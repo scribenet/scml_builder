@@ -1,0 +1,88 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Scribe Abbreviated Markup (Sam)                   -->
+<!--  VERSION:   2.0                                               -->
+<!--  DATE:      March 2014                                        -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+Version  Reason/Occasion                    (who)   vx.x (yymmdd)  
+
+-->
+
+<!-- ============================================================= -->
+<!--                   Entity Declarations                         -->
+<!-- ============================================================= -->
+
+  <!ENTITY % coreattrs
+   "id        ID      #IMPLIED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED"
+  >
+
+<%= element_list(:pars) %>
+
+<%= element_list(:chars) %>
+
+<!-- ============================================================= -->
+<!--                   Main-Level Elements                         -->
+<!-- ============================================================= -->
+
+  <!ELEMENT sam (%paragraph_level.group;) >
+  <!ATTLIST sam
+      %coreattrs;
+      bver CDATA #IMPLIED
+      lang   CDATA #IMPLIED
+  >
+
+<!-- ============================================================= -->
+<!--                   Paragraph-Level Elements                    -->
+<!-- ============================================================= -->
+
+<%= element_declarations(:pars) %>
+
+<!-- ~============================================================ -->
+<!--                   Character-Level Elements                    -->
+<!-- ============================================================= -->
+
+<%= element_declarations(:chars) %>
+
+<!-- ~============================================================ -->
+<!--                   Table Elements                              -->
+<!-- ============================================================= -->
+
+  <!ELEMENT table ( tr+ ) >
+  <!ATTLIST table
+      %coreattrs;
+      width CDATA #IMPLIED
+      style CDATA #IMPLIED
+      border CDATA #IMPLIED>
+
+  <!ELEMENT tr ( cell+ ) >
+  <!ATTLIST tr
+      %coreattrs;
+      align CDATA #IMPLIED
+      valign CDATA #IMPLIED >
+
+  <!ELEMENT cell ( %paragraph_level.group; )* >
+  <!ATTLIST cell
+      %coreattrs;
+      colspan CDATA #IMPLIED
+      rowspan CDATA #IMPLIED 
+      align CDATA #IMPLIED   >
+
+<!-- ~============================================================ -->
+<!--               Non-Textual Inline Elements                     -->
+<!-- ============================================================= -->
+
+  <!ELEMENT img ( %inline_level.group; )* >
+  <!ATTLIST img
+    %coreattrs;
+    src     CDATA     #REQUIRED
+    alt     CDATA     #IMPLIED
+    height  CDATA     #IMPLIED
+    width   CDATA     #IMPLIED
+  >

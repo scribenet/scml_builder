@@ -1,0 +1,925 @@
+:structure_styles:
+  - :name: blockquote
+  - :name: box
+  - :name: codeline
+  - :name: dialogue
+  - :name: epigraph
+  - :name: equation
+  - :name: exercise
+  - :name: figure
+  - :name: glossary
+  - :name: index
+  - :name: letter
+  - :name: list
+  - :name: media
+  - :name: notes
+  - :name: pullquote
+  - :name: question
+  - :name: recipe
+  - :name: references
+  - :name: senseline
+  - :name: sidebar
+  - :name: story
+  - :name: written
+:paragraph_styles:
+  - :name: ah
+  - :name: ahaft
+  - :name: ans
+  - :name: ansf
+  - :name: ard
+  - :name: au
+  - :name: au1
+  - :name: aubio
+  - :name: aubiof
+  - :name: audio
+  - :name: bh
+  - :name: bhaft
+  - :name: bk
+  - :name: bk1
+  - :name: bk2
+  - :name: bkau
+  - :name: bkau1
+  - :name: bkht
+  - :name: bkpub
+  - :name: bkpub1
+  - :name: bksect
+  - :name: bl
+  - :name: bl1
+  - :name: bl1f
+  - :name: bl1l
+  - :name: bl1p
+  - :name: bl1pl
+  - :name: bl1s
+  - :name: blf
+  - :name: blh
+  - :name: bll
+  - :name: blp
+  - :name: blpl
+  - :name: bls
+  - :name: bq
+  - :name: bq1
+  - :name: bq1f
+  - :name: bq1l
+  - :name: bq1s
+  - :name: bqaft
+  - :name: bqf
+  - :name: bqh
+  - :name: bql
+  - :name: bqnl
+  - :name: bqnlf
+  - :name: bqnll
+  - :name: bqnls
+  - :name: bqo
+  - :name: bqs
+  - :name: bqt
+  - :name: bqul
+  - :name: bqulf
+  - :name: bqull
+  - :name: bquls
+  - :name: bx
+  - :name: bx1
+  - :name: bx1aft
+  - :name: bx1ah
+  - :name: bx1bh
+  - :name: bx1bq
+  - :name: bx1bqf
+  - :name: bx1bql
+  - :name: bx1bqs
+  - :name: bx1con
+  - :name: bx1f
+  - :name: bx1h
+  - :name: bx1l
+  - :name: bx1nl
+  - :name: bx1nlf
+  - :name: bx1nll
+  - :name: bx1nlp
+  - :name: bx1sl
+  - :name: bx1slf
+  - :name: bx1sll
+  - :name: bx1t
+  - :name: bx1ul
+  - :name: bx1ulf
+  - :name: bx1ull
+  - :name: bx1ulp
+  - :name: bxaft
+  - :name: bxah
+  - :name: bxau
+  - :name: bxau1
+  - :name: bxbh
+  - :name: bxbq
+  - :name: bxbqf
+  - :name: bxbql
+  - :name: bxbqs
+  - :name: bxcon
+  - :name: bxf
+  - :name: bxh
+  - :name: bxl
+  - :name: bxnl
+  - :name: bxnlf
+  - :name: bxnll
+  - :name: bxnlp
+  - :name: bxnls
+  - :name: bxo
+  - :name: bxs
+  - :name: bxsl
+  - :name: bxslf
+  - :name: bxsll
+  - :name: bxt
+  - :name: bxul
+  - :name: bxulf
+  - :name: bxull
+  - :name: bxulp
+  - :name: bxuls
+  - :name: call
+  - :name: ch
+  - :name: chaft
+  - :name: chsect
+  - :name: chsubsect
+  - :name: cip
+  - :name: cip1
+  - :name: cip2
+  - :name: cipf
+  - :name: cipf1
+  - :name: cipl
+  - :name: cl
+  - :name: cl1
+  - :name: cl1f
+  - :name: cl1l
+  - :name: cl1s
+  - :name: cl2
+  - :name: cl2f
+  - :name: cl2l
+  - :name: cl2s
+  - :name: cl3
+  - :name: cl3f
+  - :name: cl3l
+  - :name: cl3s
+  - :name: clf
+  - :name: cll
+  - :name: cls
+  - :name: cn
+  - :name: com
+  - :name: crt
+  - :name: crt1
+  - :name: crt1f
+  - :name: crt2
+  - :name: crt3
+  - :name: crtf
+  - :name: cs
+  - :name: ct
+  - :name: ctbm
+  - :name: ctfm
+  - :name: ctoc
+  - :name: ctoc1
+  - :name: ctoch
+  - :name: ded
+  - :name: ded1
+  - :name: ded1f
+  - :name: dedf
+  - :name: dh
+  - :name: dhaft
+  - :name: dia
+  - :name: diaf
+  - :name: dial
+  - :name: diap
+  - :name: diapl
+  - :name: dias
+  - :name: dl
+  - :name: dl1
+  - :name: dt
+  - :name: dtsub
+  - :name: eds
+  - :name: eh
+  - :name: ehaft
+  - :name: en
+  - :name: end
+  - :name: enhn
+  - :name: enp
+  - :name: ep
+  - :name: ep1
+  - :name: ep2
+  - :name: epaft
+  - :name: epf
+  - :name: epl
+  - :name: eps
+  - :name: epsl
+  - :name: epsl1
+  - :name: epslf
+  - :name: ept
+  - :name: ept1
+  - :name: eq
+  - :name: eqaft
+  - :name: ex
+  - :name: exaft
+  - :name: exah
+  - :name: exbh
+  - :name: exf
+  - :name: exh
+  - :name: exl
+  - :name: exnl
+  - :name: exnl1
+  - :name: exnl1f
+  - :name: exnl1l
+  - :name: exnl1p
+  - :name: exnl1s
+  - :name: exnlf
+  - :name: exnll
+  - :name: exnlp
+  - :name: exnls
+  - :name: exs
+  - :name: exul
+  - :name: exul1
+  - :name: exul1f
+  - :name: exul1l
+  - :name: exul1p
+  - :name: exul1s
+  - :name: exulf
+  - :name: exull
+  - :name: exulp
+  - :name: exuls
+  - :name: fig
+  - :name: figatr
+  - :name: figcap
+  - :name: figcap1
+  - :name: figh
+  - :name: figh1
+  - :name: fign
+  - :name: fn
+  - :name: fnn
+  - :name: fnp
+  - :name: fs
+  - :name: glo
+  - :name: glof
+  - :name: hb
+  - :name: hd
+  - :name: in
+  - :name: in1
+  - :name: in2
+  - :name: in3
+  - :name: inf
+  - :name: inh
+  - :name: inh1
+  - :name: lo
+  - :name: lps
+  - :name: lt
+  - :name: lta
+  - :name: ltaf
+  - :name: ltc
+  - :name: ltd
+  - :name: ltdf
+  - :name: ltf
+  - :name: ltg
+  - :name: ltl
+  - :name: lto
+  - :name: lts
+  - :name: ltsig
+  - :name: ltsigf
+  - :name: ltsigl
+  - :name: mediah
+  - :name: mediacap
+  - :name: mediaatr
+  - :name: nl
+  - :name: nl1
+  - :name: nl1f
+  - :name: nl1l
+  - :name: nl1p
+  - :name: nl1pl
+  - :name: nl1s
+  - :name: nl2
+  - :name: nl2f
+  - :name: nl2l
+  - :name: nl2p
+  - :name: nl2s
+  - :name: nl3
+  - :name: nl3f
+  - :name: nl3l
+  - :name: nl3p
+  - :name: nl3s
+  - :name: nl4
+  - :name: nl4f
+  - :name: nl4l
+  - :name: nl4p
+  - :name: nl4s
+  - :name: nl5
+  - :name: nl5f
+  - :name: nl5l
+  - :name: nl5p
+  - :name: nl5s
+  - :name: nlf
+  - :name: nlh
+  - :name: nll
+  - :name: nlp
+  - :name: nlpl
+  - :name: nls
+  - :name: ntbq
+  - :name: ntbqf
+  - :name: ntbql
+  - :name: ntbqs
+  - :name: ntcon
+  - :name: nteq
+  - :name: ntnl
+  - :name: ntnlf
+  - :name: ntnll
+  - :name: ntsl
+  - :name: ntslf
+  - :name: ntsll
+  - :name: nttd
+  - :name: ntul
+  - :name: ntulf
+  - :name: ntull
+  - :name: opt
+  - :name: p
+  - :name: paft
+  - :name: patr
+  - :name: patr1
+  - :name: pcon
+  - :name: pcust1
+  - :name: pcust2
+  - :name: pcust3
+  - :name: pf
+  - :name: pn
+  - :name: ps
+  - :name: psec
+  - :name: psec1
+  - :name: pt
+  - :name: qu
+  - :name: quf
+  - :name: quh
+  - :name: quot
+  - :name: quotf
+  - :name: quotl
+  - :name: quots
+  - :name: quott
+  - :name: rb
+  - :name: rbc
+  - :name: rbi
+  - :name: rc
+  - :name: rf
+  - :name: rf1
+  - :name: rf2
+  - :name: rp
+  - :name: rp1
+  - :name: rp1f
+  - :name: rp1l
+  - :name: rp1y
+  - :name: rpah
+  - :name: rpbh
+  - :name: rpch
+  - :name: rpf
+  - :name: rpg
+  - :name: rpg1
+  - :name: rph
+  - :name: rph1
+  - :name: rphn
+  - :name: rpil
+  - :name: rpil1
+  - :name: rpil1f
+  - :name: rpil1l
+  - :name: rpil1s
+  - :name: rpilf
+  - :name: rpill
+  - :name: rpils
+  - :name: rpl
+  - :name: rpn
+  - :name: rpn1
+  - :name: rpnut
+  - :name: rpnut1
+  - :name: rpt
+  - :name: rpt1
+  - :name: rpv
+  - :name: rpv1
+  - :name: rpv1f
+  - :name: rpv1h
+  - :name: rpv1l
+  - :name: rpvf
+  - :name: rpvh
+  - :name: rpvl
+  - :name: rpy
+  - :name: rv
+  - :name: rvd
+  - :name: rvh
+  - :name: rvt
+  - :name: sb
+  - :name: sb1
+  - :name: sb1f
+  - :name: sb1h
+  - :name: sb1l
+  - :name: sb1t
+  - :name: sbaft
+  - :name: sbah
+  - :name: sbahaft
+  - :name: sbbh
+  - :name: sbbhaft
+  - :name: sbbq
+  - :name: sbbqaft
+  - :name: sbbqf
+  - :name: sbbql
+  - :name: sbbqs
+  - :name: sbcon
+  - :name: sbf
+  - :name: sbh
+  - :name: sbl
+  - :name: sbnl
+  - :name: sbnl1
+  - :name: sbnl1f
+  - :name: sbnl1l
+  - :name: sbnl1p
+  - :name: sbnl1s
+  - :name: sbnl2
+  - :name: sbnl2f
+  - :name: sbnl2l
+  - :name: sbnl2p
+  - :name: sbnl2s
+  - :name: sbnl3
+  - :name: sbnl3f
+  - :name: sbnl3l
+  - :name: sbnl4
+  - :name: sbnl4f
+  - :name: sbnl4l
+  - :name: sbnl5
+  - :name: sbnl5f
+  - :name: sbnl5l
+  - :name: sbnlf
+  - :name: sbnll
+  - :name: sbnlp
+  - :name: sbnls
+  - :name: sbo
+  - :name: sbs
+  - :name: sbsl
+  - :name: sbsl1
+  - :name: sbsl1f
+  - :name: sbsl1l
+  - :name: sbsl1s
+  - :name: sbsl2
+  - :name: sbsl2f
+  - :name: sbsl2l
+  - :name: sbsl2s
+  - :name: sbsl3
+  - :name: sbsl3f
+  - :name: sbsl3l
+  - :name: sbsl3s
+  - :name: sbslf
+  - :name: sbsli
+  - :name: sbslif
+  - :name: sbslil
+  - :name: sbsll
+  - :name: sbsls
+  - :name: sbslt
+  - :name: sbt
+  - :name: sbul
+  - :name: sbul1
+  - :name: sbul1f
+  - :name: sbul1l
+  - :name: sbul1p
+  - :name: sbul1s
+  - :name: sbul2
+  - :name: sbul2f
+  - :name: sbul2l
+  - :name: sbul2p
+  - :name: sbul2s
+  - :name: sbulf
+  - :name: sbull
+  - :name: sbulp
+  - :name: sbuls
+  - :name: sec
+  - :name: secbot
+  - :name: sectop
+  - :name: ser
+  - :name: ser1
+  - :name: ser2
+  - :name: seraft
+  - :name: serah
+  - :name: serahaft
+  - :name: serau
+  - :name: serbh
+  - :name: serf
+  - :name: serp
+  - :name: serpf
+  - :name: sers
+  - :name: sert
+  - :name: sh
+  - :name: sl
+  - :name: sl1
+  - :name: sl1f
+  - :name: sl1l
+  - :name: sl2
+  - :name: sl2f
+  - :name: sl2l
+  - :name: sl3
+  - :name: sl3f
+  - :name: sl3l
+  - :name: sl4
+  - :name: sl4f
+  - :name: sl4l
+  - :name: sl5
+  - :name: sl5f
+  - :name: sl5l
+  - :name: sl6
+  - :name: sl6f
+  - :name: sl6l
+  - :name: sl7
+  - :name: sl7f
+  - :name: sl7l
+  - :name: sl8
+  - :name: sl8f
+  - :name: sl8l
+  - :name: sl9
+  - :name: sl9f
+  - :name: sl9l
+  - :name: slf
+  - :name: slh
+  - :name: sli
+  - :name: slif
+  - :name: slil
+  - :name: sll
+  - :name: sls
+  - :name: slt
+  - :name: st
+  - :name: stf
+  - :name: sth
+  - :name: sth1
+  - :name: sth2
+  - :name: stl
+  - :name: structure
+    :for: sam
+  - :name: sts
+  - :name: tatr
+  - :name: taxclass
+  - :name: taxfamily
+  - :name: taxgenus
+  - :name: taxkingdom
+  - :name: taxorder
+  - :name: taxphylum
+  - :name: taxspecies
+  - :name: tch
+  - :name: tch1
+  - :name: tch2
+  - :name: td
+  - :name: tdf
+  - :name: tdl
+  - :name: tdnl
+  - :name: tdp
+  - :name: tdul
+  - :name: th
+  - :name: th1
+  - :name: th2
+  - :name: tn
+  - :name: toc
+  - :name: toc1
+  - :name: toc2
+  - :name: toc3
+  - :name: toc4
+  - :name: toc5
+  - :name: tocau
+  - :name: tocbm
+  - :name: tocbmf
+  - :name: tocf
+  - :name: tocfm
+  - :name: tocfmf
+  - :name: tocpt
+  - :name: tocut
+  - :name: tsecbot
+  - :name: tsectop
+  - :name: ul
+  - :name: ul1
+  - :name: ul1f
+  - :name: ul1l
+  - :name: ul1p
+  - :name: ul1pl
+  - :name: ul1s
+  - :name: ul2
+  - :name: ul2f
+  - :name: ul2l
+  - :name: ul2p
+  - :name: ul2s
+  - :name: ul3
+  - :name: ul3f
+  - :name: ul3l
+  - :name: ul3p
+  - :name: ul3s
+  - :name: ul4
+  - :name: ul4f
+  - :name: ul4l
+  - :name: ul4p
+  - :name: ul4s
+  - :name: ul5
+  - :name: ul5f
+  - :name: ul5l
+  - :name: ul5p
+  - :name: ul5s
+  - :name: ulf
+  - :name: ulh
+  - :name: ull
+  - :name: ulp
+  - :name: ulpl
+  - :name: uls
+  - :name: un
+  - :name: us
+  - :name: ut
+  - :name: video
+  - :name: wl
+  - :name: wl1
+  - :name: wl1f
+  - :name: wl1h
+  - :name: wl1h1
+  - :name: wl1l
+  - :name: wl1s
+  - :name: wl2
+  - :name: wl2f
+  - :name: wl2h
+  - :name: wl2h1
+  - :name: wl2l
+  - :name: wl2s
+  - :name: wl3
+  - :name: wl3f
+  - :name: wl3h
+  - :name: wl3h1
+  - :name: wl3l
+  - :name: wl3s
+  - :name: wlf
+  - :name: wlh
+  - :name: wlh1
+  - :name: wll
+  - :name: wls
+  - :name: wsh
+:character_styles:
+  - :name: abbr
+  - :name: ac
+  - :name: b
+  - :name: bcv
+  - :name: bi
+  - :name: ccust1
+  - :name: ccust2
+  - :name: ccust3
+  - :name: cemd
+  - :name: chemb
+  - :name: cip-i
+  - :name: code
+  - :name: code-b
+  - :name: code-bi
+  - :name: code-i
+  - :name: dcrit
+  - :name: dcrit-b
+  - :name: dcrit-bi
+  - :name: dcrit-i
+  - :name: dcrit-ob
+  - :name: dcrit-red
+  - :name: dispk
+  - :name: dispk-i
+  - :name: dropcap
+  - :name: dropcap-i
+  - :name: enn
+  - :name: ennum
+  - :name: enref
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: fighn
+  - :name: first
+  - :name: first-i
+  - :name: fnnum
+  - :name: fnref
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: fol
+  - :name: folio
+  - :name: frac
+  - :name: frac-b
+  - :name: frac-bi
+  - :name: frac-i
+  - :name: grc
+  - :name: grc-b
+  - :name: grc-bi
+  - :name: grc-i
+  - :name: grc-u
+  - :name: gt
+  - :name: gt-i
+  - :name: gt-sm
+  - :name: gtref
+  - :name: heb
+  - :name: heb-b
+  - :name: heb-bi
+  - :name: heb-i
+  - :name: heb-u
+  - :name: hemb
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: gtref-i
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: gtref-sm
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: i
+  - :name: idx
+  - :name: inhn
+  - :name: iu
+  - :name: l-chi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-chi-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-chi-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-chi-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-fre
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-fre-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-fre-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-fre-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ger
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ger-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ger-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ger-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ita
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ita-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ita-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-ita-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-jpn
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-jpn-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-jpn-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-jpn-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-kor
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-kor-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-kor-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-kor-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-lat
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-lat-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-lat-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-lat-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-rus
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-rus-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-rus-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-rus-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-spa
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-spa-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-spa-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: l-spa-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: lang
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: lang-b
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: lang-bi
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: lang-i
+    :attrs:
+      - [lang, CDATA, '#IMPLIED']
+  - :name: med
+  - :name: ob
+  - :name: osf
+  - :name: osf-b
+  - :name: osf-bi
+  - :name: osf-i
+  - :name: page
+    :for: sam
+  - :name: pnum
+  - :name: red
+  - :name: red-b
+  - :name: red-i
+  - :name: red-ob
+  - :name: red-sm
+  - :name: red-sm-i
+  - :name: red-sm-ob
+  - :name: rh
+  - :name: rh-i
+  - :name: rhr
+  - :name: rhref
+  - :name: rhref1
+  - :name: rhv
+  - :name: sm
+  - :name: sm-b
+  - :name: sm-bi
+  - :name: sm-i
+  - :name: sm-ob
+  - :name: smver
+  - :name: speaker
+  - :name: speaker-i
+  - :name: strk
+  - :name: sub
+  - :name: sub-b
+  - :name: sub-bi
+  - :name: sub-i
+  - :name: sub-u
+  - :name: sup
+  - :name: sup-b
+  - :name: sup-bi
+  - :name: sup-i
+  - :name: sup-u
+  - :name: symb
+  - :name: symb-b
+  - :name: symb-i
+  - :name: symb-sub
+  - :name: symb-sub-b
+  - :name: symb-sub-bi
+  - :name: symb-sub-i
+  - :name: symb-sup
+  - :name: symb-sup-b
+  - :name: symb-sup-bi
+  - :name: symb-sup-i
+  - :name: tel
+  - :name: tetr
+  - :name: tetr-b
+  - :name: tetr-i
+  - :name: tetr-ob
+  - :name: tetr-red
+  - :name: tetr-red-i
+  - :name: tetr-red-ob
+  - :name: tgrc
+  - :name: tgrc-b
+  - :name: tgrc-bi
+  - :name: tgrc-i
+  - :name: theb
+  - :name: theb-i
+  - :name: theb-ob
+  - :name: theb-red
+  - :name: thn
+  - :name: tocnum
+  - :name: trh
+  - :name: trh-i
+  - :name: tso
+  - :name: u
+  - :name: url
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: ver
+  - :name: xbk
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: xbr
+    :attrs:
+      - [t, CDATA, '#IMPLIED'] 
+  - :name: xref
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 
+  - :name: xref-i
+    :attrs:
+      - [idref, IDREF, '#IMPLIED'] 

@@ -1,0 +1,158 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Scribe Markup Language (ScML)                     -->
+<!--  VERSION:   2.0                                               -->
+<!--  DATE:      March 2014                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+Version  Reason/Occasion                    (who)   vx.x (yymmdd)  
+
+-->
+
+<!-- ============================================================= -->
+<!--                   Entity Declarations                         -->
+<!-- ============================================================= -->
+
+  <!ENTITY % coreattrs
+   "id        ID      #IMPLIED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED"
+  >
+
+<%= element_list(:structs) %>
+
+<%= element_list(:pars) %>
+
+<%= element_list(:chars) %>
+
+<!-- ~============================================================ -->
+<!--                   Main-Level Elements                         -->
+<!-- ============================================================= -->
+
+  <!ELEMENT scml ( division+ | book ) >
+  <!ATTLIST scml
+      %coreattrs;
+      bver CDATA #IMPLIED
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT division (book+) >
+  <!ATTLIST division
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT book ( chapter+ | part+ ) >
+  <!ATTLIST book
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT part ( chapter+ ) >
+  <!ATTLIST part
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT chapter ( cover | (%block_level.group; | %paragraph_level.group;)+ ) >
+  <!ATTLIST chapter
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+<!-- ~============================================================ -->
+<!--                   Block-Level Elements                        -->
+<!-- ============================================================= -->
+
+<%= element_declarations(:structs) %>
+
+<!-- ~============================================================ -->
+<!--                   Paragraph-Level Elements                    -->
+<!-- ============================================================= -->
+
+<%= element_declarations(:pars) %>
+
+<!-- ~============================================================ -->
+<!--                   Character-Level Elements                    -->
+<!-- ============================================================= -->
+
+<%= element_declarations(:chars) %>
+
+<!-- ~============================================================ -->
+<!--                   Table Elements                              -->
+<!-- ============================================================= -->
+
+  <!ELEMENT table ( tr+ ) >
+  <!ATTLIST table
+      %coreattrs;
+      width CDATA #IMPLIED
+      style CDATA #IMPLIED
+      border CDATA #IMPLIED>
+
+  <!ELEMENT tr ( cell+ ) >
+  <!ATTLIST tr
+      %coreattrs;
+      align CDATA #IMPLIED
+      valign CDATA #IMPLIED >
+
+  <!ELEMENT cell ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST cell
+      %coreattrs;
+      colspan CDATA #IMPLIED
+      rowspan CDATA #IMPLIED 
+      align CDATA #IMPLIED   >
+
+<!-- ~============================================================ -->
+<!--                   Specialized Structures                      -->
+<!-- ============================================================= -->
+
+  <!ELEMENT cover ( fig ) >
+  <!ATTLIST cover
+    %coreattrs;
+  >
+
+<!-- ~============================================================ -->
+<!--               Non-Textual Inline Elements                     -->
+<!-- ============================================================= -->
+
+  <!ELEMENT a EMPTY>
+  <!-- html -->
+  <!ATTLIST a
+    id     ID     #REQUIRED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED
+  >
+
+  <!ELEMENT br EMPTY>
+  <!-- html -->
+
+  <!ELEMENT img EMPTY>
+  <!-- html -->
+  <!ATTLIST img
+    %coreattrs;
+    src     CDATA     #REQUIRED
+    alt     CDATA     #IMPLIED
+    height  CDATA     #IMPLIED
+    width   CDATA     #IMPLIED
+  >
+
+  <!ELEMENT page EMPTY>
+  <!ATTLIST page
+    id     ID     #REQUIRED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED
+  >
+
+<!-- ~============================================================ -->
+<!--           Non-Textual Paragraph-Level Elements                -->
+<!-- ============================================================= -->
+
+  <!ELEMENT hr EMPTY>
+  <!-- html -->
+  <!ATTLIST hr
+    %coreattrs;
+  >

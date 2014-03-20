@@ -1,0 +1,5118 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Scribe Markup Language (ScML)                     -->
+<!--  VERSION:   2.0                                               -->
+<!--  DATE:      March 2014                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+Version  Reason/Occasion                    (who)   vx.x (yymmdd)  
+
+-->
+
+<!-- ============================================================= -->
+<!--                   Entity Declarations                         -->
+<!-- ============================================================= -->
+
+  <!ENTITY % coreattrs
+   "id        ID      #IMPLIED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED"
+  >
+
+<!ENTITY % block_level.group
+  "blockquote
+  | box
+  | codeline
+  | dialogue
+  | epigraph
+  | equation
+  | exercise
+  | figure
+  | glossary
+  | index
+  | letter
+  | list
+  | media
+  | notes
+  | pullquote
+  | question
+  | recipe
+  | references
+  | senseline
+  | sidebar
+  | story
+  | table
+  | written">
+
+<!ENTITY % paragraph_level.group
+  "ah
+  | ahaft
+  | ans
+  | ansf
+  | ard
+  | au
+  | au1
+  | aubio
+  | aubiof
+  | audio
+  | bh
+  | bhaft
+  | bk
+  | bk1
+  | bk2
+  | bkau
+  | bkau1
+  | bkht
+  | bkpub
+  | bkpub1
+  | bksect
+  | bl
+  | bl1
+  | bl1f
+  | bl1l
+  | bl1p
+  | bl1pl
+  | bl1s
+  | blf
+  | blh
+  | bll
+  | blp
+  | blpl
+  | bls
+  | bq
+  | bq1
+  | bq1f
+  | bq1l
+  | bq1s
+  | bqaft
+  | bqf
+  | bqh
+  | bql
+  | bqnl
+  | bqnlf
+  | bqnll
+  | bqnls
+  | bqo
+  | bqs
+  | bqt
+  | bqul
+  | bqulf
+  | bqull
+  | bquls
+  | bx
+  | bx1
+  | bx1aft
+  | bx1ah
+  | bx1bh
+  | bx1bq
+  | bx1bqf
+  | bx1bql
+  | bx1bqs
+  | bx1con
+  | bx1f
+  | bx1h
+  | bx1l
+  | bx1nl
+  | bx1nlf
+  | bx1nll
+  | bx1nlp
+  | bx1sl
+  | bx1slf
+  | bx1sll
+  | bx1t
+  | bx1ul
+  | bx1ulf
+  | bx1ull
+  | bx1ulp
+  | bxaft
+  | bxah
+  | bxau
+  | bxau1
+  | bxbh
+  | bxbq
+  | bxbqf
+  | bxbql
+  | bxbqs
+  | bxcon
+  | bxf
+  | bxh
+  | bxl
+  | bxnl
+  | bxnlf
+  | bxnll
+  | bxnlp
+  | bxnls
+  | bxo
+  | bxs
+  | bxsl
+  | bxslf
+  | bxsll
+  | bxt
+  | bxul
+  | bxulf
+  | bxull
+  | bxulp
+  | bxuls
+  | call
+  | ch
+  | chaft
+  | chsect
+  | chsubsect
+  | cip
+  | cip1
+  | cip2
+  | cipf
+  | cipf1
+  | cipl
+  | cl
+  | cl1
+  | cl1f
+  | cl1l
+  | cl1s
+  | cl2
+  | cl2f
+  | cl2l
+  | cl2s
+  | cl3
+  | cl3f
+  | cl3l
+  | cl3s
+  | clf
+  | cll
+  | cls
+  | cn
+  | com
+  | crt
+  | crt1
+  | crt1f
+  | crt2
+  | crt3
+  | crtf
+  | cs
+  | ct
+  | ctbm
+  | ctfm
+  | ctoc
+  | ctoc1
+  | ctoch
+  | ded
+  | ded1
+  | ded1f
+  | dedf
+  | dh
+  | dhaft
+  | dia
+  | diaf
+  | dial
+  | diap
+  | diapl
+  | dias
+  | dl
+  | dl1
+  | dt
+  | dtsub
+  | eds
+  | eh
+  | ehaft
+  | en
+  | end
+  | enhn
+  | enp
+  | ep
+  | ep1
+  | ep2
+  | epaft
+  | epf
+  | epl
+  | eps
+  | epsl
+  | epsl1
+  | epslf
+  | ept
+  | ept1
+  | eq
+  | eqaft
+  | ex
+  | exaft
+  | exah
+  | exbh
+  | exf
+  | exh
+  | exl
+  | exnl
+  | exnl1
+  | exnl1f
+  | exnl1l
+  | exnl1p
+  | exnl1s
+  | exnlf
+  | exnll
+  | exnlp
+  | exnls
+  | exs
+  | exul
+  | exul1
+  | exul1f
+  | exul1l
+  | exul1p
+  | exul1s
+  | exulf
+  | exull
+  | exulp
+  | exuls
+  | fig
+  | figatr
+  | figcap
+  | figcap1
+  | figh
+  | figh1
+  | fign
+  | fn
+  | fnn
+  | fnp
+  | fs
+  | glo
+  | glof
+  | hb
+  | hd
+  | in
+  | in1
+  | in2
+  | in3
+  | inf
+  | inh
+  | inh1
+  | lo
+  | lps
+  | lt
+  | lta
+  | ltaf
+  | ltc
+  | ltd
+  | ltdf
+  | ltf
+  | ltg
+  | ltl
+  | lto
+  | lts
+  | ltsig
+  | ltsigf
+  | ltsigl
+  | mediaatr
+  | mediacap
+  | mediah
+  | nl
+  | nl1
+  | nl1f
+  | nl1l
+  | nl1p
+  | nl1pl
+  | nl1s
+  | nl2
+  | nl2f
+  | nl2l
+  | nl2p
+  | nl2s
+  | nl3
+  | nl3f
+  | nl3l
+  | nl3p
+  | nl3s
+  | nl4
+  | nl4f
+  | nl4l
+  | nl4p
+  | nl4s
+  | nl5
+  | nl5f
+  | nl5l
+  | nl5p
+  | nl5s
+  | nlf
+  | nlh
+  | nll
+  | nlp
+  | nlpl
+  | nls
+  | ntbq
+  | ntbqf
+  | ntbql
+  | ntbqs
+  | ntcon
+  | nteq
+  | ntnl
+  | ntnlf
+  | ntnll
+  | ntsl
+  | ntslf
+  | ntsll
+  | nttd
+  | ntul
+  | ntulf
+  | ntull
+  | opt
+  | p
+  | paft
+  | patr
+  | patr1
+  | pcon
+  | pcust1
+  | pcust2
+  | pcust3
+  | pf
+  | pn
+  | ps
+  | psec
+  | psec1
+  | pt
+  | qu
+  | quf
+  | quh
+  | quot
+  | quotf
+  | quotl
+  | quots
+  | quott
+  | rb
+  | rbc
+  | rbi
+  | rc
+  | rf
+  | rf1
+  | rf2
+  | rp
+  | rp1
+  | rp1f
+  | rp1l
+  | rp1y
+  | rpah
+  | rpbh
+  | rpch
+  | rpf
+  | rpg
+  | rpg1
+  | rph
+  | rph1
+  | rphn
+  | rpil
+  | rpil1
+  | rpil1f
+  | rpil1l
+  | rpil1s
+  | rpilf
+  | rpill
+  | rpils
+  | rpl
+  | rpn
+  | rpn1
+  | rpnut
+  | rpnut1
+  | rpt
+  | rpt1
+  | rpv
+  | rpv1
+  | rpv1f
+  | rpv1h
+  | rpv1l
+  | rpvf
+  | rpvh
+  | rpvl
+  | rpy
+  | rv
+  | rvd
+  | rvh
+  | rvt
+  | sb
+  | sb1
+  | sb1f
+  | sb1h
+  | sb1l
+  | sb1t
+  | sbaft
+  | sbah
+  | sbahaft
+  | sbbh
+  | sbbhaft
+  | sbbq
+  | sbbqaft
+  | sbbqf
+  | sbbql
+  | sbbqs
+  | sbcon
+  | sbf
+  | sbh
+  | sbl
+  | sbnl
+  | sbnl1
+  | sbnl1f
+  | sbnl1l
+  | sbnl1p
+  | sbnl1s
+  | sbnl2
+  | sbnl2f
+  | sbnl2l
+  | sbnl2p
+  | sbnl2s
+  | sbnl3
+  | sbnl3f
+  | sbnl3l
+  | sbnl4
+  | sbnl4f
+  | sbnl4l
+  | sbnl5
+  | sbnl5f
+  | sbnl5l
+  | sbnlf
+  | sbnll
+  | sbnlp
+  | sbnls
+  | sbo
+  | sbs
+  | sbsl
+  | sbsl1
+  | sbsl1f
+  | sbsl1l
+  | sbsl1s
+  | sbsl2
+  | sbsl2f
+  | sbsl2l
+  | sbsl2s
+  | sbsl3
+  | sbsl3f
+  | sbsl3l
+  | sbsl3s
+  | sbslf
+  | sbsli
+  | sbslif
+  | sbslil
+  | sbsll
+  | sbsls
+  | sbslt
+  | sbt
+  | sbul
+  | sbul1
+  | sbul1f
+  | sbul1l
+  | sbul1p
+  | sbul1s
+  | sbul2
+  | sbul2f
+  | sbul2l
+  | sbul2p
+  | sbul2s
+  | sbulf
+  | sbull
+  | sbulp
+  | sbuls
+  | sec
+  | secbot
+  | sectop
+  | ser
+  | ser1
+  | ser2
+  | seraft
+  | serah
+  | serahaft
+  | serau
+  | serbh
+  | serf
+  | serp
+  | serpf
+  | sers
+  | sert
+  | sh
+  | sl
+  | sl1
+  | sl1f
+  | sl1l
+  | sl2
+  | sl2f
+  | sl2l
+  | sl3
+  | sl3f
+  | sl3l
+  | sl4
+  | sl4f
+  | sl4l
+  | sl5
+  | sl5f
+  | sl5l
+  | sl6
+  | sl6f
+  | sl6l
+  | sl7
+  | sl7f
+  | sl7l
+  | sl8
+  | sl8f
+  | sl8l
+  | sl9
+  | sl9f
+  | sl9l
+  | slf
+  | slh
+  | sli
+  | slif
+  | slil
+  | sll
+  | sls
+  | slt
+  | st
+  | stf
+  | sth
+  | sth1
+  | sth2
+  | stl
+  | sts
+  | tatr
+  | taxclass
+  | taxfamily
+  | taxgenus
+  | taxkingdom
+  | taxorder
+  | taxphylum
+  | taxspecies
+  | tch
+  | tch1
+  | tch2
+  | td
+  | tdf
+  | tdl
+  | tdnl
+  | tdp
+  | tdul
+  | th
+  | th1
+  | th2
+  | tn
+  | toc
+  | toc1
+  | toc2
+  | toc3
+  | toc4
+  | toc5
+  | tocau
+  | tocbm
+  | tocbmf
+  | tocf
+  | tocfm
+  | tocfmf
+  | tocpt
+  | tocut
+  | tsecbot
+  | tsectop
+  | ul
+  | ul1
+  | ul1f
+  | ul1l
+  | ul1p
+  | ul1pl
+  | ul1s
+  | ul2
+  | ul2f
+  | ul2l
+  | ul2p
+  | ul2s
+  | ul3
+  | ul3f
+  | ul3l
+  | ul3p
+  | ul3s
+  | ul4
+  | ul4f
+  | ul4l
+  | ul4p
+  | ul4s
+  | ul5
+  | ul5f
+  | ul5l
+  | ul5p
+  | ul5s
+  | ulf
+  | ulh
+  | ull
+  | ulp
+  | ulpl
+  | uls
+  | un
+  | us
+  | ut
+  | video
+  | wl
+  | wl1
+  | wl1f
+  | wl1h
+  | wl1h1
+  | wl1l
+  | wl1s
+  | wl2
+  | wl2f
+  | wl2h
+  | wl2h1
+  | wl2l
+  | wl2s
+  | wl3
+  | wl3f
+  | wl3h
+  | wl3h1
+  | wl3l
+  | wl3s
+  | wlf
+  | wlh
+  | wlh1
+  | wll
+  | wls
+  | wsh">
+
+<!ENTITY % inline_level.group
+  "#PCDATA
+  | abbr
+  | ac
+  | b
+  | bcv
+  | bi
+  | ccust1
+  | ccust2
+  | ccust3
+  | cemd
+  | chemb
+  | cip-i
+  | code
+  | code-b
+  | code-bi
+  | code-i
+  | dcrit
+  | dcrit-b
+  | dcrit-bi
+  | dcrit-i
+  | dcrit-ob
+  | dcrit-red
+  | dispk
+  | dispk-i
+  | dropcap
+  | dropcap-i
+  | enn
+  | ennum
+  | enref
+  | fighn
+  | first
+  | first-i
+  | fnnum
+  | fnref
+  | fol
+  | folio
+  | frac
+  | frac-b
+  | frac-bi
+  | frac-i
+  | grc
+  | grc-b
+  | grc-bi
+  | grc-i
+  | grc-u
+  | gt
+  | gt-i
+  | gt-sm
+  | gtref
+  | gtref-i
+  | gtref-sm
+  | heb
+  | heb-b
+  | heb-bi
+  | heb-i
+  | heb-u
+  | hemb
+  | i
+  | idx
+  | inhn
+  | iu
+  | l-chi
+  | l-chi-b
+  | l-chi-bi
+  | l-chi-i
+  | l-fre
+  | l-fre-b
+  | l-fre-bi
+  | l-fre-i
+  | l-ger
+  | l-ger-b
+  | l-ger-bi
+  | l-ger-i
+  | l-ita
+  | l-ita-b
+  | l-ita-bi
+  | l-ita-i
+  | l-jpn
+  | l-jpn-b
+  | l-jpn-bi
+  | l-jpn-i
+  | l-kor
+  | l-kor-b
+  | l-kor-bi
+  | l-kor-i
+  | l-lat
+  | l-lat-b
+  | l-lat-bi
+  | l-lat-i
+  | l-rus
+  | l-rus-b
+  | l-rus-bi
+  | l-rus-i
+  | l-spa
+  | l-spa-b
+  | l-spa-bi
+  | l-spa-i
+  | lang
+  | lang-b
+  | lang-bi
+  | lang-i
+  | med
+  | ob
+  | osf
+  | osf-b
+  | osf-bi
+  | osf-i
+  | pnum
+  | red
+  | red-b
+  | red-i
+  | red-ob
+  | red-sm
+  | red-sm-i
+  | red-sm-ob
+  | rh
+  | rh-i
+  | rhr
+  | rhref
+  | rhref1
+  | rhv
+  | sm
+  | sm-b
+  | sm-bi
+  | sm-i
+  | sm-ob
+  | smver
+  | speaker
+  | speaker-i
+  | strk
+  | sub
+  | sub-b
+  | sub-bi
+  | sub-i
+  | sub-u
+  | sup
+  | sup-b
+  | sup-bi
+  | sup-i
+  | sup-u
+  | symb
+  | symb-b
+  | symb-i
+  | symb-sub
+  | symb-sub-b
+  | symb-sub-bi
+  | symb-sub-i
+  | symb-sup
+  | symb-sup-b
+  | symb-sup-bi
+  | symb-sup-i
+  | tel
+  | tetr
+  | tetr-b
+  | tetr-i
+  | tetr-ob
+  | tetr-red
+  | tetr-red-i
+  | tetr-red-ob
+  | tgrc
+  | tgrc-b
+  | tgrc-bi
+  | tgrc-i
+  | theb
+  | theb-i
+  | theb-ob
+  | theb-red
+  | thn
+  | tocnum
+  | trh
+  | trh-i
+  | tso
+  | u
+  | url
+  | ver
+  | xbk
+  | xbr
+  | xref
+  | xref-i">
+
+<!-- ~============================================================ -->
+<!--                   Main-Level Elements                         -->
+<!-- ============================================================= -->
+
+  <!ELEMENT scml ( division+ | book ) >
+  <!ATTLIST scml
+      %coreattrs;
+      bver CDATA #IMPLIED
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT division (book+) >
+  <!ATTLIST division
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT book ( chapter+ | part+ ) >
+  <!ATTLIST book
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT part ( chapter+ ) >
+  <!ATTLIST part
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+  <!ELEMENT chapter ( cover | (%block_level.group; | %paragraph_level.group;)+ ) >
+  <!ATTLIST chapter
+      %coreattrs;
+      lang   CDATA #IMPLIED
+  >
+
+<!-- ~============================================================ -->
+<!--                   Block-Level Elements                        -->
+<!-- ============================================================= -->
+
+
+  <!ELEMENT blockquote ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST blockquote
+    %coreattrs;
+  >
+  
+  <!ELEMENT box ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST box
+    %coreattrs;
+  >
+  
+  <!ELEMENT codeline ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST codeline
+    %coreattrs;
+  >
+  
+  <!ELEMENT dialogue ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST dialogue
+    %coreattrs;
+  >
+  
+  <!ELEMENT epigraph ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST epigraph
+    %coreattrs;
+  >
+  
+  <!ELEMENT equation ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST equation
+    %coreattrs;
+  >
+  
+  <!ELEMENT exercise ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST exercise
+    %coreattrs;
+  >
+  
+  <!ELEMENT figure ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST figure
+    %coreattrs;
+  >
+  
+  <!ELEMENT glossary ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST glossary
+    %coreattrs;
+  >
+  
+  <!ELEMENT index ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST index
+    %coreattrs;
+  >
+  
+  <!ELEMENT letter ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST letter
+    %coreattrs;
+  >
+  
+  <!ELEMENT list ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST list
+    %coreattrs;
+  >
+  
+  <!ELEMENT media ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST media
+    %coreattrs;
+  >
+  
+  <!ELEMENT notes ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST notes
+    %coreattrs;
+  >
+  
+  <!ELEMENT pullquote ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST pullquote
+    %coreattrs;
+  >
+  
+  <!ELEMENT question ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST question
+    %coreattrs;
+  >
+  
+  <!ELEMENT recipe ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST recipe
+    %coreattrs;
+  >
+  
+  <!ELEMENT references ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST references
+    %coreattrs;
+  >
+  
+  <!ELEMENT senseline ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST senseline
+    %coreattrs;
+  >
+  
+  <!ELEMENT sidebar ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST sidebar
+    %coreattrs;
+  >
+  
+  <!ELEMENT story ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST story
+    %coreattrs;
+  >
+  
+  <!ELEMENT written ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST written
+    %coreattrs;
+  >
+  
+
+<!-- ~============================================================ -->
+<!--                   Paragraph-Level Elements                    -->
+<!-- ============================================================= -->
+
+
+  <!ELEMENT ah ( %inline_level.group; )* >
+  <!ATTLIST ah
+    %coreattrs;
+  >
+  
+  <!ELEMENT ahaft ( %inline_level.group; )* >
+  <!ATTLIST ahaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT ans ( %inline_level.group; )* >
+  <!ATTLIST ans
+    %coreattrs;
+  >
+  
+  <!ELEMENT ansf ( %inline_level.group; )* >
+  <!ATTLIST ansf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ard ( %inline_level.group; )* >
+  <!ATTLIST ard
+    %coreattrs;
+  >
+  
+  <!ELEMENT au ( %inline_level.group; )* >
+  <!ATTLIST au
+    %coreattrs;
+  >
+  
+  <!ELEMENT au1 ( %inline_level.group; )* >
+  <!ATTLIST au1
+    %coreattrs;
+  >
+  
+  <!ELEMENT aubio ( %inline_level.group; )* >
+  <!ATTLIST aubio
+    %coreattrs;
+  >
+  
+  <!ELEMENT aubiof ( %inline_level.group; )* >
+  <!ATTLIST aubiof
+    %coreattrs;
+  >
+  
+  <!ELEMENT audio ( %inline_level.group; )* >
+  <!ATTLIST audio
+    %coreattrs;
+  >
+  
+  <!ELEMENT bh ( %inline_level.group; )* >
+  <!ATTLIST bh
+    %coreattrs;
+  >
+  
+  <!ELEMENT bhaft ( %inline_level.group; )* >
+  <!ATTLIST bhaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT bk ( %inline_level.group; )* >
+  <!ATTLIST bk
+    %coreattrs;
+  >
+  
+  <!ELEMENT bk1 ( %inline_level.group; )* >
+  <!ATTLIST bk1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bk2 ( %inline_level.group; )* >
+  <!ATTLIST bk2
+    %coreattrs;
+  >
+  
+  <!ELEMENT bkau ( %inline_level.group; )* >
+  <!ATTLIST bkau
+    %coreattrs;
+  >
+  
+  <!ELEMENT bkau1 ( %inline_level.group; )* >
+  <!ATTLIST bkau1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bkht ( %inline_level.group; )* >
+  <!ATTLIST bkht
+    %coreattrs;
+  >
+  
+  <!ELEMENT bkpub ( %inline_level.group; )* >
+  <!ATTLIST bkpub
+    %coreattrs;
+  >
+  
+  <!ELEMENT bkpub1 ( %inline_level.group; )* >
+  <!ATTLIST bkpub1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bksect ( %inline_level.group; )* >
+  <!ATTLIST bksect
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl ( %inline_level.group; )* >
+  <!ATTLIST bl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl1 ( %inline_level.group; )* >
+  <!ATTLIST bl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl1f ( %inline_level.group; )* >
+  <!ATTLIST bl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl1l ( %inline_level.group; )* >
+  <!ATTLIST bl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl1p ( %inline_level.group; )* >
+  <!ATTLIST bl1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl1pl ( %inline_level.group; )* >
+  <!ATTLIST bl1pl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bl1s ( %inline_level.group; )* >
+  <!ATTLIST bl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT blf ( %inline_level.group; )* >
+  <!ATTLIST blf
+    %coreattrs;
+  >
+  
+  <!ELEMENT blh ( %inline_level.group; )* >
+  <!ATTLIST blh
+    %coreattrs;
+  >
+  
+  <!ELEMENT bll ( %inline_level.group; )* >
+  <!ATTLIST bll
+    %coreattrs;
+  >
+  
+  <!ELEMENT blp ( %inline_level.group; )* >
+  <!ATTLIST blp
+    %coreattrs;
+  >
+  
+  <!ELEMENT blpl ( %inline_level.group; )* >
+  <!ATTLIST blpl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bls ( %inline_level.group; )* >
+  <!ATTLIST bls
+    %coreattrs;
+  >
+  
+  <!ELEMENT bq ( %inline_level.group; )* >
+  <!ATTLIST bq
+    %coreattrs;
+  >
+  
+  <!ELEMENT bq1 ( %inline_level.group; )* >
+  <!ATTLIST bq1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bq1f ( %inline_level.group; )* >
+  <!ATTLIST bq1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT bq1l ( %inline_level.group; )* >
+  <!ATTLIST bq1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT bq1s ( %inline_level.group; )* >
+  <!ATTLIST bq1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqaft ( %inline_level.group; )* >
+  <!ATTLIST bqaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqf ( %inline_level.group; )* >
+  <!ATTLIST bqf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqh ( %inline_level.group; )* >
+  <!ATTLIST bqh
+    %coreattrs;
+  >
+  
+  <!ELEMENT bql ( %inline_level.group; )* >
+  <!ATTLIST bql
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqnl ( %inline_level.group; )* >
+  <!ATTLIST bqnl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqnlf ( %inline_level.group; )* >
+  <!ATTLIST bqnlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqnll ( %inline_level.group; )* >
+  <!ATTLIST bqnll
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqnls ( %inline_level.group; )* >
+  <!ATTLIST bqnls
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqo ( %inline_level.group; )* >
+  <!ATTLIST bqo
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqs ( %inline_level.group; )* >
+  <!ATTLIST bqs
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqt ( %inline_level.group; )* >
+  <!ATTLIST bqt
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqul ( %inline_level.group; )* >
+  <!ATTLIST bqul
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqulf ( %inline_level.group; )* >
+  <!ATTLIST bqulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bqull ( %inline_level.group; )* >
+  <!ATTLIST bqull
+    %coreattrs;
+  >
+  
+  <!ELEMENT bquls ( %inline_level.group; )* >
+  <!ATTLIST bquls
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx ( %inline_level.group; )* >
+  <!ATTLIST bx
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1 ( %inline_level.group; )* >
+  <!ATTLIST bx1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1aft ( %inline_level.group; )* >
+  <!ATTLIST bx1aft
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1ah ( %inline_level.group; )* >
+  <!ATTLIST bx1ah
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1bh ( %inline_level.group; )* >
+  <!ATTLIST bx1bh
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1bq ( %inline_level.group; )* >
+  <!ATTLIST bx1bq
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1bqf ( %inline_level.group; )* >
+  <!ATTLIST bx1bqf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1bql ( %inline_level.group; )* >
+  <!ATTLIST bx1bql
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1bqs ( %inline_level.group; )* >
+  <!ATTLIST bx1bqs
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1con ( %inline_level.group; )* >
+  <!ATTLIST bx1con
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1f ( %inline_level.group; )* >
+  <!ATTLIST bx1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1h ( %inline_level.group; )* >
+  <!ATTLIST bx1h
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1l ( %inline_level.group; )* >
+  <!ATTLIST bx1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1nl ( %inline_level.group; )* >
+  <!ATTLIST bx1nl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1nlf ( %inline_level.group; )* >
+  <!ATTLIST bx1nlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1nll ( %inline_level.group; )* >
+  <!ATTLIST bx1nll
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1nlp ( %inline_level.group; )* >
+  <!ATTLIST bx1nlp
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1sl ( %inline_level.group; )* >
+  <!ATTLIST bx1sl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1slf ( %inline_level.group; )* >
+  <!ATTLIST bx1slf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1sll ( %inline_level.group; )* >
+  <!ATTLIST bx1sll
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1t ( %inline_level.group; )* >
+  <!ATTLIST bx1t
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1ul ( %inline_level.group; )* >
+  <!ATTLIST bx1ul
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1ulf ( %inline_level.group; )* >
+  <!ATTLIST bx1ulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1ull ( %inline_level.group; )* >
+  <!ATTLIST bx1ull
+    %coreattrs;
+  >
+  
+  <!ELEMENT bx1ulp ( %inline_level.group; )* >
+  <!ATTLIST bx1ulp
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxaft ( %inline_level.group; )* >
+  <!ATTLIST bxaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxah ( %inline_level.group; )* >
+  <!ATTLIST bxah
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxau ( %inline_level.group; )* >
+  <!ATTLIST bxau
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxau1 ( %inline_level.group; )* >
+  <!ATTLIST bxau1
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxbh ( %inline_level.group; )* >
+  <!ATTLIST bxbh
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxbq ( %inline_level.group; )* >
+  <!ATTLIST bxbq
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxbqf ( %inline_level.group; )* >
+  <!ATTLIST bxbqf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxbql ( %inline_level.group; )* >
+  <!ATTLIST bxbql
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxbqs ( %inline_level.group; )* >
+  <!ATTLIST bxbqs
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxcon ( %inline_level.group; )* >
+  <!ATTLIST bxcon
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxf ( %inline_level.group; )* >
+  <!ATTLIST bxf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxh ( %inline_level.group; )* >
+  <!ATTLIST bxh
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxl ( %inline_level.group; )* >
+  <!ATTLIST bxl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxnl ( %inline_level.group; )* >
+  <!ATTLIST bxnl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxnlf ( %inline_level.group; )* >
+  <!ATTLIST bxnlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxnll ( %inline_level.group; )* >
+  <!ATTLIST bxnll
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxnlp ( %inline_level.group; )* >
+  <!ATTLIST bxnlp
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxnls ( %inline_level.group; )* >
+  <!ATTLIST bxnls
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxo ( %inline_level.group; )* >
+  <!ATTLIST bxo
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxs ( %inline_level.group; )* >
+  <!ATTLIST bxs
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxsl ( %inline_level.group; )* >
+  <!ATTLIST bxsl
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxslf ( %inline_level.group; )* >
+  <!ATTLIST bxslf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxsll ( %inline_level.group; )* >
+  <!ATTLIST bxsll
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxt ( %inline_level.group; )* >
+  <!ATTLIST bxt
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxul ( %inline_level.group; )* >
+  <!ATTLIST bxul
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxulf ( %inline_level.group; )* >
+  <!ATTLIST bxulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxull ( %inline_level.group; )* >
+  <!ATTLIST bxull
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxulp ( %inline_level.group; )* >
+  <!ATTLIST bxulp
+    %coreattrs;
+  >
+  
+  <!ELEMENT bxuls ( %inline_level.group; )* >
+  <!ATTLIST bxuls
+    %coreattrs;
+  >
+  
+  <!ELEMENT call ( %inline_level.group; )* >
+  <!ATTLIST call
+    %coreattrs;
+  >
+  
+  <!ELEMENT ch ( %inline_level.group; )* >
+  <!ATTLIST ch
+    %coreattrs;
+  >
+  
+  <!ELEMENT chaft ( %inline_level.group; )* >
+  <!ATTLIST chaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT chsect ( %inline_level.group; )* >
+  <!ATTLIST chsect
+    %coreattrs;
+  >
+  
+  <!ELEMENT chsubsect ( %inline_level.group; )* >
+  <!ATTLIST chsubsect
+    %coreattrs;
+  >
+  
+  <!ELEMENT cip ( %inline_level.group; )* >
+  <!ATTLIST cip
+    %coreattrs;
+  >
+  
+  <!ELEMENT cip1 ( %inline_level.group; )* >
+  <!ATTLIST cip1
+    %coreattrs;
+  >
+  
+  <!ELEMENT cip2 ( %inline_level.group; )* >
+  <!ATTLIST cip2
+    %coreattrs;
+  >
+  
+  <!ELEMENT cipf ( %inline_level.group; )* >
+  <!ATTLIST cipf
+    %coreattrs;
+  >
+  
+  <!ELEMENT cipf1 ( %inline_level.group; )* >
+  <!ATTLIST cipf1
+    %coreattrs;
+  >
+  
+  <!ELEMENT cipl ( %inline_level.group; )* >
+  <!ATTLIST cipl
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl ( %inline_level.group; )* >
+  <!ATTLIST cl
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl1 ( %inline_level.group; )* >
+  <!ATTLIST cl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl1f ( %inline_level.group; )* >
+  <!ATTLIST cl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl1l ( %inline_level.group; )* >
+  <!ATTLIST cl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl1s ( %inline_level.group; )* >
+  <!ATTLIST cl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl2 ( %inline_level.group; )* >
+  <!ATTLIST cl2
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl2f ( %inline_level.group; )* >
+  <!ATTLIST cl2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl2l ( %inline_level.group; )* >
+  <!ATTLIST cl2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl2s ( %inline_level.group; )* >
+  <!ATTLIST cl2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl3 ( %inline_level.group; )* >
+  <!ATTLIST cl3
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl3f ( %inline_level.group; )* >
+  <!ATTLIST cl3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl3l ( %inline_level.group; )* >
+  <!ATTLIST cl3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT cl3s ( %inline_level.group; )* >
+  <!ATTLIST cl3s
+    %coreattrs;
+  >
+  
+  <!ELEMENT clf ( %inline_level.group; )* >
+  <!ATTLIST clf
+    %coreattrs;
+  >
+  
+  <!ELEMENT cll ( %inline_level.group; )* >
+  <!ATTLIST cll
+    %coreattrs;
+  >
+  
+  <!ELEMENT cls ( %inline_level.group; )* >
+  <!ATTLIST cls
+    %coreattrs;
+  >
+  
+  <!ELEMENT cn ( %inline_level.group; )* >
+  <!ATTLIST cn
+    %coreattrs;
+  >
+  
+  <!ELEMENT com ( %inline_level.group; )* >
+  <!ATTLIST com
+    %coreattrs;
+  >
+  
+  <!ELEMENT crt ( %inline_level.group; )* >
+  <!ATTLIST crt
+    %coreattrs;
+  >
+  
+  <!ELEMENT crt1 ( %inline_level.group; )* >
+  <!ATTLIST crt1
+    %coreattrs;
+  >
+  
+  <!ELEMENT crt1f ( %inline_level.group; )* >
+  <!ATTLIST crt1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT crt2 ( %inline_level.group; )* >
+  <!ATTLIST crt2
+    %coreattrs;
+  >
+  
+  <!ELEMENT crt3 ( %inline_level.group; )* >
+  <!ATTLIST crt3
+    %coreattrs;
+  >
+  
+  <!ELEMENT crtf ( %inline_level.group; )* >
+  <!ATTLIST crtf
+    %coreattrs;
+  >
+  
+  <!ELEMENT cs ( %inline_level.group; )* >
+  <!ATTLIST cs
+    %coreattrs;
+  >
+  
+  <!ELEMENT ct ( %inline_level.group; )* >
+  <!ATTLIST ct
+    %coreattrs;
+  >
+  
+  <!ELEMENT ctbm ( %inline_level.group; )* >
+  <!ATTLIST ctbm
+    %coreattrs;
+  >
+  
+  <!ELEMENT ctfm ( %inline_level.group; )* >
+  <!ATTLIST ctfm
+    %coreattrs;
+  >
+  
+  <!ELEMENT ctoc ( %inline_level.group; )* >
+  <!ATTLIST ctoc
+    %coreattrs;
+  >
+  
+  <!ELEMENT ctoc1 ( %inline_level.group; )* >
+  <!ATTLIST ctoc1
+    %coreattrs;
+  >
+  
+  <!ELEMENT ctoch ( %inline_level.group; )* >
+  <!ATTLIST ctoch
+    %coreattrs;
+  >
+  
+  <!ELEMENT ded ( %inline_level.group; )* >
+  <!ATTLIST ded
+    %coreattrs;
+  >
+  
+  <!ELEMENT ded1 ( %inline_level.group; )* >
+  <!ATTLIST ded1
+    %coreattrs;
+  >
+  
+  <!ELEMENT ded1f ( %inline_level.group; )* >
+  <!ATTLIST ded1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT dedf ( %inline_level.group; )* >
+  <!ATTLIST dedf
+    %coreattrs;
+  >
+  
+  <!ELEMENT dh ( %inline_level.group; )* >
+  <!ATTLIST dh
+    %coreattrs;
+  >
+  
+  <!ELEMENT dhaft ( %inline_level.group; )* >
+  <!ATTLIST dhaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT dia ( %inline_level.group; )* >
+  <!ATTLIST dia
+    %coreattrs;
+  >
+  
+  <!ELEMENT diaf ( %inline_level.group; )* >
+  <!ATTLIST diaf
+    %coreattrs;
+  >
+  
+  <!ELEMENT dial ( %inline_level.group; )* >
+  <!ATTLIST dial
+    %coreattrs;
+  >
+  
+  <!ELEMENT diap ( %inline_level.group; )* >
+  <!ATTLIST diap
+    %coreattrs;
+  >
+  
+  <!ELEMENT diapl ( %inline_level.group; )* >
+  <!ATTLIST diapl
+    %coreattrs;
+  >
+  
+  <!ELEMENT dias ( %inline_level.group; )* >
+  <!ATTLIST dias
+    %coreattrs;
+  >
+  
+  <!ELEMENT dl ( %inline_level.group; )* >
+  <!ATTLIST dl
+    %coreattrs;
+  >
+  
+  <!ELEMENT dl1 ( %inline_level.group; )* >
+  <!ATTLIST dl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT dt ( %inline_level.group; )* >
+  <!ATTLIST dt
+    %coreattrs;
+  >
+  
+  <!ELEMENT dtsub ( %inline_level.group; )* >
+  <!ATTLIST dtsub
+    %coreattrs;
+  >
+  
+  <!ELEMENT eds ( %inline_level.group; )* >
+  <!ATTLIST eds
+    %coreattrs;
+  >
+  
+  <!ELEMENT eh ( %inline_level.group; )* >
+  <!ATTLIST eh
+    %coreattrs;
+  >
+  
+  <!ELEMENT ehaft ( %inline_level.group; )* >
+  <!ATTLIST ehaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT en ( %inline_level.group; )* >
+  <!ATTLIST en
+    %coreattrs;
+  >
+  
+  <!ELEMENT end ( %inline_level.group; )* >
+  <!ATTLIST end
+    %coreattrs;
+  >
+  
+  <!ELEMENT enhn ( %inline_level.group; )* >
+  <!ATTLIST enhn
+    %coreattrs;
+  >
+  
+  <!ELEMENT enp ( %inline_level.group; )* >
+  <!ATTLIST enp
+    %coreattrs;
+  >
+  
+  <!ELEMENT ep ( %inline_level.group; )* >
+  <!ATTLIST ep
+    %coreattrs;
+  >
+  
+  <!ELEMENT ep1 ( %inline_level.group; )* >
+  <!ATTLIST ep1
+    %coreattrs;
+  >
+  
+  <!ELEMENT ep2 ( %inline_level.group; )* >
+  <!ATTLIST ep2
+    %coreattrs;
+  >
+  
+  <!ELEMENT epaft ( %inline_level.group; )* >
+  <!ATTLIST epaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT epf ( %inline_level.group; )* >
+  <!ATTLIST epf
+    %coreattrs;
+  >
+  
+  <!ELEMENT epl ( %inline_level.group; )* >
+  <!ATTLIST epl
+    %coreattrs;
+  >
+  
+  <!ELEMENT eps ( %inline_level.group; )* >
+  <!ATTLIST eps
+    %coreattrs;
+  >
+  
+  <!ELEMENT epsl ( %inline_level.group; )* >
+  <!ATTLIST epsl
+    %coreattrs;
+  >
+  
+  <!ELEMENT epsl1 ( %inline_level.group; )* >
+  <!ATTLIST epsl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT epslf ( %inline_level.group; )* >
+  <!ATTLIST epslf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ept ( %inline_level.group; )* >
+  <!ATTLIST ept
+    %coreattrs;
+  >
+  
+  <!ELEMENT ept1 ( %inline_level.group; )* >
+  <!ATTLIST ept1
+    %coreattrs;
+  >
+  
+  <!ELEMENT eq ( %inline_level.group; )* >
+  <!ATTLIST eq
+    %coreattrs;
+  >
+  
+  <!ELEMENT eqaft ( %inline_level.group; )* >
+  <!ATTLIST eqaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT ex ( %inline_level.group; )* >
+  <!ATTLIST ex
+    %coreattrs;
+  >
+  
+  <!ELEMENT exaft ( %inline_level.group; )* >
+  <!ATTLIST exaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT exah ( %inline_level.group; )* >
+  <!ATTLIST exah
+    %coreattrs;
+  >
+  
+  <!ELEMENT exbh ( %inline_level.group; )* >
+  <!ATTLIST exbh
+    %coreattrs;
+  >
+  
+  <!ELEMENT exf ( %inline_level.group; )* >
+  <!ATTLIST exf
+    %coreattrs;
+  >
+  
+  <!ELEMENT exh ( %inline_level.group; )* >
+  <!ATTLIST exh
+    %coreattrs;
+  >
+  
+  <!ELEMENT exl ( %inline_level.group; )* >
+  <!ATTLIST exl
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnl ( %inline_level.group; )* >
+  <!ATTLIST exnl
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnl1 ( %inline_level.group; )* >
+  <!ATTLIST exnl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnl1f ( %inline_level.group; )* >
+  <!ATTLIST exnl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnl1l ( %inline_level.group; )* >
+  <!ATTLIST exnl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnl1p ( %inline_level.group; )* >
+  <!ATTLIST exnl1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnl1s ( %inline_level.group; )* >
+  <!ATTLIST exnl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnlf ( %inline_level.group; )* >
+  <!ATTLIST exnlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnll ( %inline_level.group; )* >
+  <!ATTLIST exnll
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnlp ( %inline_level.group; )* >
+  <!ATTLIST exnlp
+    %coreattrs;
+  >
+  
+  <!ELEMENT exnls ( %inline_level.group; )* >
+  <!ATTLIST exnls
+    %coreattrs;
+  >
+  
+  <!ELEMENT exs ( %inline_level.group; )* >
+  <!ATTLIST exs
+    %coreattrs;
+  >
+  
+  <!ELEMENT exul ( %inline_level.group; )* >
+  <!ATTLIST exul
+    %coreattrs;
+  >
+  
+  <!ELEMENT exul1 ( %inline_level.group; )* >
+  <!ATTLIST exul1
+    %coreattrs;
+  >
+  
+  <!ELEMENT exul1f ( %inline_level.group; )* >
+  <!ATTLIST exul1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT exul1l ( %inline_level.group; )* >
+  <!ATTLIST exul1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT exul1p ( %inline_level.group; )* >
+  <!ATTLIST exul1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT exul1s ( %inline_level.group; )* >
+  <!ATTLIST exul1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT exulf ( %inline_level.group; )* >
+  <!ATTLIST exulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT exull ( %inline_level.group; )* >
+  <!ATTLIST exull
+    %coreattrs;
+  >
+  
+  <!ELEMENT exulp ( %inline_level.group; )* >
+  <!ATTLIST exulp
+    %coreattrs;
+  >
+  
+  <!ELEMENT exuls ( %inline_level.group; )* >
+  <!ATTLIST exuls
+    %coreattrs;
+  >
+  
+  <!ELEMENT fig ( %inline_level.group; )* >
+  <!ATTLIST fig
+    %coreattrs;
+  >
+  
+  <!ELEMENT figatr ( %inline_level.group; )* >
+  <!ATTLIST figatr
+    %coreattrs;
+  >
+  
+  <!ELEMENT figcap ( %inline_level.group; )* >
+  <!ATTLIST figcap
+    %coreattrs;
+  >
+  
+  <!ELEMENT figcap1 ( %inline_level.group; )* >
+  <!ATTLIST figcap1
+    %coreattrs;
+  >
+  
+  <!ELEMENT figh ( %inline_level.group; )* >
+  <!ATTLIST figh
+    %coreattrs;
+  >
+  
+  <!ELEMENT figh1 ( %inline_level.group; )* >
+  <!ATTLIST figh1
+    %coreattrs;
+  >
+  
+  <!ELEMENT fign ( %inline_level.group; )* >
+  <!ATTLIST fign
+    %coreattrs;
+  >
+  
+  <!ELEMENT fn ( %inline_level.group; )* >
+  <!ATTLIST fn
+    %coreattrs;
+  >
+  
+  <!ELEMENT fnn ( %inline_level.group; )* >
+  <!ATTLIST fnn
+    %coreattrs;
+  >
+  
+  <!ELEMENT fnp ( %inline_level.group; )* >
+  <!ATTLIST fnp
+    %coreattrs;
+  >
+  
+  <!ELEMENT fs ( %inline_level.group; )* >
+  <!ATTLIST fs
+    %coreattrs;
+  >
+  
+  <!ELEMENT glo ( %inline_level.group; )* >
+  <!ATTLIST glo
+    %coreattrs;
+  >
+  
+  <!ELEMENT glof ( %inline_level.group; )* >
+  <!ATTLIST glof
+    %coreattrs;
+  >
+  
+  <!ELEMENT hb ( %inline_level.group; )* >
+  <!ATTLIST hb
+    %coreattrs;
+  >
+  
+  <!ELEMENT hd ( %inline_level.group; )* >
+  <!ATTLIST hd
+    %coreattrs;
+  >
+  
+  <!ELEMENT in ( %inline_level.group; )* >
+  <!ATTLIST in
+    %coreattrs;
+  >
+  
+  <!ELEMENT in1 ( %inline_level.group; )* >
+  <!ATTLIST in1
+    %coreattrs;
+  >
+  
+  <!ELEMENT in2 ( %inline_level.group; )* >
+  <!ATTLIST in2
+    %coreattrs;
+  >
+  
+  <!ELEMENT in3 ( %inline_level.group; )* >
+  <!ATTLIST in3
+    %coreattrs;
+  >
+  
+  <!ELEMENT inf ( %inline_level.group; )* >
+  <!ATTLIST inf
+    %coreattrs;
+  >
+  
+  <!ELEMENT inh ( %inline_level.group; )* >
+  <!ATTLIST inh
+    %coreattrs;
+  >
+  
+  <!ELEMENT inh1 ( %inline_level.group; )* >
+  <!ATTLIST inh1
+    %coreattrs;
+  >
+  
+  <!ELEMENT lo ( %inline_level.group; )* >
+  <!ATTLIST lo
+    %coreattrs;
+  >
+  
+  <!ELEMENT lps ( %inline_level.group; )* >
+  <!ATTLIST lps
+    %coreattrs;
+  >
+  
+  <!ELEMENT lt ( %inline_level.group; )* >
+  <!ATTLIST lt
+    %coreattrs;
+  >
+  
+  <!ELEMENT lta ( %inline_level.group; )* >
+  <!ATTLIST lta
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltaf ( %inline_level.group; )* >
+  <!ATTLIST ltaf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltc ( %inline_level.group; )* >
+  <!ATTLIST ltc
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltd ( %inline_level.group; )* >
+  <!ATTLIST ltd
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltdf ( %inline_level.group; )* >
+  <!ATTLIST ltdf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltf ( %inline_level.group; )* >
+  <!ATTLIST ltf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltg ( %inline_level.group; )* >
+  <!ATTLIST ltg
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltl ( %inline_level.group; )* >
+  <!ATTLIST ltl
+    %coreattrs;
+  >
+  
+  <!ELEMENT lto ( %inline_level.group; )* >
+  <!ATTLIST lto
+    %coreattrs;
+  >
+  
+  <!ELEMENT lts ( %inline_level.group; )* >
+  <!ATTLIST lts
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltsig ( %inline_level.group; )* >
+  <!ATTLIST ltsig
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltsigf ( %inline_level.group; )* >
+  <!ATTLIST ltsigf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ltsigl ( %inline_level.group; )* >
+  <!ATTLIST ltsigl
+    %coreattrs;
+  >
+  
+  <!ELEMENT mediah ( %inline_level.group; )* >
+  <!ATTLIST mediah
+    %coreattrs;
+  >
+  
+  <!ELEMENT mediacap ( %inline_level.group; )* >
+  <!ATTLIST mediacap
+    %coreattrs;
+  >
+  
+  <!ELEMENT mediaatr ( %inline_level.group; )* >
+  <!ATTLIST mediaatr
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl ( %inline_level.group; )* >
+  <!ATTLIST nl
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl1 ( %inline_level.group; )* >
+  <!ATTLIST nl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl1f ( %inline_level.group; )* >
+  <!ATTLIST nl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl1l ( %inline_level.group; )* >
+  <!ATTLIST nl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl1p ( %inline_level.group; )* >
+  <!ATTLIST nl1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl1pl ( %inline_level.group; )* >
+  <!ATTLIST nl1pl
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl1s ( %inline_level.group; )* >
+  <!ATTLIST nl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl2 ( %inline_level.group; )* >
+  <!ATTLIST nl2
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl2f ( %inline_level.group; )* >
+  <!ATTLIST nl2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl2l ( %inline_level.group; )* >
+  <!ATTLIST nl2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl2p ( %inline_level.group; )* >
+  <!ATTLIST nl2p
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl2s ( %inline_level.group; )* >
+  <!ATTLIST nl2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl3 ( %inline_level.group; )* >
+  <!ATTLIST nl3
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl3f ( %inline_level.group; )* >
+  <!ATTLIST nl3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl3l ( %inline_level.group; )* >
+  <!ATTLIST nl3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl3p ( %inline_level.group; )* >
+  <!ATTLIST nl3p
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl3s ( %inline_level.group; )* >
+  <!ATTLIST nl3s
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl4 ( %inline_level.group; )* >
+  <!ATTLIST nl4
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl4f ( %inline_level.group; )* >
+  <!ATTLIST nl4f
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl4l ( %inline_level.group; )* >
+  <!ATTLIST nl4l
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl4p ( %inline_level.group; )* >
+  <!ATTLIST nl4p
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl4s ( %inline_level.group; )* >
+  <!ATTLIST nl4s
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl5 ( %inline_level.group; )* >
+  <!ATTLIST nl5
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl5f ( %inline_level.group; )* >
+  <!ATTLIST nl5f
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl5l ( %inline_level.group; )* >
+  <!ATTLIST nl5l
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl5p ( %inline_level.group; )* >
+  <!ATTLIST nl5p
+    %coreattrs;
+  >
+  
+  <!ELEMENT nl5s ( %inline_level.group; )* >
+  <!ATTLIST nl5s
+    %coreattrs;
+  >
+  
+  <!ELEMENT nlf ( %inline_level.group; )* >
+  <!ATTLIST nlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT nlh ( %inline_level.group; )* >
+  <!ATTLIST nlh
+    %coreattrs;
+  >
+  
+  <!ELEMENT nll ( %inline_level.group; )* >
+  <!ATTLIST nll
+    %coreattrs;
+  >
+  
+  <!ELEMENT nlp ( %inline_level.group; )* >
+  <!ATTLIST nlp
+    %coreattrs;
+  >
+  
+  <!ELEMENT nlpl ( %inline_level.group; )* >
+  <!ATTLIST nlpl
+    %coreattrs;
+  >
+  
+  <!ELEMENT nls ( %inline_level.group; )* >
+  <!ATTLIST nls
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntbq ( %inline_level.group; )* >
+  <!ATTLIST ntbq
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntbqf ( %inline_level.group; )* >
+  <!ATTLIST ntbqf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntbql ( %inline_level.group; )* >
+  <!ATTLIST ntbql
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntbqs ( %inline_level.group; )* >
+  <!ATTLIST ntbqs
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntcon ( %inline_level.group; )* >
+  <!ATTLIST ntcon
+    %coreattrs;
+  >
+  
+  <!ELEMENT nteq ( %inline_level.group; )* >
+  <!ATTLIST nteq
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntnl ( %inline_level.group; )* >
+  <!ATTLIST ntnl
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntnlf ( %inline_level.group; )* >
+  <!ATTLIST ntnlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntnll ( %inline_level.group; )* >
+  <!ATTLIST ntnll
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntsl ( %inline_level.group; )* >
+  <!ATTLIST ntsl
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntslf ( %inline_level.group; )* >
+  <!ATTLIST ntslf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntsll ( %inline_level.group; )* >
+  <!ATTLIST ntsll
+    %coreattrs;
+  >
+  
+  <!ELEMENT nttd ( %inline_level.group; )* >
+  <!ATTLIST nttd
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntul ( %inline_level.group; )* >
+  <!ATTLIST ntul
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntulf ( %inline_level.group; )* >
+  <!ATTLIST ntulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ntull ( %inline_level.group; )* >
+  <!ATTLIST ntull
+    %coreattrs;
+  >
+  
+  <!ELEMENT opt ( %inline_level.group; )* >
+  <!ATTLIST opt
+    %coreattrs;
+  >
+  
+  <!ELEMENT p ( %inline_level.group; )* >
+  <!ATTLIST p
+    %coreattrs;
+  >
+  
+  <!ELEMENT paft ( %inline_level.group; )* >
+  <!ATTLIST paft
+    %coreattrs;
+  >
+  
+  <!ELEMENT patr ( %inline_level.group; )* >
+  <!ATTLIST patr
+    %coreattrs;
+  >
+  
+  <!ELEMENT patr1 ( %inline_level.group; )* >
+  <!ATTLIST patr1
+    %coreattrs;
+  >
+  
+  <!ELEMENT pcon ( %inline_level.group; )* >
+  <!ATTLIST pcon
+    %coreattrs;
+  >
+  
+  <!ELEMENT pcust1 ( %inline_level.group; )* >
+  <!ATTLIST pcust1
+    %coreattrs;
+  >
+  
+  <!ELEMENT pcust2 ( %inline_level.group; )* >
+  <!ATTLIST pcust2
+    %coreattrs;
+  >
+  
+  <!ELEMENT pcust3 ( %inline_level.group; )* >
+  <!ATTLIST pcust3
+    %coreattrs;
+  >
+  
+  <!ELEMENT pf ( %inline_level.group; )* >
+  <!ATTLIST pf
+    %coreattrs;
+  >
+  
+  <!ELEMENT pn ( %inline_level.group; )* >
+  <!ATTLIST pn
+    %coreattrs;
+  >
+  
+  <!ELEMENT ps ( %inline_level.group; )* >
+  <!ATTLIST ps
+    %coreattrs;
+  >
+  
+  <!ELEMENT psec ( %inline_level.group; )* >
+  <!ATTLIST psec
+    %coreattrs;
+  >
+  
+  <!ELEMENT psec1 ( %inline_level.group; )* >
+  <!ATTLIST psec1
+    %coreattrs;
+  >
+  
+  <!ELEMENT pt ( %inline_level.group; )* >
+  <!ATTLIST pt
+    %coreattrs;
+  >
+  
+  <!ELEMENT qu ( %inline_level.group; )* >
+  <!ATTLIST qu
+    %coreattrs;
+  >
+  
+  <!ELEMENT quf ( %inline_level.group; )* >
+  <!ATTLIST quf
+    %coreattrs;
+  >
+  
+  <!ELEMENT quh ( %inline_level.group; )* >
+  <!ATTLIST quh
+    %coreattrs;
+  >
+  
+  <!ELEMENT quot ( %inline_level.group; )* >
+  <!ATTLIST quot
+    %coreattrs;
+  >
+  
+  <!ELEMENT quotf ( %inline_level.group; )* >
+  <!ATTLIST quotf
+    %coreattrs;
+  >
+  
+  <!ELEMENT quotl ( %inline_level.group; )* >
+  <!ATTLIST quotl
+    %coreattrs;
+  >
+  
+  <!ELEMENT quots ( %inline_level.group; )* >
+  <!ATTLIST quots
+    %coreattrs;
+  >
+  
+  <!ELEMENT quott ( %inline_level.group; )* >
+  <!ATTLIST quott
+    %coreattrs;
+  >
+  
+  <!ELEMENT rb ( %inline_level.group; )* >
+  <!ATTLIST rb
+    %coreattrs;
+  >
+  
+  <!ELEMENT rbc ( %inline_level.group; )* >
+  <!ATTLIST rbc
+    %coreattrs;
+  >
+  
+  <!ELEMENT rbi ( %inline_level.group; )* >
+  <!ATTLIST rbi
+    %coreattrs;
+  >
+  
+  <!ELEMENT rc ( %inline_level.group; )* >
+  <!ATTLIST rc
+    %coreattrs;
+  >
+  
+  <!ELEMENT rf ( %inline_level.group; )* >
+  <!ATTLIST rf
+    %coreattrs;
+  >
+  
+  <!ELEMENT rf1 ( %inline_level.group; )* >
+  <!ATTLIST rf1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rf2 ( %inline_level.group; )* >
+  <!ATTLIST rf2
+    %coreattrs;
+  >
+  
+  <!ELEMENT rp ( %inline_level.group; )* >
+  <!ATTLIST rp
+    %coreattrs;
+  >
+  
+  <!ELEMENT rp1 ( %inline_level.group; )* >
+  <!ATTLIST rp1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rp1f ( %inline_level.group; )* >
+  <!ATTLIST rp1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT rp1l ( %inline_level.group; )* >
+  <!ATTLIST rp1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT rp1y ( %inline_level.group; )* >
+  <!ATTLIST rp1y
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpah ( %inline_level.group; )* >
+  <!ATTLIST rpah
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpbh ( %inline_level.group; )* >
+  <!ATTLIST rpbh
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpch ( %inline_level.group; )* >
+  <!ATTLIST rpch
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpf ( %inline_level.group; )* >
+  <!ATTLIST rpf
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpg ( %inline_level.group; )* >
+  <!ATTLIST rpg
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpg1 ( %inline_level.group; )* >
+  <!ATTLIST rpg1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rph ( %inline_level.group; )* >
+  <!ATTLIST rph
+    %coreattrs;
+  >
+  
+  <!ELEMENT rph1 ( %inline_level.group; )* >
+  <!ATTLIST rph1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rphn ( %inline_level.group; )* >
+  <!ATTLIST rphn
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpil ( %inline_level.group; )* >
+  <!ATTLIST rpil
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpil1 ( %inline_level.group; )* >
+  <!ATTLIST rpil1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpil1f ( %inline_level.group; )* >
+  <!ATTLIST rpil1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpil1l ( %inline_level.group; )* >
+  <!ATTLIST rpil1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpil1s ( %inline_level.group; )* >
+  <!ATTLIST rpil1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpilf ( %inline_level.group; )* >
+  <!ATTLIST rpilf
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpill ( %inline_level.group; )* >
+  <!ATTLIST rpill
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpils ( %inline_level.group; )* >
+  <!ATTLIST rpils
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpl ( %inline_level.group; )* >
+  <!ATTLIST rpl
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpn ( %inline_level.group; )* >
+  <!ATTLIST rpn
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpn1 ( %inline_level.group; )* >
+  <!ATTLIST rpn1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpnut ( %inline_level.group; )* >
+  <!ATTLIST rpnut
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpnut1 ( %inline_level.group; )* >
+  <!ATTLIST rpnut1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpt ( %inline_level.group; )* >
+  <!ATTLIST rpt
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpt1 ( %inline_level.group; )* >
+  <!ATTLIST rpt1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpv ( %inline_level.group; )* >
+  <!ATTLIST rpv
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpv1 ( %inline_level.group; )* >
+  <!ATTLIST rpv1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpv1f ( %inline_level.group; )* >
+  <!ATTLIST rpv1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpv1h ( %inline_level.group; )* >
+  <!ATTLIST rpv1h
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpv1l ( %inline_level.group; )* >
+  <!ATTLIST rpv1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpvf ( %inline_level.group; )* >
+  <!ATTLIST rpvf
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpvh ( %inline_level.group; )* >
+  <!ATTLIST rpvh
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpvl ( %inline_level.group; )* >
+  <!ATTLIST rpvl
+    %coreattrs;
+  >
+  
+  <!ELEMENT rpy ( %inline_level.group; )* >
+  <!ATTLIST rpy
+    %coreattrs;
+  >
+  
+  <!ELEMENT rv ( %inline_level.group; )* >
+  <!ATTLIST rv
+    %coreattrs;
+  >
+  
+  <!ELEMENT rvd ( %inline_level.group; )* >
+  <!ATTLIST rvd
+    %coreattrs;
+  >
+  
+  <!ELEMENT rvh ( %inline_level.group; )* >
+  <!ATTLIST rvh
+    %coreattrs;
+  >
+  
+  <!ELEMENT rvt ( %inline_level.group; )* >
+  <!ATTLIST rvt
+    %coreattrs;
+  >
+  
+  <!ELEMENT sb ( %inline_level.group; )* >
+  <!ATTLIST sb
+    %coreattrs;
+  >
+  
+  <!ELEMENT sb1 ( %inline_level.group; )* >
+  <!ATTLIST sb1
+    %coreattrs;
+  >
+  
+  <!ELEMENT sb1f ( %inline_level.group; )* >
+  <!ATTLIST sb1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sb1h ( %inline_level.group; )* >
+  <!ATTLIST sb1h
+    %coreattrs;
+  >
+  
+  <!ELEMENT sb1l ( %inline_level.group; )* >
+  <!ATTLIST sb1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sb1t ( %inline_level.group; )* >
+  <!ATTLIST sb1t
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbaft ( %inline_level.group; )* >
+  <!ATTLIST sbaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbah ( %inline_level.group; )* >
+  <!ATTLIST sbah
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbahaft ( %inline_level.group; )* >
+  <!ATTLIST sbahaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbh ( %inline_level.group; )* >
+  <!ATTLIST sbbh
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbhaft ( %inline_level.group; )* >
+  <!ATTLIST sbbhaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbq ( %inline_level.group; )* >
+  <!ATTLIST sbbq
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbqaft ( %inline_level.group; )* >
+  <!ATTLIST sbbqaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbqf ( %inline_level.group; )* >
+  <!ATTLIST sbbqf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbql ( %inline_level.group; )* >
+  <!ATTLIST sbbql
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbbqs ( %inline_level.group; )* >
+  <!ATTLIST sbbqs
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbcon ( %inline_level.group; )* >
+  <!ATTLIST sbcon
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbf ( %inline_level.group; )* >
+  <!ATTLIST sbf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbh ( %inline_level.group; )* >
+  <!ATTLIST sbh
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbl ( %inline_level.group; )* >
+  <!ATTLIST sbl
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl ( %inline_level.group; )* >
+  <!ATTLIST sbnl
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl1 ( %inline_level.group; )* >
+  <!ATTLIST sbnl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl1f ( %inline_level.group; )* >
+  <!ATTLIST sbnl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl1l ( %inline_level.group; )* >
+  <!ATTLIST sbnl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl1p ( %inline_level.group; )* >
+  <!ATTLIST sbnl1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl1s ( %inline_level.group; )* >
+  <!ATTLIST sbnl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl2 ( %inline_level.group; )* >
+  <!ATTLIST sbnl2
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl2f ( %inline_level.group; )* >
+  <!ATTLIST sbnl2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl2l ( %inline_level.group; )* >
+  <!ATTLIST sbnl2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl2p ( %inline_level.group; )* >
+  <!ATTLIST sbnl2p
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl2s ( %inline_level.group; )* >
+  <!ATTLIST sbnl2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl3 ( %inline_level.group; )* >
+  <!ATTLIST sbnl3
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl3f ( %inline_level.group; )* >
+  <!ATTLIST sbnl3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl3l ( %inline_level.group; )* >
+  <!ATTLIST sbnl3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl4 ( %inline_level.group; )* >
+  <!ATTLIST sbnl4
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl4f ( %inline_level.group; )* >
+  <!ATTLIST sbnl4f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl4l ( %inline_level.group; )* >
+  <!ATTLIST sbnl4l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl5 ( %inline_level.group; )* >
+  <!ATTLIST sbnl5
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl5f ( %inline_level.group; )* >
+  <!ATTLIST sbnl5f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnl5l ( %inline_level.group; )* >
+  <!ATTLIST sbnl5l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnlf ( %inline_level.group; )* >
+  <!ATTLIST sbnlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnll ( %inline_level.group; )* >
+  <!ATTLIST sbnll
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnlp ( %inline_level.group; )* >
+  <!ATTLIST sbnlp
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbnls ( %inline_level.group; )* >
+  <!ATTLIST sbnls
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbo ( %inline_level.group; )* >
+  <!ATTLIST sbo
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbs ( %inline_level.group; )* >
+  <!ATTLIST sbs
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl ( %inline_level.group; )* >
+  <!ATTLIST sbsl
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl1 ( %inline_level.group; )* >
+  <!ATTLIST sbsl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl1f ( %inline_level.group; )* >
+  <!ATTLIST sbsl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl1l ( %inline_level.group; )* >
+  <!ATTLIST sbsl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl1s ( %inline_level.group; )* >
+  <!ATTLIST sbsl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl2 ( %inline_level.group; )* >
+  <!ATTLIST sbsl2
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl2f ( %inline_level.group; )* >
+  <!ATTLIST sbsl2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl2l ( %inline_level.group; )* >
+  <!ATTLIST sbsl2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl2s ( %inline_level.group; )* >
+  <!ATTLIST sbsl2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl3 ( %inline_level.group; )* >
+  <!ATTLIST sbsl3
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl3f ( %inline_level.group; )* >
+  <!ATTLIST sbsl3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl3l ( %inline_level.group; )* >
+  <!ATTLIST sbsl3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsl3s ( %inline_level.group; )* >
+  <!ATTLIST sbsl3s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbslf ( %inline_level.group; )* >
+  <!ATTLIST sbslf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsli ( %inline_level.group; )* >
+  <!ATTLIST sbsli
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbslif ( %inline_level.group; )* >
+  <!ATTLIST sbslif
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbslil ( %inline_level.group; )* >
+  <!ATTLIST sbslil
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsll ( %inline_level.group; )* >
+  <!ATTLIST sbsll
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbsls ( %inline_level.group; )* >
+  <!ATTLIST sbsls
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbslt ( %inline_level.group; )* >
+  <!ATTLIST sbslt
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbt ( %inline_level.group; )* >
+  <!ATTLIST sbt
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul ( %inline_level.group; )* >
+  <!ATTLIST sbul
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul1 ( %inline_level.group; )* >
+  <!ATTLIST sbul1
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul1f ( %inline_level.group; )* >
+  <!ATTLIST sbul1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul1l ( %inline_level.group; )* >
+  <!ATTLIST sbul1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul1p ( %inline_level.group; )* >
+  <!ATTLIST sbul1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul1s ( %inline_level.group; )* >
+  <!ATTLIST sbul1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul2 ( %inline_level.group; )* >
+  <!ATTLIST sbul2
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul2f ( %inline_level.group; )* >
+  <!ATTLIST sbul2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul2l ( %inline_level.group; )* >
+  <!ATTLIST sbul2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul2p ( %inline_level.group; )* >
+  <!ATTLIST sbul2p
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbul2s ( %inline_level.group; )* >
+  <!ATTLIST sbul2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbulf ( %inline_level.group; )* >
+  <!ATTLIST sbulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbull ( %inline_level.group; )* >
+  <!ATTLIST sbull
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbulp ( %inline_level.group; )* >
+  <!ATTLIST sbulp
+    %coreattrs;
+  >
+  
+  <!ELEMENT sbuls ( %inline_level.group; )* >
+  <!ATTLIST sbuls
+    %coreattrs;
+  >
+  
+  <!ELEMENT sec ( %inline_level.group; )* >
+  <!ATTLIST sec
+    %coreattrs;
+  >
+  
+  <!ELEMENT secbot ( %inline_level.group; )* >
+  <!ATTLIST secbot
+    %coreattrs;
+  >
+  
+  <!ELEMENT sectop ( %inline_level.group; )* >
+  <!ATTLIST sectop
+    %coreattrs;
+  >
+  
+  <!ELEMENT ser ( %inline_level.group; )* >
+  <!ATTLIST ser
+    %coreattrs;
+  >
+  
+  <!ELEMENT ser1 ( %inline_level.group; )* >
+  <!ATTLIST ser1
+    %coreattrs;
+  >
+  
+  <!ELEMENT ser2 ( %inline_level.group; )* >
+  <!ATTLIST ser2
+    %coreattrs;
+  >
+  
+  <!ELEMENT seraft ( %inline_level.group; )* >
+  <!ATTLIST seraft
+    %coreattrs;
+  >
+  
+  <!ELEMENT serah ( %inline_level.group; )* >
+  <!ATTLIST serah
+    %coreattrs;
+  >
+  
+  <!ELEMENT serahaft ( %inline_level.group; )* >
+  <!ATTLIST serahaft
+    %coreattrs;
+  >
+  
+  <!ELEMENT serau ( %inline_level.group; )* >
+  <!ATTLIST serau
+    %coreattrs;
+  >
+  
+  <!ELEMENT serbh ( %inline_level.group; )* >
+  <!ATTLIST serbh
+    %coreattrs;
+  >
+  
+  <!ELEMENT serf ( %inline_level.group; )* >
+  <!ATTLIST serf
+    %coreattrs;
+  >
+  
+  <!ELEMENT serp ( %inline_level.group; )* >
+  <!ATTLIST serp
+    %coreattrs;
+  >
+  
+  <!ELEMENT serpf ( %inline_level.group; )* >
+  <!ATTLIST serpf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sers ( %inline_level.group; )* >
+  <!ATTLIST sers
+    %coreattrs;
+  >
+  
+  <!ELEMENT sert ( %inline_level.group; )* >
+  <!ATTLIST sert
+    %coreattrs;
+  >
+  
+  <!ELEMENT sh ( %inline_level.group; )* >
+  <!ATTLIST sh
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl ( %inline_level.group; )* >
+  <!ATTLIST sl
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl1 ( %inline_level.group; )* >
+  <!ATTLIST sl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl1f ( %inline_level.group; )* >
+  <!ATTLIST sl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl1l ( %inline_level.group; )* >
+  <!ATTLIST sl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl2 ( %inline_level.group; )* >
+  <!ATTLIST sl2
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl2f ( %inline_level.group; )* >
+  <!ATTLIST sl2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl2l ( %inline_level.group; )* >
+  <!ATTLIST sl2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl3 ( %inline_level.group; )* >
+  <!ATTLIST sl3
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl3f ( %inline_level.group; )* >
+  <!ATTLIST sl3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl3l ( %inline_level.group; )* >
+  <!ATTLIST sl3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl4 ( %inline_level.group; )* >
+  <!ATTLIST sl4
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl4f ( %inline_level.group; )* >
+  <!ATTLIST sl4f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl4l ( %inline_level.group; )* >
+  <!ATTLIST sl4l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl5 ( %inline_level.group; )* >
+  <!ATTLIST sl5
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl5f ( %inline_level.group; )* >
+  <!ATTLIST sl5f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl5l ( %inline_level.group; )* >
+  <!ATTLIST sl5l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl6 ( %inline_level.group; )* >
+  <!ATTLIST sl6
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl6f ( %inline_level.group; )* >
+  <!ATTLIST sl6f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl6l ( %inline_level.group; )* >
+  <!ATTLIST sl6l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl7 ( %inline_level.group; )* >
+  <!ATTLIST sl7
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl7f ( %inline_level.group; )* >
+  <!ATTLIST sl7f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl7l ( %inline_level.group; )* >
+  <!ATTLIST sl7l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl8 ( %inline_level.group; )* >
+  <!ATTLIST sl8
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl8f ( %inline_level.group; )* >
+  <!ATTLIST sl8f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl8l ( %inline_level.group; )* >
+  <!ATTLIST sl8l
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl9 ( %inline_level.group; )* >
+  <!ATTLIST sl9
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl9f ( %inline_level.group; )* >
+  <!ATTLIST sl9f
+    %coreattrs;
+  >
+  
+  <!ELEMENT sl9l ( %inline_level.group; )* >
+  <!ATTLIST sl9l
+    %coreattrs;
+  >
+  
+  <!ELEMENT slf ( %inline_level.group; )* >
+  <!ATTLIST slf
+    %coreattrs;
+  >
+  
+  <!ELEMENT slh ( %inline_level.group; )* >
+  <!ATTLIST slh
+    %coreattrs;
+  >
+  
+  <!ELEMENT sli ( %inline_level.group; )* >
+  <!ATTLIST sli
+    %coreattrs;
+  >
+  
+  <!ELEMENT slif ( %inline_level.group; )* >
+  <!ATTLIST slif
+    %coreattrs;
+  >
+  
+  <!ELEMENT slil ( %inline_level.group; )* >
+  <!ATTLIST slil
+    %coreattrs;
+  >
+  
+  <!ELEMENT sll ( %inline_level.group; )* >
+  <!ATTLIST sll
+    %coreattrs;
+  >
+  
+  <!ELEMENT sls ( %inline_level.group; )* >
+  <!ATTLIST sls
+    %coreattrs;
+  >
+  
+  <!ELEMENT slt ( %inline_level.group; )* >
+  <!ATTLIST slt
+    %coreattrs;
+  >
+  
+  <!ELEMENT st ( %inline_level.group; )* >
+  <!ATTLIST st
+    %coreattrs;
+  >
+  
+  <!ELEMENT stf ( %inline_level.group; )* >
+  <!ATTLIST stf
+    %coreattrs;
+  >
+  
+  <!ELEMENT sth ( %inline_level.group; )* >
+  <!ATTLIST sth
+    %coreattrs;
+  >
+  
+  <!ELEMENT sth1 ( %inline_level.group; )* >
+  <!ATTLIST sth1
+    %coreattrs;
+  >
+  
+  <!ELEMENT sth2 ( %inline_level.group; )* >
+  <!ATTLIST sth2
+    %coreattrs;
+  >
+  
+  <!ELEMENT stl ( %inline_level.group; )* >
+  <!ATTLIST stl
+    %coreattrs;
+  >
+  
+  <!ELEMENT sts ( %inline_level.group; )* >
+  <!ATTLIST sts
+    %coreattrs;
+  >
+  
+  <!ELEMENT tatr ( %inline_level.group; )* >
+  <!ATTLIST tatr
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxclass ( %inline_level.group; )* >
+  <!ATTLIST taxclass
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxfamily ( %inline_level.group; )* >
+  <!ATTLIST taxfamily
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxgenus ( %inline_level.group; )* >
+  <!ATTLIST taxgenus
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxkingdom ( %inline_level.group; )* >
+  <!ATTLIST taxkingdom
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxorder ( %inline_level.group; )* >
+  <!ATTLIST taxorder
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxphylum ( %inline_level.group; )* >
+  <!ATTLIST taxphylum
+    %coreattrs;
+  >
+  
+  <!ELEMENT taxspecies ( %inline_level.group; )* >
+  <!ATTLIST taxspecies
+    %coreattrs;
+  >
+  
+  <!ELEMENT tch ( %inline_level.group; )* >
+  <!ATTLIST tch
+    %coreattrs;
+  >
+  
+  <!ELEMENT tch1 ( %inline_level.group; )* >
+  <!ATTLIST tch1
+    %coreattrs;
+  >
+  
+  <!ELEMENT tch2 ( %inline_level.group; )* >
+  <!ATTLIST tch2
+    %coreattrs;
+  >
+  
+  <!ELEMENT td ( %inline_level.group; )* >
+  <!ATTLIST td
+    %coreattrs;
+  >
+  
+  <!ELEMENT tdf ( %inline_level.group; )* >
+  <!ATTLIST tdf
+    %coreattrs;
+  >
+  
+  <!ELEMENT tdl ( %inline_level.group; )* >
+  <!ATTLIST tdl
+    %coreattrs;
+  >
+  
+  <!ELEMENT tdnl ( %inline_level.group; )* >
+  <!ATTLIST tdnl
+    %coreattrs;
+  >
+  
+  <!ELEMENT tdp ( %inline_level.group; )* >
+  <!ATTLIST tdp
+    %coreattrs;
+  >
+  
+  <!ELEMENT tdul ( %inline_level.group; )* >
+  <!ATTLIST tdul
+    %coreattrs;
+  >
+  
+  <!ELEMENT th ( %inline_level.group; )* >
+  <!ATTLIST th
+    %coreattrs;
+  >
+  
+  <!ELEMENT th1 ( %inline_level.group; )* >
+  <!ATTLIST th1
+    %coreattrs;
+  >
+  
+  <!ELEMENT th2 ( %inline_level.group; )* >
+  <!ATTLIST th2
+    %coreattrs;
+  >
+  
+  <!ELEMENT tn ( %inline_level.group; )* >
+  <!ATTLIST tn
+    %coreattrs;
+  >
+  
+  <!ELEMENT toc ( %inline_level.group; )* >
+  <!ATTLIST toc
+    %coreattrs;
+  >
+  
+  <!ELEMENT toc1 ( %inline_level.group; )* >
+  <!ATTLIST toc1
+    %coreattrs;
+  >
+  
+  <!ELEMENT toc2 ( %inline_level.group; )* >
+  <!ATTLIST toc2
+    %coreattrs;
+  >
+  
+  <!ELEMENT toc3 ( %inline_level.group; )* >
+  <!ATTLIST toc3
+    %coreattrs;
+  >
+  
+  <!ELEMENT toc4 ( %inline_level.group; )* >
+  <!ATTLIST toc4
+    %coreattrs;
+  >
+  
+  <!ELEMENT toc5 ( %inline_level.group; )* >
+  <!ATTLIST toc5
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocau ( %inline_level.group; )* >
+  <!ATTLIST tocau
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocbm ( %inline_level.group; )* >
+  <!ATTLIST tocbm
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocbmf ( %inline_level.group; )* >
+  <!ATTLIST tocbmf
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocf ( %inline_level.group; )* >
+  <!ATTLIST tocf
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocfm ( %inline_level.group; )* >
+  <!ATTLIST tocfm
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocfmf ( %inline_level.group; )* >
+  <!ATTLIST tocfmf
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocpt ( %inline_level.group; )* >
+  <!ATTLIST tocpt
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocut ( %inline_level.group; )* >
+  <!ATTLIST tocut
+    %coreattrs;
+  >
+  
+  <!ELEMENT tsecbot ( %inline_level.group; )* >
+  <!ATTLIST tsecbot
+    %coreattrs;
+  >
+  
+  <!ELEMENT tsectop ( %inline_level.group; )* >
+  <!ATTLIST tsectop
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul ( %inline_level.group; )* >
+  <!ATTLIST ul
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul1 ( %inline_level.group; )* >
+  <!ATTLIST ul1
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul1f ( %inline_level.group; )* >
+  <!ATTLIST ul1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul1l ( %inline_level.group; )* >
+  <!ATTLIST ul1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul1p ( %inline_level.group; )* >
+  <!ATTLIST ul1p
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul1pl ( %inline_level.group; )* >
+  <!ATTLIST ul1pl
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul1s ( %inline_level.group; )* >
+  <!ATTLIST ul1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul2 ( %inline_level.group; )* >
+  <!ATTLIST ul2
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul2f ( %inline_level.group; )* >
+  <!ATTLIST ul2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul2l ( %inline_level.group; )* >
+  <!ATTLIST ul2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul2p ( %inline_level.group; )* >
+  <!ATTLIST ul2p
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul2s ( %inline_level.group; )* >
+  <!ATTLIST ul2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul3 ( %inline_level.group; )* >
+  <!ATTLIST ul3
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul3f ( %inline_level.group; )* >
+  <!ATTLIST ul3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul3l ( %inline_level.group; )* >
+  <!ATTLIST ul3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul3p ( %inline_level.group; )* >
+  <!ATTLIST ul3p
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul3s ( %inline_level.group; )* >
+  <!ATTLIST ul3s
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul4 ( %inline_level.group; )* >
+  <!ATTLIST ul4
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul4f ( %inline_level.group; )* >
+  <!ATTLIST ul4f
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul4l ( %inline_level.group; )* >
+  <!ATTLIST ul4l
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul4p ( %inline_level.group; )* >
+  <!ATTLIST ul4p
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul4s ( %inline_level.group; )* >
+  <!ATTLIST ul4s
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul5 ( %inline_level.group; )* >
+  <!ATTLIST ul5
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul5f ( %inline_level.group; )* >
+  <!ATTLIST ul5f
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul5l ( %inline_level.group; )* >
+  <!ATTLIST ul5l
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul5p ( %inline_level.group; )* >
+  <!ATTLIST ul5p
+    %coreattrs;
+  >
+  
+  <!ELEMENT ul5s ( %inline_level.group; )* >
+  <!ATTLIST ul5s
+    %coreattrs;
+  >
+  
+  <!ELEMENT ulf ( %inline_level.group; )* >
+  <!ATTLIST ulf
+    %coreattrs;
+  >
+  
+  <!ELEMENT ulh ( %inline_level.group; )* >
+  <!ATTLIST ulh
+    %coreattrs;
+  >
+  
+  <!ELEMENT ull ( %inline_level.group; )* >
+  <!ATTLIST ull
+    %coreattrs;
+  >
+  
+  <!ELEMENT ulp ( %inline_level.group; )* >
+  <!ATTLIST ulp
+    %coreattrs;
+  >
+  
+  <!ELEMENT ulpl ( %inline_level.group; )* >
+  <!ATTLIST ulpl
+    %coreattrs;
+  >
+  
+  <!ELEMENT uls ( %inline_level.group; )* >
+  <!ATTLIST uls
+    %coreattrs;
+  >
+  
+  <!ELEMENT un ( %inline_level.group; )* >
+  <!ATTLIST un
+    %coreattrs;
+  >
+  
+  <!ELEMENT us ( %inline_level.group; )* >
+  <!ATTLIST us
+    %coreattrs;
+  >
+  
+  <!ELEMENT ut ( %inline_level.group; )* >
+  <!ATTLIST ut
+    %coreattrs;
+  >
+  
+  <!ELEMENT video ( %inline_level.group; )* >
+  <!ATTLIST video
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl ( %inline_level.group; )* >
+  <!ATTLIST wl
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl1 ( %inline_level.group; )* >
+  <!ATTLIST wl1
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl1f ( %inline_level.group; )* >
+  <!ATTLIST wl1f
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl1h ( %inline_level.group; )* >
+  <!ATTLIST wl1h
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl1h1 ( %inline_level.group; )* >
+  <!ATTLIST wl1h1
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl1l ( %inline_level.group; )* >
+  <!ATTLIST wl1l
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl1s ( %inline_level.group; )* >
+  <!ATTLIST wl1s
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl2 ( %inline_level.group; )* >
+  <!ATTLIST wl2
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl2f ( %inline_level.group; )* >
+  <!ATTLIST wl2f
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl2h ( %inline_level.group; )* >
+  <!ATTLIST wl2h
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl2h1 ( %inline_level.group; )* >
+  <!ATTLIST wl2h1
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl2l ( %inline_level.group; )* >
+  <!ATTLIST wl2l
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl2s ( %inline_level.group; )* >
+  <!ATTLIST wl2s
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl3 ( %inline_level.group; )* >
+  <!ATTLIST wl3
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl3f ( %inline_level.group; )* >
+  <!ATTLIST wl3f
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl3h ( %inline_level.group; )* >
+  <!ATTLIST wl3h
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl3h1 ( %inline_level.group; )* >
+  <!ATTLIST wl3h1
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl3l ( %inline_level.group; )* >
+  <!ATTLIST wl3l
+    %coreattrs;
+  >
+  
+  <!ELEMENT wl3s ( %inline_level.group; )* >
+  <!ATTLIST wl3s
+    %coreattrs;
+  >
+  
+  <!ELEMENT wlf ( %inline_level.group; )* >
+  <!ATTLIST wlf
+    %coreattrs;
+  >
+  
+  <!ELEMENT wlh ( %inline_level.group; )* >
+  <!ATTLIST wlh
+    %coreattrs;
+  >
+  
+  <!ELEMENT wlh1 ( %inline_level.group; )* >
+  <!ATTLIST wlh1
+    %coreattrs;
+  >
+  
+  <!ELEMENT wll ( %inline_level.group; )* >
+  <!ATTLIST wll
+    %coreattrs;
+  >
+  
+  <!ELEMENT wls ( %inline_level.group; )* >
+  <!ATTLIST wls
+    %coreattrs;
+  >
+  
+  <!ELEMENT wsh ( %inline_level.group; )* >
+  <!ATTLIST wsh
+    %coreattrs;
+  >
+  
+
+<!-- ~============================================================ -->
+<!--                   Character-Level Elements                    -->
+<!-- ============================================================= -->
+
+
+  <!ELEMENT abbr ( %inline_level.group; )* >
+  <!ATTLIST abbr
+    %coreattrs;
+  >
+  
+  <!ELEMENT ac ( %inline_level.group; )* >
+  <!ATTLIST ac
+    %coreattrs;
+  >
+  
+  <!ELEMENT b ( %inline_level.group; )* >
+  <!ATTLIST b
+    %coreattrs;
+  >
+  
+  <!ELEMENT bcv ( %inline_level.group; )* >
+  <!ATTLIST bcv
+    %coreattrs;
+  >
+  
+  <!ELEMENT bi ( %inline_level.group; )* >
+  <!ATTLIST bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT ccust1 ( %inline_level.group; )* >
+  <!ATTLIST ccust1
+    %coreattrs;
+  >
+  
+  <!ELEMENT ccust2 ( %inline_level.group; )* >
+  <!ATTLIST ccust2
+    %coreattrs;
+  >
+  
+  <!ELEMENT ccust3 ( %inline_level.group; )* >
+  <!ATTLIST ccust3
+    %coreattrs;
+  >
+  
+  <!ELEMENT cemd ( %inline_level.group; )* >
+  <!ATTLIST cemd
+    %coreattrs;
+  >
+  
+  <!ELEMENT chemb ( %inline_level.group; )* >
+  <!ATTLIST chemb
+    %coreattrs;
+  >
+  
+  <!ELEMENT cip-i ( %inline_level.group; )* >
+  <!ATTLIST cip-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT code ( %inline_level.group; )* >
+  <!ATTLIST code
+    %coreattrs;
+  >
+  
+  <!ELEMENT code-b ( %inline_level.group; )* >
+  <!ATTLIST code-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT code-bi ( %inline_level.group; )* >
+  <!ATTLIST code-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT code-i ( %inline_level.group; )* >
+  <!ATTLIST code-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT dcrit ( %inline_level.group; )* >
+  <!ATTLIST dcrit
+    %coreattrs;
+  >
+  
+  <!ELEMENT dcrit-b ( %inline_level.group; )* >
+  <!ATTLIST dcrit-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT dcrit-bi ( %inline_level.group; )* >
+  <!ATTLIST dcrit-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT dcrit-i ( %inline_level.group; )* >
+  <!ATTLIST dcrit-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT dcrit-ob ( %inline_level.group; )* >
+  <!ATTLIST dcrit-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT dcrit-red ( %inline_level.group; )* >
+  <!ATTLIST dcrit-red
+    %coreattrs;
+  >
+  
+  <!ELEMENT dispk ( %inline_level.group; )* >
+  <!ATTLIST dispk
+    %coreattrs;
+  >
+  
+  <!ELEMENT dispk-i ( %inline_level.group; )* >
+  <!ATTLIST dispk-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT dropcap ( %inline_level.group; )* >
+  <!ATTLIST dropcap
+    %coreattrs;
+  >
+  
+  <!ELEMENT dropcap-i ( %inline_level.group; )* >
+  <!ATTLIST dropcap-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT enn ( %inline_level.group; )* >
+  <!ATTLIST enn
+    %coreattrs;
+  >
+  
+  <!ELEMENT ennum ( %inline_level.group; )* >
+  <!ATTLIST ennum
+    %coreattrs;
+  >
+  
+  <!ELEMENT enref ( %inline_level.group; )* >
+  <!ATTLIST enref
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT fighn ( %inline_level.group; )* >
+  <!ATTLIST fighn
+    %coreattrs;
+  >
+  
+  <!ELEMENT first ( %inline_level.group; )* >
+  <!ATTLIST first
+    %coreattrs;
+  >
+  
+  <!ELEMENT first-i ( %inline_level.group; )* >
+  <!ATTLIST first-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT fnnum ( %inline_level.group; )* >
+  <!ATTLIST fnnum
+    %coreattrs;
+  >
+  
+  <!ELEMENT fnref ( %inline_level.group; )* >
+  <!ATTLIST fnref
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT fol ( %inline_level.group; )* >
+  <!ATTLIST fol
+    %coreattrs;
+  >
+  
+  <!ELEMENT folio ( %inline_level.group; )* >
+  <!ATTLIST folio
+    %coreattrs;
+  >
+  
+  <!ELEMENT frac ( %inline_level.group; )* >
+  <!ATTLIST frac
+    %coreattrs;
+  >
+  
+  <!ELEMENT frac-b ( %inline_level.group; )* >
+  <!ATTLIST frac-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT frac-bi ( %inline_level.group; )* >
+  <!ATTLIST frac-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT frac-i ( %inline_level.group; )* >
+  <!ATTLIST frac-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT grc ( %inline_level.group; )* >
+  <!ATTLIST grc
+    %coreattrs;
+  >
+  
+  <!ELEMENT grc-b ( %inline_level.group; )* >
+  <!ATTLIST grc-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT grc-bi ( %inline_level.group; )* >
+  <!ATTLIST grc-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT grc-i ( %inline_level.group; )* >
+  <!ATTLIST grc-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT grc-u ( %inline_level.group; )* >
+  <!ATTLIST grc-u
+    %coreattrs;
+  >
+  
+  <!ELEMENT gt ( %inline_level.group; )* >
+  <!ATTLIST gt
+    %coreattrs;
+  >
+  
+  <!ELEMENT gt-i ( %inline_level.group; )* >
+  <!ATTLIST gt-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT gt-sm ( %inline_level.group; )* >
+  <!ATTLIST gt-sm
+    %coreattrs;
+  >
+  
+  <!ELEMENT gtref ( %inline_level.group; )* >
+  <!ATTLIST gtref
+    %coreattrs;
+  >
+  
+  <!ELEMENT heb ( %inline_level.group; )* >
+  <!ATTLIST heb
+    %coreattrs;
+  >
+  
+  <!ELEMENT heb-b ( %inline_level.group; )* >
+  <!ATTLIST heb-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT heb-bi ( %inline_level.group; )* >
+  <!ATTLIST heb-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT heb-i ( %inline_level.group; )* >
+  <!ATTLIST heb-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT heb-u ( %inline_level.group; )* >
+  <!ATTLIST heb-u
+    %coreattrs;
+  >
+  
+  <!ELEMENT hemb ( %inline_level.group; )* >
+  <!ATTLIST hemb
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT gtref-i ( %inline_level.group; )* >
+  <!ATTLIST gtref-i
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT gtref-sm ( %inline_level.group; )* >
+  <!ATTLIST gtref-sm
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT i ( %inline_level.group; )* >
+  <!ATTLIST i
+    %coreattrs;
+  >
+  
+  <!ELEMENT idx ( %inline_level.group; )* >
+  <!ATTLIST idx
+    %coreattrs;
+  >
+  
+  <!ELEMENT inhn ( %inline_level.group; )* >
+  <!ATTLIST inhn
+    %coreattrs;
+  >
+  
+  <!ELEMENT iu ( %inline_level.group; )* >
+  <!ATTLIST iu
+    %coreattrs;
+  >
+  
+  <!ELEMENT l-chi ( %inline_level.group; )* >
+  <!ATTLIST l-chi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-chi-b ( %inline_level.group; )* >
+  <!ATTLIST l-chi-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-chi-bi ( %inline_level.group; )* >
+  <!ATTLIST l-chi-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-chi-i ( %inline_level.group; )* >
+  <!ATTLIST l-chi-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-fre ( %inline_level.group; )* >
+  <!ATTLIST l-fre
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-fre-b ( %inline_level.group; )* >
+  <!ATTLIST l-fre-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-fre-bi ( %inline_level.group; )* >
+  <!ATTLIST l-fre-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-fre-i ( %inline_level.group; )* >
+  <!ATTLIST l-fre-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ger ( %inline_level.group; )* >
+  <!ATTLIST l-ger
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ger-b ( %inline_level.group; )* >
+  <!ATTLIST l-ger-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ger-bi ( %inline_level.group; )* >
+  <!ATTLIST l-ger-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ger-i ( %inline_level.group; )* >
+  <!ATTLIST l-ger-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ita ( %inline_level.group; )* >
+  <!ATTLIST l-ita
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ita-b ( %inline_level.group; )* >
+  <!ATTLIST l-ita-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ita-bi ( %inline_level.group; )* >
+  <!ATTLIST l-ita-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-ita-i ( %inline_level.group; )* >
+  <!ATTLIST l-ita-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-jpn ( %inline_level.group; )* >
+  <!ATTLIST l-jpn
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-jpn-b ( %inline_level.group; )* >
+  <!ATTLIST l-jpn-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-jpn-bi ( %inline_level.group; )* >
+  <!ATTLIST l-jpn-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-jpn-i ( %inline_level.group; )* >
+  <!ATTLIST l-jpn-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-kor ( %inline_level.group; )* >
+  <!ATTLIST l-kor
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-kor-b ( %inline_level.group; )* >
+  <!ATTLIST l-kor-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-kor-bi ( %inline_level.group; )* >
+  <!ATTLIST l-kor-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-kor-i ( %inline_level.group; )* >
+  <!ATTLIST l-kor-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-lat ( %inline_level.group; )* >
+  <!ATTLIST l-lat
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-lat-b ( %inline_level.group; )* >
+  <!ATTLIST l-lat-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-lat-bi ( %inline_level.group; )* >
+  <!ATTLIST l-lat-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-lat-i ( %inline_level.group; )* >
+  <!ATTLIST l-lat-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-rus ( %inline_level.group; )* >
+  <!ATTLIST l-rus
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-rus-b ( %inline_level.group; )* >
+  <!ATTLIST l-rus-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-rus-bi ( %inline_level.group; )* >
+  <!ATTLIST l-rus-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-rus-i ( %inline_level.group; )* >
+  <!ATTLIST l-rus-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-spa ( %inline_level.group; )* >
+  <!ATTLIST l-spa
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-spa-b ( %inline_level.group; )* >
+  <!ATTLIST l-spa-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-spa-bi ( %inline_level.group; )* >
+  <!ATTLIST l-spa-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT l-spa-i ( %inline_level.group; )* >
+  <!ATTLIST l-spa-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT lang ( %inline_level.group; )* >
+  <!ATTLIST lang
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT lang-b ( %inline_level.group; )* >
+  <!ATTLIST lang-b
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT lang-bi ( %inline_level.group; )* >
+  <!ATTLIST lang-bi
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT lang-i ( %inline_level.group; )* >
+  <!ATTLIST lang-i
+    %coreattrs;
+    lang  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT med ( %inline_level.group; )* >
+  <!ATTLIST med
+    %coreattrs;
+  >
+  
+  <!ELEMENT ob ( %inline_level.group; )* >
+  <!ATTLIST ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT osf ( %inline_level.group; )* >
+  <!ATTLIST osf
+    %coreattrs;
+  >
+  
+  <!ELEMENT osf-b ( %inline_level.group; )* >
+  <!ATTLIST osf-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT osf-bi ( %inline_level.group; )* >
+  <!ATTLIST osf-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT osf-i ( %inline_level.group; )* >
+  <!ATTLIST osf-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT pnum ( %inline_level.group; )* >
+  <!ATTLIST pnum
+    %coreattrs;
+  >
+  
+  <!ELEMENT red ( %inline_level.group; )* >
+  <!ATTLIST red
+    %coreattrs;
+  >
+  
+  <!ELEMENT red-b ( %inline_level.group; )* >
+  <!ATTLIST red-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT red-i ( %inline_level.group; )* >
+  <!ATTLIST red-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT red-ob ( %inline_level.group; )* >
+  <!ATTLIST red-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT red-sm ( %inline_level.group; )* >
+  <!ATTLIST red-sm
+    %coreattrs;
+  >
+  
+  <!ELEMENT red-sm-i ( %inline_level.group; )* >
+  <!ATTLIST red-sm-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT red-sm-ob ( %inline_level.group; )* >
+  <!ATTLIST red-sm-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT rh ( %inline_level.group; )* >
+  <!ATTLIST rh
+    %coreattrs;
+  >
+  
+  <!ELEMENT rh-i ( %inline_level.group; )* >
+  <!ATTLIST rh-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT rhr ( %inline_level.group; )* >
+  <!ATTLIST rhr
+    %coreattrs;
+  >
+  
+  <!ELEMENT rhref ( %inline_level.group; )* >
+  <!ATTLIST rhref
+    %coreattrs;
+  >
+  
+  <!ELEMENT rhref1 ( %inline_level.group; )* >
+  <!ATTLIST rhref1
+    %coreattrs;
+  >
+  
+  <!ELEMENT rhv ( %inline_level.group; )* >
+  <!ATTLIST rhv
+    %coreattrs;
+  >
+  
+  <!ELEMENT sm ( %inline_level.group; )* >
+  <!ATTLIST sm
+    %coreattrs;
+  >
+  
+  <!ELEMENT sm-b ( %inline_level.group; )* >
+  <!ATTLIST sm-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT sm-bi ( %inline_level.group; )* >
+  <!ATTLIST sm-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT sm-i ( %inline_level.group; )* >
+  <!ATTLIST sm-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT sm-ob ( %inline_level.group; )* >
+  <!ATTLIST sm-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT smver ( %inline_level.group; )* >
+  <!ATTLIST smver
+    %coreattrs;
+  >
+  
+  <!ELEMENT speaker ( %inline_level.group; )* >
+  <!ATTLIST speaker
+    %coreattrs;
+  >
+  
+  <!ELEMENT speaker-i ( %inline_level.group; )* >
+  <!ATTLIST speaker-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT strk ( %inline_level.group; )* >
+  <!ATTLIST strk
+    %coreattrs;
+  >
+  
+  <!ELEMENT sub ( %inline_level.group; )* >
+  <!ATTLIST sub
+    %coreattrs;
+  >
+  
+  <!ELEMENT sub-b ( %inline_level.group; )* >
+  <!ATTLIST sub-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT sub-bi ( %inline_level.group; )* >
+  <!ATTLIST sub-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT sub-i ( %inline_level.group; )* >
+  <!ATTLIST sub-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT sub-u ( %inline_level.group; )* >
+  <!ATTLIST sub-u
+    %coreattrs;
+  >
+  
+  <!ELEMENT sup ( %inline_level.group; )* >
+  <!ATTLIST sup
+    %coreattrs;
+  >
+  
+  <!ELEMENT sup-b ( %inline_level.group; )* >
+  <!ATTLIST sup-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT sup-bi ( %inline_level.group; )* >
+  <!ATTLIST sup-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT sup-i ( %inline_level.group; )* >
+  <!ATTLIST sup-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT sup-u ( %inline_level.group; )* >
+  <!ATTLIST sup-u
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb ( %inline_level.group; )* >
+  <!ATTLIST symb
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-b ( %inline_level.group; )* >
+  <!ATTLIST symb-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-i ( %inline_level.group; )* >
+  <!ATTLIST symb-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sub ( %inline_level.group; )* >
+  <!ATTLIST symb-sub
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sub-b ( %inline_level.group; )* >
+  <!ATTLIST symb-sub-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sub-bi ( %inline_level.group; )* >
+  <!ATTLIST symb-sub-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sub-i ( %inline_level.group; )* >
+  <!ATTLIST symb-sub-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sup ( %inline_level.group; )* >
+  <!ATTLIST symb-sup
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sup-b ( %inline_level.group; )* >
+  <!ATTLIST symb-sup-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sup-bi ( %inline_level.group; )* >
+  <!ATTLIST symb-sup-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT symb-sup-i ( %inline_level.group; )* >
+  <!ATTLIST symb-sup-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT tel ( %inline_level.group; )* >
+  <!ATTLIST tel
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr ( %inline_level.group; )* >
+  <!ATTLIST tetr
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr-b ( %inline_level.group; )* >
+  <!ATTLIST tetr-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr-i ( %inline_level.group; )* >
+  <!ATTLIST tetr-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr-ob ( %inline_level.group; )* >
+  <!ATTLIST tetr-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr-red ( %inline_level.group; )* >
+  <!ATTLIST tetr-red
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr-red-i ( %inline_level.group; )* >
+  <!ATTLIST tetr-red-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT tetr-red-ob ( %inline_level.group; )* >
+  <!ATTLIST tetr-red-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT tgrc ( %inline_level.group; )* >
+  <!ATTLIST tgrc
+    %coreattrs;
+  >
+  
+  <!ELEMENT tgrc-b ( %inline_level.group; )* >
+  <!ATTLIST tgrc-b
+    %coreattrs;
+  >
+  
+  <!ELEMENT tgrc-bi ( %inline_level.group; )* >
+  <!ATTLIST tgrc-bi
+    %coreattrs;
+  >
+  
+  <!ELEMENT tgrc-i ( %inline_level.group; )* >
+  <!ATTLIST tgrc-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT theb ( %inline_level.group; )* >
+  <!ATTLIST theb
+    %coreattrs;
+  >
+  
+  <!ELEMENT theb-i ( %inline_level.group; )* >
+  <!ATTLIST theb-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT theb-ob ( %inline_level.group; )* >
+  <!ATTLIST theb-ob
+    %coreattrs;
+  >
+  
+  <!ELEMENT theb-red ( %inline_level.group; )* >
+  <!ATTLIST theb-red
+    %coreattrs;
+  >
+  
+  <!ELEMENT thn ( %inline_level.group; )* >
+  <!ATTLIST thn
+    %coreattrs;
+  >
+  
+  <!ELEMENT tocnum ( %inline_level.group; )* >
+  <!ATTLIST tocnum
+    %coreattrs;
+  >
+  
+  <!ELEMENT trh ( %inline_level.group; )* >
+  <!ATTLIST trh
+    %coreattrs;
+  >
+  
+  <!ELEMENT trh-i ( %inline_level.group; )* >
+  <!ATTLIST trh-i
+    %coreattrs;
+  >
+  
+  <!ELEMENT tso ( %inline_level.group; )* >
+  <!ATTLIST tso
+    %coreattrs;
+  >
+  
+  <!ELEMENT u ( %inline_level.group; )* >
+  <!ATTLIST u
+    %coreattrs;
+  >
+  
+  <!ELEMENT url ( %inline_level.group; )* >
+  <!ATTLIST url
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT ver ( %inline_level.group; )* >
+  <!ATTLIST ver
+    %coreattrs;
+  >
+  
+  <!ELEMENT xbk ( %inline_level.group; )* >
+  <!ATTLIST xbk
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT xbr ( %inline_level.group; )* >
+  <!ATTLIST xbr
+    %coreattrs;
+    t  CDATA  #IMPLIED
+  >
+  
+  <!ELEMENT xref ( %inline_level.group; )* >
+  <!ATTLIST xref
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+  <!ELEMENT xref-i ( %inline_level.group; )* >
+  <!ATTLIST xref-i
+    %coreattrs;
+    idref  IDREF  #IMPLIED
+  >
+  
+
+<!-- ~============================================================ -->
+<!--                   Table Elements                              -->
+<!-- ============================================================= -->
+
+  <!ELEMENT table ( tr+ ) >
+  <!ATTLIST table
+      %coreattrs;
+      width CDATA #IMPLIED
+      style CDATA #IMPLIED
+      border CDATA #IMPLIED>
+
+  <!ELEMENT tr ( cell+ ) >
+  <!ATTLIST tr
+      %coreattrs;
+      align CDATA #IMPLIED
+      valign CDATA #IMPLIED >
+
+  <!ELEMENT cell ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST cell
+      %coreattrs;
+      colspan CDATA #IMPLIED
+      rowspan CDATA #IMPLIED 
+      align CDATA #IMPLIED   >
+
+<!-- ~============================================================ -->
+<!--                   Specialized Structures                      -->
+<!-- ============================================================= -->
+
+  <!ELEMENT cover ( fig ) >
+  <!ATTLIST cover
+    %coreattrs;
+  >
+
+<!-- ~============================================================ -->
+<!--               Non-Textual Inline Elements                     -->
+<!-- ============================================================= -->
+
+  <!ELEMENT a EMPTY>
+  <!-- html -->
+  <!ATTLIST a
+    id     ID     #REQUIRED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED
+  >
+
+  <!ELEMENT br EMPTY>
+  <!-- html -->
+
+  <!ELEMENT img EMPTY>
+  <!-- html -->
+  <!ATTLIST img
+    %coreattrs;
+    src     CDATA     #REQUIRED
+    alt     CDATA     #IMPLIED
+    height  CDATA     #IMPLIED
+    width   CDATA     #IMPLIED
+  >
+
+  <!ELEMENT page EMPTY>
+  <!ATTLIST page
+    id     ID     #REQUIRED
+    type      CDATA   #IMPLIED
+    semantic  CDATA   #IMPLIED
+  >
+
+<!-- ~============================================================ -->
+<!--           Non-Textual Paragraph-Level Elements                -->
+<!-- ============================================================= -->
+
+  <!ELEMENT hr EMPTY>
+  <!-- html -->
+  <!ATTLIST hr
+    %coreattrs;
+  >
