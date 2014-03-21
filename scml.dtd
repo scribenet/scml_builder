@@ -28,10 +28,12 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
   | box
   | codeline
   | dialogue
+  | endnote
   | epigraph
   | equation
   | exercise
   | figure
+  | footnote
   | glossary
   | index
   | letter
@@ -853,7 +855,7 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
 <!--                   Main-Level Elements                         -->
 <!-- ============================================================= -->
 
-  <!ELEMENT scml ( division+ | book ) >
+  <!ELEMENT scml ( division+ | book )+ >
   <!ATTLIST scml
       %coreattrs;
       bver CDATA #IMPLIED
@@ -866,14 +868,8 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
       lang   CDATA #IMPLIED
   >
 
-  <!ELEMENT book ( chapter+ | part+ ) >
+  <!ELEMENT book ( chapter )+ >
   <!ATTLIST book
-      %coreattrs;
-      lang   CDATA #IMPLIED
-  >
-
-  <!ELEMENT part ( chapter+ ) >
-  <!ATTLIST part
       %coreattrs;
       lang   CDATA #IMPLIED
   >
@@ -909,6 +905,11 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
     %coreattrs;
   >
   
+  <!ELEMENT endnote ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST endnote
+    %coreattrs;
+  >
+  
   <!ELEMENT epigraph ( %block_level.group; | %paragraph_level.group; )* >
   <!ATTLIST epigraph
     %coreattrs;
@@ -921,6 +922,11 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
   
   <!ELEMENT exercise ( %block_level.group; | %paragraph_level.group; )* >
   <!ATTLIST exercise
+    %coreattrs;
+  >
+  
+  <!ELEMENT footnote ( %block_level.group; | %paragraph_level.group; )* >
+  <!ATTLIST footnote
     %coreattrs;
   >
   

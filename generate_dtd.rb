@@ -39,7 +39,6 @@ class DTDMaker
     @structs = ELEMENTS[:structure_styles] 
     @pars = pertinent_elements(ELEMENTS[:paragraph_styles])
     @chars = pertinent_elements(ELEMENTS[:character_styles])
-    require 'pry'; binding.pry 
   end
 
   def pertinent_elements list
@@ -86,6 +85,7 @@ class DTDMaker
 
   def element_declarations els
     children = CHILDREN[els].join(' | ')
+    children = '#PCDATA' if els == :chars and type == 'sam'
     modifier = type == :structs ? '+' : '*'
     list = send(els)
     list.map{ |el| EL_TEMPLATE.result(binding) }.join

@@ -33,7 +33,7 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
 <!--                   Main-Level Elements                         -->
 <!-- ============================================================= -->
 
-  <!ELEMENT scml ( division+ | book ) >
+  <!ELEMENT scml ( division+ | book )+ >
   <!ATTLIST scml
       %coreattrs;
       bver CDATA #IMPLIED
@@ -46,14 +46,8 @@ Version  Reason/Occasion                    (who)   vx.x (yymmdd)
       lang   CDATA #IMPLIED
   >
 
-  <!ELEMENT book ( chapter+ | part+ ) >
+  <!ELEMENT book ( chapter )+ >
   <!ATTLIST book
-      %coreattrs;
-      lang   CDATA #IMPLIED
-  >
-
-  <!ELEMENT part ( chapter+ ) >
-  <!ATTLIST part
       %coreattrs;
       lang   CDATA #IMPLIED
   >

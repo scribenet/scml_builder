@@ -3,9 +3,11 @@
   - :name: box
   - :name: codeline
   - :name: dialogue
+  - :name: endnote
   - :name: epigraph
   - :name: equation
   - :name: exercise
+  - :name: footnote
   - :name: figure
   - :name: glossary
   - :name: index
