@@ -22,7 +22,7 @@ class DTDMaker
   SCML_BLOCK_EXTRAS = %w(table)
   SCML_NON_TEXT_INLINE = %w(a br img page)
   SCML_NON_TEXT_COMPACT = %w(hr)
-  SAM_INLINE_EXTRAS = %w(img)
+  INLINE_EXTRAS = %w(img)
 
   def initialize type
     @type = type
@@ -73,9 +73,8 @@ class DTDMaker
       list += SCML_NON_TEXT_INLINE if els == :chars and
       list += SCML_NON_TEXT_COMPACT if els == :pars
       list += SCML_BLOCK_EXTRAS if els == :structs
-    else
-      list += SAM_INLINE_EXTRAS if els == :chars
     end
+    list += INLINE_EXTRAS if els == :chars
     pipe_joined(list.sort)
   end
 
