@@ -7,13 +7,14 @@
 # any element not specified belongs in all list outputs
 #
 # other attrs avialable per element
+# description: description
 # scml_specialized_contents: explicit list of permissible children for element; otherwise defaults to standard based on its structure/para/char group
 # sam_specialized_contents: explicit list of permissible children for element; otherwise defaults to standard based on its para/char group
-# sam_attrs: attributes available in the sam DTD
-# scml_attrs: attributes available in the scml DTD
+# :sam_attrs: attributes available in the sam DTD
+# :scml_attrs: attributes available in the scml DTD
 # group_name: name for the group of elements it belongs to; distinct from its primary structure
 # primary_structure: primary structure this element belongs to
-# sub_structures: secondary structures element is associated with (for instance, "sbnl" has a primary structure of "sidebar," but secondary structure of "list")
+# secondary_structures: secondary structures element is associated with (for instance, "sbnl" has a primary structure of "sidebar," but secondary structure of "list")
 
 ---
 :roots:
@@ -145,20 +146,6 @@
     :for: scml
     :group_name: structure
 
-  table:
-    :for: dtds
-    :group_name: structure
-    :sam_specialized_contents: '( tr+ )'
-    :scml_specialized_contents: '( tr+ )'
-    sam_attrs:
-    - [width, CDATA '#IMPLIED']
-    - [style, CDATA '#IMPLIED']
-    - [border, CDATA '#IMPLIED']
-    scml_attrs:
-    - [width, CDATA '#IMPLIED']
-    - [style, CDATA '#IMPLIED']
-    - [border, CDATA '#IMPLIED']
-
   written:
     :for: scml
     :group_name: structure
@@ -170,15 +157,29 @@
     :group_name: structure
     :scml_specialized_contents: '( fig )'
 
+  table:
+    :for: dtds
+    :group_name: structure
+    :sam_specialized_contents: '( tr+ )'
+    :scml_specialized_contents: '( tr+ )'
+    :sam_attrs:
+    - [width, CDATA '#IMPLIED']
+    - [style, CDATA '#IMPLIED']
+    - [border, CDATA '#IMPLIED']
+    :scml_attrs:
+    - [width, CDATA '#IMPLIED']
+    - [style, CDATA '#IMPLIED']
+    - [border, CDATA '#IMPLIED']
+
   tr:
     :for: dtds
     :group_name: structure
     :sam_specialized_contents: '( cell+ )'
     :scml_specialized_contents: '( cell+ )'
-    sam_attrs:
+    :sam_attrs:
     - [align, CDATA '#IMPLIED']
     - [valign, CDATA '#IMPLIED']
-    scml_attrs:
+    :scml_attrs:
     - [align, CDATA '#IMPLIED']
     - [valign, CDATA '#IMPLIED']
 
@@ -187,11 +188,11 @@
     :group_name: structure
     :sam_specialized_contents: '(%paragraph_styles;)+'
     :scml_specialized_contents: '(%block_styles; | %paragraph_styles;)+'
-    scml_attrs:
+    :scml_attrs:
     - [colspan, CDATA '#IMPLIED']
     - [rowspan, CDATA '#IMPLIED']
     - [align, CDATA '#IMPLIED']
-    sam_attrs:
+    :sam_attrs:
     - [colspan, CDATA '#IMPLIED']
     - [rowspan, CDATA '#IMPLIED']
     - [align, CDATA '#IMPLIED']
@@ -2589,6 +2590,7 @@
     :primary_structure: story
 
   structure:
+    :for: sam
     :group_name: structure
 
   sts:
