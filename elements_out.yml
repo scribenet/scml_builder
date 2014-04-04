@@ -1,0 +1,2847 @@
+# ==== Rules ====
+# "for" values:
+# - scml: belongs only in full scml applications, like the scml.dtd
+# - sam: belongs only in full sam applications, like the sam.dtd, word template, etc.
+# - tso: typesetter only, belongs only in typesets and design templates
+# - dtds: belongs on the sam and scml dtds, but not on flat tag lists (table, tr, cell)
+# any element not specified belongs in all list outputs
+#
+# other attrs avialable per element
+# specialized_contents: explicit list of permissible children for element; otherwise defaults to standard based on its structure/para/char group
+# sam_attrs: attributes available in the sam DTD
+# scml_attrs: attributes available in the scml DTD
+# group_name: name for the group of elements it belongs to; distinct from its primary structure
+# primary_structure: primary structure this element belongs to
+# sub_structures: secondary structures element is associated with (for instance, "sbnl" has a primary structure of "sidebar," but secondary structure of "list")
+
+---
+:roots:
+  sam:
+    :group_name: structure
+  scml:
+    :group_name: structure
+:structure_styles:
+  division:
+    :for: scml
+    :group_name: structure
+  book:
+    :for: scml
+    :group_name: structure
+  chapter:
+    :for: scml
+    :group_name: structure
+  blockquote:
+    :for: scml
+    :group_name: structure
+  box:
+    :for: scml
+    :group_name: structure
+  cell:
+    :for: dtds
+    :group_name: structure
+  codeline:
+    :for: scml
+    :group_name: structure
+  cover:
+    :for: scml
+    :group_name: structure
+  dialogue:
+    :for: scml
+    :group_name: structure
+  endnote:
+    :for: scml
+    :group_name: structure
+  epigraph:
+    :for: scml
+    :group_name: structure
+  equation:
+    :for: scml
+    :group_name: structure
+  exercise:
+    :for: scml
+    :group_name: structure
+  footnote:
+    :for: scml
+    :group_name: structure
+  figure:
+    :for: scml
+    :group_name: structure
+  glossary:
+    :for: scml
+    :group_name: structure
+  index:
+    :for: scml
+    :group_name: structure
+  letter:
+    :for: scml
+    :group_name: structure
+  list:
+    :for: scml
+    :group_name: structure
+  media:
+    :for: scml
+    :group_name: structure
+  notes:
+    :for: scml
+    :group_name: structure
+  pullquote:
+    :for: scml
+    :group_name: structure
+  question:
+    :for: scml
+    :group_name: structure
+  recipe:
+    :for: scml
+    :group_name: structure
+  references:
+    :for: scml
+    :group_name: structure
+  senseline:
+    :for: scml
+    :group_name: structure
+  sidebar:
+    :for: scml
+    :group_name: structure
+  story:
+    :for: scml
+    :group_name: structure
+  table:
+    :for: dtds
+    :group_name: structure
+  tr:
+    :for: dtds
+    :group_name: structure
+  written:
+    :for: scml
+    :group_name: structure
+:paragraph_styles:
+  ah:
+    :group_name: heads
+  ahaft:
+    :group_name: heads
+  ans:
+    :group_name: question
+    :abbrev: qu
+    :primary_structure: question
+  ansf:
+    :group_name: question
+    :abbrev: qu
+    :primary_structure: question
+  ard:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  au:
+    :group_name: chapter_other
+  au1:
+    :group_name: chapter_other
+  aubio:
+    :group_name: chapter_other
+  aubiof:
+    :group_name: chapter_other
+  audio:
+    :group_name: media
+    :primary_structure: media
+  bh:
+    :group_name: heads
+  bhaft:
+    :group_name: heads
+  bk:
+    :group_name: book
+    :abbrev: bk
+  bk1:
+    :group_name: book
+    :abbrev: bk
+  bk2:
+    :group_name: book
+    :abbrev: bk
+  bkau:
+    :group_name: book
+    :abbrev: bk
+  bkau1:
+    :group_name: book
+    :abbrev: bk
+  bkht:
+    :group_name: book
+    :abbrev: bk
+  bkpub:
+    :group_name: book
+    :abbrev: bk
+  bkpub1:
+    :group_name: book
+    :abbrev: bk
+  bksect:
+    :group_name: book
+    :abbrev: bk
+  bl:
+    :group_name: list
+    :primary_structure: list
+  bl1:
+    :group_name: list
+    :primary_structure: list
+  bl1f:
+    :group_name: list
+    :primary_structure: list
+  bl1l:
+    :group_name: list
+    :primary_structure: list
+  bl1p:
+    :group_name: list
+    :primary_structure: list
+  bl1pl:
+    :group_name: list
+    :primary_structure: list
+  bl1s:
+    :group_name: list
+    :primary_structure: list
+  blf:
+    :group_name: list
+    :primary_structure: list
+  blh:
+    :group_name: list
+    :primary_structure: list
+  bll:
+    :group_name: list
+    :primary_structure: list
+  blp:
+    :group_name: list
+    :primary_structure: list
+  blpl:
+    :group_name: list
+    :primary_structure: list
+  bls:
+    :group_name: list
+    :primary_structure: list
+  bq:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bq1:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bq1f:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bq1l:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bq1s:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqaft:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqf:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqh:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bql:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqnl:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqnlf:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqnll:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqnls:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqo:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqs:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqt:
+    :group_name: blockquotes
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqul:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqulf:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bqull:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bquls:
+    :group_name: blockquotes-list
+    :abbrev: bq
+    :primary_structure: blockquote
+  bx:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1aft:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1ah:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1bh:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1bq:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1bqf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1bql:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1bqs:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1con:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1f:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1h:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1l:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1nl:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1nlf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1nll:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1nlp:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1sl:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1slf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1sll:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1t:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1ul:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1ulf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1ull:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bx1ulp:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxaft:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxah:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxau:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxau1:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxbh:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxbq:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxbqf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxbql:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxbqs:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxcon:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxh:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxl:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxnl:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxnlf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxnll:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxnlp:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxnls:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxo:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxs:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxsl:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxslf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxsll:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxt:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxul:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxulf:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxull:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxulp:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  bxuls:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+  call:
+    :group_name: quote
+    :abbrev: quo
+    :primary_structure: pullquote
+  ch:
+    :group_name: heads
+  chaft:
+    :group_name: heads
+  chsect:
+    :group_name: heads
+  chsubsect:
+    :group_name: heads
+  cip:
+    :group_name: copyright
+    :abbrev: cip
+  cip1:
+    :group_name: copyright
+    :abbrev: cip
+  cip2:
+    :group_name: copyright
+    :abbrev: cip
+  cipf:
+    :group_name: copyright
+    :abbrev: cip
+  cipf1:
+    :group_name: copyright
+    :abbrev: cip
+  cipl:
+    :group_name: copyright
+    :abbrev: cip
+  cl:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl1:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl1f:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl1l:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl1s:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl2:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl2f:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl2l:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl2s:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl3:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl3f:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl3l:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cl3s:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  clf:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cll:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cls:
+    :group_name: codeline
+    :abbrev: cl
+    :primary_structure: codeline
+  cn:
+    :group_name: chapter_start
+    :chapter_start: true
+  com:
+    :group_name: commentary
+    :abbrev: com
+  crt:
+    :group_name: copyright
+    :abbrev: cip
+  crt1:
+    :group_name: copyright
+    :abbrev: cip
+  crt1f:
+    :group_name: copyright
+    :abbrev: cip
+  crt2:
+    :group_name: copyright
+    :abbrev: cip
+  crt3:
+    :group_name: copyright
+    :abbrev: cip
+  crtf:
+    :group_name: copyright
+    :abbrev: cip
+  cs:
+    :group_name: chapter_other
+  ct:
+    :group_name: chapter_start
+    :chapter_start: true
+  ctbm:
+    :group_name: chapter_start
+    :chapter_start: true
+  ctfm:
+    :group_name: chapter_start
+    :chapter_start: true
+  ctoc:
+    :group_name: chapter-contents
+    :abbrev: ctoc
+  ctoc1:
+    :group_name: chapter-contents
+    :abbrev: ctoc
+  ctoch:
+    :group_name: chapter-contents
+    :abbrev: ctoc
+  ded:
+    :group_name: dedication
+    :abbrev: ded
+  ded1:
+    :group_name: dedication
+    :abbrev: ded
+  ded1f:
+    :group_name: dedication
+    :abbrev: ded
+  dedf:
+    :group_name: dedication
+    :abbrev: ded
+  dh:
+    :group_name: heads
+  dhaft:
+    :group_name: heads
+  dia:
+    :group_name: dialogue
+    :abbrev: dia
+    :primary_structure: dialogue
+  diaf:
+    :group_name: dialogue
+    :abbrev: dia
+    :primary_structure: dialogue
+  dial:
+    :group_name: dialogue
+    :abbrev: dia
+    :primary_structure: dialogue
+  diap:
+    :group_name: dialogue
+    :abbrev: dia
+    :primary_structure: dialogue
+  diapl:
+    :group_name: dialogue
+    :abbrev: dia
+    :primary_structure: dialogue
+  dias:
+    :group_name: dialogue
+    :abbrev: dia
+    :primary_structure: dialogue
+  dl:
+    :group_name: heads
+  dl1:
+    :group_name: heads
+  dt:
+    :group_name: heads
+  dtsub:
+    :group_name: heads
+  eds:
+    :group_name: note
+    :primary_structure: notes
+  eh:
+    :group_name: heads
+  ehaft:
+    :group_name: heads
+  en:
+    :group_name: note
+    :primary_structure: notes
+  end:
+    :group_name: body
+  enhn:
+    :group_name: note
+    :primary_structure: notes
+  enp:
+    :group_name: note
+    :primary_structure: notes
+  ep:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  ep1:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  ep2:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  epaft:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  epf:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  epl:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  eps:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  epsl:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  epsl1:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  epslf:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  ept:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  ept1:
+    :group_name: epigraph
+    :abbrev: ep
+    :primary_structure: epigraph
+  eq:
+    :group_name: equation
+    :abbrev: eq
+    :primary_structure: equation
+  eqaft:
+    :group_name: equation
+    :abbrev: eq
+    :primary_structure: equation
+  ex:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exaft:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exah:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exbh:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exf:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exh:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exl:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnl:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnl1:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnl1f:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnl1l:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnl1p:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnl1s:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnlf:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnll:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnlp:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exnls:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exs:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exul:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exul1:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exul1f:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exul1l:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exul1p:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exul1s:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exulf:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exull:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exulp:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  exuls:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  fig:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  figatr:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  figcap:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  figcap1:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  figh:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  figh1:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  fign:
+    :group_name: figure
+    :abbrev: fig
+    :primary_structure: figure
+  fn:
+    :group_name: note
+    :primary_structure: notes
+  fnp:
+    :group_name: note
+    :primary_structure: notes
+  folio:
+    :group_name: page
+  fs:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  glo:
+    :group_name: glossary
+    :abbrev: glo
+    :primary_structure: glossary
+  glof:
+    :group_name: glossary
+    :abbrev: glo
+    :primary_structure: glossary
+  hb:
+    :group_name: body
+  hd:
+    :group_name: heads
+  in:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  in1:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  in2:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  in3:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  inf:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  inh:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  inh1:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  inhn:
+    :group_name: index
+    :abbrev: in
+    :primary_structure: index
+  lo:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+  lps:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  lt:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  lta:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltaf:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltc:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltd:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltdf:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltf:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltg:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltl:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  lto:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  lts:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltsig:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltsigf:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  ltsigl:
+    :group_name: letter
+    :abbrev: lt
+    :primary_structure: letter
+  mediah:
+    :group_name: media
+    :primary_structure: media
+  mediacap:
+    :group_name: media
+    :primary_structure: media
+  mediaatr:
+    :group_name: media
+    :primary_structure: media
+  nl:
+    :group_name: list
+    :primary_structure: list
+  nl1:
+    :group_name: list
+    :primary_structure: list
+  nl1f:
+    :group_name: list
+    :primary_structure: list
+  nl1l:
+    :group_name: list
+    :primary_structure: list
+  nl1p:
+    :group_name: list
+    :primary_structure: list
+  nl1pl:
+    :group_name: list
+    :primary_structure: list
+  nl1s:
+    :group_name: list
+    :primary_structure: list
+  nl2:
+    :group_name: list
+    :primary_structure: list
+  nl2f:
+    :group_name: list
+    :primary_structure: list
+  nl2l:
+    :group_name: list
+    :primary_structure: list
+  nl2p:
+    :group_name: list
+    :primary_structure: list
+  nl2s:
+    :group_name: list
+    :primary_structure: list
+  nl3:
+    :group_name: list
+    :primary_structure: list
+  nl3f:
+    :group_name: list
+    :primary_structure: list
+  nl3l:
+    :group_name: list
+    :primary_structure: list
+  nl3p:
+    :group_name: list
+    :primary_structure: list
+  nl3s:
+    :group_name: list
+    :primary_structure: list
+  nl4:
+    :group_name: list
+    :primary_structure: list
+  nl4f:
+    :group_name: list
+    :primary_structure: list
+  nl4l:
+    :group_name: list
+    :primary_structure: list
+  nl4p:
+    :group_name: list
+    :primary_structure: list
+  nl4s:
+    :group_name: list
+    :primary_structure: list
+  nl5:
+    :group_name: list
+    :primary_structure: list
+  nl5f:
+    :group_name: list
+    :primary_structure: list
+  nl5l:
+    :group_name: list
+    :primary_structure: list
+  nl5p:
+    :group_name: list
+    :primary_structure: list
+  nl5s:
+    :group_name: list
+    :primary_structure: list
+  nlf:
+    :group_name: list
+    :primary_structure: list
+  nlh:
+    :group_name: list
+    :primary_structure: list
+  nll:
+    :group_name: list
+    :primary_structure: list
+  nlp:
+    :group_name: list
+    :primary_structure: list
+  nlpl:
+    :group_name: list
+    :primary_structure: list
+  nls:
+    :group_name: list
+    :primary_structure: list
+  ntbq:
+    :group_name: note
+    :primary_structure: notes
+  ntbqf:
+    :group_name: note
+    :primary_structure: notes
+  ntbql:
+    :group_name: note
+    :primary_structure: notes
+  ntbqs:
+    :group_name: note
+    :primary_structure: notes
+  ntcon:
+    :group_name: note
+    :primary_structure: notes
+  nteq:
+    :group_name: note
+    :primary_structure: notes
+  ntnl:
+    :group_name: note
+    :primary_structure: notes
+  ntnlf:
+    :group_name: note
+    :primary_structure: notes
+  ntnll:
+    :group_name: note
+    :primary_structure: notes
+  ntsl:
+    :group_name: note
+    :primary_structure: notes
+  ntslf:
+    :group_name: note
+    :primary_structure: notes
+  ntsll:
+    :group_name: note
+    :primary_structure: notes
+  nttd:
+    :group_name: note
+    :primary_structure: notes
+  ntul:
+    :group_name: note
+    :primary_structure: notes
+  ntulf:
+    :group_name: note
+    :primary_structure: notes
+  ntull:
+    :group_name: note
+    :primary_structure: notes
+  opt:
+    :group_name: rubric
+    :abbrev: rb
+  p:
+    :group_name: body
+  paft:
+    :group_name: body
+  patr:
+    :group_name: body
+  patr1:
+    :group_name: body
+  pcon:
+    :group_name: body
+  pcust1:
+    :group_name: body
+  pcust2:
+    :group_name: body
+  pcust3:
+    :group_name: body
+  pf:
+    :group_name: body
+  pn:
+    :group_name: parts
+    :chapter_start: true
+  ps:
+    :group_name: parts_other
+  psec:
+    :group_name: body
+  psec1:
+    :group_name: body
+  pt:
+    :group_name: parts
+    :chapter_start: true
+  qu:
+    :group_name: question
+    :abbrev: qu
+    :primary_structure: question
+  quf:
+    :group_name: question
+    :abbrev: qu
+    :primary_structure: question
+  quh:
+    :group_name: question
+    :abbrev: qu
+    :primary_structure: question
+  quot:
+    :group_name: quote
+    :abbrev: quo
+    :primary_structure: pullquote
+  quotf:
+    :group_name: quote
+    :abbrev: quo
+    :primary_structure: pullquote
+  quotl:
+    :group_name: quote
+    :abbrev: quo
+    :primary_structure: pullquote
+  quots:
+    :group_name: quote
+    :abbrev: quo
+    :primary_structure: pullquote
+  quott:
+    :group_name: quote
+    :abbrev: quo
+    :primary_structure: pullquote
+  rb:
+    :group_name: rubric
+    :abbrev: rb
+  rbc:
+    :group_name: rubric
+    :abbrev: rb
+  rbi:
+    :group_name: rubric
+    :abbrev: rb
+  rf:
+    :group_name: reference
+    :primary_structure: references
+  rf1:
+    :group_name: reference
+    :primary_structure: references
+  rf2:
+    :group_name: reference
+    :primary_structure: references
+  rh:
+    :group_name: page
+  rhr:
+    :group_name: page
+  rhv:
+    :group_name: page
+  rp:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rp1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rp1f:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rp1l:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rp1y:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpah:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpbh:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpch:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpf:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpg:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpg1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rph:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rph1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rphn:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpil:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpil1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpil1f:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpil1l:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpil1s:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpilf:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpill:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpils:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpl:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpn:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpn1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpnut:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpnut1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpt:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpt1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpv:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpv1:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpv1f:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpv1h:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpv1l:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpvf:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpvh:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpvl:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rpy:
+    :group_name: recipe
+    :abbrev: rp
+    :primary_structure: recipe
+  rv:
+    :group_name: series
+    :abbrev: ser
+  rvd:
+    :group_name: series
+    :abbrev: ser
+  rvh:
+    :group_name: series
+    :abbrev: ser
+  rvt:
+    :group_name: series
+    :abbrev: ser
+  sb:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sb1:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sb1f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sb1h:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sb1l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sb1t:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbaft:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbah:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbahaft:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbh:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbhaft:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbq:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbqaft:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbqf:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbql:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbbqs:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbcon:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbf:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbh:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbl:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl1:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl1f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl1l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl1p:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl1s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl2:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl2f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl2l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl2p:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl2s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl3:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl3f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl3l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl4:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl4f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl4l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl5:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl5f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnl5l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnlf:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnll:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnlp:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbnls:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbo:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbs:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl1:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl1f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl1l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl1s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl2:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl2f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl2l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl2s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl3:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl3f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl3l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsl3s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbslf:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsli:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbslif:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbslil:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsll:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbsls:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbslt:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbt:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul1:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul1f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul1l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul1p:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul1s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul2:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul2f:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul2l:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul2p:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbul2s:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbulf:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbull:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbulp:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sbuls:
+    :group_name: sidebar
+    :abbrev: sb
+    :primary_structure: sidebar
+  sec:
+    :group_name: body
+  secbot:
+    :group_name: body
+  sectop:
+    :group_name: body
+  ser:
+    :group_name: series
+    :abbrev: ser
+  ser1:
+    :group_name: series
+    :abbrev: ser
+  ser2:
+    :group_name: series
+    :abbrev: ser
+  seraft:
+    :group_name: series
+    :abbrev: ser
+  serah:
+    :group_name: series
+    :abbrev: ser
+  serahaft:
+    :group_name: series
+    :abbrev: ser
+  serau:
+    :group_name: series
+    :abbrev: ser
+  serbh:
+    :group_name: series
+    :abbrev: ser
+  serf:
+    :group_name: series
+    :abbrev: ser
+  serp:
+    :group_name: series
+    :abbrev: ser
+  serpf:
+    :group_name: series
+    :abbrev: ser
+  sers:
+    :group_name: series
+    :abbrev: ser
+  sert:
+    :group_name: series
+    :abbrev: ser
+  sh:
+    :group_name: heads
+  sl:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl1:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl1f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl1l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl2:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl2f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl2l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl3:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl3f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl3l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl4:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl4f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl4l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl5:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl5f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl5l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl6:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl6f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl6l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl7:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl7f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl7l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl8:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl8f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl8l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl9:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl9f:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sl9l:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  slf:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  slh:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sli:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  slif:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  slil:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sll:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  sls:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  slt:
+    :group_name: sense
+    :abbrev: sl
+    :primary_structure: senseline
+  st:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  stf:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  sth:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  sth1:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  sth2:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  stl:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  structure:
+    :group_name: structure
+  sts:
+    :group_name: story
+    :abbrev: st
+    :primary_structure: story
+  tatr:
+    :group_name: table
+    :abbrev: t
+  tch:
+    :group_name: table
+    :abbrev: t
+  tch1:
+    :group_name: table
+    :abbrev: t
+  tch2:
+    :group_name: table
+    :abbrev: t
+  td:
+    :group_name: table
+    :abbrev: t
+  tdf:
+    :group_name: table
+    :abbrev: t
+  tdl:
+    :group_name: table
+    :abbrev: t
+  tdnl:
+    :group_name: table
+    :abbrev: t
+  tdp:
+    :group_name: table
+    :abbrev: t
+  tdul:
+    :group_name: table
+    :abbrev: t
+  th:
+    :group_name: table
+    :abbrev: t
+  th1:
+    :group_name: table
+    :abbrev: t
+  th2:
+    :group_name: table
+    :abbrev: t
+  tn:
+    :group_name: table
+    :abbrev: t
+  toc:
+    :group_name: contents
+    :abbrev: toc
+  toc1:
+    :group_name: contents
+    :abbrev: toc
+  toc2:
+    :group_name: contents
+    :abbrev: toc
+  toc3:
+    :group_name: contents
+    :abbrev: toc
+  toc4:
+    :group_name: contents
+    :abbrev: toc
+  toc5:
+    :group_name: contents
+    :abbrev: toc
+  tocau:
+    :group_name: contents
+    :abbrev: toc
+  tocbm:
+    :group_name: contents
+    :abbrev: toc
+  tocbmf:
+    :group_name: contents
+    :abbrev: toc
+  tocf:
+    :group_name: contents
+    :abbrev: toc
+  tocfm:
+    :group_name: contents
+    :abbrev: toc
+  tocfmf:
+    :group_name: contents
+    :abbrev: toc
+  tocpt:
+    :group_name: contents
+    :abbrev: toc
+  tocut:
+    :group_name: contents
+    :abbrev: toc
+  tsecbot:
+    :group_name: body
+  tsectop:
+    :group_name: body
+  ul:
+    :group_name: list
+    :primary_structure: list
+  ul1:
+    :group_name: list
+    :primary_structure: list
+  ul1f:
+    :group_name: list
+    :primary_structure: list
+  ul1l:
+    :group_name: list
+    :primary_structure: list
+  ul1p:
+    :group_name: list
+    :primary_structure: list
+  ul1pl:
+    :group_name: list
+    :primary_structure: list
+  ul1s:
+    :group_name: list
+    :primary_structure: list
+  ul2:
+    :group_name: list
+    :primary_structure: list
+  ul2f:
+    :group_name: list
+    :primary_structure: list
+  ul2l:
+    :group_name: list
+    :primary_structure: list
+  ul2p:
+    :group_name: list
+    :primary_structure: list
+  ul2s:
+    :group_name: list
+    :primary_structure: list
+  ul3:
+    :group_name: list
+    :primary_structure: list
+  ul3f:
+    :group_name: list
+    :primary_structure: list
+  ul3l:
+    :group_name: list
+    :primary_structure: list
+  ul3p:
+    :group_name: list
+    :primary_structure: list
+  ul3s:
+    :group_name: list
+    :primary_structure: list
+  ul4:
+    :group_name: list
+    :primary_structure: list
+  ul4f:
+    :group_name: list
+    :primary_structure: list
+  ul4l:
+    :group_name: list
+    :primary_structure: list
+  ul4p:
+    :group_name: list
+    :primary_structure: list
+  ul4s:
+    :group_name: list
+    :primary_structure: list
+  ul5:
+    :group_name: list
+    :primary_structure: list
+  ul5f:
+    :group_name: list
+    :primary_structure: list
+  ul5l:
+    :group_name: list
+    :primary_structure: list
+  ul5p:
+    :group_name: list
+    :primary_structure: list
+  ul5s:
+    :group_name: list
+    :primary_structure: list
+  ulf:
+    :group_name: list
+    :primary_structure: list
+  ulh:
+    :group_name: list
+    :primary_structure: list
+  ull:
+    :group_name: list
+    :primary_structure: list
+  ulp:
+    :group_name: list
+    :primary_structure: list
+  ulpl:
+    :group_name: list
+    :primary_structure: list
+  uls:
+    :group_name: list
+    :primary_structure: list
+  un:
+    :group_name: units
+    :chapter_start: true
+  us:
+    :group_name: units_other
+  ut:
+    :group_name: units
+    :chapter_start: true
+  video:
+    :group_name: media
+    :primary_structure: media
+  wl:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl1:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl1f:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl1h:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl1h1:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl1l:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl1s:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl2:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl2f:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl2h:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl2h1:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl2l:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl2s:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl3:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl3f:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl3h:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl3h1:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl3l:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wl3s:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wlf:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wlh:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wlh1:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wll:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wls:
+    :group_name: written-language
+    :abbrev: wl
+    :primary_structure: written
+  wsh:
+    :group_name: exercise
+    :abbrev: ex
+    :primary_structure: exercise
+:character_styles:
+  abbr:
+    :group_name: char-styles
+  ac:
+    :group_name: char-styles
+  b:
+    :group_name: char-styles
+  bcv:
+    :group_name: char-styles
+  bi:
+    :group_name: char-styles
+  ccust1:
+    :group_name: char-styles
+  ccust2:
+    :group_name: char-styles
+  ccust3:
+    :group_name: char-styles
+  cemd:
+    :group_name: char-styles
+  chemb:
+    :group_name: char-styles
+  code:
+    :group_name: char-styles
+  code-b:
+    :group_name: char-styles
+  code-bi:
+    :group_name: char-styles
+  code-i:
+    :group_name: char-styles
+  dcrit:
+    :group_name: char-styles
+  dcrit-b:
+    :group_name: char-styles
+  dcrit-bi:
+    :group_name: char-styles
+  dcrit-i:
+    :group_name: char-styles
+  dcrit-ob:
+    :group_name: char-styles
+  dcrit-red:
+    :group_name: char-styles
+  dispk:
+    :group_name: char-styles
+  dispk-i:
+    :group_name: char-styles
+  dropcap:
+    :group_name: char-styles
+  dropcap-i:
+    :group_name: char-styles
+  ennum:
+    :group_name: char-styles
+  enref:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  fighn:
+    :group_name: char-styles
+  first:
+    :group_name: char-styles
+  first-i:
+    :group_name: char-styles
+  fnnum:
+    :group_name: char-styles
+  fnref:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  fol:
+    :group_name: char-styles
+  frac:
+    :group_name: char-styles
+  frac-b:
+    :group_name: char-styles
+  frac-bi:
+    :group_name: char-styles
+  frac-i:
+    :group_name: char-styles
+  grc:
+    :group_name: char-styles
+  grc-b:
+    :group_name: char-styles
+  grc-bi:
+    :group_name: char-styles
+  grc-i:
+    :group_name: char-styles
+  grc-u:
+    :group_name: char-styles
+  gt:
+    :group_name: char-styles
+  gt-i:
+    :group_name: char-styles
+  gt-sm:
+    :group_name: char-styles
+  gtref:
+    :group_name: char-styles
+  heb:
+    :group_name: char-styles
+  heb-b:
+    :group_name: char-styles
+  heb-bi:
+    :group_name: char-styles
+  heb-i:
+    :group_name: char-styles
+  heb-u:
+    :group_name: char-styles
+  hemb:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  gtref-i:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  gtref-sm:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  i:
+    :group_name: char-styles
+  idx:
+    :group_name: char-styles
+  iu:
+    :group_name: char-styles
+  l-chi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-chi-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-chi-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-chi-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-fre:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-fre-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-fre-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-fre-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ger:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ger-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ger-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ger-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ita:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ita-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ita-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-ita-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-jpn:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-jpn-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-jpn-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-jpn-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-kor:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-kor-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-kor-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-kor-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-lat:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-lat-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-lat-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-lat-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-rus:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-rus-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-rus-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-rus-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-spa:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-spa-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-spa-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  l-spa-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  lang:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  lang-b:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  lang-bi:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  lang-i:
+    :scml_attrs:
+    - - lang
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  med:
+    :group_name: char-styles
+  ob:
+    :group_name: char-styles
+  osf:
+    :group_name: char-styles
+  osf-b:
+    :group_name: char-styles
+  osf-bi:
+    :group_name: char-styles
+  osf-i:
+    :group_name: char-styles
+  page:
+    :group_name: char-styles
+  pnum:
+    :group_name: char-styles
+  rc:
+    :group_name: char-styles
+  red:
+    :group_name: char-styles
+  red-b:
+    :group_name: char-styles
+  red-i:
+    :group_name: char-styles
+  red-ob:
+    :group_name: char-styles
+  red-sm:
+    :group_name: char-styles
+  red-sm-i:
+    :group_name: char-styles
+  red-sm-ob:
+    :group_name: char-styles
+  rh-i:
+    :group_name: char-styles
+  rhref:
+    :group_name: char-styles
+  rhref1:
+    :group_name: char-styles
+  sm:
+    :group_name: char-styles
+  sm-b:
+    :group_name: char-styles
+  sm-bi:
+    :group_name: char-styles
+  sm-i:
+    :group_name: char-styles
+  sm-ob:
+    :group_name: char-styles
+  smver:
+    :group_name: char-styles
+  speaker:
+    :group_name: char-styles
+  speaker-i:
+    :group_name: char-styles
+  strk:
+    :group_name: char-styles
+  sub:
+    :group_name: char-styles
+  sub-b:
+    :group_name: char-styles
+  sub-bi:
+    :group_name: char-styles
+  sub-i:
+    :group_name: char-styles
+  sub-u:
+    :group_name: char-styles
+  sup:
+    :group_name: char-styles
+  sup-b:
+    :group_name: char-styles
+  sup-bi:
+    :group_name: char-styles
+  sup-i:
+    :group_name: char-styles
+  sup-u:
+    :group_name: char-styles
+  symb:
+    :group_name: char-styles
+  symb-b:
+    :group_name: char-styles
+  symb-i:
+    :group_name: char-styles
+  symb-sub:
+    :group_name: char-styles
+  symb-sub-b:
+    :group_name: char-styles
+  symb-sub-bi:
+    :group_name: char-styles
+  symb-sub-i:
+    :group_name: char-styles
+  symb-sup:
+    :group_name: char-styles
+  symb-sup-b:
+    :group_name: char-styles
+  symb-sup-bi:
+    :group_name: char-styles
+  symb-sup-i:
+    :group_name: char-styles
+  taxclass:
+    :group_name: char-styles
+  taxfamily:
+    :group_name: char-styles
+  taxgenus:
+    :group_name: char-styles
+  taxkingdom:
+    :group_name: char-styles
+  taxorder:
+    :group_name: char-styles
+  taxphylum:
+    :group_name: char-styles
+  taxspecies:
+    :group_name: char-styles
+  tel:
+    :group_name: char-styles
+  tetr:
+    :group_name: char-styles
+  tetr-b:
+    :group_name: char-styles
+  tetr-i:
+    :group_name: char-styles
+  tetr-ob:
+    :group_name: char-styles
+  tetr-red:
+    :group_name: char-styles
+  tetr-red-i:
+    :group_name: char-styles
+  tetr-red-ob:
+    :group_name: char-styles
+  tgrc:
+    :group_name: char-styles
+  tgrc-b:
+    :group_name: char-styles
+  tgrc-bi:
+    :group_name: char-styles
+  tgrc-i:
+    :group_name: char-styles
+  theb:
+    :group_name: char-styles
+  theb-i:
+    :group_name: char-styles
+  theb-ob:
+    :group_name: char-styles
+  theb-red:
+    :group_name: char-styles
+  thn:
+    :group_name: char-styles
+  tocnum:
+    :group_name: char-styles
+  trh:
+    :group_name: char-styles
+  trh-i:
+    :group_name: char-styles
+  tso:
+    :group_name: char-styles
+  u:
+    :group_name: char-styles
+  url:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  ver:
+    :group_name: char-styles
+  xbk:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  xbr:
+    :scml_attrs:
+    - - t
+      - CDATA
+      - '#IMPLIED'
+    :group_name: char-styles
+  xref:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles
+  xref-i:
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :group_name: char-styles

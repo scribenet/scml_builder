@@ -15,2573 +15,965 @@
 # sub_structures: secondary structures element is associated with (for instance, "sbnl" has a primary structure of "sidebar," but secondary structure of "list")
 
 :roots:
-  - sam
-  - scml
-:super_structures:
-  - division
-  - book
-  - chapter
+  sam:
+  scml:
 :structure_styles:
-  - blockquote:
+  division:
     :for: scml
-    :primary_group:
-  - box:
+  book:
     :for: scml
-    :primary_group:
-  - codeline:
+  chapter:
     :for: scml
-    :primary_group:
-  - cover:
+  blockquote:
     :for: scml
-    :primary_group:
-  - dialogue:
+  box:
     :for: scml
-    :primary_group:
-  - endnote:
+  cell:
+    :for: dtds
+  codeline:
     :for: scml
-    :primary_group:
-  - epigraph:
+  cover:
     :for: scml
-    :primary_group:
-  - equation:
+  dialogue:
     :for: scml
-    :primary_group:
-  - exercise:
+  endnote:
     :for: scml
-    :primary_group:
-  - footnote:
+  epigraph:
     :for: scml
-    :primary_group:
-  - figure:
+  equation:
     :for: scml
-    :primary_group:
-  - glossary:
+  exercise:
     :for: scml
-    :primary_group:
-  - index:
+  footnote:
     :for: scml
-    :primary_group:
-  - letter:
+  figure:
     :for: scml
-    :primary_group:
-  - list:
+  glossary:
     :for: scml
-    :primary_group:
-  - media:
+  index:
     :for: scml
-    :primary_group:
-  - notes:
+  letter:
     :for: scml
-    :primary_group:
-  - pullquote:
+  list:
     :for: scml
-    :primary_group:
-  - question:
+  media:
     :for: scml
-    :primary_group:
-  - recipe:
+  notes:
     :for: scml
-    :primary_group:
-  - references:
+  pullquote:
     :for: scml
-    :primary_group:
-  - senseline:
+  question:
     :for: scml
-    :primary_group:
-  - sidebar:
+  recipe:
     :for: scml
-    :primary_group:
-  - story:
+  references:
     :for: scml
-    :primary_group:
-  - written:
+  senseline:
     :for: scml
-    :primary_group:
+  sidebar:
+    :for: scml
+  story:
+    :for: scml
+  table:
+    :for: dtds
+  tr:
+    :for: dtds
+  written:
+    :for: scml
 :paragraph_styles:
-  - ah:
-    :for:
-    :primary_group:
-  - ahaft:
-    :for:
-    :primary_group:
-  - ans:
-    :for:
-    :primary_group:
-  - ansf:
-    :for:
-    :primary_group:
-  - ard:
-    :for:
-    :primary_group:
-  - au:
-    :for:
-    :primary_group:
-  - au1:
-    :for:
-    :primary_group:
-  - aubio:
-    :for:
-    :primary_group:
-  - aubiof:
-    :for:
-    :primary_group:
-  - audio:
-    :for:
-    :primary_group:
-  - bh:
-    :for:
-    :primary_group:
-  - bhaft:
-    :for:
-    :primary_group:
-  - bk:
-    :for:
-    :primary_group:
-  - bk1:
-    :for:
-    :primary_group:
-  - bk2:
-    :for:
-    :primary_group:
-  - bkau:
-    :for:
-    :primary_group:
-  - bkau1:
-    :for:
-    :primary_group:
-  - bkht:
-    :for:
-    :primary_group:
-  - bkpub:
-    :for:
-    :primary_group:
-  - bkpub1:
-    :for:
-    :primary_group:
-  - bksect:
-    :for:
-    :primary_group:
-  - bl:
-    :for:
-    :primary_group:
-  - bl1:
-    :for:
-    :primary_group:
-  - bl1f:
-    :for:
-    :primary_group:
-  - bl1l:
-    :for:
-    :primary_group:
-  - bl1p:
-    :for:
-    :primary_group:
-  - bl1pl:
-    :for:
-    :primary_group:
-  - bl1s:
-    :for:
-    :primary_group:
-  - blf:
-    :for:
-    :primary_group:
-  - blh:
-    :for:
-    :primary_group:
-  - bll:
-    :for:
-    :primary_group:
-  - blp:
-    :for:
-    :primary_group:
-  - blpl:
-    :for:
-    :primary_group:
-  - bls:
-    :for:
-    :primary_group:
-  - bq:
-    :for:
-    :primary_group:
-  - bq1:
-    :for:
-    :primary_group:
-  - bq1f:
-    :for:
-    :primary_group:
-  - bq1l:
-    :for:
-    :primary_group:
-  - bq1s:
-    :for:
-    :primary_group:
-  - bqaft:
-    :for:
-    :primary_group:
-  - bqf:
-    :for:
-    :primary_group:
-  - bqh:
-    :for:
-    :primary_group:
-  - bql:
-    :for:
-    :primary_group:
-  - bqnl:
-    :for:
-    :primary_group:
-  - bqnlf:
-    :for:
-    :primary_group:
-  - bqnll:
-    :for:
-    :primary_group:
-  - bqnls:
-    :for:
-    :primary_group:
-  - bqo:
-    :for:
-    :primary_group:
-  - bqs:
-    :for:
-    :primary_group:
-  - bqt:
-    :for:
-    :primary_group:
-  - bqul:
-    :for:
-    :primary_group:
-  - bqulf:
-    :for:
-    :primary_group:
-  - bqull:
-    :for:
-    :primary_group:
-  - bquls:
-    :for:
-    :primary_group:
-  - bx:
-    :for:
-    :primary_group:
-  - bx1:
-    :for:
-    :primary_group:
-  - bx1aft:
-    :for:
-    :primary_group:
-  - bx1ah:
-    :for:
-    :primary_group:
-  - bx1bh:
-    :for:
-    :primary_group:
-  - bx1bq:
-    :for:
-    :primary_group:
-  - bx1bqf:
-    :for:
-    :primary_group:
-  - bx1bql:
-    :for:
-    :primary_group:
-  - bx1bqs:
-    :for:
-    :primary_group:
-  - bx1con:
-    :for:
-    :primary_group:
-  - bx1f:
-    :for:
-    :primary_group:
-  - bx1h:
-    :for:
-    :primary_group:
-  - bx1l:
-    :for:
-    :primary_group:
-  - bx1nl:
-    :for:
-    :primary_group:
-  - bx1nlf:
-    :for:
-    :primary_group:
-  - bx1nll:
-    :for:
-    :primary_group:
-  - bx1nlp:
-    :for:
-    :primary_group:
-  - bx1sl:
-    :for:
-    :primary_group:
-  - bx1slf:
-    :for:
-    :primary_group:
-  - bx1sll:
-    :for:
-    :primary_group:
-  - bx1t:
-    :for:
-    :primary_group:
-  - bx1ul:
-    :for:
-    :primary_group:
-  - bx1ulf:
-    :for:
-    :primary_group:
-  - bx1ull:
-    :for:
-    :primary_group:
-  - bx1ulp:
-    :for:
-    :primary_group:
-  - bxaft:
-    :for:
-    :primary_group:
-  - bxah:
-    :for:
-    :primary_group:
-  - bxau:
-    :for:
-    :primary_group:
-  - bxau1:
-    :for:
-    :primary_group:
-  - bxbh:
-    :for:
-    :primary_group:
-  - bxbq:
-    :for:
-    :primary_group:
-  - bxbqf:
-    :for:
-    :primary_group:
-  - bxbql:
-    :for:
-    :primary_group:
-  - bxbqs:
-    :for:
-    :primary_group:
-  - bxcon:
-    :for:
-    :primary_group:
-  - bxf:
-    :for:
-    :primary_group:
-  - bxh:
-    :for:
-    :primary_group:
-  - bxl:
-    :for:
-    :primary_group:
-  - bxnl:
-    :for:
-    :primary_group:
-  - bxnlf:
-    :for:
-    :primary_group:
-  - bxnll:
-    :for:
-    :primary_group:
-  - bxnlp:
-    :for:
-    :primary_group:
-  - bxnls:
-    :for:
-    :primary_group:
-  - bxo:
-    :for:
-    :primary_group:
-  - bxs:
-    :for:
-    :primary_group:
-  - bxsl:
-    :for:
-    :primary_group:
-  - bxslf:
-    :for:
-    :primary_group:
-  - bxsll:
-    :for:
-    :primary_group:
-  - bxt:
-    :for:
-    :primary_group:
-  - bxul:
-    :for:
-    :primary_group:
-  - bxulf:
-    :for:
-    :primary_group:
-  - bxull:
-    :for:
-    :primary_group:
-  - bxulp:
-    :for:
-    :primary_group:
-  - bxuls:
-    :for:
-    :primary_group:
-  - call:
-    :for:
-    :primary_group:
-  - ch:
-    :for:
-    :primary_group:
-  - chaft:
-    :for:
-    :primary_group:
-  - chsect:
-    :for:
-    :primary_group:
-  - chsubsect:
-    :for:
-    :primary_group:
-  - cip:
-    :for:
-    :primary_group:
-  - cip1:
-    :for:
-    :primary_group:
-  - cip2:
-    :for:
-    :primary_group:
-  - cipf:
-    :for:
-    :primary_group:
-  - cipf1:
-    :for:
-    :primary_group:
-  - cipl:
-    :for:
-    :primary_group:
-  - cl:
-    :for:
-    :primary_group:
-  - cl1:
-    :for:
-    :primary_group:
-  - cl1f:
-    :for:
-    :primary_group:
-  - cl1l:
-    :for:
-    :primary_group:
-  - cl1s:
-    :for:
-    :primary_group:
-  - cl2:
-    :for:
-    :primary_group:
-  - cl2f:
-    :for:
-    :primary_group:
-  - cl2l:
-    :for:
-    :primary_group:
-  - cl2s:
-    :for:
-    :primary_group:
-  - cl3:
-    :for:
-    :primary_group:
-  - cl3f:
-    :for:
-    :primary_group:
-  - cl3l:
-    :for:
-    :primary_group:
-  - cl3s:
-    :for:
-    :primary_group:
-  - clf:
-    :for:
-    :primary_group:
-  - cll:
-    :for:
-    :primary_group:
-  - cls:
-    :for:
-    :primary_group:
-  - cn:
-    :for:
-    :primary_group:
-  - com:
-    :for:
-    :primary_group:
-  - crt:
-    :for:
-    :primary_group:
-  - crt1:
-    :for:
-    :primary_group:
-  - crt1f:
-    :for:
-    :primary_group:
-  - crt2:
-    :for:
-    :primary_group:
-  - crt3:
-    :for:
-    :primary_group:
-  - crtf:
-    :for:
-    :primary_group:
-  - cs:
-    :for:
-    :primary_group:
-  - ct:
-    :for:
-    :primary_group:
-  - ctbm:
-    :for:
-    :primary_group:
-  - ctfm:
-    :for:
-    :primary_group:
-  - ctoc:
-    :for:
-    :primary_group:
-  - ctoc1:
-    :for:
-    :primary_group:
-  - ctoch:
-    :for:
-    :primary_group:
-  - ded:
-    :for:
-    :primary_group:
-  - ded1:
-    :for:
-    :primary_group:
-  - ded1f:
-    :for:
-    :primary_group:
-  - dedf:
-    :for:
-    :primary_group:
-  - dh:
-    :for:
-    :primary_group:
-  - dhaft:
-    :for:
-    :primary_group:
-  - dia:
-    :for:
-    :primary_group:
-  - diaf:
-    :for:
-    :primary_group:
-  - dial:
-    :for:
-    :primary_group:
-  - diap:
-    :for:
-    :primary_group:
-  - diapl:
-    :for:
-    :primary_group:
-  - dias:
-    :for:
-    :primary_group:
-  - dl:
-    :for:
-    :primary_group:
-  - dl1:
-    :for:
-    :primary_group:
-  - dt:
-    :for:
-    :primary_group:
-  - dtsub:
-    :for:
-    :primary_group:
-  - eds:
-    :for:
-    :primary_group:
-  - eh:
-    :for:
-    :primary_group:
-  - ehaft:
-    :for:
-    :primary_group:
-  - en:
-    :for:
-    :primary_group:
-  - end:
-    :for:
-    :primary_group:
-  - enhn:
-    :for:
-    :primary_group:
-  - enp:
-    :for:
-    :primary_group:
-  - ep:
-    :for:
-    :primary_group:
-  - ep1:
-    :for:
-    :primary_group:
-  - ep2:
-    :for:
-    :primary_group:
-  - epaft:
-    :for:
-    :primary_group:
-  - epf:
-    :for:
-    :primary_group:
-  - epl:
-    :for:
-    :primary_group:
-  - eps:
-    :for:
-    :primary_group:
-  - epsl:
-    :for:
-    :primary_group:
-  - epsl1:
-    :for:
-    :primary_group:
-  - epslf:
-    :for:
-    :primary_group:
-  - ept:
-    :for:
-    :primary_group:
-  - ept1:
-    :for:
-    :primary_group:
-  - eq:
-    :for:
-    :primary_group:
-  - eqaft:
-    :for:
-    :primary_group:
-  - ex:
-    :for:
-    :primary_group:
-  - exaft:
-    :for:
-    :primary_group:
-  - exah:
-    :for:
-    :primary_group:
-  - exbh:
-    :for:
-    :primary_group:
-  - exf:
-    :for:
-    :primary_group:
-  - exh:
-    :for:
-    :primary_group:
-  - exl:
-    :for:
-    :primary_group:
-  - exnl:
-    :for:
-    :primary_group:
-  - exnl1:
-    :for:
-    :primary_group:
-  - exnl1f:
-    :for:
-    :primary_group:
-  - exnl1l:
-    :for:
-    :primary_group:
-  - exnl1p:
-    :for:
-    :primary_group:
-  - exnl1s:
-    :for:
-    :primary_group:
-  - exnlf:
-    :for:
-    :primary_group:
-  - exnll:
-    :for:
-    :primary_group:
-  - exnlp:
-    :for:
-    :primary_group:
-  - exnls:
-    :for:
-    :primary_group:
-  - exs:
-    :for:
-    :primary_group:
-  - exul:
-    :for:
-    :primary_group:
-  - exul1:
-    :for:
-    :primary_group:
-  - exul1f:
-    :for:
-    :primary_group:
-  - exul1l:
-    :for:
-    :primary_group:
-  - exul1p:
-    :for:
-    :primary_group:
-  - exul1s:
-    :for:
-    :primary_group:
-  - exulf:
-    :for:
-    :primary_group:
-  - exull:
-    :for:
-    :primary_group:
-  - exulp:
-    :for:
-    :primary_group:
-  - exuls:
-    :for:
-    :primary_group:
-  - fig:
-    :for:
-    :primary_group:
-  - figatr:
-    :for:
-    :primary_group:
-  - figcap:
-    :for:
-    :primary_group:
-  - figcap1:
-    :for:
-    :primary_group:
-  - figh:
-    :for:
-    :primary_group:
-  - figh1:
-    :for:
-    :primary_group:
-  - fign:
-    :for:
-    :primary_group:
-  - fn:
-    :for:
-    :primary_group:
-  - fnp:
-    :for:
-    :primary_group:
-  - folio:
-    :for:
-    :primary_group:
-  - fs:
-    :for:
-    :primary_group:
-  - glo:
-    :for:
-    :primary_group:
-  - glof:
-    :for:
-    :primary_group:
-  - hb:
-    :for:
-    :primary_group:
-  - hd:
-    :for:
-    :primary_group:
-  - in:
-    :for:
-    :primary_group:
-  - in1:
-    :for:
-    :primary_group:
-  - in2:
-    :for:
-    :primary_group:
-  - in3:
-    :for:
-    :primary_group:
-  - inf:
-    :for:
-    :primary_group:
-  - inh:
-    :for:
-    :primary_group:
-  - inh1:
-    :for:
-    :primary_group:
-  - inhn:
-    :for:
-    :primary_group:
-  - lo:
-    :for:
-    :primary_group:
-  - lps:
-    :for:
-    :primary_group:
-  - lt:
-    :for:
-    :primary_group:
-  - lta:
-    :for:
-    :primary_group:
-  - ltaf:
-    :for:
-    :primary_group:
-  - ltc:
-    :for:
-    :primary_group:
-  - ltd:
-    :for:
-    :primary_group:
-  - ltdf:
-    :for:
-    :primary_group:
-  - ltf:
-    :for:
-    :primary_group:
-  - ltg:
-    :for:
-    :primary_group:
-  - ltl:
-    :for:
-    :primary_group:
-  - lto:
-    :for:
-    :primary_group:
-  - lts:
-    :for:
-    :primary_group:
-  - ltsig:
-    :for:
-    :primary_group:
-  - ltsigf:
-    :for:
-    :primary_group:
-  - ltsigl:
-    :for:
-    :primary_group:
-  - mediah:
-    :for:
-    :primary_group:
-  - mediacap:
-    :for:
-    :primary_group:
-  - mediaatr:
-    :for:
-    :primary_group:
-  - nl:
-    :for:
-    :primary_group:
-  - nl1:
-    :for:
-    :primary_group:
-  - nl1f:
-    :for:
-    :primary_group:
-  - nl1l:
-    :for:
-    :primary_group:
-  - nl1p:
-    :for:
-    :primary_group:
-  - nl1pl:
-    :for:
-    :primary_group:
-  - nl1s:
-    :for:
-    :primary_group:
-  - nl2:
-    :for:
-    :primary_group:
-  - nl2f:
-    :for:
-    :primary_group:
-  - nl2l:
-    :for:
-    :primary_group:
-  - nl2p:
-    :for:
-    :primary_group:
-  - nl2s:
-    :for:
-    :primary_group:
-  - nl3:
-    :for:
-    :primary_group:
-  - nl3f:
-    :for:
-    :primary_group:
-  - nl3l:
-    :for:
-    :primary_group:
-  - nl3p:
-    :for:
-    :primary_group:
-  - nl3s:
-    :for:
-    :primary_group:
-  - nl4:
-    :for:
-    :primary_group:
-  - nl4f:
-    :for:
-    :primary_group:
-  - nl4l:
-    :for:
-    :primary_group:
-  - nl4p:
-    :for:
-    :primary_group:
-  - nl4s:
-    :for:
-    :primary_group:
-  - nl5:
-    :for:
-    :primary_group:
-  - nl5f:
-    :for:
-    :primary_group:
-  - nl5l:
-    :for:
-    :primary_group:
-  - nl5p:
-    :for:
-    :primary_group:
-  - nl5s:
-    :for:
-    :primary_group:
-  - nlf:
-    :for:
-    :primary_group:
-  - nlh:
-    :for:
-    :primary_group:
-  - nll:
-    :for:
-    :primary_group:
-  - nlp:
-    :for:
-    :primary_group:
-  - nlpl:
-    :for:
-    :primary_group:
-  - nls:
-    :for:
-    :primary_group:
-  - ntbq:
-    :for:
-    :primary_group:
-  - ntbqf:
-    :for:
-    :primary_group:
-  - ntbql:
-    :for:
-    :primary_group:
-  - ntbqs:
-    :for:
-    :primary_group:
-  - ntcon:
-    :for:
-    :primary_group:
-  - nteq:
-    :for:
-    :primary_group:
-  - ntnl:
-    :for:
-    :primary_group:
-  - ntnlf:
-    :for:
-    :primary_group:
-  - ntnll:
-    :for:
-    :primary_group:
-  - ntsl:
-    :for:
-    :primary_group:
-  - ntslf:
-    :for:
-    :primary_group:
-  - ntsll:
-    :for:
-    :primary_group:
-  - nttd:
-    :for:
-    :primary_group:
-  - ntul:
-    :for:
-    :primary_group:
-  - ntulf:
-    :for:
-    :primary_group:
-  - ntull:
-    :for:
-    :primary_group:
-  - opt:
-    :for:
-    :primary_group:
-  - p:
-    :for:
-    :primary_group:
-  - paft:
-    :for:
-    :primary_group:
-  - patr:
-    :for:
-    :primary_group:
-  - patr1:
-    :for:
-    :primary_group:
-  - pcon:
-    :for:
-    :primary_group:
-  - pcust1:
-    :for:
-    :primary_group:
-  - pcust2:
-    :for:
-    :primary_group:
-  - pcust3:
-    :for:
-    :primary_group:
-  - pf:
-    :for:
-    :primary_group:
-  - pn:
-    :for:
-    :primary_group:
-  - ps:
-    :for:
-    :primary_group:
-  - psec:
-    :for:
-    :primary_group:
-  - psec1:
-    :for:
-    :primary_group:
-  - pt:
-    :for:
-    :primary_group:
-  - qu:
-    :for:
-    :primary_group:
-  - quf:
-    :for:
-    :primary_group:
-  - quh:
-    :for:
-    :primary_group:
-  - quot:
-    :for:
-    :primary_group:
-  - quotf:
-    :for:
-    :primary_group:
-  - quotl:
-    :for:
-    :primary_group:
-  - quots:
-    :for:
-    :primary_group:
-  - quott:
-    :for:
-    :primary_group:
-  - rb:
-    :for:
-    :primary_group:
-  - rbc:
-    :for:
-    :primary_group:
-  - rbi:
-    :for:
-    :primary_group:
-  - rf:
-    :for:
-    :primary_group:
-  - rf1:
-    :for:
-    :primary_group:
-  - rf2:
-    :for:
-    :primary_group:
-  - rh:
-    :for:
-    :primary_group:
-  - rhr:
-    :for:
-    :primary_group:
-  - rhv:
-    :for:
-    :primary_group:
-  - rp:
-    :for:
-    :primary_group:
-  - rp1:
-    :for:
-    :primary_group:
-  - rp1f:
-    :for:
-    :primary_group:
-  - rp1l:
-    :for:
-    :primary_group:
-  - rp1y:
-    :for:
-    :primary_group:
-  - rpah:
-    :for:
-    :primary_group:
-  - rpbh:
-    :for:
-    :primary_group:
-  - rpch:
-    :for:
-    :primary_group:
-  - rpf:
-    :for:
-    :primary_group:
-  - rpg:
-    :for:
-    :primary_group:
-  - rpg1:
-    :for:
-    :primary_group:
-  - rph:
-    :for:
-    :primary_group:
-  - rph1:
-    :for:
-    :primary_group:
-  - rphn:
-    :for:
-    :primary_group:
-  - rpil:
-    :for:
-    :primary_group:
-  - rpil1:
-    :for:
-    :primary_group:
-  - rpil1f:
-    :for:
-    :primary_group:
-  - rpil1l:
-    :for:
-    :primary_group:
-  - rpil1s:
-    :for:
-    :primary_group:
-  - rpilf:
-    :for:
-    :primary_group:
-  - rpill:
-    :for:
-    :primary_group:
-  - rpils:
-    :for:
-    :primary_group:
-  - rpl:
-    :for:
-    :primary_group:
-  - rpn:
-    :for:
-    :primary_group:
-  - rpn1:
-    :for:
-    :primary_group:
-  - rpnut:
-    :for:
-    :primary_group:
-  - rpnut1:
-    :for:
-    :primary_group:
-  - rpt:
-    :for:
-    :primary_group:
-  - rpt1:
-    :for:
-    :primary_group:
-  - rpv:
-    :for:
-    :primary_group:
-  - rpv1:
-    :for:
-    :primary_group:
-  - rpv1f:
-    :for:
-    :primary_group:
-  - rpv1h:
-    :for:
-    :primary_group:
-  - rpv1l:
-    :for:
-    :primary_group:
-  - rpvf:
-    :for:
-    :primary_group:
-  - rpvh:
-    :for:
-    :primary_group:
-  - rpvl:
-    :for:
-    :primary_group:
-  - rpy:
-    :for:
-    :primary_group:
-  - rv:
-    :for:
-    :primary_group:
-  - rvd:
-    :for:
-    :primary_group:
-  - rvh:
-    :for:
-    :primary_group:
-  - rvt:
-    :for:
-    :primary_group:
-  - sb:
-    :for:
-    :primary_group:
-  - sb1:
-    :for:
-    :primary_group:
-  - sb1f:
-    :for:
-    :primary_group:
-  - sb1h:
-    :for:
-    :primary_group:
-  - sb1l:
-    :for:
-    :primary_group:
-  - sb1t:
-    :for:
-    :primary_group:
-  - sbaft:
-    :for:
-    :primary_group:
-  - sbah:
-    :for:
-    :primary_group:
-  - sbahaft:
-    :for:
-    :primary_group:
-  - sbbh:
-    :for:
-    :primary_group:
-  - sbbhaft:
-    :for:
-    :primary_group:
-  - sbbq:
-    :for:
-    :primary_group:
-  - sbbqaft:
-    :for:
-    :primary_group:
-  - sbbqf:
-    :for:
-    :primary_group:
-  - sbbql:
-    :for:
-    :primary_group:
-  - sbbqs:
-    :for:
-    :primary_group:
-  - sbcon:
-    :for:
-    :primary_group:
-  - sbf:
-    :for:
-    :primary_group:
-  - sbh:
-    :for:
-    :primary_group:
-  - sbl:
-    :for:
-    :primary_group:
-  - sbnl:
-    :for:
-    :primary_group:
-  - sbnl1:
-    :for:
-    :primary_group:
-  - sbnl1f:
-    :for:
-    :primary_group:
-  - sbnl1l:
-    :for:
-    :primary_group:
-  - sbnl1p:
-    :for:
-    :primary_group:
-  - sbnl1s:
-    :for:
-    :primary_group:
-  - sbnl2:
-    :for:
-    :primary_group:
-  - sbnl2f:
-    :for:
-    :primary_group:
-  - sbnl2l:
-    :for:
-    :primary_group:
-  - sbnl2p:
-    :for:
-    :primary_group:
-  - sbnl2s:
-    :for:
-    :primary_group:
-  - sbnl3:
-    :for:
-    :primary_group:
-  - sbnl3f:
-    :for:
-    :primary_group:
-  - sbnl3l:
-    :for:
-    :primary_group:
-  - sbnl4:
-    :for:
-    :primary_group:
-  - sbnl4f:
-    :for:
-    :primary_group:
-  - sbnl4l:
-    :for:
-    :primary_group:
-  - sbnl5:
-    :for:
-    :primary_group:
-  - sbnl5f:
-    :for:
-    :primary_group:
-  - sbnl5l:
-    :for:
-    :primary_group:
-  - sbnlf:
-    :for:
-    :primary_group:
-  - sbnll:
-    :for:
-    :primary_group:
-  - sbnlp:
-    :for:
-    :primary_group:
-  - sbnls:
-    :for:
-    :primary_group:
-  - sbo:
-    :for:
-    :primary_group:
-  - sbs:
-    :for:
-    :primary_group:
-  - sbsl:
-    :for:
-    :primary_group:
-  - sbsl1:
-    :for:
-    :primary_group:
-  - sbsl1f:
-    :for:
-    :primary_group:
-  - sbsl1l:
-    :for:
-    :primary_group:
-  - sbsl1s:
-    :for:
-    :primary_group:
-  - sbsl2:
-    :for:
-    :primary_group:
-  - sbsl2f:
-    :for:
-    :primary_group:
-  - sbsl2l:
-    :for:
-    :primary_group:
-  - sbsl2s:
-    :for:
-    :primary_group:
-  - sbsl3:
-    :for:
-    :primary_group:
-  - sbsl3f:
-    :for:
-    :primary_group:
-  - sbsl3l:
-    :for:
-    :primary_group:
-  - sbsl3s:
-    :for:
-    :primary_group:
-  - sbslf:
-    :for:
-    :primary_group:
-  - sbsli:
-    :for:
-    :primary_group:
-  - sbslif:
-    :for:
-    :primary_group:
-  - sbslil:
-    :for:
-    :primary_group:
-  - sbsll:
-    :for:
-    :primary_group:
-  - sbsls:
-    :for:
-    :primary_group:
-  - sbslt:
-    :for:
-    :primary_group:
-  - sbt:
-    :for:
-    :primary_group:
-  - sbul:
-    :for:
-    :primary_group:
-  - sbul1:
-    :for:
-    :primary_group:
-  - sbul1f:
-    :for:
-    :primary_group:
-  - sbul1l:
-    :for:
-    :primary_group:
-  - sbul1p:
-    :for:
-    :primary_group:
-  - sbul1s:
-    :for:
-    :primary_group:
-  - sbul2:
-    :for:
-    :primary_group:
-  - sbul2f:
-    :for:
-    :primary_group:
-  - sbul2l:
-    :for:
-    :primary_group:
-  - sbul2p:
-    :for:
-    :primary_group:
-  - sbul2s:
-    :for:
-    :primary_group:
-  - sbulf:
-    :for:
-    :primary_group:
-  - sbull:
-    :for:
-    :primary_group:
-  - sbulp:
-    :for:
-    :primary_group:
-  - sbuls:
-    :for:
-    :primary_group:
-  - sec:
-    :for:
-    :primary_group:
-  - secbot:
-    :for:
-    :primary_group:
-  - sectop:
-    :for:
-    :primary_group:
-  - ser:
-    :for:
-    :primary_group:
-  - ser1:
-    :for:
-    :primary_group:
-  - ser2:
-    :for:
-    :primary_group:
-  - seraft:
-    :for:
-    :primary_group:
-  - serah:
-    :for:
-    :primary_group:
-  - serahaft:
-    :for:
-    :primary_group:
-  - serau:
-    :for:
-    :primary_group:
-  - serbh:
-    :for:
-    :primary_group:
-  - serf:
-    :for:
-    :primary_group:
-  - serp:
-    :for:
-    :primary_group:
-  - serpf:
-    :for:
-    :primary_group:
-  - sers:
-    :for:
-    :primary_group:
-  - sert:
-    :for:
-    :primary_group:
-  - sh:
-    :for:
-    :primary_group:
-  - sl:
-    :for:
-    :primary_group:
-  - sl1:
-    :for:
-    :primary_group:
-  - sl1f:
-    :for:
-    :primary_group:
-  - sl1l:
-    :for:
-    :primary_group:
-  - sl2:
-    :for:
-    :primary_group:
-  - sl2f:
-    :for:
-    :primary_group:
-  - sl2l:
-    :for:
-    :primary_group:
-  - sl3:
-    :for:
-    :primary_group:
-  - sl3f:
-    :for:
-    :primary_group:
-  - sl3l:
-    :for:
-    :primary_group:
-  - sl4:
-    :for:
-    :primary_group:
-  - sl4f:
-    :for:
-    :primary_group:
-  - sl4l:
-    :for:
-    :primary_group:
-  - sl5:
-    :for:
-    :primary_group:
-  - sl5f:
-    :for:
-    :primary_group:
-  - sl5l:
-    :for:
-    :primary_group:
-  - sl6:
-    :for:
-    :primary_group:
-  - sl6f:
-    :for:
-    :primary_group:
-  - sl6l:
-    :for:
-    :primary_group:
-  - sl7:
-    :for:
-    :primary_group:
-  - sl7f:
-    :for:
-    :primary_group:
-  - sl7l:
-    :for:
-    :primary_group:
-  - sl8:
-    :for:
-    :primary_group:
-  - sl8f:
-    :for:
-    :primary_group:
-  - sl8l:
-    :for:
-    :primary_group:
-  - sl9:
-    :for:
-    :primary_group:
-  - sl9f:
-    :for:
-    :primary_group:
-  - sl9l:
-    :for:
-    :primary_group:
-  - slf:
-    :for:
-    :primary_group:
-  - slh:
-    :for:
-    :primary_group:
-  - sli:
-    :for:
-    :primary_group:
-  - slif:
-    :for:
-    :primary_group:
-  - slil:
-    :for:
-    :primary_group:
-  - sll:
-    :for:
-    :primary_group:
-  - sls:
-    :for:
-    :primary_group:
-  - slt:
-    :for:
-    :primary_group:
-  - st:
-    :for:
-    :primary_group:
-  - stf:
-    :for:
-    :primary_group:
-  - sth:
-    :for:
-    :primary_group:
-  - sth1:
-    :for:
-    :primary_group:
-  - sth2:
-    :for:
-    :primary_group:
-  - stl:
-    :for:
-    :primary_group:
-  - structure:
-    :for: sam
-    :primary_group:
-  - sts:
-    :for:
-    :primary_group:
-  - tatr:
-    :for:
-    :primary_group:
-  - tch:
-    :for:
-    :primary_group:
-  - tch1:
-    :for:
-    :primary_group:
-  - tch2:
-    :for:
-    :primary_group:
-  - td:
-    :for:
-    :primary_group:
-  - tdf:
-    :for:
-    :primary_group:
-  - tdl:
-    :for:
-    :primary_group:
-  - tdnl:
-    :for:
-    :primary_group:
-  - tdp:
-    :for:
-    :primary_group:
-  - tdul:
-    :for:
-    :primary_group:
-  - th:
-    :for:
-    :primary_group:
-  - th1:
-    :for:
-    :primary_group:
-  - th2:
-    :for:
-    :primary_group:
-  - tn:
-    :for:
-    :primary_group:
-  - toc:
-    :for:
-    :primary_group:
-  - toc1:
-    :for:
-    :primary_group:
-  - toc2:
-    :for:
-    :primary_group:
-  - toc3:
-    :for:
-    :primary_group:
-  - toc4:
-    :for:
-    :primary_group:
-  - toc5:
-    :for:
-    :primary_group:
-  - tocau:
-    :for:
-    :primary_group:
-  - tocbm:
-    :for:
-    :primary_group:
-  - tocbmf:
-    :for:
-    :primary_group:
-  - tocf:
-    :for:
-    :primary_group:
-  - tocfm:
-    :for:
-    :primary_group:
-  - tocfmf:
-    :for:
-    :primary_group:
-  - tocpt:
-    :for:
-    :primary_group:
-  - tocut:
-    :for:
-    :primary_group:
-  - tsecbot:
-    :for:
-    :primary_group:
-  - tsectop:
-    :for:
-    :primary_group:
-  - ul:
-    :for:
-    :primary_group:
-  - ul1:
-    :for:
-    :primary_group:
-  - ul1f:
-    :for:
-    :primary_group:
-  - ul1l:
-    :for:
-    :primary_group:
-  - ul1p:
-    :for:
-    :primary_group:
-  - ul1pl:
-    :for:
-    :primary_group:
-  - ul1s:
-    :for:
-    :primary_group:
-  - ul2:
-    :for:
-    :primary_group:
-  - ul2f:
-    :for:
-    :primary_group:
-  - ul2l:
-    :for:
-    :primary_group:
-  - ul2p:
-    :for:
-    :primary_group:
-  - ul2s:
-    :for:
-    :primary_group:
-  - ul3:
-    :for:
-    :primary_group:
-  - ul3f:
-    :for:
-    :primary_group:
-  - ul3l:
-    :for:
-    :primary_group:
-  - ul3p:
-    :for:
-    :primary_group:
-  - ul3s:
-    :for:
-    :primary_group:
-  - ul4:
-    :for:
-    :primary_group:
-  - ul4f:
-    :for:
-    :primary_group:
-  - ul4l:
-    :for:
-    :primary_group:
-  - ul4p:
-    :for:
-    :primary_group:
-  - ul4s:
-    :for:
-    :primary_group:
-  - ul5:
-    :for:
-    :primary_group:
-  - ul5f:
-    :for:
-    :primary_group:
-  - ul5l:
-    :for:
-    :primary_group:
-  - ul5p:
-    :for:
-    :primary_group:
-  - ul5s:
-    :for:
-    :primary_group:
-  - ulf:
-    :for:
-    :primary_group:
-  - ulh:
-    :for:
-    :primary_group:
-  - ull:
-    :for:
-    :primary_group:
-  - ulp:
-    :for:
-    :primary_group:
-  - ulpl:
-    :for:
-    :primary_group:
-  - uls:
-    :for:
-    :primary_group:
-  - un:
-    :for:
-    :primary_group:
-  - us:
-    :for:
-    :primary_group:
-  - ut:
-    :for:
-    :primary_group:
-  - video:
-    :for:
-    :primary_group:
-  - wl:
-    :for:
-    :primary_group:
-  - wl1:
-    :for:
-    :primary_group:
-  - wl1f:
-    :for:
-    :primary_group:
-  - wl1h:
-    :for:
-    :primary_group:
-  - wl1h1:
-    :for:
-    :primary_group:
-  - wl1l:
-    :for:
-    :primary_group:
-  - wl1s:
-    :for:
-    :primary_group:
-  - wl2:
-    :for:
-    :primary_group:
-  - wl2f:
-    :for:
-    :primary_group:
-  - wl2h:
-    :for:
-    :primary_group:
-  - wl2h1:
-    :for:
-    :primary_group:
-  - wl2l:
-    :for:
-    :primary_group:
-  - wl2s:
-    :for:
-    :primary_group:
-  - wl3:
-    :for:
-    :primary_group:
-  - wl3f:
-    :for:
-    :primary_group:
-  - wl3h:
-    :for:
-    :primary_group:
-  - wl3h1:
-    :for:
-    :primary_group:
-  - wl3l:
-    :for:
-    :primary_group:
-  - wl3s:
-    :for:
-    :primary_group:
-  - wlf:
-    :for:
-    :primary_group:
-  - wlh:
-    :for:
-    :primary_group:
-  - wlh1:
-    :for:
-    :primary_group:
-  - wll:
-    :for:
-    :primary_group:
-  - wls:
-    :for:
-    :primary_group:
-  - wsh:
-    :for:
-    :primary_group:
+  ah:
+  ahaft:
+  ans:
+  ansf:
+  ard:
+  au:
+  au1:
+  aubio:
+  aubiof:
+  audio:
+  bh:
+  bhaft:
+  bk:
+  bk1:
+  bk2:
+  bkau:
+  bkau1:
+  bkht:
+  bkpub:
+  bkpub1:
+  bksect:
+  bl:
+  bl1:
+  bl1f:
+  bl1l:
+  bl1p:
+  bl1pl:
+  bl1s:
+  blf:
+  blh:
+  bll:
+  blp:
+  blpl:
+  bls:
+  bq:
+  bq1:
+  bq1f:
+  bq1l:
+  bq1s:
+  bqaft:
+  bqf:
+  bqh:
+  bql:
+  bqnl:
+  bqnlf:
+  bqnll:
+  bqnls:
+  bqo:
+  bqs:
+  bqt:
+  bqul:
+  bqulf:
+  bqull:
+  bquls:
+  bx:
+  bx1:
+  bx1aft:
+  bx1ah:
+  bx1bh:
+  bx1bq:
+  bx1bqf:
+  bx1bql:
+  bx1bqs:
+  bx1con:
+  bx1f:
+  bx1h:
+  bx1l:
+  bx1nl:
+  bx1nlf:
+  bx1nll:
+  bx1nlp:
+  bx1sl:
+  bx1slf:
+  bx1sll:
+  bx1t:
+  bx1ul:
+  bx1ulf:
+  bx1ull:
+  bx1ulp:
+  bxaft:
+  bxah:
+  bxau:
+  bxau1:
+  bxbh:
+  bxbq:
+  bxbqf:
+  bxbql:
+  bxbqs:
+  bxcon:
+  bxf:
+  bxh:
+  bxl:
+  bxnl:
+  bxnlf:
+  bxnll:
+  bxnlp:
+  bxnls:
+  bxo:
+  bxs:
+  bxsl:
+  bxslf:
+  bxsll:
+  bxt:
+  bxul:
+  bxulf:
+  bxull:
+  bxulp:
+  bxuls:
+  call:
+  ch:
+  chaft:
+  chsect:
+  chsubsect:
+  cip:
+  cip1:
+  cip2:
+  cipf:
+  cipf1:
+  cipl:
+  cl:
+  cl1:
+  cl1f:
+  cl1l:
+  cl1s:
+  cl2:
+  cl2f:
+  cl2l:
+  cl2s:
+  cl3:
+  cl3f:
+  cl3l:
+  cl3s:
+  clf:
+  cll:
+  cls:
+  cn:
+  com:
+  crt:
+  crt1:
+  crt1f:
+  crt2:
+  crt3:
+  crtf:
+  cs:
+  ct:
+  ctbm:
+  ctfm:
+  ctoc:
+  ctoc1:
+  ctoch:
+  ded:
+  ded1:
+  ded1f:
+  dedf:
+  dh:
+  dhaft:
+  dia:
+  diaf:
+  dial:
+  diap:
+  diapl:
+  dias:
+  dl:
+  dl1:
+  dt:
+  dtsub:
+  eds:
+  eh:
+  ehaft:
+  en:
+  end:
+  enhn:
+  enp:
+  ep:
+  ep1:
+  ep2:
+  epaft:
+  epf:
+  epl:
+  eps:
+  epsl:
+  epsl1:
+  epslf:
+  ept:
+  ept1:
+  eq:
+  eqaft:
+  ex:
+  exaft:
+  exah:
+  exbh:
+  exf:
+  exh:
+  exl:
+  exnl:
+  exnl1:
+  exnl1f:
+  exnl1l:
+  exnl1p:
+  exnl1s:
+  exnlf:
+  exnll:
+  exnlp:
+  exnls:
+  exs:
+  exul:
+  exul1:
+  exul1f:
+  exul1l:
+  exul1p:
+  exul1s:
+  exulf:
+  exull:
+  exulp:
+  exuls:
+  fig:
+  figatr:
+  figcap:
+  figcap1:
+  figh:
+  figh1:
+  fign:
+  fn:
+  fnp:
+  folio:
+  fs:
+  glo:
+  glof:
+  hb:
+  hd:
+  in:
+  in1:
+  in2:
+  in3:
+  inf:
+  inh:
+  inh1:
+  inhn:
+  lo:
+  lps:
+  lt:
+  lta:
+  ltaf:
+  ltc:
+  ltd:
+  ltdf:
+  ltf:
+  ltg:
+  ltl:
+  lto:
+  lts:
+  ltsig:
+  ltsigf:
+  ltsigl:
+  mediah:
+  mediacap:
+  mediaatr:
+  nl:
+  nl1:
+  nl1f:
+  nl1l:
+  nl1p:
+  nl1pl:
+  nl1s:
+  nl2:
+  nl2f:
+  nl2l:
+  nl2p:
+  nl2s:
+  nl3:
+  nl3f:
+  nl3l:
+  nl3p:
+  nl3s:
+  nl4:
+  nl4f:
+  nl4l:
+  nl4p:
+  nl4s:
+  nl5:
+  nl5f:
+  nl5l:
+  nl5p:
+  nl5s:
+  nlf:
+  nlh:
+  nll:
+  nlp:
+  nlpl:
+  nls:
+  ntbq:
+  ntbqf:
+  ntbql:
+  ntbqs:
+  ntcon:
+  nteq:
+  ntnl:
+  ntnlf:
+  ntnll:
+  ntsl:
+  ntslf:
+  ntsll:
+  nttd:
+  ntul:
+  ntulf:
+  ntull:
+  opt:
+  p:
+  paft:
+  patr:
+  patr1:
+  pcon:
+  pcust1:
+  pcust2:
+  pcust3:
+  pf:
+  pn:
+  ps:
+  psec:
+  psec1:
+  pt:
+  qu:
+  quf:
+  quh:
+  quot:
+  quotf:
+  quotl:
+  quots:
+  quott:
+  rb:
+  rbc:
+  rbi:
+  rf:
+  rf1:
+  rf2:
+  rh:
+  rhr:
+  rhv:
+  rp:
+  rp1:
+  rp1f:
+  rp1l:
+  rp1y:
+  rpah:
+  rpbh:
+  rpch:
+  rpf:
+  rpg:
+  rpg1:
+  rph:
+  rph1:
+  rphn:
+  rpil:
+  rpil1:
+  rpil1f:
+  rpil1l:
+  rpil1s:
+  rpilf:
+  rpill:
+  rpils:
+  rpl:
+  rpn:
+  rpn1:
+  rpnut:
+  rpnut1:
+  rpt:
+  rpt1:
+  rpv:
+  rpv1:
+  rpv1f:
+  rpv1h:
+  rpv1l:
+  rpvf:
+  rpvh:
+  rpvl:
+  rpy:
+  rv:
+  rvd:
+  rvh:
+  rvt:
+  sb:
+  sb1:
+  sb1f:
+  sb1h:
+  sb1l:
+  sb1t:
+  sbaft:
+  sbah:
+  sbahaft:
+  sbbh:
+  sbbhaft:
+  sbbq:
+  sbbqaft:
+  sbbqf:
+  sbbql:
+  sbbqs:
+  sbcon:
+  sbf:
+  sbh:
+  sbl:
+  sbnl:
+  sbnl1:
+  sbnl1f:
+  sbnl1l:
+  sbnl1p:
+  sbnl1s:
+  sbnl2:
+  sbnl2f:
+  sbnl2l:
+  sbnl2p:
+  sbnl2s:
+  sbnl3:
+  sbnl3f:
+  sbnl3l:
+  sbnl4:
+  sbnl4f:
+  sbnl4l:
+  sbnl5:
+  sbnl5f:
+  sbnl5l:
+  sbnlf:
+  sbnll:
+  sbnlp:
+  sbnls:
+  sbo:
+  sbs:
+  sbsl:
+  sbsl1:
+  sbsl1f:
+  sbsl1l:
+  sbsl1s:
+  sbsl2:
+  sbsl2f:
+  sbsl2l:
+  sbsl2s:
+  sbsl3:
+  sbsl3f:
+  sbsl3l:
+  sbsl3s:
+  sbslf:
+  sbsli:
+  sbslif:
+  sbslil:
+  sbsll:
+  sbsls:
+  sbslt:
+  sbt:
+  sbul:
+  sbul1:
+  sbul1f:
+  sbul1l:
+  sbul1p:
+  sbul1s:
+  sbul2:
+  sbul2f:
+  sbul2l:
+  sbul2p:
+  sbul2s:
+  sbulf:
+  sbull:
+  sbulp:
+  sbuls:
+  sec:
+  secbot:
+  sectop:
+  ser:
+  ser1:
+  ser2:
+  seraft:
+  serah:
+  serahaft:
+  serau:
+  serbh:
+  serf:
+  serp:
+  serpf:
+  sers:
+  sert:
+  sh:
+  sl:
+  sl1:
+  sl1f:
+  sl1l:
+  sl2:
+  sl2f:
+  sl2l:
+  sl3:
+  sl3f:
+  sl3l:
+  sl4:
+  sl4f:
+  sl4l:
+  sl5:
+  sl5f:
+  sl5l:
+  sl6:
+  sl6f:
+  sl6l:
+  sl7:
+  sl7f:
+  sl7l:
+  sl8:
+  sl8f:
+  sl8l:
+  sl9:
+  sl9f:
+  sl9l:
+  slf:
+  slh:
+  sli:
+  slif:
+  slil:
+  sll:
+  sls:
+  slt:
+  st:
+  stf:
+  sth:
+  sth1:
+  sth2:
+  stl:
+  structure:
+  sts:
+  tatr:
+  tch:
+  tch1:
+  tch2:
+  td:
+  tdf:
+  tdl:
+  tdnl:
+  tdp:
+  tdul:
+  th:
+  th1:
+  th2:
+  tn:
+  toc:
+  toc1:
+  toc2:
+  toc3:
+  toc4:
+  toc5:
+  tocau:
+  tocbm:
+  tocbmf:
+  tocf:
+  tocfm:
+  tocfmf:
+  tocpt:
+  tocut:
+  tsecbot:
+  tsectop:
+  ul:
+  ul1:
+  ul1f:
+  ul1l:
+  ul1p:
+  ul1pl:
+  ul1s:
+  ul2:
+  ul2f:
+  ul2l:
+  ul2p:
+  ul2s:
+  ul3:
+  ul3f:
+  ul3l:
+  ul3p:
+  ul3s:
+  ul4:
+  ul4f:
+  ul4l:
+  ul4p:
+  ul4s:
+  ul5:
+  ul5f:
+  ul5l:
+  ul5p:
+  ul5s:
+  ulf:
+  ulh:
+  ull:
+  ulp:
+  ulpl:
+  uls:
+  un:
+  us:
+  ut:
+  video:
+  wl:
+  wl1:
+  wl1f:
+  wl1h:
+  wl1h1:
+  wl1l:
+  wl1s:
+  wl2:
+  wl2f:
+  wl2h:
+  wl2h1:
+  wl2l:
+  wl2s:
+  wl3:
+  wl3f:
+  wl3h:
+  wl3h1:
+  wl3l:
+  wl3s:
+  wlf:
+  wlh:
+  wlh1:
+  wll:
+  wls:
+  wsh:
 :character_styles:
-  - abbr:
-    :for:
-    :primary_group:
-  - ac:
-    :for:
-    :primary_group:
-  - b:
-    :for:
-    :primary_group:
-  - bcv:
-    :for:
-    :primary_group:
-  - bi:
-    :for:
-    :primary_group:
-  - ccust1:
-    :for:
-    :primary_group:
-  - ccust2:
-    :for:
-    :primary_group:
-  - ccust3:
-    :for:
-    :primary_group:
-  - cemd:
-    :for:
-    :primary_group:
-  - chemb:
-    :for:
-    :primary_group:
-  - code:
-    :for:
-    :primary_group:
-  - code-b:
-    :for:
-    :primary_group:
-  - code-bi:
-    :for:
-    :primary_group:
-  - code-i:
-    :for:
-    :primary_group:
-  - dcrit:
-    :for:
-    :primary_group:
-  - dcrit-b:
-    :for:
-    :primary_group:
-  - dcrit-bi:
-    :for:
-    :primary_group:
-  - dcrit-i:
-    :for:
-    :primary_group:
-  - dcrit-ob:
-    :for:
-    :primary_group:
-  - dcrit-red:
-    :for:
-    :primary_group:
-  - dispk:
-    :for:
-    :primary_group:
-  - dispk-i:
-    :for:
-    :primary_group:
-  - dropcap:
-    :for:
-    :primary_group:
-  - dropcap-i:
-    :for:
-    :primary_group:
-  - ennum:
-    :for:
-    :primary_group:
-  - enref:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - fighn:
-    :for:
-    :primary_group:
-  - first:
-    :for:
-    :primary_group:
-  - first-i:
-    :for:
-    :primary_group:
-  - fnnum:
-    :for:
-    :primary_group:
-  - fnref:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - fol:
-    :for:
-    :primary_group:
-  - frac:
-    :for:
-    :primary_group:
-  - frac-b:
-    :for:
-    :primary_group:
-  - frac-bi:
-    :for:
-    :primary_group:
-  - frac-i:
-    :for:
-    :primary_group:
-  - grc:
-    :for:
-    :primary_group:
-  - grc-b:
-    :for:
-    :primary_group:
-  - grc-bi:
-    :for:
-    :primary_group:
-  - grc-i:
-    :for:
-    :primary_group:
-  - grc-u:
-    :for:
-    :primary_group:
-  - gt:
-    :for:
-    :primary_group:
-  - gt-i:
-    :for:
-    :primary_group:
-  - gt-sm:
-    :for:
-    :primary_group:
-  - gtref:
-    :for:
-    :primary_group:
-  - heb:
-    :for:
-    :primary_group:
-  - heb-b:
-    :for:
-    :primary_group:
-  - heb-bi:
-    :for:
-    :primary_group:
-  - heb-i:
-    :for:
-    :primary_group:
-  - heb-u:
-    :for:
-    :primary_group:
-  - hemb:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - gtref-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - gtref-sm:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - i:
-    :for:
-    :primary_group:
-  - idx:
-    :for:
-    :primary_group:
-  - iu:
-    :for:
-    :primary_group:
-  - l-chi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-chi-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-chi-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-chi-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-fre:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-fre-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-fre-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-fre-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ger:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ger-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ger-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ger-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ita:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ita-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ita-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-ita-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-jpn:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-jpn-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-jpn-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-jpn-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-kor:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-kor-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-kor-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-kor-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-lat:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-lat-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-lat-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-lat-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-rus:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-rus-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-rus-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-rus-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-spa:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-spa-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-spa-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - l-spa-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - lang:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - lang-b:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - lang-bi:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - lang-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [lang, CDATA, '#IMPLIED']
-  - med:
-    :for:
-    :primary_group:
-  - ob:
-    :for:
-    :primary_group:
-  - osf:
-    :for:
-    :primary_group:
-  - osf-b:
-    :for:
-    :primary_group:
-  - osf-bi:
-    :for:
-    :primary_group:
-  - osf-i:
-    :for:
-    :primary_group:
-  - page:
-    :for:
-    :primary_group:
-    :for: sam
-  - pnum:
-    :for:
-    :primary_group:
-  - rc:
-    :for:
-    :primary_group:
-  - red:
-    :for:
-    :primary_group:
-  - red-b:
-    :for:
-    :primary_group:
-  - red-i:
-    :for:
-    :primary_group:
-  - red-ob:
-    :for:
-    :primary_group:
-  - red-sm:
-    :for:
-    :primary_group:
-  - red-sm-i:
-    :for:
-    :primary_group:
-  - red-sm-ob:
-    :for:
-    :primary_group:
-  - rh-i:
-    :for:
-    :primary_group:
-  - rhref:
-    :for:
-    :primary_group:
-  - rhref1:
-    :for:
-    :primary_group:
-  - sm:
-    :for:
-    :primary_group:
-  - sm-b:
-    :for:
-    :primary_group:
-  - sm-bi:
-    :for:
-    :primary_group:
-  - sm-i:
-    :for:
-    :primary_group:
-  - sm-ob:
-    :for:
-    :primary_group:
-  - smver:
-    :for:
-    :primary_group:
-  - speaker:
-    :for:
-    :primary_group:
-  - speaker-i:
-    :for:
-    :primary_group:
-  - strk:
-    :for:
-    :primary_group:
-  - sub:
-    :for:
-    :primary_group:
-  - sub-b:
-    :for:
-    :primary_group:
-  - sub-bi:
-    :for:
-    :primary_group:
-  - sub-i:
-    :for:
-    :primary_group:
-  - sub-u:
-    :for:
-    :primary_group:
-  - sup:
-    :for:
-    :primary_group:
-  - sup-b:
-    :for:
-    :primary_group:
-  - sup-bi:
-    :for:
-    :primary_group:
-  - sup-i:
-    :for:
-    :primary_group:
-  - sup-u:
-    :for:
-    :primary_group:
-  - symb:
-    :for:
-    :primary_group:
-  - symb-b:
-    :for:
-    :primary_group:
-  - symb-i:
-    :for:
-    :primary_group:
-  - symb-sub:
-    :for:
-    :primary_group:
-  - symb-sub-b:
-    :for:
-    :primary_group:
-  - symb-sub-bi:
-    :for:
-    :primary_group:
-  - symb-sub-i:
-    :for:
-    :primary_group:
-  - symb-sup:
-    :for:
-    :primary_group:
-  - symb-sup-b:
-    :for:
-    :primary_group:
-  - symb-sup-bi:
-    :for:
-    :primary_group:
-  - symb-sup-i:
-    :for:
-    :primary_group:
-  - taxclass:
-    :for:
-    :primary_group:
-  - taxfamily:
-    :for:
-    :primary_group:
-  - taxgenus:
-    :for:
-    :primary_group:
-  - taxkingdom:
-    :for:
-    :primary_group:
-  - taxorder:
-    :for:
-    :primary_group:
-  - taxphylum:
-    :for:
-    :primary_group:
-  - taxspecies:
-    :for:
-    :primary_group:
-  - tel:
-    :for:
-    :primary_group:
-  - tetr:
-    :for:
-    :primary_group:
-  - tetr-b:
-    :for:
-    :primary_group:
-  - tetr-i:
-    :for:
-    :primary_group:
-  - tetr-ob:
-    :for:
-    :primary_group:
-  - tetr-red:
-    :for:
-    :primary_group:
-  - tetr-red-i:
-    :for:
-    :primary_group:
-  - tetr-red-ob:
-    :for:
-    :primary_group:
-  - tgrc:
-    :for:
-    :primary_group:
-  - tgrc-b:
-    :for:
-    :primary_group:
-  - tgrc-bi:
-    :for:
-    :primary_group:
-  - tgrc-i:
-    :for:
-    :primary_group:
-  - theb:
-    :for:
-    :primary_group:
-  - theb-i:
-    :for:
-    :primary_group:
-  - theb-ob:
-    :for:
-    :primary_group:
-  - theb-red:
-    :for:
-    :primary_group:
-  - thn:
-    :for:
-    :primary_group:
-  - tocnum:
-    :for:
-    :primary_group:
-  - trh:
-    :for:
-    :primary_group:
-  - trh-i:
-    :for:
-    :primary_group:
-  - tso:
-    :for:
-    :primary_group:
-  - u:
-    :for:
-    :primary_group:
-  - url:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - ver:
-    :for:
-    :primary_group:
-  - xbk:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - xbr:
-    :for:
-    :primary_group:
-    :attrs:
-      - [t, CDATA, '#IMPLIED'] 
-  - xref:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
-  - xref-i:
-    :for:
-    :primary_group:
-    :attrs:
-      - [idref, IDREF, '#IMPLIED'] 
+  abbr:
+  ac:
+  b:
+  bcv:
+  bi:
+  ccust1:
+  ccust2:
+  ccust3:
+  cemd:
+  chemb:
+  code:
+  code-b:
+  code-bi:
+  code-i:
+  dcrit:
+  dcrit-b:
+  dcrit-bi:
+  dcrit-i:
+  dcrit-ob:
+  dcrit-red:
+  dispk:
+  dispk-i:
+  dropcap:
+  dropcap-i:
+  ennum:
+  enref:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  fighn:
+  first:
+  first-i:
+  fnnum:
+  fnref:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  fol:
+  frac:
+  frac-b:
+  frac-bi:
+  frac-i:
+  grc:
+  grc-b:
+  grc-bi:
+  grc-i:
+  grc-u:
+  gt:
+  gt-i:
+  gt-sm:
+  gtref:
+  heb:
+  heb-b:
+  heb-bi:
+  heb-i:
+  heb-u:
+  hemb:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  gtref-i:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  gtref-sm:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  i:
+  idx:
+  iu:
+  l-chi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-chi-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-chi-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-chi-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-fre:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-fre-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-fre-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-fre-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ger:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ger-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ger-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ger-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ita:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ita-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ita-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-ita-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-jpn:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-jpn-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-jpn-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-jpn-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-kor:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-kor-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-kor-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-kor-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-lat:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-lat-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-lat-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-lat-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-rus:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-rus-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-rus-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-rus-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-spa:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-spa-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-spa-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  l-spa-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  lang:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  lang-b:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  lang-bi:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  lang-i:
+    :scml_attrs:
+    - [lang, CDATA, '#IMPLIED']
+  med:
+  ob:
+  osf:
+  osf-b:
+  osf-bi:
+  osf-i:
+  page:
+  pnum:
+  rc:
+  red:
+  red-b:
+  red-i:
+  red-ob:
+  red-sm:
+  red-sm-i:
+  red-sm-ob:
+  rh-i:
+  rhref:
+  rhref1:
+  sm:
+  sm-b:
+  sm-bi:
+  sm-i:
+  sm-ob:
+  smver:
+  speaker:
+  speaker-i:
+  strk:
+  sub:
+  sub-b:
+  sub-bi:
+  sub-i:
+  sub-u:
+  sup:
+  sup-b:
+  sup-bi:
+  sup-i:
+  sup-u:
+  symb:
+  symb-b:
+  symb-i:
+  symb-sub:
+  symb-sub-b:
+  symb-sub-bi:
+  symb-sub-i:
+  symb-sup:
+  symb-sup-b:
+  symb-sup-bi:
+  symb-sup-i:
+  taxclass:
+  taxfamily:
+  taxgenus:
+  taxkingdom:
+  taxorder:
+  taxphylum:
+  taxspecies:
+  tel:
+  tetr:
+  tetr-b:
+  tetr-i:
+  tetr-ob:
+  tetr-red:
+  tetr-red-i:
+  tetr-red-ob:
+  tgrc:
+  tgrc-b:
+  tgrc-bi:
+  tgrc-i:
+  theb:
+  theb-i:
+  theb-ob:
+  theb-red:
+  thn:
+  tocnum:
+  trh:
+  trh-i:
+  tso:
+  u:
+  url:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  ver:
+  xbk:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  xbr:
+    :scml_attrs:
+    - [t, CDATA, '#IMPLIED'] 
+  xref:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
+  xref-i:
+    :scml_attrs:
+    - [idref, IDREF, '#IMPLIED'] 
