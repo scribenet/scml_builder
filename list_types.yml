@@ -1,4 +1,5 @@
 scml_dtd:
+  :var_name: scml
   :runner: DTDMaker
   :name: scml.dtd
   :exclude_for:
@@ -12,6 +13,7 @@ scml_dtd:
   - paragraph_styles
   - character_styles
 sam_dtd:
+  :var_name: sam
   :runner: DTDMaker
   :name: sam.dtd
   :exclude_for:
