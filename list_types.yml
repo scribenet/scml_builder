@@ -24,3 +24,14 @@ sam_dtd:
   - specialized_structure_styles
   - paragraph_styles
   - character_styles
+scml_list:
+  :var_name: scml
+  :runner: ScmlListMaker
+  :name: scmllist.txt
+  :exclude_for:
+  - scml
+  - tso
+  - dtds
+  :categories:
+  - paragraph_styles
+  - character_styles

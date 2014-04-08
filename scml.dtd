@@ -8,7 +8,6 @@
     semantic  CDATA   #IMPLIED"
   >
 
-
   <!ENTITY % block_styles
   "blockquote
   | box
@@ -34,8 +33,6 @@
   | sidebar
   | story
   | written">
-
-
 
   <!ENTITY % paragraph_styles
   "ah
@@ -649,8 +646,6 @@
   | wls
   | wsh">
 
-
-
   <!ENTITY % character_styles
   "a
   | abbr
@@ -830,7 +825,6 @@
   | xbr
   | xref
   | xref-i">
-
 <!-- ============================================================ -->
 <!--                             Root                             -->
 <!-- ============================================================ -->
