@@ -1,5 +1,3 @@
-# YO DAN
-# IMPORT EXTENDED LIST FOR DTDS ATTR
 # ==== Rules ====
 # "for" values:
 # - scml: belongs only in full scml applications, like the scml.dtd
@@ -4087,11 +4085,13 @@
     :name: Diacritic Italic
     :date: March 8, 2013
   dcrit-ob:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Language
     :name: Diacritic Oblique
     :date: March 8, 2013
   dcrit-red:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Language
     :name: Diacritic red
@@ -4737,6 +4737,7 @@
     :learning_category: References/Cross-References
     :name: Paragraph Number
   rc:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Embedded Rubric
