@@ -626,8 +626,8 @@ C	dcrit	#	Diacritic
 C	dcrit-b	#	Diacritic Bold
 C	dcrit-bi	#	Diacritic Bold-Italic
 C	dcrit-i	#	Diacritic Italic
-C	dcrit-ob	#	Diacritic Oblique
-C	dcrit-red	#	Diacritic red
+Ce	dcrit-ob	#	Diacritic Oblique
+Ce	dcrit-red	#	Diacritic red
 C	dispk	#	Dialogue Speaker
 Ce	dispk-i	#	Dialogue Speaker Italic
 Ce	dropcap	#	Drop Cap
@@ -712,7 +712,7 @@ C	osf-bi	#	Old-Style Figures Bold Italic
 C	osf-i	#	Old-Style Figures Italic
 C	page	#	Page
 C	pnum	#	Paragraph Number
-C	rc	#	Embedded Rubric
+Ce	rc	#	Embedded Rubric
 C	red	#	Red Letter Text
 Ce	red-b	#	Red Letter Text Bold
 Ce	red-i	#	Red Letter Text Italic
