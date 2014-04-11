@@ -704,7 +704,7 @@ C	lang-b	#	Language Bold
 C	lang-bi	#	Language Bold-Italic
 C	lang-i	#	Language Italic
 C	med
-C	ob	#	Oblique
+Ce	ob	#	Oblique
 Ce	osf	#	Old-Style Figures
 Ce	osf-b	#	Old-Style Figures Bold
 Ce	osf-bi	#	Old-Style Figures Bold Italic

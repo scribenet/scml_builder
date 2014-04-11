@@ -4697,6 +4697,7 @@
   med:
     :group_name: char-styles
   ob:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Oblique
