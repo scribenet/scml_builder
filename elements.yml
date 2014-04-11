@@ -6,6 +6,7 @@
 # - sam: belongs only in full sam applications, like the sam.dtd, word template, etc.
 # - tso: typesetter only, belongs only in typesets and design templates
 # - dtds: belongs on the sam and scml dtds, but not on flat tag lists (table, tr, cell)
+# - expanded: belongs on most lists, including DTDs, but not applicable to the SAI template
 # any element not specified belongs in all list outputs
 #
 # other attrs available per element
@@ -2163,14 +2164,17 @@
     :name: Paragraph Continued
     :tip: "When a paragraph is broken up by a block quote, figure, or list, the <i>continuation</i> of the paragraph should be composed as pcon. This is structurally different from paft, which is a paragraph that follows a head. When composing, keep in mind whether a paragraph that follows a list is a new paragraph (p) or the continuation of the previous paragraph."
   pcust1:
+    :for: expanded
     :group_name: body
     :learning_category: Figure
     :name: Paragraph Custom 1
   pcust2:
+    :for: expanded
     :group_name: body
     :learning_category: Figure
     :name: Paragraph Custom 2
   pcust3:
+    :for: expanded
     :group_name: body
     :learning_category: Figure
     :name: Paragraph Custom 3
@@ -3584,12 +3588,14 @@
     :name: TOC Back Matter
     :tip: "To be used for back matter listings in the TOC (Notes, Bibliography, Index, Appendix, About the Author, etc.)."
   tocbmf:
+    :for: expanded
     :group_name: contents
     :abbrev: toc
     :learning_category: Contents
     :name: TOC Back Matter First
     :tip: "If you need to control the spacing above the first tocbm entry, use this style. Outside InDesign, this style reverts back to tocbm."
   tocf:
+    :for: expanded
     :group_name: contents
     :abbrev: toc
     :learning_category: Contents
@@ -3602,6 +3608,7 @@
     :name: TOC Front Matter
     :tip: "To be used for front matter listings in the TOC (Preface, Acknowledgments, List of Figures/Tables, etc.). These are generally the pages that use roman numerals in a typeset book."
   tocfmf:
+    :for: expanded
     :group_name: contents
     :abbrev: toc
     :learning_category: Contents
@@ -3620,11 +3627,13 @@
     :name: TOC Unit Title
     :tip: "To be used for unit titles that are included in the TOC. Corresponds with text in the ut style."
   tsecbot:
+    :for: expanded
     :group_name: body
     :learning_category: Body
     :name: Temporary Bottom-of-Page Section Break
     :tip: "Temporary bottom-of-page sec when a psec happens to fall at a page break. This is removed when converting a typeset book to ScML or e-pub."
   tsectop:
+    :for: expanded
     :group_name: body
     :learning_category: Body
     :name: Temporary Top-of-Page Section Break
@@ -4014,17 +4023,17 @@
     :scml_specialized_contents: EMPTY
     :group_name: char-styles
   ccust1:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Character Custom 1
   ccust2:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Character Custom 2
   ccust3:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Character Custom 3
@@ -4092,17 +4101,17 @@
     :learning_category: Paragraph/Character Style Pairs
     :name: Dialogue Speaker
   dispk-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Dialogue Speaker Italic
   dropcap:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Drop Cap
   dropcap-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Drop Cap Italic
@@ -4156,17 +4165,17 @@
     :learning_category: Symbols, Figures, and Fractions
     :name: Fraction
   frac-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Fraction Bold
   frac-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Fraction Bold-Italic
   frac-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Fraction Italic
@@ -4198,13 +4207,13 @@
     :tip: "The glossary term appearing in the glo paragraph."
     :date: March 8, 2013
   gt-i:
-    :for: dtds
+    :for: expanded 
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Glossary Term Italic
     :date: March 8, 2013
   gt-sm:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Glossary Term Small-Caps
@@ -4246,7 +4255,7 @@
     :name: Embedded Head
     :date: February 16, 2012
   gtref-i:
-    :for: dtds
+    :for: expanded
     :scml_attrs:
     - - idref
       - IDREF
@@ -4256,7 +4265,7 @@
     :name: Glossary Reference Italic
     :date: March 8, 2013
   gtref-sm:
-    :for: dtds
+    :for: expanded
     :scml_attrs:
     - - idref
       - IDREF
@@ -4736,35 +4745,35 @@
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Red Letter Text
   red-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Letter Text Bold
   red-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Letter Text Italic
   red-ob:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Red Oblique
     :date: February 16, 2012
   red-sm:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Red Small-caps
     :date: February 16, 2012
   red-sm-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Red Small-caps Italic
     :date: February 16, 2012
   red-sm-ob:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Red Small-caps Oblique
@@ -4792,12 +4801,12 @@
     :name: Small Caps
     :tip: "An uppercase letter in the small caps character style is the same as an uppercase letter in a normal font. A lowercase letter in the small caps character style is what gives you the small caps you want. Very frequently, this comes up with B.C., B.C.E., A.D., and C.E., which need to be b.c., b.c.e., a.d., and c.e. to appear in small caps. Caps-small-caps text should be typed in title case."
   sm-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Small Caps Bold
   sm-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Small Caps Bold-Italic
@@ -4806,22 +4815,22 @@
     :learning_category: Main Styles
     :name: Small Caps Italic
   sm-ob:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Small Caps Oblique
   smver:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Small Caps Verse
   speaker:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Speaker
   speaker-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Speaker Italic
@@ -4838,16 +4847,17 @@
     :learning_category: Superscript and Subscript
     :name: Subscript Bold
   sub-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Subscript Bold-Italic
   sub-i:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Superscript and Subscript
     :name: Subscript Italic
   sub-u:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Subscript Underline
@@ -4860,7 +4870,7 @@
     :learning_category: Superscript and Subscript
     :name: Superscript Bold
   sup-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Superscript Bold-Italic
@@ -4869,7 +4879,7 @@
     :learning_category: Superscript and Subscript
     :name: Superscript Italic
   sup-u:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Superscript Underline
@@ -4878,52 +4888,52 @@
     :learning_category: Symbols, Figures, and Fractions
     :name: Symbol
   symb-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Bold
   symb-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Italic
   symb-sub:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Subscript
   symb-sub-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Subscript Bold
   symb-sub-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Subscript Bold-Italic
   symb-sub-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Subscript Italic
   symb-sup:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Superscript
   symb-sup-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Superscript Bold
   symb-sup-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Superscript Bold-Italic
   symb-sup-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Superscript Italic
@@ -4973,31 +4983,37 @@
     :name: Tetragrammaton
     :date: March 8, 2013
   tetr-b:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Bold
     :date: March 8, 2013
   tetr-i:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Italic
     :date: March 8, 2013
   tetr-ob:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Oblique
     :date: April 14, 2014
   tetr-red:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Red
     :date: March 8, 2013
   tetr-red-i:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Red Italic
     :date: March 8, 2013
   tetr-red-ob:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Red Oblique
@@ -5007,17 +5023,17 @@
     :learning_category: Language
     :name: Transliterated Greek
   tgrc-b:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Greek Bold
   tgrc-bi:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Greek Bold-Italic
   tgrc-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Greek Italic
@@ -5026,18 +5042,18 @@
     :learning_category: Language
     :name: Transliterated Hebrew
   theb-i:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Hebrew Italic
   theb-ob:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Hebrew Oblique
     :date: April 14, 2014
   theb-red:
-    :for: dtds
+    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Hebrew Red

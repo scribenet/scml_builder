@@ -26,8 +26,14 @@ class ScmlListMaker
   end
 
   def line category, el, info
-    descrip = info[:description] ? "#{TAB}##{TAB}#{info[:description]}" : ''
-    TYPES[category] + TAB + el + descrip + "\n"
+    descrip = info[:name] ? "#{TAB}##{TAB}#{info[:name]}" : ''
+    cat_marker = get_category(category, info)
+    cat_marker + TAB + el + descrip + "\n"
+  end
+
+  def get_category(category, info)
+    basic = TYPES[category]
+    marker = info[:for] == 'expanded' ? basic + 'e' : basic
   end
 
 end
