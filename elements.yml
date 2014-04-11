@@ -4021,22 +4021,17 @@
     :scml_specialized_contents: EMPTY
     :group_name: char-styles
   ccust1:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Character Custom 1
   ccust2:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Character Custom 2
   ccust3:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Character Custom 3
-  cemd:
-    :group_name: char-styles
   chemb:
     :group_name: char-styles
     :learning_category: Embedded Heads
@@ -4207,7 +4202,6 @@
     :tip: "The glossary term appearing in the glo paragraph."
     :date: March 8, 2013
   gt-i:
-    :for: expanded 
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Glossary Term Italic
@@ -4255,7 +4249,6 @@
     :name: Embedded Head
     :date: February 16, 2012
   gtref-i:
-    :for: expanded
     :scml_attrs:
     - - idref
       - IDREF
@@ -4708,21 +4701,25 @@
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Oblique
   osf:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Symbols, Figures, and Fractions
     :name: Old-Style Figures
     :date: February 16, 2012
   osf-b:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Symbols, Figures, and Fractions
     :name: Old-Style Figures Bold
     :date: March 8, 2013
   osf-bi:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Symbols, Figures, and Fractions
     :name: Old-Style Figures Bold Italic
     :date: March 8, 2013
   osf-i:
+    :for: expanded
     :group_name: char-styles
     :learning_category: Symbols, Figures, and Fractions
     :name: Old-Style Figures Italic
@@ -4746,12 +4743,10 @@
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Red Letter Text
   red-b:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Letter Text Bold
   red-i:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Letter Text Italic
@@ -4802,12 +4797,10 @@
     :name: Small Caps
     :tip: "An uppercase letter in the small caps character style is the same as an uppercase letter in a normal font. A lowercase letter in the small caps character style is what gives you the small caps you want. Very frequently, this comes up with B.C., B.C.E., A.D., and C.E., which need to be b.c., b.c.e., a.d., and c.e. to appear in small caps. Caps-small-caps text should be typed in title case."
   sm-b:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Small Caps Bold
   sm-bi:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Small Caps Bold-Italic
@@ -4848,12 +4841,10 @@
     :learning_category: Superscript and Subscript
     :name: Subscript Bold
   sub-bi:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Subscript Bold-Italic
   sub-i:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Superscript and Subscript
     :name: Subscript Italic
@@ -4871,7 +4862,6 @@
     :learning_category: Superscript and Subscript
     :name: Superscript Bold
   sup-bi:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Superscript Bold-Italic
@@ -4889,12 +4879,10 @@
     :learning_category: Symbols, Figures, and Fractions
     :name: Symbol
   symb-b:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Bold
   symb-i:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Symbol Italic
@@ -4984,13 +4972,11 @@
     :name: Tetragrammaton
     :date: March 8, 2013
   tetr-b:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Bold
     :date: March 8, 2013
   tetr-i:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Mainly in Bibles and Religious Publications
     :name: Tetragrammaton Italic
@@ -5024,17 +5010,14 @@
     :learning_category: Language
     :name: Transliterated Greek
   tgrc-b:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Greek Bold
   tgrc-bi:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Greek Bold-Italic
   tgrc-i:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Greek Italic
@@ -5043,7 +5026,6 @@
     :learning_category: Language
     :name: Transliterated Hebrew
   theb-i:
-    :for: expanded
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Transliterated Hebrew Italic
@@ -5110,6 +5092,7 @@
     :learning_category: References/Cross-References
     :name: External Reference
   xbr:
+    :for: expanded
     :scml_attrs:
     - - t
       - CDATA

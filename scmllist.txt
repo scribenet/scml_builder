@@ -613,10 +613,9 @@ C	abbr	#	Abbreviation
 C	ac	#	All Caps
 C	b	#	Bold
 C	bi	#	Bold-Italic
-Ce	ccust1	#	Character Custom 1
-Ce	ccust2	#	Character Custom 2
-Ce	ccust3	#	Character Custom 3
-C	cemd
+C	ccust1	#	Character Custom 1
+C	ccust2	#	Character Custom 2
+C	ccust3	#	Character Custom 3
 C	chemb	#	Embedded C-Head
 C	code	#	Code
 C	code-b	#	Code Bold
@@ -649,7 +648,7 @@ C	grc-bi	#	Greek Bold-Italic
 C	grc-i	#	Greek Italic
 C	grc-u	#	Greek Underline
 C	gt	#	Glossary Term
-Ce	gt-i	#	Glossary Term Italic
+C	gt-i	#	Glossary Term Italic
 Ce	gt-sm	#	Glossary Term Small-Caps
 C	gtref	#	Glossary Reference
 C	heb	#	Hebrew
@@ -658,7 +657,7 @@ C	heb-bi	#	Hebrew Bold-Italic
 C	heb-i	#	Hebrew Italic
 C	heb-u	#	Hebrew Underline
 C	hemb	#	Embedded Head
-Ce	gtref-i	#	Glossary Reference Italic
+C	gtref-i	#	Glossary Reference Italic
 Ce	gtref-sm	#	Glossary Reference Small-Caps
 C	i	#	Italic
 C	idx	#	Index
@@ -706,23 +705,23 @@ C	lang-bi	#	Language Bold-Italic
 C	lang-i	#	Language Italic
 C	med
 C	ob	#	Oblique
-C	osf	#	Old-Style Figures
-C	osf-b	#	Old-Style Figures Bold
-C	osf-bi	#	Old-Style Figures Bold Italic
-C	osf-i	#	Old-Style Figures Italic
+Ce	osf	#	Old-Style Figures
+Ce	osf-b	#	Old-Style Figures Bold
+Ce	osf-bi	#	Old-Style Figures Bold Italic
+Ce	osf-i	#	Old-Style Figures Italic
 C	page	#	Page
 C	pnum	#	Paragraph Number
 Ce	rc	#	Embedded Rubric
 C	red	#	Red Letter Text
-Ce	red-b	#	Red Letter Text Bold
-Ce	red-i	#	Red Letter Text Italic
+C	red-b	#	Red Letter Text Bold
+C	red-i	#	Red Letter Text Italic
 Ce	red-ob	#	Red Oblique
 Ce	red-sm	#	Red Small-caps
 Ce	red-sm-i	#	Red Small-caps Italic
 Ce	red-sm-ob	#	Red Small-caps Oblique
 C	sm	#	Small Caps
-Ce	sm-b	#	Small Caps Bold
-Ce	sm-bi	#	Small Caps Bold-Italic
+C	sm-b	#	Small Caps Bold
+C	sm-bi	#	Small Caps Bold-Italic
 C	sm-i	#	Small Caps Italic
 Ce	sm-ob	#	Small Caps Oblique
 Ce	smver	#	Small Caps Verse
@@ -731,17 +730,17 @@ Ce	speaker-i	#	Speaker Italic
 C	strk	#	Strikethrough
 C	sub	#	Subscript
 C	sub-b	#	Subscript Bold
-Ce	sub-bi	#	Subscript Bold-Italic
-Ce	sub-i	#	Subscript Italic
+C	sub-bi	#	Subscript Bold-Italic
+C	sub-i	#	Subscript Italic
 Ce	sub-u	#	Subscript Underline
 C	sup	#	Superscript
 C	sup-b	#	Superscript Bold
-Ce	sup-bi	#	Superscript Bold-Italic
+C	sup-bi	#	Superscript Bold-Italic
 C	sup-i	#	Superscript Italic
 Ce	sup-u	#	Superscript Underline
 C	symb	#	Symbol
-Ce	symb-b	#	Symbol Bold
-Ce	symb-i	#	Symbol Italic
+C	symb-b	#	Symbol Bold
+C	symb-i	#	Symbol Italic
 Ce	symb-sub	#	Symbol Subscript
 Ce	symb-sub-b	#	Symbol Subscript Bold
 Ce	symb-sub-bi	#	Symbol Subscript Bold-Italic
@@ -759,18 +758,18 @@ C	taxphylum	#	Taxonomy Phylum
 C	taxspecies	#	Taxonomy Species
 C	tel	#	Telephone Number
 C	tetr	#	Tetragrammaton
-Ce	tetr-b	#	Tetragrammaton Bold
-Ce	tetr-i	#	Tetragrammaton Italic
+C	tetr-b	#	Tetragrammaton Bold
+C	tetr-i	#	Tetragrammaton Italic
 Ce	tetr-ob	#	Tetragrammaton Oblique
 Ce	tetr-red	#	Tetragrammaton Red
 Ce	tetr-red-i	#	Tetragrammaton Red Italic
 Ce	tetr-red-ob	#	Tetragrammaton Red Oblique
 C	tgrc	#	Transliterated Greek
-Ce	tgrc-b	#	Transliterated Greek Bold
-Ce	tgrc-bi	#	Transliterated Greek Bold-Italic
-Ce	tgrc-i	#	Transliterated Greek Italic
+C	tgrc-b	#	Transliterated Greek Bold
+C	tgrc-bi	#	Transliterated Greek Bold-Italic
+C	tgrc-i	#	Transliterated Greek Italic
 C	theb	#	Transliterated Hebrew
-Ce	theb-i	#	Transliterated Hebrew Italic
+C	theb-i	#	Transliterated Hebrew Italic
 Ce	theb-ob	#	Transliterated Hebrew Oblique
 Ce	theb-red	#	Transliterated Hebrew Red
 C	thn	#	Table Head Number
@@ -780,6 +779,6 @@ C	u	#	Underline
 C	url	#	URL
 C	ver	#	Verse
 C	xbk	#	External Reference
-C	xbr	#	Bible Reference
+Ce	xbr	#	Bible Reference
 C	xref	#	Cross-Reference
 C	xref-i	#	Cross-Reference Italic
