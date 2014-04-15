@@ -27,7 +27,7 @@ sam_dtd:
 scml_list:
   :var_name: scml
   :runner: ScmlListMaker
-  :name: scmllist.txt
+  :name: scr-scmllist.txt
   :exclude_for:
   - scml
   - tso
