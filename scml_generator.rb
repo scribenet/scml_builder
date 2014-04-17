@@ -2,6 +2,7 @@ require 'yaml'
 require 'erb'
 require_relative 'lib/dtd_maker'
 require_relative 'lib/scml_list_maker'
+require_relative 'lib/word_template_maker'
 
 class ScmlListKnowledge
 
