@@ -1,0 +1,37 @@
+scml_dtd:
+  :var_name: scml
+  :runner: DTDMaker
+  :name: scml.dtd
+  :exclude_for:
+  - sam
+  - tso
+  :categories:
+  - roots
+  - major_structure_styles
+  - block_styles
+  - specialized_structure_styles
+  - paragraph_styles
+  - character_styles
+sam_dtd:
+  :var_name: sam
+  :runner: DTDMaker
+  :name: sam.dtd
+  :exclude_for:
+  - scml
+  - tso
+  :categories:
+  - roots
+  - specialized_structure_styles
+  - paragraph_styles
+  - character_styles
+scml_list:
+  :var_name: scml
+  :runner: ScmlListMaker
+  :name: scr-scmllist.txt
+  :exclude_for:
+  - scml
+  - tso
+  - dtds
+  :categories:
+  - paragraph_styles
+  - character_styles
