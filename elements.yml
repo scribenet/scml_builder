@@ -230,6 +230,9 @@
     - - border
       - CDATA
       - '#IMPLIED'
+    - - orient
+      - CDATA
+      - '#IMPLIED'
     :scml_attrs:
     - - width
       - CDATA
@@ -238,6 +241,9 @@
       - CDATA
       - '#IMPLIED'
     - - border
+      - CDATA
+      - '#IMPLIED'
+    - - orient
       - CDATA
       - '#IMPLIED'
     :learning_category: Structural Elements
@@ -1107,6 +1113,8 @@
   cn:
     :group_name: chapter_start
     :chapter_start: true
+    :learning_category: Part/Chapter
+    :name: Chapter Number
   com:
     :group_name: commentary
     :abbrev: com
