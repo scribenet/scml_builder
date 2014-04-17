@@ -26,7 +26,7 @@ class ScmlListMaker
   end
 
   def line category, el, info
-    descrip = info[:name] ? "#{TAB}##{TAB}#{info[:name]}" : ''
+    descrip = info[:name] ? "#{TAB}##{TAB}#{info[:name]}" : "#{TAB}#" 
     cat_marker = get_category(category, info)
     cat_marker + TAB + el + descrip + "\n"
   end
