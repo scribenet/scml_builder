@@ -42,6 +42,7 @@ expanded_word_template:
   :exclude_for:
   - tso
   - dtds
+  - scml
   :categories:
   - paragraph_styles
   - character_styles
