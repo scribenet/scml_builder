@@ -35,3 +35,26 @@ scml_list:
   :categories:
   - paragraph_styles
   - character_styles
+word_template:
+  :var_name: scml
+  :runner: WordTemplateMaker
+  :name: scr-word-template.dotx
+  :exclude_for:
+  - tso
+  - dtds
+  - scml
+  - expanded
+  :categories:
+  - paragraph_styles
+  - character_styles
+expanded_word_template:
+  :var_name: scml
+  :runner: WordTemplateMaker
+  :name: scr-sam2docx-template.dotx
+  :exclude_for:
+  - tso
+  - dtds
+  - scml
+  :categories:
+  - paragraph_styles
+  - character_styles
