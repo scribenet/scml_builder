@@ -63,7 +63,7 @@ class WordTemplateMaker
 
   def trim_template current_styles, style_list
     (current_styles - elements).each do |bad_style|
-      style_list.css("w|name[w|val=#{bad_style}").map{ |x| x.parent.remove }
+      style_list.css("w|name[w|val=\"#{bad_style}\"]").map{ |x| x.parent.remove }
     end
   end
     
@@ -81,7 +81,7 @@ class WordTemplateMaker
 
   def trim_document(current_styles)
     (current_styles - elements).each do |bad_style|
-      document.css("[w|val=#{bad_style}]").map{ |x| x.parent.parent.remove }
+      document.css("[w|val=\"#{bad_style}\"]").map{ |x| x.parent.parent.remove }
     end
   end
 
