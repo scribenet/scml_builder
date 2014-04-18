@@ -32,11 +32,16 @@ class WordTemplateMaker
     adjust_templates
     cleanup_document
     reset_dotx
+    File.open('log','w').write dotx.document.gsub(/<w:p /, "\n<w:p ")
     @dotx.rezip
   end
 
   def cleanup_document
-    document.css('w|p').map{ |x| x.remove if x.text.empty? }
+    document.css('w|p').map{ |x| x.remove if removable_p?(x) }
+  end
+
+  def removable_p? p
+    p.text.empty? and p.parent.name == 'body'
   end
     
   def reset_dotx
