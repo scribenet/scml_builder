@@ -1111,8 +1111,9 @@
     :name: Codeline standalone
     :date: March 8, 2013
   cn:
-    :group_name: chapter_start
+    :group_name: chapter
     :chapter_start: true
+    :chapter_exclusion: part
     :learning_category: Part/Chapter
     :name: Chapter Number
   com:
@@ -1162,19 +1163,22 @@
     :learning_category: Part/Chapter
     :name: Chapter Subtitle
   ct:
-    :group_name: chapter_start
+    :group_name: chapter
     :chapter_start: true
+    :chapter_exclusion: part
     :learning_category: Part/Chapter
     :name: Chapter Title
   ctbm:
-    :group_name: chapter_start
+    :group_name: chapter
     :chapter_start: true
+    :chapter_exclusion: part
     :learning_category: Part/Chapter
     :name: Chapter Title Back Matter
     :tip: "A back matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs. Use ctbm for those titles (“Appendix Title,” “Notes,” “Bibliography,” etc.)."
   ctfm:
-    :group_name: chapter_start
+    :group_name: chapter
     :chapter_start: true
+    :chapter_exclusion: part
     :learning_category: Part/Chapter
     :name: Chapter Title Front Matter
     :tip: "A front matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs, and they get a different treatment when producing e-books. Therefore, use ctfm for those titles (“Contents,” “Preface,” etc.)."
@@ -2191,8 +2195,9 @@
     :tip: "This is the first regular (body) paragraph of a chapter, even if it follows an a-head. Many designs include a drop cap or small caps on this paragraph. It is not the same as paft or psec and should not be used to control spacing within a chapter."
     :shortcut: Ctrl+Shift+P or F3
   pn:
-    :group_name: parts
+    :group_name: part
     :chapter_start: true
+    :chapter_exclusion: chapter
     :learning_category: Part/Chapter
     :name: Part Number
   ps:
@@ -2211,8 +2216,9 @@
     :tip: "In case you have two different types of psec that have different "
     :date: February 16, 2012
   pt:
-    :group_name: parts
+    :group_name: part
     :chapter_start: true
+    :chapter_exclusion: chapter
     :learning_category: Part/Chapter
     :name: Part Title
   qu:
@@ -3815,7 +3821,7 @@
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Stand-Alone
   un:
-    :group_name: units
+    :group_name: unit
     :chapter_start: true
     :learning_category: Part/Chapter
     :name: Unit Number
@@ -3824,7 +3830,7 @@
     :learning_category: Part/Chapter
     :name: Unit Subtitle
   ut:
-    :group_name: units
+    :group_name: unit
     :chapter_start: true
     :learning_category: Part/Chapter
     :name: Unit Title
