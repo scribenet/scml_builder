@@ -1565,6 +1565,7 @@
   epsl1:
     :group_name: epigraph
     :spacing_profile: 4
+    :spacing_profile: 4
     :abbrev: ep
     :primary_structure: epigraph
     :learning_category: Epigraph
@@ -3224,6 +3225,7 @@
     :name: Sidebar Numbered List Item Last
   sbnlp:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3231,6 +3233,7 @@
     :tip: "A new paragraph within a sidebar numbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   sbnls:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3244,120 +3247,149 @@
     :date: February 16, 2012
   sbs:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph Stand-Alone
   sbsl:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline
   sbsl1:
     :group_name: sidebar
+    :spacing_profile: 4
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1
   sbsl1f:
     :group_name: sidebar
+    :spacing_profile: 3
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 First
   sbsl1l:
     :group_name: sidebar
+    :spacing_profile: 5
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 Last
   sbsl1s:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 Stand-Alone
   sbsl2:
     :group_name: sidebar
+    :spacing_profile: 4
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2
   sbsl2f:
     :group_name: sidebar
+    :spacing_profile: 3
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 First
   sbsl2l:
     :group_name: sidebar
+    :spacing_profile: 5
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 Last
   sbsl2s:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 Stand-Alone
   sbsl3:
     :group_name: sidebar
+    :spacing_profile: 4
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3
   sbsl3f:
     :group_name: sidebar
+    :spacing_profile: 3
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 First
   sbsl3l:
     :group_name: sidebar
+    :spacing_profile: 5
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 Last
   sbsl3s:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 Stand-Alone
   sbslf:
     :group_name: sidebar
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline First
   sbsli:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent
   sbslif:
     :group_name: sidebar
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent First
   sbslil:
     :group_name: sidebar
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent Last
   sbsll:
     :group_name: sidebar
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Last
   sbsls:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3377,84 +3409,98 @@
     :tip: "The sbt style should be used for repeating sidebar titles. For example, some books might have many sidebars that begin with “For Your Information . . .”"
   sbul:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item
   sbul1:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1
   sbul1f:
     :group_name: sidebar
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 First
   sbul1l:
     :group_name: sidebar
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Last
   sbul1p:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Paragraph
   sbul1s:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Stand-Alone
   sbul2:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2
   sbul2f:
     :group_name: sidebar
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 First
   sbul2l:
     :group_name: sidebar
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Last
   sbul2p:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Paragraph
   sbul2s:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Stand-Alone
   sbulf:
     :group_name: sidebar
+    :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item First
   sbull:
     :group_name: sidebar
+    :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Last
   sbulp:
     :group_name: sidebar
+    :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3462,39 +3508,46 @@
     :tip: "A new paragraph within a sidebar unnumbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   sbuls:
     :group_name: sidebar
+    :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Stand-Alone
   sec:
     :group_name: body
+    :spacing_profile: 2
     :learning_category: Body
     :name: Section Break (Asterisk Break)
     :tip: "An ornamented space break (aka asterisk break). If a dingbat or asterisks are used to show the start of a new section, then the symbol or asterisks should be given the sec style. As with an a-head, the paragraph that follows should be paft. Note: this style is mutually exclusive with the psec style."
   secbot:
     :group_name: body
+    :spacing_profile: 2
     :learning_category: Body
     :name: Bottom-of-Page Section Break
     :tip: "Bottom-of-page sec to accomodate spacing/baseline needs of required ornament."
   sectop:
     :group_name: body
+    :spacing_profile: 2
     :learning_category: Body
     :name: Top-of-Page Section Break
     :tip: "Top-of-page sec to accomodate spacing/baseline needs of required ornament."
   ser:
     :group_name: series
+    :spacing_profile: 4
     :abbrev: ser
     :learning_category: Series
     :name: Series Entry
     :tip: "A title within the series. This is the base level series tag. It will generally be either a book title or a book title followed by the author name."
   ser1:
     :group_name: series
+    :spacing_profile: 4
     :abbrev: ser
     :learning_category: Series
     :name: Series Level 1
     :tip: "Level 1 series tag, if special spacing or indentation is needed."
   ser2:
     :group_name: series
+    :spacing_profile: 4
     :abbrev: ser
     :learning_category: Series
     :name: Series Level 2
@@ -3507,35 +3560,41 @@
     :tip: "A title within the series, following a head."
   serah:
     :group_name: series
+    :spacing_profile: 1
     :abbrev: ser
     :learning_category: Series
     :name: Series A-Head
     :tip: "An a-head within a series list. For example, if an author wrote half his books under a pseudonym, this a-head might say “As [Author Name]” before each grouping. Or if an educational series is divided by subject or grade level, this a-head may be used."
   serahaft:
     :group_name: series
+    :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
     :name: Series A-Head After Series Title
   serau:
     :group_name: series
+    :spacing_profile: 4
     :abbrev: ser
     :learning_category: Series
     :name: Series Author
     :tip: "The author of a book listed in the series list, if it appears on a separate line."
   serbh:
     :group_name: series
+    :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
     :name: Series B-Head
     :tip: "If further divisions are needed within a series list, this is the b-head level."
   serf:
     :group_name: series
+    :spacing_profile: 3
     :abbrev: ser
     :learning_category: Series
     :name: Series Entry First
     :tip: "The series entry first is the same as the ser style but with added space above."
   serp:
     :group_name: series
+    :spacing_profile: 4
     :abbrev: ser
     :learning_category: Series
     :name: Series Paragraph
@@ -3543,6 +3602,7 @@
     :date: February 16, 2012
   serpf:
     :group_name: series
+    :spacing_profile: 3
     :abbrev: ser
     :learning_category: Series
     :name: Series Paragraph First
@@ -3550,6 +3610,7 @@
     :date: February 16, 2012
   sers:
     :group_name: series
+    :spacing_profile: 6
     :abbrev: ser
     :learning_category: Series
     :name: Series Subtitle
@@ -3562,6 +3623,7 @@
     :tip: "The series title is the title of the series (not a book title within the series)."
   sh:
     :group_name: heads
+    :spacing_profile: 2
     :learning_category: Heads
     :name: Section Head
   sl:
@@ -3574,60 +3636,70 @@
     :tip: "Senselines are lines of text that have a specific cadence, such as poems or liturgies. Indentations for senseline text are controlled by the numbered sl1, sl2, and sl3 styles. (Formerly po style.)"
   sl1:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1
   sl1f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1 First
   sl1l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1 Last
   sl2:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2
   sl2f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2 First
   sl2l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2 Last
   sl3:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3
   sl3f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3 First
   sl3l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3 Last
   sl4:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3635,6 +3707,7 @@
     :date: March 8, 2013
   sl4f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3642,6 +3715,7 @@
     :date: March 8, 2013
   sl4l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3649,6 +3723,7 @@
     :date: March 8, 2013
   sl5:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3656,6 +3731,7 @@
     :date: March 8, 2013
   sl5f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3663,6 +3739,7 @@
     :date: March 8, 2013
   sl5l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3670,6 +3747,7 @@
     :date: March 8, 2013
   sl6:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3677,6 +3755,7 @@
     :date: March 8, 2013
   sl6f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3684,6 +3763,7 @@
     :date: March 8, 2013
   sl6l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3691,6 +3771,7 @@
     :date: March 8, 2013
   sl7:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3698,6 +3779,7 @@
     :date: March 8, 2013
   sl7f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3705,6 +3787,7 @@
     :date: March 8, 2013
   sl7l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3712,6 +3795,7 @@
     :date: March 8, 2013
   sl8:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3719,6 +3803,7 @@
     :date: March 8, 2013
   sl8f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3726,6 +3811,7 @@
     :date: March 8, 2013
   sl8l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3733,6 +3819,7 @@
     :date: March 8, 2013
   sl9:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3740,6 +3827,7 @@
     :date: March 8, 2013
   sl9f:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3747,6 +3835,7 @@
     :date: March 8, 2013
   sl9l:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3754,13 +3843,14 @@
     :date: March 8, 2013
   slf:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
-    :spacing_profile: 3
     :learning_category: Senseline (Poetry)
     :name: Senseline First
   slh:
     :group_name: sense
+    :spacing_profile: 2
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3769,6 +3859,7 @@
     :date: March 8, 2013
   sli:
     :group_name: sense
+    :spacing_profile: 4
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3776,6 +3867,7 @@
     :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise. (Formerly poi style.)"
   slif:
     :group_name: sense
+    :spacing_profile: 3
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3783,6 +3875,7 @@
     :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise. (Formerly poi style.)"
   slil:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3790,6 +3883,7 @@
     :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise. (Formerly poi style.)"
   sll:
     :group_name: sense
+    :spacing_profile: 5
     :abbrev: sl
     :primary_structure: senseline
     :spacing_profile: 5
@@ -3797,6 +3891,7 @@
     :name: Senseline Last
   sls:
     :group_name: sense
+    :spacing_profile: 6
     :abbrev: sl
     :primary_structure: senseline
     :spacing_profile: 6
