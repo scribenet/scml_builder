@@ -1,0 +1,26 @@
+# medial should always be first-listed attr after type
+1:
+  :type: :head
+  :aft: 1
+2:
+  :type: :head
+3:
+  :type: :first
+  :medial: '- f'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+4:
+  :type: :medial
+  :first: '+ f'
+  :last: '+ l'
+  :standalone: '+ s'
+5:
+  :type: :last
+  :medial: '- l'
+  :first: 'medial + f'
+  :standalone: 'medial + s'
+6:
+  :type: :standalone
+  :medial: '- s'
+  :first: 'medial + f'
+  :last: 'medial + l'
