@@ -3,6 +3,7 @@ require 'erb'
 require_relative 'lib/dtd_maker'
 require_relative 'lib/scml_list_maker'
 require_relative 'lib/word_template_maker'
+require_relative 'lib/swim_list_maker'
 
 class ScmlListKnowledge
 
