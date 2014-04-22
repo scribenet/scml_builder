@@ -522,7 +522,7 @@
     :group_name: blockquotes
     :abbrev: bq
     :primary_structure: blockquote
-    :spacing_profile: 16
+    :spacing_profile: 28
     :learning_category: Block Quotation
     :name: Block Quote
     :tip: "Often referred to as an extract. Use the f, l, and s variations to control spacing above and below as needed. When multiple block quotes appear consecutively, use bqf for all paragraphs that need space above them until the last one, which should use bqs, giving space above and below. This will prevent you from doubling up on space between separate block quotes. Block quote variations include bq1 sublevels as well as bqnl (block quote numbered list) and bqul (block quote unnumbered list) styles."
@@ -566,7 +566,7 @@
     :group_name: blockquotes
     :abbrev: bq
     :primary_structure: blockquote
-    :spacing_profile: 15
+    :spacing_profile: 27
     :learning_category: Block Quotation
     :name: Block Quote First
   bqh:
@@ -580,7 +580,7 @@
     :group_name: blockquotes
     :abbrev: bq
     :primary_structure: blockquote
-    :spacing_profile: 17
+    :spacing_profile: 29
     :learning_category: Block Quotation
     :name: Block Quote Last
   bqnl:
@@ -613,6 +613,7 @@
     :name: Block Quote Numbered List Item Stand-Alone
   bqo:
     :group_name: blockquotes
+    :spacing_profile: 31
     :abbrev: bq
     :primary_structure: blockquote
     :learning_category: Block Quotation
@@ -622,7 +623,7 @@
     :group_name: blockquotes
     :abbrev: bq
     :primary_structure: blockquote
-    :spacing_profile: 18
+    :spacing_profile: 30
     :learning_category: Block Quotation
     :name: Block Quote Stand-Alone
   bqt:
@@ -666,7 +667,7 @@
     :group_name: box
     :abbrev: bx
     :primary_structure: box
-    :spacing_profile: 16
+    :spacing_profile: 28
     :learning_category: Box
     :name: Box Paragraph
     :tip: "Box text is used with parallel sidebar levels to aid in clarity and indicate sidebars that specifically occur within the main text area, most frequently placed within a gray, colored, and/or bordered box. Unless specifically coordinated with the design, sidebar content should use the sb styles as a default. Box pagragraph styles include heads, numbered lists, unnumbered lists, block quotes, and senselines. Each box style has a Level 1 equivalent."
@@ -782,6 +783,13 @@
     :spacing_profile: 9
     :learning_category: Box
     :name: Box Level 1 Numbered List Item Paragraph
+  bx1s:
+    :group_name: box
+    :abbrev: bx
+    :primary_structure: box
+    :spacing_profile: 18
+    :learning_category: Box
+    :name: Box Level 1 Paragraph Stand-Alone
   bx1sl:
     :group_name: box
     :abbrev: bx
@@ -912,7 +920,7 @@
     :group_name: box
     :abbrev: bx
     :primary_structure: box
-    :spacing_profile: 15
+    :spacing_profile: 27
     :learning_category: Box
     :name: Box Paragraph First
   bxh:
@@ -927,7 +935,7 @@
     :group_name: box
     :abbrev: bx
     :primary_structure: box
-    :spacing_profile: 17
+    :spacing_profile: 29
     :learning_category: Box
     :name: Box Paragraph Last
   bxnl:
@@ -967,6 +975,7 @@
     :name: Box Numbered List Item Stand-Alone
   bxo:
     :group_name: box
+    :spacing_profile: 31
     :abbrev: bx
     :primary_structure: box
     :learning_category: Box
@@ -976,7 +985,7 @@
     :group_name: box
     :abbrev: bx
     :primary_structure: box
-    :spacing_profile: 18
+    :spacing_profile: 30
     :learning_category: Box
     :name: Box Paragraph Stand-Alone
     :tip: "Box text with space both above and below. This is needed only if the box text appears within the text flow, with the box itself placed behind the text. If the text is placed within the box, spacing can be controlled through the object's style sheet."
@@ -1104,6 +1113,7 @@
     :tip: "Library of Congress Catalog-in-Publication data that will have space above it."
   cipf1:
     :group_name: copyright
+    :spacing_profile: 23
     :abbrev: cip
     :learning_category: Book
     :name: Catalog-in-Publication Data Level 1 First
@@ -1604,7 +1614,7 @@
     :date: March 8, 2013
   eq:
     :group_name: equation
-    :spacing_profile: 9
+    :spacing_profile: 20
     :abbrev: eq
     :primary_structure: equation
     :learning_category: Figure
@@ -1612,6 +1622,7 @@
     :tip: "Equations that appear in their own paragraphs, like figures, should use the eq paragraph style. A typesetter can use alternate styled to help control spacing needs, but composition in Word need not concern itself with this and can use eq for all equation paragraphs."
   eqaft:
     :group_name: equation
+    :spacing_profile: 21
     :abbrev: eq
     :primary_structure: equation
     :learning_category: Figure
@@ -2008,7 +2019,7 @@
     :date: February 16, 2012
   lt:
     :group_name: letter
-    :spacing_profile: 4
+    :spacing_profile: 33
     :abbrev: lt
     :primary_structure: letter
     :learning_category: Formal Letter
@@ -2054,7 +2065,7 @@
     :tip: "This is the first line of the letter date, often right aligned. If the date runs more than one line (perhaps the year is on a different line), the ltdf style would be applied to the first line, followed by ltd for the rest."
   ltf:
     :group_name: letter
-    :spacing_profile: 3
+    :spacing_profile: 32
     :abbrev: lt
     :primary_structure: letter
     :learning_category: Formal Letter
@@ -2070,7 +2081,7 @@
     :tip: "“Dear So-and-So . . .”"
   ltl:
     :group_name: letter
-    :spacing_profile: 5
+    :spacing_profile: 34
     :abbrev: lt
     :primary_structure: letter
     :learning_category: Formal Letter
@@ -2078,6 +2089,7 @@
     :date: March 8, 2013
   lto:
     :group_name: letter
+    :spacing_profile: 36
     :abbrev: lt
     :primary_structure: letter
     :learning_category: Formal Letter
@@ -2085,7 +2097,7 @@
     :date: March 8, 2013
   lts:
     :group_name: letter
-    :spacing_profile: 6
+    :spacing_profile: 35
     :abbrev: lt
     :primary_structure: letter
     :learning_category: Formal Letter
@@ -2953,7 +2965,7 @@
     :tip: "The review tail is the author of the rv quotation. Most commonly preceded by an em dash and right aligned, like an ept or quotail."
   sb:
     :group_name: sidebar
-    :spacing_profile: 16
+    :spacing_profile: 28
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3075,7 +3087,7 @@
     :name: Sidebar Paragraph Continued
   sbf:
     :group_name: sidebar
-    :spacing_profile: 15
+    :spacing_profile: 27
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3090,7 +3102,7 @@
     :tip: "The sbh style is for individual instances of sidebar heads."
   sbl:
     :group_name: sidebar
-    :spacing_profile: 17
+    :spacing_profile: 29
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3266,6 +3278,7 @@
     :name: Sidebar Numbered List Item Stand-Alone
   sbo:
     :group_name: sidebar
+    :spacing_profile: 31
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3273,7 +3286,7 @@
     :date: February 16, 2012
   sbs:
     :group_name: sidebar
-    :spacing_profile: 18
+    :spacing_profile: 30
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3560,7 +3573,7 @@
     :tip: "Top-of-page sec to accomodate spacing/baseline needs of required ornament."
   ser:
     :group_name: series
-    :spacing_profile: 8
+    :spacing_profile: 25
     :abbrev: ser
     :learning_category: Series
     :name: Series Entry
@@ -3581,6 +3594,7 @@
     :tip: "Level 2 series tag, if special spacing or indentation is needed."
   seraft:
     :group_name: series
+    :spacing_profile: 26
     :abbrev: ser
     :learning_category: Series
     :name: Series After Head
@@ -3614,7 +3628,7 @@
     :tip: "If further divisions are needed within a series list, this is the b-head level."
   serf:
     :group_name: series
-    :spacing_profile: 7
+    :spacing_profile: 24
     :abbrev: ser
     :learning_category: Series
     :name: Series Entry First
