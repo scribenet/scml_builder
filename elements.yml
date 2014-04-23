@@ -556,7 +556,7 @@
     :name: Block Quote Level 1 Stand-Alone
   bqaft:
     :group_name: blockquotes
-    :spacing_profile: 19
+    :spacing_profile: 37
     :abbrev: bq
     :primary_structure: blockquote
     :learning_category: Block Quotation
@@ -848,7 +848,7 @@
     :name: Box Level 1 Unnumbered List Item Paragraph
   bxaft:
     :group_name: box
-    :spacing_profile: 19
+    :spacing_profile: 37
     :abbrev: bx
     :primary_structure: box
     :learning_category: Box
@@ -3010,7 +3010,7 @@
     :date: March 8, 2013
   sbaft:
     :group_name: sidebar
-    :spacing_profile: 19
+    :spacing_profile: 37
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar

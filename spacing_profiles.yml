@@ -203,3 +203,12 @@
   :medial: '- o'
   :first: 'medial + f'
   :last: 'medial + l'
+
+# aft with full range
+37:
+  :type: :aft
+  :medial: '- aft'
+  :first: 'medial + f'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+  :only: 'medial + o'
