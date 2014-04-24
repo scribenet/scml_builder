@@ -1012,7 +1012,7 @@
     :name: Box Senseline Last
   bxt:
     :group_name: box
-    :spacing_profile: 22
+    :spacing_profile: 2
     :abbrev: bx
     :primary_structure: box
     :learning_category: Box
@@ -1859,7 +1859,7 @@
     :tip: "To be used when a book includes different types of figure captions for different kinds of figures, like photos versus maps or drawings."
   figh:
     :group_name: figure
-    :spacing_profile: 2
+    :spacing_profile: 9
     :abbrev: fig
     :primary_structure: figure
     :learning_category: Figure

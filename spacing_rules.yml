@@ -1,5 +1,5 @@
 :bin:
-  - A medial should never precede a medial of a different category. Element two should become first or element one should become last.
+  - A medial or aft should never precede a medial of a different category. Element two should become first or element one should become last.
   - A last should never precede a first, standalone, or only. Element one should become medial.
   - A standalone should never precede a first, standalone, or only. Element one should become a first.
   - A head should never precede a head, first, medial, standalone, or last. Element two should become an aft.
@@ -7,5 +7,5 @@
   - A standalone should never precede a head. Element one should become a first.
 
 :tert:
-  - Elements should never occur in the order medial or first, then medial, first, or last, then medial or last if elements one and three are from the same categories.  Element two should become standalone.
+  - Elements should never occur in the order medial, first, then medial, first, or last, then medial or last if elements one and three are from the same categories.  Element two should become standalone.
   - Elements should never occur in the order head then medial, standalone, first, last, or aft then medial, standalone, first, last, or aft if the elements two and three are from different categories. Element two should become only.
