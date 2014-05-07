@@ -22,7 +22,8 @@ class SwimListMaker
   def organize_into_learning_lists
     list.each do |el, vals|
       next unless vals[:learning_category]
-      cate = constantize( vals[:learning_category] )
+      cate = get_category(vals)
+      #require 'pry'; binding.pry if vals[:learning_category].match(/written/i)
       if types.include? cate
         instance_variable_get('@' + cate)[el] = vals
       else
@@ -30,6 +31,14 @@ class SwimListMaker
         generate_instance_val cate
         instance_variable_get('@' + cate)[el] = vals
       end
+    end
+  end
+
+  def get_category vals
+    if vals[:for] and vals[:for] == 'expanded'
+      cate = constantize( vals[:learning_category] + '_expanded' )
+    else
+      cate = constantize( vals[:learning_category] )
     end
   end
 
