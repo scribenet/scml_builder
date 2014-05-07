@@ -1,0 +1,33 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Scribe Markup Language (ScML)                     -->
+<!--  VERSION:   2.0.0                                             -->
+<!--  DATE:      April 2014                                        -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+Version  Reason/Occasion                    (who)        m.m.p (yymmdd)  
+57       Reboot of ScML versioning to       dcorrigan    2.0.0  140401
+         follow strict semantic rules       cchimi
+         as defined by http://semver.org/
+         - no longer supports "flat" scml
+           construction; that's been
+           delegated to sam (Scribe
+           Abbreviated Mark-up)
+         - division and book only children
+           of root
+         - chapter only child of book
+         - part and text elements
+           eliminated
+         - block-level elements valid
+           within one another
+         - all paragraph-level elements
+           valid within all block-levels
+         - various minor additions and
+           deletions
+-->
+
+<%= @output %>

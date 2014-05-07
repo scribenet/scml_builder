@@ -1939,6 +1939,10 @@
     :name: Head
     :tip: "Generally used in Bibles, this style can also be appropriated when a one-off head is needed in an exceptional circumstance."
     :date:  
+  hr:
+    :for: scml
+    :scml_specialized_contents: EMPTY
+    :group_name: body
   in:
     :group_name: index
     :spacing_profile: 8
@@ -4912,10 +4916,6 @@
     :learning_category: Expanded List of Character Styles
     :name: Glossary Reference Small-Caps
     :date: March 8, 2013
-  hr:
-    :for: scml
-    :scml_specialized_contents: EMPTY
-    :group_name: char-styles
   i:
     :group_name: char-styles
     :learning_category: Main Styles

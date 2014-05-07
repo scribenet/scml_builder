@@ -7,6 +7,7 @@ class DTDMaker
   BREADTH = 60
   DELIMITER = '=' * BREADTH
   TAB = '  '
+  TEMPLATE_DIR =  File.dirname(__FILE__) + '/../templates/'
 
   EL_TEMPLATE = ERB.new """
 <%= TAB %><!ELEMENT <%= name %> <%= children(category, info) %> >
@@ -24,13 +25,14 @@ class DTDMaker
   def initialize type, list
     @list = list
     @type = type
+    @template = ERB.new( File.read(TEMPLATE_DIR + type + '_dtd.erb') )
     @output = ''
   end
 
   def run
     entity_declarations
     iterate_categories
-    output
+    @template.result(binding)
   end
 
   def entity_declarations
