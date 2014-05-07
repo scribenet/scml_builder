@@ -1,0 +1,214 @@
+# medial should always be first-listed attr after type
+# head with aft variant
+1:
+  :type: :head
+  :aft: '+ aft'
+# head without aft variant
+2:
+  :type: :head
+# standard first, no aft
+3:
+  :type: :first
+  :medial: '- f'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+# standard medial, no aft
+4:
+  :type: :medial
+  :first: '+ f'
+  :last: '+ l'
+  :standalone: '+ s'
+# standard last, no aft
+5:
+  :type: :last
+  :medial: '- l'
+  :first: 'medial + f'
+  :standalone: 'medial + s'
+# standard standalone, no aft
+6:
+  :type: :standalone
+  :medial: '- s'
+  :first: 'medial + f'
+  :last: 'medial + l'
+# first with medial variant
+7:
+  :type: :first
+  :medial: '- f'
+# medial with first variant
+8:
+  :type: :medial
+  :first: '+ f'
+# medial with no spacing variants
+9:
+  :type: :medial
+# medial with last variant
+10:
+  :type: :medial
+  :last: '+ l'
+# last with medial variant
+11:
+  :type: :last
+  :medial: '- l'
+# first, no aft, no standalone
+12:
+  :type: :first
+  :medial: '- f'
+  :last: 'medial + l'
+# medial, no aft, no standalone
+13:
+  :type: :medial
+  :first: '+ f'
+  :last: '+ l'
+# last, no aft, no standalone
+14:
+  :type: :last
+  :medial: '- l'
+  :first: 'medial + f'
+# standard first with aft
+15:
+  :type: :first
+  :medial: '- f'
+  :aft: 'medial + aft'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+# standard medial with aft
+16:
+  :type: :medial
+  :first: '+ f'
+  :aft: '+ aft'
+  :last: '+ l'
+  :standalone: '+ s'
+# standard last with aft
+17:
+  :type: :last
+  :medial: '- l'
+  :aft: 'medial + aft'
+  :first: 'medial + f'
+  :standalone: 'medial + s'
+# standard standalone with aft
+18:
+  :type: :standalone
+  :medial: '- s'
+  :aft: 'medial + aft'
+  :first: 'medial + f'
+  :last: 'medial + l'
+# aft with standard spacing variants
+19:
+  :type: :aft
+  :medial: '- aft'
+  :first: 'medial + f'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+# medial with only aft variant
+20:
+  :type: :medial
+  :aft: '+ aft'
+# aft with only medial variant
+21:
+  :type: :aft
+  :medial: '- aft'
+# standalone with no variants (i.e., a tail)
+22:
+  :type: :standalone
+# first, no variations
+23:
+  :type: :first
+# first with medial and aft variants
+24:
+  :type: :first
+  :medial: '- f'
+  :aft: 'medial + aft'
+# medial with first and aft variants
+25:
+  :type: :medial
+  :first: '+ f'
+  :aft: '+ aft'
+# aft with medial and first variants
+26:
+  :type: :aft
+  :medial: '- aft'
+  :first: 'medial + f'
+# standard first with aft and only
+27:
+  :type: :first
+  :medial: '- f'
+  :aft: 'medial + aft'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+  :only: 'medial + o'
+# standard medial with aft and only
+28:
+  :type: :medial
+  :first: '+ f'
+  :aft: '+ aft'
+  :last: '+ l'
+  :standalone: '+ s'
+  :only: '+ o'
+# standard last with aft and only
+29:
+  :type: :last
+  :medial: '- l'
+  :aft: 'medial + aft'
+  :first: 'medial + f'
+  :standalone: 'medial + s'
+  :only: 'medial + o'
+# standard standalone with aft and only
+30:
+  :type: :standalone
+  :medial: '- s'
+  :aft: 'medial + aft'
+  :first: 'medial + f'
+  :last: 'medial + l'
+  :only: 'medial + o'
+# standard only with aft
+31:
+  :type: :only
+  :medial: '- o'
+  :aft: 'medial + aft'
+  :first: 'medial + f'
+  :last: 'medial + l'
+
+
+# standard first with only
+32:
+  :type: :first
+  :medial: '- f'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+  :only: 'medial + o'
+# standard medial with only
+33:
+  :type: :medial
+  :first: '+ f'
+  :last: '+ l'
+  :standalone: '+ s'
+  :only: '+ o'
+# standard last with only
+34:
+  :type: :last
+  :medial: '- l'
+  :first: 'medial + f'
+  :standalone: 'medial + s'
+  :only: 'medial + o'
+# standard standalone and only
+35:
+  :type: :standalone
+  :medial: '- s'
+  :first: 'medial + f'
+  :last: 'medial + l'
+  :only: 'medial + o'
+# standard only
+36:
+  :type: :only
+  :medial: '- o'
+  :first: 'medial + f'
+  :last: 'medial + l'
+
+# aft with full range
+37:
+  :type: :aft
+  :medial: '- aft'
+  :first: 'medial + f'
+  :last: 'medial + l'
+  :standalone: 'medial + s'
+  :only: 'medial + o'

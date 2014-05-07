@@ -58,3 +58,15 @@ expanded_word_template:
   :categories:
   - paragraph_styles
   - character_styles
+swim_list:
+  :var_name: scml
+  :runner: SwimListMaker
+  :name: scml-tag-list.md
+  :exclude_for:
+  - dtds
+  :categories:
+  - roots
+  - major_structure_styles
+  - block_styles
+  - paragraph_styles
+  - character_styles
