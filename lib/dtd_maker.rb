@@ -12,7 +12,7 @@ class DTDMaker
   EL_TEMPLATE = ERB.new """
 <%= TAB %><!ELEMENT <%= name %> <%= children(category, info) %> >
 <%= TAB %><!ATTLIST <%= name %>
-<%= TAB %><%= TAB %>%coreattrs;<% if info[:attrs]; info[attrs].each do |name, val, req| %>
+<%= TAB %><%= TAB %>%coreattrs;<% if info[attrs]; info[attrs].each do |name, val, req| %>
 <%= TAB %><%= TAB %><%= name %><%= TAB %><%= val %><%= TAB %><%= req %><% end end%>
 <%= TAB %>>"""
   
@@ -39,7 +39,9 @@ class DTDMaker
     @output += header_and_core_attrs + "\n"
     list.each do |category, els|
       next unless children_types[type].include? category
-      @output += entity(category, els.keys)
+      el_list = els.keys
+      el_list << 'table' if category.to_s.match(/block/i)
+      @output += entity(category, el_list)
     end
   end
 

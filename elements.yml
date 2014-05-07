@@ -4633,15 +4633,6 @@
     :for: scml
     :scml_specialized_contents: EMPTY
     :group_name: char-styles
-    :scml_attrs:
-    - - id
-      - ID '#REQUIRED'
-    - - type
-      - CDATA
-      - '#IMPLIED'
-    - - semantic
-      - CDATA
-      - '#IMPLIED'
     :learning_category: Expanded List of Character Styles
     :name: Anchor
   abbr:

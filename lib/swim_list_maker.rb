@@ -76,7 +76,7 @@ class SwimListMaker
 
   def make_tag el, vals
     return "`#{el}`" unless vals[:tip]
-    return "{~tt:`#{el}` #{vals[:tip]}"
+    return "{~tt:`#{el}` #{vals[:tip]}}"
   end
 
   def constantize string
