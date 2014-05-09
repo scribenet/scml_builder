@@ -5366,6 +5366,14 @@
     :scml_specialized_contents: EMPTY
     :learning_category: Expanded List of Character Styles
     :name: Page
+    :sam_attrs:
+    - - locator
+      - CDATA
+      - '#IMPLIED'
+    :scml_attrs:
+    - - locator
+      - CDATA
+      - '#IMPLIED'
   pnum:
     :group_name: char-styles
     :learning_category: References/Cross-References
@@ -5710,8 +5718,12 @@
     :name: Underline
   url:
     :scml_attrs:
-    - - idref
-      - IDREF
+    - - href
+      - CDATA
+      - '#IMPLIED'
+    :sam_attrs:
+    - - href
+      - CDATA
       - '#IMPLIED'
     :group_name: char-styles
     :learning_category: References/Cross-References
