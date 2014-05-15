@@ -274,8 +274,8 @@
   cell:
     :for: dtds
     :group_name: structure
-    :sam_specialized_contents: (%paragraph_styles;)+
-    :scml_specialized_contents: (%block_styles; | %paragraph_styles;)+
+    :sam_specialized_contents: (%paragraph_styles;)*
+    :scml_specialized_contents: (%block_styles; | %paragraph_styles;)*
     :scml_attrs:
     - - colspan
       - CDATA
