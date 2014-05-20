@@ -1941,6 +1941,7 @@
     :date:  
   hr:
     :for: scml
+    :spacing_profile: 2
     :scml_specialized_contents: EMPTY
     :group_name: body
   in:
