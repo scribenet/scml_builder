@@ -1,14 +1,16 @@
 ****ScML: Scribe Markup Language tag list and reference documentation.
 
-## ScML Updates for 2013
+## {~collapse:toggle:Note on the Expanded List}
 
-{~a-popup:http://learning.scribenet.com/node/2339 Click here} for information regarding the 2013 ScML Update.
-
-## Note on the Expanded List
+{~collapse:start:Note on the Expanded List}
 
 ScML encompasses a large number of variations that are needed in a typeset file but are not needed when composing in Word, particularly when it comes to character styles. One example is `ah-i`. Italics in an a-head can simply be composed as `i` in Word, and a standard, automatic step when converting to InDesign Tagged Text is to change that to `ah-i`, which can then be defined with the proper font setting in the typesetting program's style sheet. To keep this page from being overly crowded, there are drop-down menus that say **More information**. Click on these menus to access the lists of additional ScML styles.
 
-## Naming Patterns Seen
+{~collapse:end}
+
+## {~collapse:toggle:Naming Patterns Seen}
+
+{~collapse:start:Naming Patterns Seen}
 
 **f, l, and s**: The literal translations for `f`, `l`, and `s` as used at the ends of style names are *first*, *last*, and *stand-alone*. These styles are used in lists and extracts to indicate where extra spacing is needed:
 
@@ -26,181 +28,147 @@ Numbered style levels can also be used for parallel style levels. If you have tw
 
 **Capitalization and Word's built-in styles**: ScML styles are *always* lowercase and never contain spaces. If your style name contains capitalized letters or spaces, it is not ScML; it might be one of Microsoft Word's built-in styles that are standard within that program. `TOC 1`, for example, should be `toc1` in ScML. Additionally, some ScML character styles contain hyphens but never spaces or underscores.
 
+{~collapse:end}
+
 ## Paragraph Styles
 
 ### Book
 
-Definition                                  | Tag                                                                                                                                                                                                       | Revision         | Reference                                                 | Shortcut
-------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @book %>
 
 ### Series
 
-Definition                                  | Tag                                                                                                                                                                                                                                                                       | Revision         | Reference                                               | Shortcut
-------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @series %>
 
 ### Contents
 
-Definition                                  | Tag                                                                                                                                                                                                                                   | Revision         | Reference                                               | Shortcut
-------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @contents %>
 
 **Expanded Set Definition**
 
-Definition                                  | Tag                                                                                                                                                                                                                                                                                                                                   | Revision          | Reference                                               | Shortcut
-------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @contents_expanded %>
 
 ### Parts and Chapters
 
-Definition                                  | Tag                                                                                                                                                                                                                                                                                                                   | Revision         | Reference                                                  | Shortcut
-------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @parts_and_chapters %>
 
 
 ### Chapter Contents
 
-Definition                                  | Tag                                                                               | Revision          | Reference                                               | Shortcut
-------------------------------------------- | --------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @chapter_contents %>
 
 ### Epigraph
 
-Definition                                  | Tag                                                                                                                                                                                                                       | Revision          | Reference                                               | Shortcut
-------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @epigraph %>
 
 ### Heads
 
-Definition                                  | Tag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Revision          | Reference                                               | Shortcut
-------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------- | --------------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @heads %>
 
 ### Body
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @body %>
 
 **Expanded Set Definition**
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @body_expanded %>
 
 ### Dialogue
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @dialogue %>
 
 ### Curriculum
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @curriculum %>
 
 ### Block Quotation
 #### Extract
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @block_quotation %>
-
-**Expanded Set Definition**
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @block_quotation_expanded %>
 
 ### Senseline 
 #### Poetry
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @senseline_poetry %>
-
-**Expanded Set Definition**
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @senseline_poetry_expanded %>
 
 ### Notes
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @notes %>
 
 ### Figure
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @figure %>
- 
-**Expanded Set Definition**
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @figure_expanded %>
 
 ### Index
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @index %>
 
 ### Numbered List
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @numbered_list %>
-
-**Expanded Set Definition**
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @numbered_list_expanded %>
 
 ### Unnumbered Lists
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @unnumbered_list %>
-
-**Expanded Set Definition**
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @unnumbered_list_expanded %>
 
 ### Bulleted List
 
 There are rare occasions when you need to denote a bulleted list as a separate list type from an unnumbered list.
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @bulleted_list %>
 
 ### Sidebar
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @sidebar %>
-
-**Expanded Set Definition**
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @sidebar_list %>
 
 ### Box
 
 Box styles are used when a specific difference needs to be maintained between parallel sidebar levels.
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @box %>
 
 ### Story 
@@ -208,139 +176,138 @@ Definition | Tag | Revision | Reference | Shortcut
 
 Story tags are specifically for offset narratives in workbooks, if there is a need to distinguish these from standard sidebars. They are also to be used for Screenplay styles (slugline, action, character, text).
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @story %>
 
 ### Formal Letter
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @formal_letter %>
 
 ### Written Language 
 #### Written Communication
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @written_language %>
 
 ### Codelines 
 #### Computer Coding
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @codelines %>
- 
 
 ### Question and Answer 
 #### Interview Format
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @question_and_answer %>
 
 ### Callouts
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @callouts %>
 
 ### Commentary
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @commentary %>
 
 ### Table
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @table %>
 
 ### Rubric
 
 A rubric is a rule for conduct of a liturgical service.
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @rubric %>
 
 ### Recipes
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @recipes %>
 
 
 ### Page
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @page %>
 
 ## Character Styles
 
 ### Main Styles
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @main_styles %>
 
 ### References/Cross-References
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @references_cross_references %>
 
 ### Superscript and Subscript
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @superscript_and_subscript %>
 
 ### Paragraph/Character Style Pairs
 
 These character styles are used in a specific type of paragraph (for example, fighn, figure head number, is used in figh, figure head paragraph).
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @paragraph_character_style_pairs %>
 
 ### Embedded Heads
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @embedded_heads %>
 
-### Symbols, Figures, and Fractions
+### Symbols, Fractions, and Codes
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-<%= @symbols_figures_and_fractions %>
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
+<%= @symbols_fractions_and_codes %>
 
 ### Miscellaneous
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @miscellaneous %>
 
 ### Language
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @language %>
 
 ### Taxonomy
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @taxonomy %>
 
 ### Biblical and Religious Character Styles 
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @biblical_and_religious_character_styles %>
 
 ### Expanded List of Character Styles
@@ -349,26 +316,14 @@ Most of these styles are not available in the Scribe Word template, but they are
 
 {~?:These character styles are not all available in the Word template but are in the ScML DTD for use in typesetting.}
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @expanded_list_of_character_styles %>
 
 ## Structural Elements
 
 Structural elements are designed to imply structures needed for electronic publishing that aren't required for traditional print publishing.
 
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
 <%= @structural_elements %>
-
-## Metadata
-
-Metadata allow you to further define content, especially for electronic publishing. These can be applied as attributes at any paragraph level.
-
-Definition | Tag | Revision | Reference | Shortcut
----------- | --- | -------- | --------- | --------
-Publication Type | pub = Bible, liturgical, promotional, newsletter |  |   
-Symantic Tag | sym |  |   
-Verse ID | ver id="BBCCCVVV" |  |   
-Bible Version | bver |  |   
-License | lic |  |   

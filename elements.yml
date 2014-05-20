@@ -208,7 +208,7 @@
     :for: scml
     :group_name: structure
     :learning_category: Structural Elements
-    :name: Codelines
+    :name: Written Language
     :date: March 8, 2013
 :specialized_structure_styles:
   cover:
@@ -1448,14 +1448,14 @@
   dl:
     :group_name: heads
     :spacing_profile: 9
-    :learning_category: Book
+    :learning_category: Heads
     :name: Dateline
     :tip: "Most commonly used in fiction titles, for datelines that are not structural divisions."
     :date: April 14, 2014
   dl1:
     :group_name: heads
     :spacing_profile: 9
-    :learning_category: Book
+    :learning_category: Heads
     :name: Dateline Level 1
     :tip: "Most commonly used in fiction titles, for datelines that are not structural divisions."
     :date: April 14, 2014
@@ -4453,173 +4453,173 @@
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Paragraph
+    :learning_category: Written Language
+    :name: Written Language Paragraph
     :tip: "Written language styles are for faxes, e-mails, memos, and other forms of written communication that might need special treatment. Formal letters should use the styles for letters."
   wl1:
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 1 Paragraph
+    :learning_category: Written Language
+    :name: Written Language Level 1 Paragraph
   wl1f:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 1 Paragraph First
+    :learning_category: Written Language
+    :name: Written Language Level 1 Paragraph First
   wl1h:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 1 Head
+    :learning_category: Written Language
+    :name: Written Language Level 1 Head
   wl1h1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 1 Subhead
+    :learning_category: Written Language
+    :name: Written Language Level 1 Subhead
   wl1l:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 1 Paragraph Last
+    :learning_category: Written Language
+    :name: Written Language Level 1 Paragraph Last
   wl1s:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 1 Paragraph Stand-Alone
+    :learning_category: Written Language
+    :name: Written Language Level 1 Paragraph Stand-Alone
     :date: February 16, 2012
   wl2:
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 2 Paragraph
+    :learning_category: Written Language
+    :name: Written Language Level 2 Paragraph
   wl2f:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 2 Paragraph First
+    :learning_category: Written Language
+    :name: Written Language Level 2 Paragraph First
   wl2h:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 2 Head
+    :learning_category: Written Language
+    :name: Written Language Level 2 Head
   wl2h1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 2  Subhead
+    :learning_category: Written Language
+    :name: Written Language Level 2  Subhead
   wl2l:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 2 Paragraph Last
+    :learning_category: Written Language
+    :name: Written Language Level 2 Paragraph Last
   wl2s:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 2 Paragraph Stand-Alone
+    :learning_category: Written Language
+    :name: Written Language Level 2 Paragraph Stand-Alone
     :date: February 16, 2012
   wl3:
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 3 Paragraph
+    :learning_category: Written Language
+    :name: Written Language Level 3 Paragraph
   wl3f:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 3 Paragraph First
+    :learning_category: Written Language
+    :name: Written Language Level 3 Paragraph First
   wl3h:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 3 Head
+    :learning_category: Written Language
+    :name: Written Language Level 3 Head
   wl3h1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 3 Subhead
+    :learning_category: Written Language
+    :name: Written Language Level 3 Subhead
   wl3l:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 3 Paragraph Last
+    :learning_category: Written Language
+    :name: Written Language Level 3 Paragraph Last
   wl3s:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Level 3 Paragraph Stand-Alone
+    :learning_category: Written Language
+    :name: Written Language Level 3 Paragraph Stand-Alone
     :date: February 16, 2012
   wlf:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Paragraph First
+    :learning_category: Written Language
+    :name: Written Language Paragraph First
   wlh:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Head
+    :learning_category: Written Language
+    :name: Written Language Head
   wlh1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Subhead
+    :learning_category: Written Language
+    :name: Written Language Subhead
   wll:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Paragraph Last
+    :learning_category: Written Language
+    :name: Written Language Paragraph Last
   wls:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Codelines
-    :name: Codelines Paragraph Stand-Alone
+    :learning_category: Written Language
+    :name: Written Language Paragraph Stand-Alone
     :date: February 16, 2012
   wsh:
     :group_name: exercise
@@ -4679,23 +4679,23 @@
     :date: February 16, 2012
   code:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code
     :tip: "Character style for computer code within paragraphs other than cl paragraphs."
     :date: March 8, 2013
   code-b:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code Bold
     :date: March 8, 2013
   code-bi:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code Bold-Italic
     :date: March 8, 2013
   code-i:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code Italic
     :date: March 8, 2013
   dcrit:
@@ -4797,7 +4797,7 @@
     :date: March 8, 2013
   frac:
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Fraction
   frac-b:
     :for: expanded
@@ -5290,7 +5290,7 @@
     :group_name: char-styles
     :learning_category: Language
     :name: Language
-    :tip: "If you have non-English language and wish to identify it (e.g., <lang type=\"fr\">Quand au cours des événements humains</lang>); ISO 639 codes are used for language identification."
+    :tip: "If you have non-English language and wish to identify it (e.g., &lt;lang type=\"fr\"&gt;Quand au cours des événements humains&lt;/lang&gt;); ISO 639 codes are used for language identification."
   lang-b:
     :sam_attrs:
     - - lang
@@ -5340,25 +5340,25 @@
   osf:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures
     :date: February 16, 2012
   osf-b:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures Bold
     :date: March 8, 2013
   osf-bi:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures Bold Italic
     :date: March 8, 2013
   osf-i:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures Italic
     :date: February 16, 2012
   page:
@@ -5521,7 +5521,7 @@
     :name: Superscript Underline
   symb:
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Symbol
   symb-b:
     :group_name: char-styles
@@ -5656,15 +5656,15 @@
     :name: Transliterated Greek
   tgrc-b:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Greek Bold
   tgrc-bi:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Greek Bold-Italic
   tgrc-i:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Greek Italic
   theb:
     :group_name: char-styles
@@ -5672,18 +5672,18 @@
     :name: Transliterated Hebrew
   theb-i:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Hebrew Italic
   theb-ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Hebrew Oblique
     :date: April 14, 2014
   theb-red:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Hebrew Red
     :date: April 14, 2014
   thn:
