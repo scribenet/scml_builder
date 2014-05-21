@@ -69,7 +69,8 @@ class SwimListMaker
       
   def pull_heads_to_top sorted 
     heads = sorted.collect{ |item| item if item[1][:spacing_category] == :head }.compact
-    %w(t h ah ahaft bh bhaft ch chaft dh dhaft 1h 2h 3h).reverse.each do |type|
+#    require 'pry'; binding.pry if sorted.any?{ |item| item.first.match(/secbot/) }
+    %w((?<!bo)t h ah ahaft bh bhaft ch chaft dh dhaft 1h 2h 3h).reverse.each do |type|
       head_vars = heads.collect{ |head| head if head.first.match(/#{type}$/) }.compact
       next if head_vars.empty?
       head_vars.each do |head_var|
