@@ -1492,7 +1492,7 @@
     :primary_structure: notes
     :learning_category: Notes
     :name: Endnote
-    :tip: "Endnotes appear at the end of a chapter or book. The number before the note should <i>not</i> be composed as enref, which is used only on the number that appears within the main text. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
+    :tip: "Endnotes appear at the end of a chapter or book. The number before the note should **not** be composed as enref, which is used only on the number that appears within the main text. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
   end:
     :group_name: body
     :spacing_profile: 22
@@ -1887,7 +1887,7 @@
     :primary_structure: notes
     :learning_category: Notes
     :name: Footnote
-    :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should <i>not</i> be composed as fnref, which is used only on the number or symbol that appears within the main text. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
+    :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should **not** be composed as fnref, which is used only on the number or symbol that appears within the main text. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
   fnp:
     :group_name: note
     :primary_structure: notes
@@ -1992,7 +1992,7 @@
     :primary_structure: index
     :learning_category: Index
     :name: Index Head
-    :tip: "Used when an index includes the letter as a head before each letter group; should be followed by an in entry, <i>not</i> inf."
+    :tip: "Used when an index includes the letter as a head before each letter group; should be followed by an in entry, **not** inf."
   inh1:
     :group_name: index
     :spacing_profile: 2
@@ -2006,6 +2006,9 @@
     :spacing_profile: 2
     :abbrev: in
     :primary_structure: index
+    :learning_category: Index
+    :name: Index Headnote
+    :tip: "For paragraphs preceding indexes that indicate what symbols or fonts mean within the index."
   lo:
     :group_name: exercise
     :spacing_profile: 9
@@ -2477,7 +2480,7 @@
     :spacing_profile: 21
     :learning_category: Body
     :name: Paragraph after Head (or sec)
-    :tip: "Paragraphs that follow heads often do not indent, as a regular p would. When composing, be aware of when a paft needs to occur. <b>If the first paragraph of a chapter is preceded by an ah or ahaft, use pf."
+    :tip: "Paragraphs that follow heads often do not indent, as a regular p would. When composing, be aware of when a paft needs to occur. If the first paragraph of a chapter is preceded by an ah or ahaft, use pf."
     :shortcut: F2 (Function key)
   patr:
     :group_name: body
@@ -2496,7 +2499,7 @@
     :group_name: body
     :learning_category: Body
     :name: Paragraph Continued
-    :tip: "When a paragraph is broken up by a block quote, figure, or list, the <i>continuation</i> of the paragraph should be composed as pcon. This is structurally different from paft, which is a paragraph that follows a head. When composing, keep in mind whether a paragraph that follows a list is a new paragraph (p) or the continuation of the previous paragraph."
+    :tip: "When a paragraph is broken up by a block quote, figure, or list, the **continuation** of the paragraph should be composed as pcon. This is structurally different from paft, which is a paragraph that follows a head. When composing, keep in mind whether a paragraph that follows a list is a new paragraph (p) or the continuation of the previous paragraph."
   pcust1:
     :for: expanded
     :spacing_profile: 9
