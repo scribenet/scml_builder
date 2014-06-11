@@ -4,42 +4,6 @@
 
 ****ScML: Scribe Markup Language tag list and reference documentation.
 
-## General Information
-
-### Notes on the Expanded List
-
-{~?:ScML encompasses a large number of variations that are needed in a typeset file but are not needed when composing in Word, particularly when it comes to character styles. {~collapse:toggle:Read more about the Expanded List}}
-
-{~collapse:start:Read more about the Expanded List}
-
-One example is `ah-i`. Italics in an a-head can simply be composed as `i` in Word, and a standard, automatic step when converting to InDesign Tagged Text is to change that to `ah-i`, which can then be defined with the proper font setting in the typesetting program's style sheet.
-
-{~collapse:end}
-
-### Naming Patterns Seen
-
-{~-:**f, l, and s**: The literal translations for `f`, `l`, and `s` as used at the ends of style names are *first*, *last*, and *stand-alone*. {~collapse:toggle:Read more about Naming Patterns Seen}}
-
-{~collapse:start:Read more about Naming Patterns Seen}
-
-These styles are used in lists and extracts to indicate where extra spacing is needed:
-
-* f = space above
-* l = space below
-* s = space above and below
-
-When these styles occur near a head or title, the common default would be to let the head control spacing, so a first numbered list item immediately after a head can be composed simply as `nl`, not `nlf`. When composing, be aware of when styles are adding extra space so that you do not double up on spacing by having two adjacent paragraph styles affecting the space between them. {~a-popup:http://learning.scribenet.com/node/1976 Click here} for more information on using the *f, l, and s* style variations. {~a-popup:http://learning.scribenet.com/node/2120 Click here} for more information on using the *only (o)* style variation.
-
-**1, 2, 3, etc.**: When elements are numbered, each number represents a sub-level of the base style. For example, `toc1` is one level down from the main `toc` paragraph level. In addition to tables of contents or book subtitles, this is important when encountering a list within a list. For example, a numbered list within an unnumbered list should be one level down; otherwise, the `nl` will be treated as though it were the *same* level as the `ul` list.
-
-Numbered style levels can also be used for parallel style levels. If you have two different kinds of sidebars, for example, `sb` can be used for one, while `sb1` can be used for the other.
-
-{~?:As numbered styles levels can be used for sub-levels or parallel levels, so, too, might there be exceptional uses for the `f`, `l`, and `s` variations of styles. ScML is flexible in that regard. While there is a main intended use for each style name, definitions can be modified within a project to accommodate needed variations.}
-
-**Capitalization and Word's built-in styles**: ScML styles are *always* lowercase and never contain spaces. If your style name contains capitalized letters or spaces, it is not ScML; it might be one of Microsoft Word's built-in styles that are standard within that program. `TOC 1`, for example, should be `toc1` in ScML. Additionally, some ScML character styles contain hyphens but never spaces or underscores.
-
-{~collapse:end}
-
 ## Paragraph Styles
 
 ### Book
@@ -295,6 +259,12 @@ Tag     | Definition     | Revision Date
 Tag     | Definition     | Revision Date 
 ------- | -------------- | -------------
 <%= @symbols_fractions_and_codes %>
+
+**Expanded Set Definition**
+
+Tag     | Definition     | Revision Date 
+------- | -------------- | -------------
+<%= @symbols_fractions_and_codes_expanded %>
 
 ### Miscellaneous
 
