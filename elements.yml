@@ -30,18 +30,12 @@
     - - bver
       - CDATA
       - '#IMPLIED'
-    - - lang
-      - CDATA
-      - '#IMPLIED'
   scml:
     :for: scml
     :group_name: structure
     :scml_specialized_contents: ( division+ | book )+
     :scml_attrs:
     - - bver
-      - CDATA
-      - '#IMPLIED'
-    - - lang
       - CDATA
       - '#IMPLIED'
     :learning_category: Structural Elements
@@ -4923,7 +4917,6 @@
     :name: Index
   img:
     :group_name: char-styles
-    :sam_specialized_contents: (%character_styles;)*
     :scml_specialized_contents: EMPTY
     :sam_attrs:
     - - src
@@ -4959,377 +4952,201 @@
     :learning_category: Main Styles
     :name: Italic Underline
   l-chi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese
     :date: February 16, 2012
   l-chi-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese Bold
     :date: February 16, 2012
   l-chi-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese Bold-Italic
     :date: February 16, 2012
   l-chi-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese Italic
     :date: February 16, 2012
   l-fre:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French
     :date: February 16, 2012
   l-fre-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French Bold
     :date: February 16, 2012
   l-fre-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French Bold-Italic
     :date: February 16, 2012
   l-fre-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French Italic
     :date: February 16, 2012
   l-ger:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German
     :date: February 16, 2012
   l-ger-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German Bold
     :date: February 16, 2012
   l-ger-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German Bold-Italic
     :date: February 16, 2012
   l-ger-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German Italic
     :date: February 16, 2012
   l-ita:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian
     :date: February 16, 2012
   l-ita-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian Bold
     :date: February 16, 2012
   l-ita-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian Bold-Italic
     :date: February 16, 2012
   l-ita-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian Italic
     :date: February 16, 2012
   l-jpn:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese
     :date: February 16, 2012
   l-jpn-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese Bold
     :date: February 16, 2012
   l-jpn-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese Bold-Italic
     :date: February 16, 2012
   l-jpn-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese Italic
     :date: February 16, 2012
   l-kor:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean
     :date: February 16, 2012
   l-kor-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean Bold
     :date: February 16, 2012
   l-kor-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean Bold-Italic
     :date: February 16, 2012
   l-kor-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean Italic
     :date: February 16, 2012
   l-lat:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin
     :date: February 16, 2012
   l-lat-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin Bold
     :date: February 16, 2012
   l-lat-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin Bold-Italic
     :date: February 16, 2012
   l-lat-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin Italic
     :date: February 16, 2012
   l-rus:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian
     :date: February 16, 2012
   l-rus-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian Bold
     :date: February 16, 2012
   l-rus-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian Bold-Italic
     :date: February 16, 2012
   l-rus-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian Italic
     :date: February 16, 2012
   l-spa:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish
     :date: February 16, 2012
   l-spa-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish Bold
     :date: February 16, 2012
   l-spa-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish Bold-Italic
     :date: February 16, 2012
   l-spa-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish Italic
     :date: February 16, 2012
   lang:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language
     :tip: "If you have non-English language and wish to identify it (e.g., &lt;lang type=\"fr\"&gt;Quand au cours des événements humains&lt;/lang&gt;); ISO 639 codes are used for language identification."
   lang-b:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language Bold
     :date: March 8, 2013
   lang-bi:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language Bold-Italic
     :date: March 8, 2013
   lang-i:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language Italic
