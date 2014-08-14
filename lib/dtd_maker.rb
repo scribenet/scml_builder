@@ -15,11 +15,12 @@ class DTDMaker
 <%= TAB %><%= TAB %>%coreattrs;<% if info[attrs]; info[attrs].each do |name, val, req| %>
 <%= TAB %><%= TAB %><%= name %><%= TAB %><%= val %><%= TAB %><%= req %><% end end%>
 <%= TAB %>>"""
-  
+
   CORE_ATTRS = "#{TAB}<!ENTITY % coreattrs
 #{TAB}#{TAB}\"id        ID      #IMPLIED
 #{TAB}#{TAB}type      CDATA   #IMPLIED
-#{TAB}#{TAB}semantic  CDATA   #IMPLIED\"
+#{TAB}#{TAB}semantic  CDATA   #IMPLIED
+#{TAB}#{TAB}lang      CDATA   #IMPLIED\"
 #{TAB}>"
 
   def initialize type, list
@@ -51,7 +52,7 @@ class DTDMaker
 
   def header_and_core_attrs
     header = DTDCategoryHeader.new(:entity_declarations).category_header
-    [header, CORE_ATTRS].join("\n\n") 
+    [header, CORE_ATTRS].join("\n\n")
   end
 
   def iterate_categories
@@ -70,7 +71,7 @@ class DTDMaker
     {
       'scml' => {
         :block_styles => ['%block_styles;', '%paragraph_styles;'],
-        :paragraph_styles => ['#PCDATA', '%character_styles;'], 
+        :paragraph_styles => ['#PCDATA', '%character_styles;'],
         :character_styles => ['#PCDATA', '%character_styles;']
       },
       'sam' => {
@@ -85,7 +86,7 @@ class DTDMaker
     contents = "#{type}_specialized_contents".to_sym
     return info[contents] if info[contents]
     kids = children_types[type][category]
-    return '( ' + kids.join(' | ') + ' )*' 
+    return '( ' + kids.join(' | ') + ' )*'
   end
 
   class DTDCategoryHeader
