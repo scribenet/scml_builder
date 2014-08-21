@@ -212,3 +212,6 @@
   :last: 'medial + l'
   :standalone: 'medial + s'
   :only: 'medial + o'
+# tail with no variants
+38:
+  :type: :tail

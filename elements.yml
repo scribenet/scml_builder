@@ -622,7 +622,7 @@
     :name: Block Quote Stand-Alone
   bqt:
     :group_name: blockquotes
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: bq
     :primary_structure: blockquote
     :learning_category: Block Quotation
@@ -807,7 +807,7 @@
     :name: Box Level 1 Senseline Last
   bx1t:
     :group_name: box
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: bx
     :primary_structure: box
     :learning_category: Box
@@ -1591,7 +1591,7 @@
     :date: March 8, 2013
   ept:
     :group_name: epigraph
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: ep
     :primary_structure: epigraph
     :learning_category: Epigraph
@@ -1599,7 +1599,7 @@
     :tip: "The speaker/author of the epigraph, typically preceded by an em dash."
   ept1:
     :group_name: epigraph
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: ep
     :primary_structure: epigraph
     :learning_category: Epigraph
@@ -2606,7 +2606,7 @@
     :date: February 16, 2012
   quott:
     :group_name: quote
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: quo
     :primary_structure: pullquote
     :learning_category: Callouts
@@ -2862,14 +2862,14 @@
     :name: Recipe Nutritional Information Level 1
   rpt:
     :group_name: recipe
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: rp
     :primary_structure: recipe
     :learning_category: Recipes
     :name: Recipe Title
   rpt1:
     :group_name: recipe
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: rp
     :primary_structure: recipe
     :learning_category: Recipes
@@ -2960,7 +2960,7 @@
     :date: April 14, 2014
   rvt:
     :group_name: series
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: ser
     :learning_category: Series
     :name: Review Tail
@@ -3004,7 +3004,7 @@
     :name: Sidebar Level 1 Last
   sb1t:
     :group_name: sidebar
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3436,7 +3436,7 @@
     :name: Sidebar Senseline Stand-Alone
   sbslt:
     :group_name: sidebar
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3942,7 +3942,7 @@
     :name: Senseline Stand-Alone
   slt:
     :group_name: sense
-    :spacing_profile: 22
+    :spacing_profile: 38 
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
