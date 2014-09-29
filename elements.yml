@@ -89,7 +89,8 @@
     :name: Dialogue
     :date:  
   endnote:
-    :for: scml
+    :for: dtds 
+    :sam_specialized_contents: (%paragraph_styles;)*
     :group_name: structure
     :learning_category: Structural Elements
     :name: Endnote
@@ -113,7 +114,8 @@
     :name: Exercise
     :date: March 8, 2013
   footnote:
-    :for: scml
+    :for: dtds 
+    :sam_specialized_contents: (%paragraph_styles;)*
     :group_name: structure
     :learning_category: Structural Elements
     :name: Footnote
@@ -4628,7 +4630,7 @@
     :name: Worksheet Head
 :character_styles:
   a:
-    :for: scml
+    :for: dtds 
     :scml_specialized_contents: EMPTY
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
@@ -5575,12 +5577,20 @@
     - - idref
       - IDREF
       - '#IMPLIED'
+    :sam_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Cross-Reference
     :shortcut: F5 (Function key)
   xref-i:
     :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :sam_attrs:
     - - idref
       - IDREF
       - '#IMPLIED'
