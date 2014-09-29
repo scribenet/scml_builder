@@ -25,7 +25,7 @@
   sam:
     :for: sam
     :group_name: structure
-    :sam_specialized_contents: (%paragraph_styles; | table)+
+    :sam_specialized_contents: (%paragraph_styles; | table | footnote | endnote)+
     :sam_attrs:
     - - bver
       - CDATA
