@@ -17,3 +17,9 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# outputs
+scml.dtd
+sam.dtd
+scml-tag-list.md
+scr-scmllist.txt

@@ -30,18 +30,12 @@
     - - bver
       - CDATA
       - '#IMPLIED'
-    - - lang
-      - CDATA
-      - '#IMPLIED'
   scml:
     :for: scml
     :group_name: structure
     :scml_specialized_contents: ( division+ | book )+
     :scml_attrs:
     - - bver
-      - CDATA
-      - '#IMPLIED'
-    - - lang
       - CDATA
       - '#IMPLIED'
     :learning_category: Structural Elements
@@ -274,8 +268,8 @@
   cell:
     :for: dtds
     :group_name: structure
-    :sam_specialized_contents: (%paragraph_styles;)+
-    :scml_specialized_contents: (%block_styles; | %paragraph_styles;)+
+    :sam_specialized_contents: (%paragraph_styles;)*
+    :scml_specialized_contents: (%block_styles; | %paragraph_styles;)*
     :scml_attrs:
     - - colspan
       - CDATA
@@ -315,14 +309,14 @@
     :abbrev: qu
     :primary_structure: question
     :spacing_profile: 8
-    :learning_category: Question and Answer (Interview Format)
+    :learning_category: Question and Answer
     :name: Answer
   ansf:
     :group_name: question
     :abbrev: qu
     :primary_structure: question
     :spacing_profile: 7
-    :learning_category: Question and Answer (Interview Format)
+    :learning_category: Question and Answer
     :name: Answer First
   ard:
     :group_name: exercise
@@ -333,26 +327,26 @@
     :name: Assigned Reading
   au:
     :group_name: chapter_other
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :spacing_profile: 2
     :name: Chapter Author
     :tip: "Distinct from the bkau style that appears on a book's title page, au is used when a different author is associated with each chapter."
   au1:
     :group_name: chapter_other
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :spacing_profile: 2
     :name: Chapter Author Level 1
     :date: March 8, 2013
   aubio:
     :group_name: chapter_other
     :spacing_profile: 8
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Author Biographical Data
     :tip: "If an author's short bio or affiliation is listed on a separate line, this style should be used. It can also be used in About the Author sections"
   aubiof:
     :group_name: chapter_other
     :spacing_profile: 7
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Author Biographical Data First
     :date: March 8, 2013
   audio:
@@ -1129,7 +1123,7 @@
     :spacing_profile: 4
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline
     :date: March 8, 2013
   cl1:
@@ -1137,7 +1131,7 @@
     :spacing_profile: 4
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 1
     :date: March 8, 2013
   cl1f:
@@ -1145,7 +1139,7 @@
     :spacing_profile: 3
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 1 first
     :date: March 8, 2013
   cl1l:
@@ -1153,7 +1147,7 @@
     :spacing_profile: 5
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 1 last
     :date: March 8, 2013
   cl1s:
@@ -1161,7 +1155,7 @@
     :spacing_profile: 6
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 1 standalone
     :date: March 8, 2013
   cl2:
@@ -1169,7 +1163,7 @@
     :spacing_profile: 4
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 2
     :date: March 8, 2013
   cl2f:
@@ -1177,7 +1171,7 @@
     :spacing_profile: 3
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 2 first
     :date: March 8, 2013
   cl2l:
@@ -1185,7 +1179,7 @@
     :spacing_profile: 5
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 2 last
     :date: March 8, 2013
   cl2s:
@@ -1193,7 +1187,7 @@
     :spacing_profile: 6
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 2 standalone
     :date: March 8, 2013
   cl3:
@@ -1201,7 +1195,7 @@
     :spacing_profile: 4
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 3
     :date: March 8, 2013
   cl3f:
@@ -1209,7 +1203,7 @@
     :spacing_profile: 3
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 3 first
     :date: March 8, 2013
   cl3l:
@@ -1217,7 +1211,7 @@
     :spacing_profile: 5
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 3 last
     :date: March 8, 2013
   cl3s:
@@ -1225,7 +1219,7 @@
     :spacing_profile: 6
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline Level 3 standalone
     :date: March 8, 2013
   clf:
@@ -1233,7 +1227,7 @@
     :spacing_profile: 3
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline first
     :date: March 8, 2013
   cll:
@@ -1241,7 +1235,7 @@
     :spacing_profile: 5
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline last
     :date: March 8, 2013
   cls:
@@ -1249,7 +1243,7 @@
     :spacing_profile: 6
     :abbrev: cl
     :primary_structure: codeline
-    :learning_category: Formal Letter
+    :learning_category: Codelines
     :name: Codeline standalone
     :date: March 8, 2013
   cn:
@@ -1257,7 +1251,7 @@
     :chapter_start: true
     :spacing_profile: 2
     :chapter_exclusion: part
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Chapter Number
   com:
     :group_name: commentary
@@ -1311,21 +1305,21 @@
   cs:
     :spacing_profile: 2
     :group_name: chapter_other
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Chapter Subtitle
   ct:
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
     :chapter_exclusion: part
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Chapter Title
   ctbm:
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
     :chapter_exclusion: part
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Chapter Title Back Matter
     :tip: "A back matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs. Use ctbm for those titles (“Appendix Title,” “Notes,” “Bibliography,” etc.)."
   ctfm:
@@ -1333,7 +1327,7 @@
     :group_name: chapter
     :chapter_start: true
     :chapter_exclusion: part
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Chapter Title Front Matter
     :tip: "A front matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs, and they get a different treatment when producing e-books. Therefore, use ctfm for those titles (“Contents,” “Preface,” etc.)."
   ctoc:
@@ -1448,14 +1442,14 @@
   dl:
     :group_name: heads
     :spacing_profile: 9
-    :learning_category: Book
+    :learning_category: Heads
     :name: Dateline
     :tip: "Most commonly used in fiction titles, for datelines that are not structural divisions."
     :date: April 14, 2014
   dl1:
     :group_name: heads
     :spacing_profile: 9
-    :learning_category: Book
+    :learning_category: Heads
     :name: Dateline Level 1
     :tip: "Most commonly used in fiction titles, for datelines that are not structural divisions."
     :date: April 14, 2014
@@ -1492,7 +1486,7 @@
     :primary_structure: notes
     :learning_category: Notes
     :name: Endnote
-    :tip: "Endnotes appear at the end of a chapter or book. The number before the note should <i>not</i> be composed as enref, which is used only on the number that appears within the main text. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
+    :tip: "Endnotes appear at the end of a chapter or book. The number before the note should **not** be composed as enref, which is used only on the number that appears within the main text. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
   end:
     :group_name: body
     :spacing_profile: 22
@@ -1887,7 +1881,7 @@
     :primary_structure: notes
     :learning_category: Notes
     :name: Footnote
-    :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should <i>not</i> be composed as fnref, which is used only on the number or symbol that appears within the main text. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
+    :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should **not** be composed as fnref, which is used only on the number or symbol that appears within the main text. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
   fnp:
     :group_name: note
     :primary_structure: notes
@@ -1939,6 +1933,11 @@
     :name: Head
     :tip: "Generally used in Bibles, this style can also be appropriated when a one-off head is needed in an exceptional circumstance."
     :date:  
+  hr:
+    :for: scml
+    :spacing_profile: 2
+    :scml_specialized_contents: EMPTY
+    :group_name: body
   in:
     :group_name: index
     :spacing_profile: 8
@@ -1987,7 +1986,7 @@
     :primary_structure: index
     :learning_category: Index
     :name: Index Head
-    :tip: "Used when an index includes the letter as a head before each letter group; should be followed by an in entry, <i>not</i> inf."
+    :tip: "Used when an index includes the letter as a head before each letter group; should be followed by an in entry, **not** inf."
   inh1:
     :group_name: index
     :spacing_profile: 2
@@ -2001,6 +2000,9 @@
     :spacing_profile: 2
     :abbrev: in
     :primary_structure: index
+    :learning_category: Index
+    :name: Index Headnote
+    :tip: "For paragraphs preceding indexes that indicate what symbols or fonts mean within the index."
   lo:
     :group_name: exercise
     :spacing_profile: 9
@@ -2472,7 +2474,7 @@
     :spacing_profile: 21
     :learning_category: Body
     :name: Paragraph after Head (or sec)
-    :tip: "Paragraphs that follow heads often do not indent, as a regular p would. When composing, be aware of when a paft needs to occur. <b>If the first paragraph of a chapter is preceded by an ah or ahaft, use pf."
+    :tip: "Paragraphs that follow heads often do not indent, as a regular p would. When composing, be aware of when a paft needs to occur. If the first paragraph of a chapter is preceded by an ah or ahaft, use pf."
     :shortcut: F2 (Function key)
   patr:
     :group_name: body
@@ -2491,24 +2493,24 @@
     :group_name: body
     :learning_category: Body
     :name: Paragraph Continued
-    :tip: "When a paragraph is broken up by a block quote, figure, or list, the <i>continuation</i> of the paragraph should be composed as pcon. This is structurally different from paft, which is a paragraph that follows a head. When composing, keep in mind whether a paragraph that follows a list is a new paragraph (p) or the continuation of the previous paragraph."
+    :tip: "When a paragraph is broken up by a block quote, figure, or list, the **continuation** of the paragraph should be composed as pcon. This is structurally different from paft, which is a paragraph that follows a head. When composing, keep in mind whether a paragraph that follows a list is a new paragraph (p) or the continuation of the previous paragraph."
   pcust1:
     :for: expanded
     :spacing_profile: 9
     :group_name: body
-    :learning_category: Figure
+    :learning_category: Body
     :name: Paragraph Custom 1
   pcust2:
     :for: expanded
     :spacing_profile: 9
     :group_name: body
-    :learning_category: Figure
+    :learning_category: Body
     :name: Paragraph Custom 2
   pcust3:
     :for: expanded
     :spacing_profile: 9
     :group_name: body
-    :learning_category: Figure
+    :learning_category: Body
     :name: Paragraph Custom 3
   pf:
     :group_name: body
@@ -2522,12 +2524,12 @@
     :spacing_profile: 2
     :chapter_start: true
     :chapter_exclusion: chapter
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Part Number
   ps:
     :spacing_profile: 2
     :group_name: parts_other
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Part Subtitle
   psec:
     :group_name: body
@@ -2547,28 +2549,28 @@
     :group_name: part
     :chapter_start: true
     :chapter_exclusion: chapter
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Part Title
   qu:
     :group_name: question
     :spacing_profile: 8
     :abbrev: qu
     :primary_structure: question
-    :learning_category: Question and Answer (Interview Format)
+    :learning_category: Question and Answer
     :name: Question
   quf:
     :group_name: question
     :spacing_profile: 7
     :abbrev: qu
     :primary_structure: question
-    :learning_category: Question and Answer (Interview Format)
+    :learning_category: Question and Answer
     :name: Question First
   quh:
     :group_name: question
     :spacing_profile: 2
     :abbrev: qu
     :primary_structure: question
-    :learning_category: Question and Answer (Interview Format)
+    :learning_category: Question and Answer
     :name: Question Head
   quot:
     :group_name: quote
@@ -3951,28 +3953,28 @@
     :spacing_profile: 4
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Paragraph
   stf:
     :group_name: story
     :spacing_profile: 3
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Paragraph First
   sth:
     :group_name: story
     :spacing_profile: 2
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Head
   sth1:
     :group_name: story
     :spacing_profile: 2
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Head Level 1
     :date: March 8, 2013
   sth2:
@@ -3980,7 +3982,7 @@
     :spacing_profile: 2
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Head Level 2
     :date: March 8, 2013
   stl:
@@ -3988,7 +3990,7 @@
     :spacing_profile: 5
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Paragraph Last
   structure:
     :for: sam
@@ -4003,7 +4005,7 @@
     :spacing_profile: 6
     :abbrev: st
     :primary_structure: story
-    :learning_category: Story or Stage Direction (Screenplay)
+    :learning_category: Story
     :name: Story Paragraph Stand-Alone
   tatr:
     :group_name: table
@@ -4426,18 +4428,18 @@
     :group_name: unit
     :chapter_start: true
     :spacing_profile: 2
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Unit Number
   us:
     :group_name: units_other
     :spacing_profile: 2
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Unit Subtitle
   ut:
     :group_name: unit
     :chapter_start: true
     :spacing_profile: 2
-    :learning_category: Part/Chapter
+    :learning_category: Parts and Chapters
     :name: Unit Title
     :tip: "Specifically for heavily divided textbooks, a unit is structurally in between a part and a chapter."
   video:
@@ -4449,7 +4451,7 @@
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Paragraph
     :tip: "Written language styles are for faxes, e-mails, memos, and other forms of written communication that might need special treatment. Formal letters should use the styles for letters."
   wl1:
@@ -4457,42 +4459,42 @@
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 1 Paragraph
   wl1f:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 1 Paragraph First
   wl1h:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 1 Head
   wl1h1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 1 Subhead
   wl1l:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 1 Paragraph Last
   wl1s:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 1 Paragraph Stand-Alone
     :date: February 16, 2012
   wl2:
@@ -4500,42 +4502,42 @@
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 2 Paragraph
   wl2f:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 2 Paragraph First
   wl2h:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 2 Head
   wl2h1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 2  Subhead
   wl2l:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 2 Paragraph Last
   wl2s:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 2 Paragraph Stand-Alone
     :date: February 16, 2012
   wl3:
@@ -4543,42 +4545,42 @@
     :spacing_profile: 4
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 3 Paragraph
   wl3f:
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 3 Paragraph First
   wl3h:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 3 Head
   wl3h1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 3 Subhead
   wl3l:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 3 Paragraph Last
   wl3s:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Level 3 Paragraph Stand-Alone
     :date: February 16, 2012
   wlf:
@@ -4586,35 +4588,35 @@
     :spacing_profile: 3
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Paragraph First
   wlh:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Head
   wlh1:
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Subhead
   wll:
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Paragraph Last
   wls:
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
     :primary_structure: written
-    :learning_category: Formal Letter
+    :learning_category: Written Language
     :name: Written Language Paragraph Stand-Alone
     :date: February 16, 2012
   wsh:
@@ -4629,15 +4631,6 @@
     :for: scml
     :scml_specialized_contents: EMPTY
     :group_name: char-styles
-    :scml_attrs:
-    - - id
-      - ID '#REQUIRED'
-    - - type
-      - CDATA
-      - '#IMPLIED'
-    - - semantic
-      - CDATA
-      - '#IMPLIED'
     :learning_category: Expanded List of Character Styles
     :name: Anchor
   abbr:
@@ -4684,23 +4677,23 @@
     :date: February 16, 2012
   code:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code
     :tip: "Character style for computer code within paragraphs other than cl paragraphs."
     :date: March 8, 2013
   code-b:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code Bold
     :date: March 8, 2013
   code-bi:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code Bold-Italic
     :date: March 8, 2013
   code-i:
     :group_name: char-styles
-    :learning_category: Paragraph/Character Style Pairs
+    :learning_category: Symbols, Fractions, and Codes
     :name: Code Italic
     :date: March 8, 2013
   dcrit:
@@ -4802,7 +4795,7 @@
     :date: March 8, 2013
   frac:
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Fraction
   frac-b:
     :for: expanded
@@ -4912,10 +4905,6 @@
     :learning_category: Expanded List of Character Styles
     :name: Glossary Reference Small-Caps
     :date: March 8, 2013
-  hr:
-    :for: scml
-    :scml_specialized_contents: EMPTY
-    :group_name: char-styles
   i:
     :group_name: char-styles
     :learning_category: Main Styles
@@ -4928,7 +4917,6 @@
     :name: Index
   img:
     :group_name: char-styles
-    :sam_specialized_contents: (%character_styles;)*
     :scml_specialized_contents: EMPTY
     :sam_attrs:
     - - src
@@ -4964,377 +4952,201 @@
     :learning_category: Main Styles
     :name: Italic Underline
   l-chi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese
     :date: February 16, 2012
   l-chi-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese Bold
     :date: February 16, 2012
   l-chi-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese Bold-Italic
     :date: February 16, 2012
   l-chi-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Chinese Italic
     :date: February 16, 2012
   l-fre:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French
     :date: February 16, 2012
   l-fre-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French Bold
     :date: February 16, 2012
   l-fre-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French Bold-Italic
     :date: February 16, 2012
   l-fre-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: French Italic
     :date: February 16, 2012
   l-ger:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German
     :date: February 16, 2012
   l-ger-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German Bold
     :date: February 16, 2012
   l-ger-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German Bold-Italic
     :date: February 16, 2012
   l-ger-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: German Italic
     :date: February 16, 2012
   l-ita:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian
     :date: February 16, 2012
   l-ita-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian Bold
     :date: February 16, 2012
   l-ita-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian Bold-Italic
     :date: February 16, 2012
   l-ita-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Italian Italic
     :date: February 16, 2012
   l-jpn:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese
     :date: February 16, 2012
   l-jpn-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese Bold
     :date: February 16, 2012
   l-jpn-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese Bold-Italic
     :date: February 16, 2012
   l-jpn-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Japanese Italic
     :date: February 16, 2012
   l-kor:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean
     :date: February 16, 2012
   l-kor-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean Bold
     :date: February 16, 2012
   l-kor-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean Bold-Italic
     :date: February 16, 2012
   l-kor-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Korean Italic
     :date: February 16, 2012
   l-lat:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin
     :date: February 16, 2012
   l-lat-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin Bold
     :date: February 16, 2012
   l-lat-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin Bold-Italic
     :date: February 16, 2012
   l-lat-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Latin Italic
     :date: February 16, 2012
   l-rus:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian
     :date: February 16, 2012
   l-rus-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian Bold
     :date: February 16, 2012
   l-rus-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian Bold-Italic
     :date: February 16, 2012
   l-rus-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Russian Italic
     :date: February 16, 2012
   l-spa:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish
     :date: February 16, 2012
   l-spa-b:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish Bold
     :date: February 16, 2012
   l-spa-bi:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish Bold-Italic
     :date: February 16, 2012
   l-spa-i:
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Spanish Italic
     :date: February 16, 2012
   lang:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language
-    :tip: "If you have non-English language and wish to identify it (e.g., <lang type=\"fr\">Quand au cours des événements humains</lang>); ISO 639 codes are used for language identification."
+    :tip: "If you have non-English language and wish to identify it (e.g., &lt;lang type=\"fr\"&gt;Quand au cours des événements humains&lt;/lang&gt;); ISO 639 codes are used for language identification."
   lang-b:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language Bold
     :date: March 8, 2013
   lang-bi:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language Bold-Italic
     :date: March 8, 2013
   lang-i:
-    :sam_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
-    :scml_attrs:
-    - - lang
-      - CDATA
-      - '#IMPLIED'
     :group_name: char-styles
     :learning_category: Language
     :name: Language Italic
@@ -5344,30 +5156,30 @@
   ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Oblique
   osf:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures
     :date: February 16, 2012
   osf-b:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures Bold
     :date: March 8, 2013
   osf-bi:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures Bold Italic
     :date: March 8, 2013
   osf-i:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Old-Style Figures Italic
     :date: February 16, 2012
   page:
@@ -5375,6 +5187,14 @@
     :scml_specialized_contents: EMPTY
     :learning_category: Expanded List of Character Styles
     :name: Page
+    :sam_attrs:
+    - - locator
+      - CDATA
+      - '#IMPLIED'
+    :scml_attrs:
+    - - locator
+      - CDATA
+      - '#IMPLIED'
   pnum:
     :group_name: char-styles
     :learning_category: References/Cross-References
@@ -5382,11 +5202,11 @@
   rc:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Embedded Rubric
   red:
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Red Letter Text
   red-b:
     :group_name: char-styles
@@ -5399,25 +5219,25 @@
   red-ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Red Oblique
     :date: February 16, 2012
   red-sm:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Red Small-caps
     :date: February 16, 2012
   red-sm-i:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Red Small-caps Italic
     :date: February 16, 2012
   red-sm-ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Red Small-caps Oblique
     :date: February 16, 2012
   rh-i:
@@ -5522,7 +5342,7 @@
     :name: Superscript Underline
   symb:
     :group_name: char-styles
-    :learning_category: Symbols, Figures, and Fractions
+    :learning_category: Symbols, Fractions, and Codes
     :name: Symbol
   symb-b:
     :group_name: char-styles
@@ -5574,37 +5394,37 @@
     :name: Symbol Superscript Italic
   taxclass:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Class
     :date: March 8, 2013
   taxfamily:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Family
     :date: March 8, 2013
   taxgenus:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Genus
     :date: March 8, 2013
   taxkingdom:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Kingdom
     :date: March 8, 2013
   taxorder:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Order
     :date: March 8, 2013
   taxphylum:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Phylum
     :date: March 8, 2013
   taxspecies:
     :group_name: char-styles
-    :learning_category: Language
+    :learning_category: Taxonomy
     :name: Taxonomy Species
     :date: March 8, 2013
   tel:
@@ -5614,41 +5434,41 @@
     :date: February 16, 2012
   tetr:
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton
     :date: March 8, 2013
   tetr-b:
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Bold
     :date: March 8, 2013
   tetr-i:
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Italic
     :date: March 8, 2013
   tetr-ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Oblique
     :date: April 14, 2014
   tetr-red:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Red
     :date: March 8, 2013
   tetr-red-i:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Red Italic
     :date: March 8, 2013
   tetr-red-ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Red Oblique
     :date: March 8, 2013
   tgrc:
@@ -5657,15 +5477,15 @@
     :name: Transliterated Greek
   tgrc-b:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Greek Bold
   tgrc-bi:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Greek Bold-Italic
   tgrc-i:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Greek Italic
   theb:
     :group_name: char-styles
@@ -5673,18 +5493,18 @@
     :name: Transliterated Hebrew
   theb-i:
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Hebrew Italic
   theb-ob:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Hebrew Oblique
     :date: April 14, 2014
   theb-red:
     :for: expanded
     :group_name: char-styles
-    :learning_category: Expanded List of Character Styles
+    :learning_category: Language
     :name: Transliterated Hebrew Red
     :date: April 14, 2014
   thn:
@@ -5719,15 +5539,19 @@
     :name: Underline
   url:
     :scml_attrs:
-    - - idref
-      - IDREF
+    - - href
+      - CDATA
+      - '#IMPLIED'
+    :sam_attrs:
+    - - href
+      - CDATA
       - '#IMPLIED'
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: URL
   ver:
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Verse
   xbk:
     :scml_attrs:
@@ -5744,7 +5568,7 @@
       - CDATA
       - '#IMPLIED'
     :group_name: char-styles
-    :learning_category: Mainly in Bibles and Religious Publications
+    :learning_category: Biblical and Religious Character Styles
     :name: Bible Reference
   xref:
     :scml_attrs:
