@@ -215,3 +215,5 @@
 # tail with no variants
 38:
   :type: :tail
+39:
+  :type: :divider

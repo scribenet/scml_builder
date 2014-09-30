@@ -4291,7 +4291,7 @@
     :name: Story Paragraph Last
   structure:
     :for: sam
-    :spacing_profile: 9
+    :spacing_profile: 39
     :group_name: structure
     :learning_category: Structural Elements
     :name: Structure
