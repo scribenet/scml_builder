@@ -2833,7 +2833,7 @@
     :tip: "On a regular body page, the verso running head is most commonly the book title, author name, or chapter title. It can also be set to use a-heads or b-heads (or something altogether different) if the design calls for it. Typically, front matter and back matter use the same content for both the rhv and the rhr."
   rp:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 13
     :abbrev: rp
     :primary_structure: recipe
@@ -2841,7 +2841,7 @@
     :name: Recipe Procedure
   rp1:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 13
     :abbrev: rp
     :primary_structure: recipe
@@ -2849,7 +2849,7 @@
     :name: Recipe Procedure Level 1
   rp1f:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 12
     :abbrev: rp
     :primary_structure: recipe
@@ -2857,7 +2857,7 @@
     :name: Recipe Procedure Level 1 First
   rp1l:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 14
     :abbrev: rp
     :primary_structure: recipe
@@ -2865,7 +2865,7 @@
     :name: Recipe Procedure Level 1 Last
   rp1y:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2897,7 +2897,7 @@
     :name: Recipe C-Head
   rpf:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 12
     :abbrev: rp
     :primary_structure: recipe
@@ -2905,7 +2905,7 @@
     :name: Recipe Procedure First
   rpg:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2913,7 +2913,7 @@
     :name: Recipe Garnish
   rpg1:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2935,7 +2935,7 @@
     :name: Recipe Subhead or Level 1 Head
   rphn:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -3007,7 +3007,7 @@
     :name: Recipe Ingredient List Item Stand-Alone
   rpl:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 14
     :abbrev: rp
     :primary_structure: recipe
@@ -3015,7 +3015,7 @@
     :name: Recipe Procedure Last
   rpn:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -3023,7 +3023,7 @@
     :name: Recipe Note
   rpn1:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -3031,7 +3031,7 @@
     :name: Recipe Note Level 1
   rpnut:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -3039,7 +3039,7 @@
     :name: Recipe Nutritional Information
   rpnut1:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -3127,7 +3127,7 @@
     :name: Recipe Variation Last
   rpy:
     :group_name: recipe
-    :secondary_group_name: body
+    :secondary_group_name: recipe_body 
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
