@@ -2136,7 +2136,7 @@
     :name: Learning Objective
   lps:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_postscript 
     :spacing_profile: 9
     :abbrev: lt
     :primary_structure: letter
@@ -2146,7 +2146,7 @@
     :date: February 16, 2012
   lt:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_body
     :spacing_profile: 33
     :abbrev: lt
     :primary_structure: letter
@@ -2172,7 +2172,7 @@
     :name: Letter Address First
   ltc:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_close
     :spacing_profile: 9
     :abbrev: lt
     :primary_structure: letter
@@ -2198,7 +2198,7 @@
     :tip: "This is the first line of the letter date, often right aligned. If the date runs more than one line (perhaps the year is on a different line), the ltdf style would be applied to the first line, followed by ltd for the rest."
   ltf:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_body
     :spacing_profile: 32
     :abbrev: lt
     :primary_structure: letter
@@ -2207,7 +2207,7 @@
     :date: March 8, 2013
   ltg:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_greeting
     :spacing_profile: 9
     :abbrev: lt
     :primary_structure: letter
@@ -2216,7 +2216,7 @@
     :tip: "“Dear So-and-So . . .”"
   ltl:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_body
     :spacing_profile: 34
     :abbrev: lt
     :primary_structure: letter
@@ -2225,7 +2225,7 @@
     :date: March 8, 2013
   lto:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_body
     :spacing_profile: 36
     :abbrev: lt
     :primary_structure: letter
@@ -2234,7 +2234,7 @@
     :date: March 8, 2013
   lts:
     :group_name: letter
-    :secondary_group_name: body
+    :secondary_group_name: letter_body
     :spacing_profile: 35
     :abbrev: lt
     :primary_structure: letter
