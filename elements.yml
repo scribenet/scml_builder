@@ -2460,7 +2460,7 @@
   nll:
     :group_name: list
     :primary_structure: list
-    :spacing_profile: 2
+    :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Last
   nlp:
