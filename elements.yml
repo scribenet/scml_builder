@@ -93,6 +93,7 @@
     :sam_specialized_contents: (%paragraph_styles;)*
     :group_name: structure
     :learning_category: Structural Elements
+    :primary_structure: notes 
     :name: Endnote
     :date:  
   epigraph:
@@ -117,6 +118,7 @@
     :for: dtds 
     :sam_specialized_contents: (%paragraph_styles;)*
     :group_name: structure
+    :primary_structure: notes 
     :learning_category: Structural Elements
     :name: Footnote
     :date: July 5, 2013
@@ -308,6 +310,7 @@
     :tip: "This is for an ah that opens a chapter, preceding the pf paragraph. If an ah follows a list, it is recommended that ah be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the ah to control spacing."
   ans:
     :group_name: question
+    :secondary_group_name: body
     :abbrev: qu
     :primary_structure: question
     :spacing_profile: 8
@@ -315,6 +318,7 @@
     :name: Answer
   ansf:
     :group_name: question
+    :secondary_group_name: body
     :abbrev: qu
     :primary_structure: question
     :spacing_profile: 7
@@ -322,6 +326,7 @@
     :name: Answer First
   ard:
     :group_name: exercise
+    :secondary_group_name: body
     :abbrev: ex
     :primary_structure: exercise
     :spacing_profile: 9
@@ -354,6 +359,7 @@
   audio:
     :spacing_profile: 9
     :group_name: media
+    :secondary_group_name: body
     :primary_structure: media
   bh:
     :group_name: heads
@@ -516,6 +522,7 @@
     :name: Bulleted List Item Stand-Alone
   bq:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 28
@@ -524,6 +531,7 @@
     :tip: "Often referred to as an extract. Use the f, l, and s variations to control spacing above and below as needed. When multiple block quotes appear consecutively, use bqf for all paragraphs that need space above them until the last one, which should use bqs, giving space above and below. This will prevent you from doubling up on space between separate block quotes. Block quote variations include bq1 sublevels as well as bqnl (block quote numbered list) and bqul (block quote unnumbered list) styles."
   bq1:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 4
@@ -531,6 +539,7 @@
     :name: Block Quote Level 1
   bq1f:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 3
@@ -538,6 +547,7 @@
     :name: Block Quote Level 1 First
   bq1l:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 5
@@ -545,6 +555,7 @@
     :name: Block Quote Level 1 Last
   bq1s:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 6
@@ -552,6 +563,7 @@
     :name: Block Quote Level 1 Stand-Alone
   bqaft:
     :group_name: blockquotes
+    :secondary_group_name: body
     :spacing_profile: 37
     :abbrev: bq
     :primary_structure: blockquote
@@ -560,6 +572,7 @@
     :tip: "For use instead of bqf when the first paragraph of a block quote follows immediately after a head, just as a paft paragraph would be used following a head. If it is the only block quote paragraph after the head, though, use bqo."
   bqf:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 27
@@ -567,6 +580,7 @@
     :name: Block Quote First
   bqh:
     :group_name: blockquotes
+    :secondary_group_name: heads
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 2
@@ -574,6 +588,7 @@
     :name: Block Quote Head
   bql:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 29
@@ -581,6 +596,7 @@
     :name: Block Quote Last
   bqnl:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 4
@@ -588,6 +604,7 @@
     :name: Block Quote Numbered List Item
   bqnlf:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 3
@@ -595,6 +612,7 @@
     :name: Block Quote Numbered List Item First
   bqnll:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 5
@@ -602,6 +620,7 @@
     :name: Block Quote Numbered List Item Last
   bqnls:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 6
@@ -609,6 +628,7 @@
     :name: Block Quote Numbered List Item Stand-Alone
   bqo:
     :group_name: blockquotes
+    :secondary_group_name: body
     :spacing_profile: 31
     :abbrev: bq
     :primary_structure: blockquote
@@ -617,6 +637,7 @@
     :date: February 16, 2012
   bqs:
     :group_name: blockquotes
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 30
@@ -624,7 +645,8 @@
     :name: Block Quote Stand-Alone
   bqt:
     :group_name: blockquotes
-    :spacing_profile: 22
+    :secondary_group_name: body
+    :spacing_profile: 38 
     :abbrev: bq
     :primary_structure: blockquote
     :learning_category: Block Quotation
@@ -633,6 +655,7 @@
     :date: February 16, 2012
   bqul:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 4
@@ -640,6 +663,7 @@
     :name: Block Quote Unnumbered List Item
   bqulf:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 3
@@ -647,6 +671,7 @@
     :name: Block Quote Unnumbered List Item First
   bqull:
     :group_name: blockquotes-list
+    :secondary_group_name: list
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 5
@@ -654,6 +679,7 @@
     :name: Block Quote Unnumbered List Item Last
   bquls:
     :group_name: blockquotes-list
+    :secondary_group_name: body
     :abbrev: bq
     :primary_structure: blockquote
     :spacing_profile: 6
@@ -669,6 +695,7 @@
     :tip: "Box text is used with parallel sidebar levels to aid in clarity and indicate sidebars that specifically occur within the main text area, most frequently placed within a gray, colored, and/or bordered box. Unless specifically coordinated with the design, sidebar content should use the sb styles as a default. Box pagragraph styles include heads, numbered lists, unnumbered lists, block quotes, and senselines. Each box style has a Level 1 equivalent."
   bx1:
     :group_name: box
+    :secondary_group_name: body
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 16
@@ -676,6 +703,7 @@
     :name: Box Level 1 Paragraph
   bx1aft:
     :group_name: box
+    :secondary_group_name: body
     :spacing_profile: 19
     :abbrev: bx
     :primary_structure: box
@@ -683,6 +711,7 @@
     :name: Box Level 1 Paragraph after Head
   bx1ah:
     :group_name: box
+    :secondary_group_name: heads
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -690,6 +719,7 @@
     :name: Box Level 1 A-Head
   bx1bh:
     :group_name: box
+    :secondary_group_name: heads
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -697,6 +727,7 @@
     :name: Box Level 1 B-Head
   bx1bq:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 4
@@ -704,6 +735,7 @@
     :name: Box Level 1 Block Quote
   bx1bqf:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 3
@@ -711,6 +743,7 @@
     :name: Box Level 1 Block Quote First
   bx1bql:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 5
@@ -718,6 +751,7 @@
     :name: Box Level 1 Block Quote Last
   bx1bqs:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 6
@@ -725,6 +759,7 @@
     :name: Box Level 1 Block Quote Stand-Alone
   bx1con:
     :group_name: box
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: bx
     :primary_structure: box
@@ -732,6 +767,7 @@
     :name: Box Level 1 Paragraph Continued
   bx1f:
     :group_name: box
+    :secondary_group_name: body
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 15
@@ -739,6 +775,7 @@
     :name: Box Level 1 Paragraph First
   bx1h:
     :group_name: box
+    :secondary_group_name: heads
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -746,6 +783,7 @@
     :name: Box Level 1 Head
   bx1l:
     :group_name: box
+    :secondary_group_name: body
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 17
@@ -753,6 +791,7 @@
     :name: Box Level 1 Paragraph Last
   bx1nl:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 13
@@ -760,6 +799,7 @@
     :name: Box Level 1 Numbered List Item
   bx1nlf:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 12
@@ -767,6 +807,7 @@
     :name: Box Level 1 Numbered List Item First
   bx1nll:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 14
@@ -774,6 +815,7 @@
     :name: Box Level 1 Numbered List Item Last
   bx1nlp:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 9
@@ -781,6 +823,7 @@
     :name: Box Level 1 Numbered List Item Paragraph
   bx1s:
     :group_name: box
+    :secondary_group_name: body
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 18
@@ -788,6 +831,7 @@
     :name: Box Level 1 Paragraph Stand-Alone
   bx1sl:
     :group_name: box
+    :secondary_group_name: sense
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 13
@@ -795,6 +839,7 @@
     :name: Box Level 1 Senseline
   bx1slf:
     :group_name: box
+    :secondary_group_name: sense
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 12
@@ -802,6 +847,7 @@
     :name: Box Level 1 Senseline First
   bx1sll:
     :group_name: box
+    :secondary_group_name: sense
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 14
@@ -809,13 +855,15 @@
     :name: Box Level 1 Senseline Last
   bx1t:
     :group_name: box
-    :spacing_profile: 22
+    :secondary_group_name: body
+    :spacing_profile: 38 
     :abbrev: bx
     :primary_structure: box
     :learning_category: Box
     :name: Box Level 1 Title
   bx1ul:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 13
@@ -823,6 +871,7 @@
     :name: Box Level 1 Unnumbered List Item
   bx1ulf:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 12
@@ -830,6 +879,7 @@
     :name: Box Level 1 Unnumbered List Item First
   bx1ull:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 14
@@ -837,6 +887,7 @@
     :name: Box Level 1 Unnumbered List Item Last
   bx1ulp:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 9
@@ -844,6 +895,7 @@
     :name: Box Level 1 Unnumbered List Item Paragraph
   bxaft:
     :group_name: box
+    :secondary_group_name: body
     :spacing_profile: 37
     :abbrev: bx
     :primary_structure: box
@@ -851,6 +903,7 @@
     :name: Box Paragraph after Head
   bxah:
     :group_name: box
+    :secondary_group_name: heads
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -858,6 +911,7 @@
     :name: Box A-Head
   bxau:
     :group_name: box
+    :secondary_group_name: chapter_other
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -865,6 +919,7 @@
     :name: Box Author
   bxau1:
     :group_name: box
+    :secondary_group_name: chapter_other
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -872,6 +927,7 @@
     :name: Box Author 1
   bxbh:
     :group_name: box
+    :secondary_group_name: heads
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -879,6 +935,7 @@
     :name: Box B-Head
   bxbq:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 4
@@ -886,6 +943,7 @@
     :name: Box Block Quote
   bxbqf:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 3
@@ -893,6 +951,7 @@
     :name: Box Block Quote First
   bxbql:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 5
@@ -900,6 +959,7 @@
     :name: Box Block Quote Last
   bxbqs:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 6
@@ -907,6 +967,7 @@
     :name: Box Block Quote Stand-Alone
   bxcon:
     :group_name: box
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: bx
     :primary_structure: box
@@ -914,6 +975,7 @@
     :name: Box Paragraph Continued
   bxf:
     :group_name: box
+    :secondary_group_name: blockquotes
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 27
@@ -921,6 +983,7 @@
     :name: Box Paragraph First
   bxh:
     :group_name: box
+    :secondary_group_name: heads
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 2
@@ -929,6 +992,7 @@
     :tip: "Used when the box head is unique to that particular box."
   bxl:
     :group_name: box
+    :secondary_group_name: body
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 29
@@ -936,6 +1000,7 @@
     :name: Box Paragraph Last
   bxnl:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 4
@@ -943,6 +1008,7 @@
     :name: Box Numbered List Item
   bxnlf:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 3
@@ -950,6 +1016,7 @@
     :name: Box Numbered List Item First
   bxnll:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 5
@@ -957,6 +1024,7 @@
     :name: Box Numbered List Item Last
   bxnlp:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 9
@@ -964,6 +1032,7 @@
     :name: Box Numbered List Item Paragraph
   bxnls:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 6
@@ -971,6 +1040,7 @@
     :name: Box Numbered List Item Stand-Alone
   bxo:
     :group_name: box
+    :secondary_group_name: body
     :spacing_profile: 31
     :abbrev: bx
     :primary_structure: box
@@ -979,6 +1049,7 @@
     :date: February 16, 2012
   bxs:
     :group_name: box
+    :secondary_group_name: body
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 30
@@ -987,6 +1058,7 @@
     :tip: "Box text with space both above and below. This is needed only if the box text appears within the text flow, with the box itself placed behind the text. If the text is placed within the box, spacing can be controlled through the object's style sheet."
   bxsl:
     :group_name: box
+    :secondary_group_name: sense
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 13
@@ -994,6 +1066,7 @@
     :name: Box Senseline
   bxslf:
     :group_name: box
+    :secondary_group_name: sense
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 12
@@ -1001,6 +1074,7 @@
     :name: Box Senseline First
   bxsll:
     :group_name: box
+    :secondary_group_name: sense
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 14
@@ -1008,6 +1082,7 @@
     :name: Box Senseline Last
   bxt:
     :group_name: box
+    :secondary_group_name: body
     :spacing_profile: 2
     :abbrev: bx
     :primary_structure: box
@@ -1016,6 +1091,7 @@
     :tip: "Used for repeating box titles."
   bxul:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 4
@@ -1023,6 +1099,7 @@
     :name: Box Unnumbered List Item
   bxulf:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 3
@@ -1030,6 +1107,7 @@
     :name: Box Unnumbered List Item First
   bxull:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 5
@@ -1037,6 +1115,7 @@
     :name: Box Unnumbered List Item Last
   bxulp:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 9
@@ -1044,6 +1123,7 @@
     :name: Box Unnumbered List Item Paragraph
   bxuls:
     :group_name: box
+    :secondary_group_name: list
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 6
@@ -1051,6 +1131,7 @@
     :name: Box Unnumbered List Item Stand-Alone
   call:
     :group_name: quote
+    :secondary_group_name: body
     :abbrev: quo
     :primary_structure: pullquote
     :spacing_profile: 9
@@ -1484,6 +1565,7 @@
     :tip: "If an eh follows a list, it is recommended that eh be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the eh to control spacing."
   en:
     :group_name: note
+    :secondary_group_name: body
     :spacing_profile: 9
     :primary_structure: notes
     :learning_category: Notes
@@ -1497,6 +1579,7 @@
     :tip: "For endpaper text in workbooks. Or, in books that include The End, use this style for that paragraph."
   enhn:
     :group_name: note
+    :secondary_group_name: heads
     :spacing_profile: 2
     :primary_structure: notes
     :learning_category: Notes
@@ -1505,6 +1588,7 @@
     :date: April 14, 2014
   enp:
     :group_name: note
+    :secondary_group_name: body
     :spacing_profile: 9
     :primary_structure: notes
     :learning_category: Notes
@@ -1512,6 +1596,7 @@
     :tip: "A new paragraph within an endnote. If an endnote is more than one paragraph long, then the second paragraph should use the enp style, which will control the proper indentation."
   ep:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 16
     :abbrev: ep
     :primary_structure: epigraph
@@ -1520,6 +1605,7 @@
     :tip: "This is the base level epigraph. If (as is most common) an epigraph is a single paragraph, simply use this ep style."
   ep1:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: ep
     :primary_structure: epigraph
@@ -1528,6 +1614,7 @@
     :tip: "First epigraph sublevel, available if special spacing or indentation is required."
   ep2:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: ep
     :primary_structure: epigraph
@@ -1536,6 +1623,7 @@
     :tip: "Second epigraph sublevel, available if special spacing or indentation is required."
   epaft:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 19
     :abbrev: ep
     :primary_structure: epigraph
@@ -1545,6 +1633,7 @@
     :date: March 8, 2013
   epf:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 15
     :abbrev: ep
     :primary_structure: epigraph
@@ -1553,6 +1642,7 @@
     :tip: "If an epigraph is multiple paragraphs, the epf style is the equivalent of pf for paragraphs: as the first epigraph paragraph, it would likely not indent and can be typeset with added space above if needed."
   epl:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 17
     :abbrev: ep
     :primary_structure: epigraph
@@ -1561,6 +1651,7 @@
     :tip: "The last paragraph of a multiple-paragraph epigraph, if needed to add spacing below."
   eps:
     :group_name: epigraph
+    :secondary_group_name: body
     :spacing_profile: 18
     :abbrev: ep
     :primary_structure: epigraph
@@ -1569,6 +1660,7 @@
     :tip: "If an epigraph has no ept and needs spacing defined above and below."
   epsl:
     :group_name: epigraph
+    :secondary_group_name: sense
     :spacing_profile: 8
     :abbrev: ep
     :primary_structure: epigraph
@@ -1577,6 +1669,7 @@
     :tip: "Epigraph senseline should be used for an epigraph that contains lines of poetry."
   epsl1:
     :group_name: epigraph
+    :secondary_group_name: sense
     :spacing_profile: 9
     :abbrev: ep
     :primary_structure: epigraph
@@ -1585,6 +1678,7 @@
     :date: March 8, 2013
   epslf:
     :group_name: epigraph
+    :secondary_group_name: sense
     :spacing_profile: 7
     :abbrev: ep
     :primary_structure: epigraph
@@ -1593,7 +1687,8 @@
     :date: March 8, 2013
   ept:
     :group_name: epigraph
-    :spacing_profile: 22
+    :secondary_group_name: body
+    :spacing_profile: 38 
     :abbrev: ep
     :primary_structure: epigraph
     :learning_category: Epigraph
@@ -1601,7 +1696,8 @@
     :tip: "The speaker/author of the epigraph, typically preceded by an em dash."
   ept1:
     :group_name: epigraph
-    :spacing_profile: 22
+    :secondary_group_name: body
+    :spacing_profile: 22 
     :abbrev: ep
     :primary_structure: epigraph
     :learning_category: Epigraph
@@ -1625,6 +1721,7 @@
     :name: Equation After Head
   ex:
     :group_name: exercise
+    :secondary_group_name: body
     :spacing_profile: 16
     :abbrev: ex
     :primary_structure: exercise
@@ -1633,6 +1730,7 @@
     :date: March 8, 2013
   exaft:
     :group_name: exercise
+    :secondary_group_name: body
     :spacing_profile: 19
     :abbrev: ex
     :primary_structure: exercise
@@ -1641,6 +1739,7 @@
     :date: March 8, 2013
   exah:
     :group_name: exercise
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: ex
     :primary_structure: exercise
@@ -1648,6 +1747,7 @@
     :name: Exercise A-Head
   exbh:
     :group_name: exercise
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: ex
     :primary_structure: exercise
@@ -1655,6 +1755,7 @@
     :name: Exercise B-Head
   exf:
     :group_name: exercise
+    :secondary_group_name: body
     :spacing_profile: 15
     :abbrev: ex
     :primary_structure: exercise
@@ -1662,6 +1763,7 @@
     :name: Exercise First
   exh:
     :group_name: exercise
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: ex
     :primary_structure: exercise
@@ -1669,6 +1771,7 @@
     :name: Exercise Head
   exl:
     :group_name: exercise
+    :secondary_group_name: body
     :spacing_profile: 17
     :abbrev: ex
     :primary_structure: exercise
@@ -1676,6 +1779,7 @@
     :name: Exercise Last
   exnl:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: ex
     :primary_structure: exercise
@@ -1683,6 +1787,7 @@
     :name: Exercise Numbered List Item
   exnl1:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: ex
     :primary_structure: exercise
@@ -1690,6 +1795,7 @@
     :name: Exercise Numbered List Item Level 1
   exnl1f:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: ex
     :primary_structure: exercise
@@ -1697,6 +1803,7 @@
     :name: Exercise Numbered List Item Level 1 First
   exnl1l:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: ex
     :primary_structure: exercise
@@ -1704,6 +1811,7 @@
     :name: Exercise Numbered List Item Level 1 Last
   exnl1p:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: ex
     :primary_structure: exercise
@@ -1711,6 +1819,7 @@
     :name: Exercise Numbered List Item Level 1 Paragraph
   exnl1s:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: ex
     :primary_structure: exercise
@@ -1718,6 +1827,7 @@
     :name: Exercise Numbered List Item Level 1 Stand-Alone
   exnlf:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: ex
     :primary_structure: exercise
@@ -1725,6 +1835,7 @@
     :name: Exercise Numbered List Item First
   exnll:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: ex
     :primary_structure: exercise
@@ -1732,6 +1843,7 @@
     :name: Exercise Numbered List Item Last
   exnlp:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: ex
     :primary_structure: exercise
@@ -1739,6 +1851,7 @@
     :name: Exercise Numbered List Item Paragraph
   exnls:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: ex
     :primary_structure: exercise
@@ -1746,6 +1859,7 @@
     :name: Exercise Numbered List Item Stand-Alone
   exs:
     :group_name: exercise
+    :secondary_group_name: body
     :spacing_profile: 18
     :abbrev: ex
     :primary_structure: exercise
@@ -1753,6 +1867,7 @@
     :name: Exercise Stand-Alone
   exul:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: ex
     :primary_structure: exercise
@@ -1760,6 +1875,7 @@
     :name: Exercise Unnumbered List Item
   exul1:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: ex
     :primary_structure: exercise
@@ -1767,6 +1883,7 @@
     :name: Exercise Unnumbered List Item Level 1
   exul1f:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: ex
     :primary_structure: exercise
@@ -1774,6 +1891,7 @@
     :name: Exercise Unnumbered List Item Level 1 First
   exul1l:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: ex
     :primary_structure: exercise
@@ -1781,6 +1899,7 @@
     :name: Exercise Unnumbered List Item Level 1 Last
   exul1p:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: ex
     :primary_structure: exercise
@@ -1788,6 +1907,7 @@
     :name: Exercise Unnumbered List Item Level 1 Paragraph
   exul1s:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: ex
     :primary_structure: exercise
@@ -1795,6 +1915,7 @@
     :name: Exercise Unnumbered List Item Level 1 Stand-Alone
   exulf:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: ex
     :primary_structure: exercise
@@ -1802,6 +1923,7 @@
     :name: Exercise Unnumbered List Item First
   exull:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: ex
     :primary_structure: exercise
@@ -1809,6 +1931,7 @@
     :name: Exercise Unnumbered List Item Last
   exulp:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: ex
     :primary_structure: exercise
@@ -1816,6 +1939,7 @@
     :name: Exercise Unnumbered List Item Paragraph
   exuls:
     :group_name: exercise
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: ex
     :primary_structure: exercise
@@ -1879,6 +2003,7 @@
     :tip: "Figure note."
   fn:
     :group_name: note
+    :secondary_group_name: body
     :spacing_profile: 9
     :primary_structure: notes
     :learning_category: Notes
@@ -1886,6 +2011,7 @@
     :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should **not** be composed as fnref, which is used only on the number or symbol that appears within the main text. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
   fnp:
     :group_name: note
+    :secondary_group_name: body
     :primary_structure: notes
     :spacing_profile: 9
     :learning_category: Notes
@@ -2014,6 +2140,7 @@
     :name: Learning Objective
   lps:
     :group_name: letter
+    :secondary_group_name: letter_postscript 
     :spacing_profile: 9
     :abbrev: lt
     :primary_structure: letter
@@ -2023,6 +2150,7 @@
     :date: February 16, 2012
   lt:
     :group_name: letter
+    :secondary_group_name: letter_body
     :spacing_profile: 33
     :abbrev: lt
     :primary_structure: letter
@@ -2031,6 +2159,7 @@
     :date: March 8, 2013
   lta:
     :group_name: letter
+    :secondary_group_name: adrress
     :spacing_profile: 8
     :abbrev: lt
     :primary_structure: letter
@@ -2039,6 +2168,7 @@
     :tip: "The letter address refers to the physical address of the recipient, not how you address another person."
   ltaf:
     :group_name: letter
+    :secondary_group_name: address
     :spacing_profile: 7
     :abbrev: lt
     :primary_structure: letter
@@ -2046,6 +2176,7 @@
     :name: Letter Address First
   ltc:
     :group_name: letter
+    :secondary_group_name: letter_close
     :spacing_profile: 9
     :abbrev: lt
     :primary_structure: letter
@@ -2054,6 +2185,7 @@
     :tip: "“Sincerely . . .”"
   ltd:
     :group_name: letter
+    :secondary_group_name: date
     :spacing_profile: 8
     :abbrev: lt
     :primary_structure: letter
@@ -2061,6 +2193,7 @@
     :name: Letter Date
   ltdf:
     :group_name: letter
+    :secondary_group_name: date
     :spacing_profile: 7
     :abbrev: lt
     :primary_structure: letter
@@ -2069,6 +2202,7 @@
     :tip: "This is the first line of the letter date, often right aligned. If the date runs more than one line (perhaps the year is on a different line), the ltdf style would be applied to the first line, followed by ltd for the rest."
   ltf:
     :group_name: letter
+    :secondary_group_name: letter_body
     :spacing_profile: 32
     :abbrev: lt
     :primary_structure: letter
@@ -2077,6 +2211,7 @@
     :date: March 8, 2013
   ltg:
     :group_name: letter
+    :secondary_group_name: letter_greeting
     :spacing_profile: 9
     :abbrev: lt
     :primary_structure: letter
@@ -2085,6 +2220,7 @@
     :tip: "“Dear So-and-So . . .”"
   ltl:
     :group_name: letter
+    :secondary_group_name: letter_body
     :spacing_profile: 34
     :abbrev: lt
     :primary_structure: letter
@@ -2093,6 +2229,7 @@
     :date: March 8, 2013
   lto:
     :group_name: letter
+    :secondary_group_name: letter_body
     :spacing_profile: 36
     :abbrev: lt
     :primary_structure: letter
@@ -2101,6 +2238,7 @@
     :date: March 8, 2013
   lts:
     :group_name: letter
+    :secondary_group_name: letter_body
     :spacing_profile: 35
     :abbrev: lt
     :primary_structure: letter
@@ -2110,6 +2248,7 @@
     :date: March 8, 2013
   ltsig:
     :group_name: letter
+    :secondary_group_name: signature
     :spacing_profile: 13
     :abbrev: lt
     :primary_structure: letter
@@ -2117,6 +2256,7 @@
     :name: Letter Signature
   ltsigf:
     :group_name: letter
+    :secondary_group_name: signature
     :spacing_profile: 12
     :abbrev: lt
     :primary_structure: letter
@@ -2124,6 +2264,7 @@
     :name: Letter Signature First
   ltsigl:
     :group_name: letter
+    :secondary_group_name: signature
     :spacing_profile: 14
     :abbrev: lt
     :primary_structure: letter
@@ -2323,7 +2464,7 @@
   nll:
     :group_name: list
     :primary_structure: list
-    :spacing_profile: 2
+    :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Last
   nlp:
@@ -2348,6 +2489,7 @@
     :name: Numbered List Item Stand-Alone
   ntbq:
     :group_name: note
+    :secondary_group_name: blockquotes
     :primary_structure: notes
     :spacing_profile: 4
     :learning_category: Notes
@@ -2355,6 +2497,7 @@
     :date: February 16, 2012
   ntbqf:
     :group_name: note
+    :secondary_group_name: blockquotes
     :primary_structure: notes
     :spacing_profile: 3
     :learning_category: Notes
@@ -2362,6 +2505,7 @@
     :date: February 16, 2012
   ntbql:
     :group_name: note
+    :secondary_group_name: blockquotes
     :primary_structure: notes
     :spacing_profile: 5
     :learning_category: Notes
@@ -2369,6 +2513,7 @@
     :date: February 16, 2012
   ntbqs:
     :group_name: note
+    :secondary_group_name: blockquotes
     :primary_structure: notes
     :spacing_profile: 6
     :learning_category: Notes
@@ -2377,12 +2522,14 @@
   ntcon:
     :spacing_profile: 9
     :group_name: note
+    :secondary_group_name: body
     :primary_structure: notes
     :learning_category: Notes
     :name: Note Continued
     :date: February 16, 2012
   nteq:
     :group_name: note
+    :secondary_group_name: equation
     :primary_structure: notes
     :spacing_profile: 9
     :learning_category: Notes
@@ -2390,6 +2537,7 @@
     :date: February 16, 2012
   ntnl:
     :group_name: note
+    :secondary_group_name: list
     :primary_structure: notes
     :spacing_profile: 13
     :learning_category: Notes
@@ -2397,6 +2545,7 @@
     :date: February 16, 2012
   ntnlf:
     :group_name: note
+    :secondary_group_name: list
     :primary_structure: notes
     :spacing_profile: 12
     :learning_category: Notes
@@ -2404,6 +2553,7 @@
     :date: February 16, 2012
   ntnll:
     :group_name: note
+    :secondary_group_name: list
     :primary_structure: notes
     :spacing_profile: 14
     :learning_category: Notes
@@ -2411,6 +2561,7 @@
     :date: February 16, 2012
   ntsl:
     :group_name: note
+    :secondary_group_name: sense
     :primary_structure: notes
     :spacing_profile: 13
     :learning_category: Notes
@@ -2418,6 +2569,7 @@
     :date: February 16, 2012
   ntslf:
     :group_name: note
+    :secondary_group_name: sense
     :primary_structure: notes
     :spacing_profile: 12
     :learning_category: Notes
@@ -2425,6 +2577,7 @@
     :date: February 16, 2012
   ntsll:
     :group_name: note
+    :secondary_group_name: sense
     :primary_structure: notes
     :spacing_profile: 14
     :learning_category: Notes
@@ -2432,6 +2585,7 @@
     :date: February 16, 2012
   nttd:
     :group_name: note
+    :secondary_group_name: table
     :primary_structure: notes
     :spacing_profile: 9
     :learning_category: Notes
@@ -2439,6 +2593,7 @@
     :date: February 16, 2012
   ntul:
     :group_name: note
+    :secondary_group_name: list
     :primary_structure: notes
     :spacing_profile: 13
     :learning_category: Notes
@@ -2446,6 +2601,7 @@
     :date: February 16, 2012
   ntulf:
     :group_name: note
+    :secondary_group_name: list
     :primary_structure: notes
     :spacing_profile: 12
     :learning_category: Notes
@@ -2453,6 +2609,7 @@
     :date: February 16, 2012
   ntull:
     :group_name: note
+    :secondary_group_name: list
     :primary_structure: notes
     :spacing_profile: 14
     :learning_category: Notes
@@ -2555,6 +2712,7 @@
     :name: Part Title
   qu:
     :group_name: question
+    :secondary_group_name: body
     :spacing_profile: 8
     :abbrev: qu
     :primary_structure: question
@@ -2562,6 +2720,7 @@
     :name: Question
   quf:
     :group_name: question
+    :secondary_group_name: body
     :spacing_profile: 7
     :abbrev: qu
     :primary_structure: question
@@ -2569,6 +2728,7 @@
     :name: Question First
   quh:
     :group_name: question
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: qu
     :primary_structure: question
@@ -2608,7 +2768,7 @@
     :date: February 16, 2012
   quott:
     :group_name: quote
-    :spacing_profile: 22
+    :spacing_profile: 22 
     :abbrev: quo
     :primary_structure: pullquote
     :learning_category: Callouts
@@ -2677,6 +2837,7 @@
     :tip: "On a regular body page, the verso running head is most commonly the book title, author name, or chapter title. It can also be set to use a-heads or b-heads (or something altogether different) if the design calls for it. Typically, front matter and back matter use the same content for both the rhv and the rhr."
   rp:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 13
     :abbrev: rp
     :primary_structure: recipe
@@ -2684,6 +2845,7 @@
     :name: Recipe Procedure
   rp1:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 13
     :abbrev: rp
     :primary_structure: recipe
@@ -2691,6 +2853,7 @@
     :name: Recipe Procedure Level 1
   rp1f:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 12
     :abbrev: rp
     :primary_structure: recipe
@@ -2698,6 +2861,7 @@
     :name: Recipe Procedure Level 1 First
   rp1l:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 14
     :abbrev: rp
     :primary_structure: recipe
@@ -2705,6 +2869,7 @@
     :name: Recipe Procedure Level 1 Last
   rp1y:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2712,6 +2877,7 @@
     :name: Recipe Yield Level 1
   rpah:
     :group_name: recipe
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2719,6 +2885,7 @@
     :name: Recipe A-Head
   rpbh:
     :group_name: recipe
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2726,6 +2893,7 @@
     :name: Recipe B-Head
   rpch:
     :group_name: recipe
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2733,6 +2901,7 @@
     :name: Recipe C-Head
   rpf:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 12
     :abbrev: rp
     :primary_structure: recipe
@@ -2740,6 +2909,7 @@
     :name: Recipe Procedure First
   rpg:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2747,6 +2917,7 @@
     :name: Recipe Garnish
   rpg1:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2754,11 +2925,13 @@
     :name: Recipe Garnish Level 1
   rph:
     :group_name: recipe
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
   rph1:
     :group_name: recipe
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2766,6 +2939,7 @@
     :name: Recipe Subhead or Level 1 Head
   rphn:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2773,6 +2947,7 @@
     :name: Recipe Head Note
   rpil:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: rp
     :primary_structure: recipe
@@ -2780,6 +2955,7 @@
     :name: Recipe Ingredient List Item
   rpil1:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: rp
     :primary_structure: recipe
@@ -2787,6 +2963,7 @@
     :name: Recipe Ingredient List Item Level 1
   rpil1f:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: rp
     :primary_structure: recipe
@@ -2794,6 +2971,7 @@
     :name: Recipe Ingredient List Item Level 1 First
   rpil1l:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: rp
     :primary_structure: recipe
@@ -2801,6 +2979,7 @@
     :name: Recipe Ingredient List Item Level 1 Last
   rpil1s:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: rp
     :primary_structure: recipe
@@ -2808,6 +2987,7 @@
     :name: Recipe Ingredient List Item Level 1 Stand-Alone
   rpilf:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: rp
     :primary_structure: recipe
@@ -2815,6 +2995,7 @@
     :name: Recipe Ingredient List Item First
   rpill:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: rp
     :primary_structure: recipe
@@ -2822,6 +3003,7 @@
     :name: Recipe Ingredient List Item Last
   rpils:
     :group_name: recipe
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: rp
     :primary_structure: recipe
@@ -2829,6 +3011,7 @@
     :name: Recipe Ingredient List Item Stand-Alone
   rpl:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 14
     :abbrev: rp
     :primary_structure: recipe
@@ -2836,6 +3019,7 @@
     :name: Recipe Procedure Last
   rpn:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2843,6 +3027,7 @@
     :name: Recipe Note
   rpn1:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2850,6 +3035,7 @@
     :name: Recipe Note Level 1
   rpnut:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2857,6 +3043,7 @@
     :name: Recipe Nutritional Information
   rpnut1:
     :group_name: recipe
+    :secondary_group_name: recipe_body
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2864,20 +3051,23 @@
     :name: Recipe Nutritional Information Level 1
   rpt:
     :group_name: recipe
-    :spacing_profile: 22
+    :secondary_group_name: heads
+    :spacing_profile: 22 
     :abbrev: rp
     :primary_structure: recipe
     :learning_category: Recipes
     :name: Recipe Title
   rpt1:
     :group_name: recipe
-    :spacing_profile: 22
+    :secondary_group_name: heads
+    :spacing_profile: 22 
     :abbrev: rp
     :primary_structure: recipe
     :learning_category: Recipes
     :name: Recipe Subtitle or Level 1 Title
   rpv:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 13
     :abbrev: rp
     :primary_structure: recipe
@@ -2885,6 +3075,7 @@
     :name: Recipe Variation
   rpv1:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 13
     :abbrev: rp
     :primary_structure: recipe
@@ -2892,6 +3083,7 @@
     :name: Recipe Variation Level 1
   rpv1f:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 12
     :abbrev: rp
     :primary_structure: recipe
@@ -2899,6 +3091,7 @@
     :name: Recipe Variation Level 1 First
   rpv1h:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2906,6 +3099,7 @@
     :name: Recipe Variation Level 1 Head
   rpv1l:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 14
     :abbrev: rp
     :primary_structure: recipe
@@ -2913,6 +3107,7 @@
     :name: Recipe Variation Level 1 Last
   rpvf:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 12
     :abbrev: rp
     :primary_structure: recipe
@@ -2920,6 +3115,7 @@
     :name: Recipe Variation First
   rpvh:
     :group_name: recipe
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
@@ -2927,6 +3123,7 @@
     :name: Recipe Variation Head
   rpvl:
     :group_name: recipe
+    :secondary_group_name: recipe_variation
     :spacing_profile: 14
     :abbrev: rp
     :primary_structure: recipe
@@ -2934,6 +3131,7 @@
     :name: Recipe Variation Last
   rpy:
     :group_name: recipe
+    :secondary_group_name: recipe_body 
     :spacing_profile: 9
     :abbrev: rp
     :primary_structure: recipe
@@ -2962,13 +3160,14 @@
     :date: April 14, 2014
   rvt:
     :group_name: series
-    :spacing_profile: 22
+    :spacing_profile: 22 
     :abbrev: ser
     :learning_category: Series
     :name: Review Tail
     :tip: "The review tail is the author of the rv quotation. Most commonly preceded by an em dash and right aligned, like an ept or quotail."
   sb:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 28
     :abbrev: sb
     :primary_structure: sidebar
@@ -2977,6 +3176,7 @@
     :tip: "Sidebar paragraphs include many variations, following the same patterns as main-level ScML styles, including heads, lists, and senselines. The sidebar styles encompass things such as “box text” that may appear within your main text area. When composing, use the different sidebar levels to organize the different kinds of boxed text that appear in your project."
   sb1:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 13
     :abbrev: sb
     :primary_structure: sidebar
@@ -2984,6 +3184,7 @@
     :name: Sidebar Level 1
   sb1f:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 12
     :abbrev: sb
     :primary_structure: sidebar
@@ -2991,6 +3192,7 @@
     :name: Sidebar Level 1 First
   sb1h:
     :group_name: sidebar
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: sb
     :primary_structure: sidebar
@@ -2999,6 +3201,7 @@
     :date: March 8, 2013
   sb1l:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 14
     :abbrev: sb
     :primary_structure: sidebar
@@ -3006,7 +3209,8 @@
     :name: Sidebar Level 1 Last
   sb1t:
     :group_name: sidebar
-    :spacing_profile: 22
+    :secondary_group_name: heads
+    :spacing_profile: 22 
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
@@ -3014,6 +3218,7 @@
     :date: March 8, 2013
   sbaft:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 37
     :abbrev: sb
     :primary_structure: sidebar
@@ -3021,6 +3226,7 @@
     :name: Sidebar Paragraph after Head
   sbah:
     :group_name: sidebar
+    :secondary_group_name: heads
     :spacing_profile: 1
     :abbrev: sb
     :primary_structure: sidebar
@@ -3028,6 +3234,7 @@
     :name: Sidebar A-Head
   sbahaft:
     :group_name: sidebar
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: sb
     :primary_structure: sidebar
@@ -3035,6 +3242,7 @@
     :name: Sidebar A-Head after Title
   sbbh:
     :group_name: sidebar
+    :secondary_group_name: heads
     :spacing_profile: 1
     :abbrev: sb
     :primary_structure: sidebar
@@ -3042,6 +3250,7 @@
     :name: Sidebar B-Head
   sbbhaft:
     :group_name: sidebar
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: sb
     :primary_structure: sidebar
@@ -3049,6 +3258,7 @@
     :name: Sidebar B-Head after A-Head
   sbbq:
     :group_name: sidebar
+    :secondary_group_name: blockquotes
     :spacing_profile: 16
     :abbrev: sb
     :primary_structure: sidebar
@@ -3056,6 +3266,7 @@
     :name: Sidebar Block Quote
   sbbqaft:
     :group_name: sidebar
+    :secondary_group_name: blockquotes
     :spacing_profile: 19
     :abbrev: sb
     :primary_structure: sidebar
@@ -3063,6 +3274,7 @@
     :name: Sidebar Block Quote after Head
   sbbqf:
     :group_name: sidebar
+    :secondary_group_name: blockquotes
     :spacing_profile: 15
     :abbrev: sb
     :primary_structure: sidebar
@@ -3070,6 +3282,7 @@
     :name: Sidebar Block Quote First
   sbbql:
     :group_name: sidebar
+    :secondary_group_name: blockquotes
     :spacing_profile: 17
     :abbrev: sb
     :primary_structure: sidebar
@@ -3077,6 +3290,7 @@
     :name: Sidebar Block Quote Last
   sbbqs:
     :group_name: sidebar
+    :secondary_group_name: blockquotes
     :spacing_profile: 18
     :abbrev: sb
     :primary_structure: sidebar
@@ -3085,12 +3299,14 @@
   sbcon:
     :spacing_profile: 9
     :group_name: sidebar
+    :secondary_group_name: body
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph Continued
   sbf:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 27
     :abbrev: sb
     :primary_structure: sidebar
@@ -3098,6 +3314,7 @@
     :name: Sidebar Paragraph First
   sbh:
     :group_name: sidebar
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: sb
     :primary_structure: sidebar
@@ -3106,6 +3323,7 @@
     :tip: "The sbh style is for individual instances of sidebar heads."
   sbl:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 29
     :abbrev: sb
     :primary_structure: sidebar
@@ -3113,6 +3331,7 @@
     :name: Sidebar Paragraph Last
   sbnl:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3120,6 +3339,7 @@
     :name: Sidebar Numbered List Item
   sbnl1:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3127,6 +3347,7 @@
     :name: Sidebar Numbered List Item Level 1
   sbnl1f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3134,6 +3355,7 @@
     :name: Sidebar Numbered List Item Level 1 First
   sbnl1l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
@@ -3141,6 +3363,7 @@
     :name: Sidebar Numbered List Item Level 1 Last
   sbnl1p:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3148,6 +3371,7 @@
     :name: Sidebar Numbered List Item Level 1 Paragraph
   sbnl1s:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3155,6 +3379,7 @@
     :name: Sidebar Numbered List Item Level 1 Stand-Alone
   sbnl2:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3162,6 +3387,7 @@
     :name: Sidebar Numbered List Item Level 2
   sbnl2f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3169,6 +3395,7 @@
     :name: Sidebar Numbered List Item Level 2 First
   sbnl2l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
@@ -3176,6 +3403,7 @@
     :name: Sidebar Numbered List Item Level 2 Last
   sbnl2p:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3183,6 +3411,7 @@
     :name: Sidebar Numbered List Item Level 2 Paragraph
   sbnl2s:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3190,6 +3419,7 @@
     :name: Sidebar Numbered List Item Level 2 Stand-Alone
   sbnl3:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 13
     :abbrev: sb
     :primary_structure: sidebar
@@ -3197,6 +3427,7 @@
     :name: Sidebar Numbered List Item Level 3
   sbnl3f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 12
     :abbrev: sb
     :primary_structure: sidebar
@@ -3204,6 +3435,7 @@
     :name: Sidebar Numbered List Item Level 3 First
   sbnl3l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 14
     :abbrev: sb
     :primary_structure: sidebar
@@ -3211,6 +3443,7 @@
     :name: Sidebar Numbered List Item Level 3 Last
   sbnl4:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 13
     :abbrev: sb
     :primary_structure: sidebar
@@ -3218,6 +3451,7 @@
     :name: Sidebar Numbered List Item Level 4
   sbnl4f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 12
     :abbrev: sb
     :primary_structure: sidebar
@@ -3225,6 +3459,7 @@
     :name: Sidebar Numbered List Item Level 4 First
   sbnl4l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 14
     :abbrev: sb
     :primary_structure: sidebar
@@ -3232,6 +3467,7 @@
     :name: Sidebar Numbered List Item Level 4 Last
   sbnl5:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 13
     :abbrev: sb
     :primary_structure: sidebar
@@ -3239,6 +3475,7 @@
     :name: Sidebar Numbered List Item Level 5
   sbnl5f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 12
     :abbrev: sb
     :primary_structure: sidebar
@@ -3246,6 +3483,7 @@
     :name: Sidebar Numbered List Item Level 5 First
   sbnl5l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 14
     :abbrev: sb
     :primary_structure: sidebar
@@ -3253,6 +3491,7 @@
     :name: Sidebar Numbered List Item Level 5 Last
   sbnlf:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3260,6 +3499,7 @@
     :name: Sidebar Numbered List Item First
   sbnll:
     :group_name: sidebar
+    :secondary_group_name: list
     :abbrev: sb
     :primary_structure: sidebar
     :spacing_profile: 5
@@ -3267,6 +3507,7 @@
     :name: Sidebar Numbered List Item Last
   sbnlp:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3275,6 +3516,7 @@
     :tip: "A new paragraph within a sidebar numbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   sbnls:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3282,6 +3524,7 @@
     :name: Sidebar Numbered List Item Stand-Alone
   sbo:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 31
     :abbrev: sb
     :primary_structure: sidebar
@@ -3290,6 +3533,7 @@
     :date: February 16, 2012
   sbs:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 30
     :abbrev: sb
     :primary_structure: sidebar
@@ -3297,6 +3541,7 @@
     :name: Sidebar Paragraph Stand-Alone
   sbsl:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3304,6 +3549,7 @@
     :name: Sidebar Senseline
   sbsl1:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3311,6 +3557,7 @@
     :name: Sidebar Senseline Level 1
   sbsl1f:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 3
     :spacing_profile: 3
     :abbrev: sb
@@ -3319,6 +3566,7 @@
     :name: Sidebar Senseline Level 1 First
   sbsl1l:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 5
     :spacing_profile: 5
     :abbrev: sb
@@ -3327,6 +3575,7 @@
     :name: Sidebar Senseline Level 1 Last
   sbsl1s:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3334,6 +3583,7 @@
     :name: Sidebar Senseline Level 1 Stand-Alone
   sbsl2:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 4
     :spacing_profile: 4
     :abbrev: sb
@@ -3342,6 +3592,7 @@
     :name: Sidebar Senseline Level 2
   sbsl2f:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 3
     :spacing_profile: 3
     :abbrev: sb
@@ -3350,6 +3601,7 @@
     :name: Sidebar Senseline Level 2 First
   sbsl2l:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 5
     :spacing_profile: 5
     :abbrev: sb
@@ -3358,6 +3610,7 @@
     :name: Sidebar Senseline Level 2 Last
   sbsl2s:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3365,6 +3618,7 @@
     :name: Sidebar Senseline Level 2 Stand-Alone
   sbsl3:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 4
     :spacing_profile: 4
     :abbrev: sb
@@ -3373,6 +3627,7 @@
     :name: Sidebar Senseline Level 3
   sbsl3f:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 3
     :spacing_profile: 3
     :abbrev: sb
@@ -3381,6 +3636,7 @@
     :name: Sidebar Senseline Level 3 First
   sbsl3l:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 5
     :spacing_profile: 5
     :abbrev: sb
@@ -3389,6 +3645,7 @@
     :name: Sidebar Senseline Level 3 Last
   sbsl3s:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3396,6 +3653,7 @@
     :name: Sidebar Senseline Level 3 Stand-Alone
   sbslf:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3403,6 +3661,7 @@
     :name: Sidebar Senseline First
   sbsli:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 13
     :abbrev: sb
     :primary_structure: sidebar
@@ -3410,6 +3669,7 @@
     :name: Sidebar Senseline Indent
   sbslif:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 12
     :abbrev: sb
     :primary_structure: sidebar
@@ -3417,6 +3677,7 @@
     :name: Sidebar Senseline Indent First
   sbslil:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 14
     :abbrev: sb
     :primary_structure: sidebar
@@ -3424,6 +3685,7 @@
     :name: Sidebar Senseline Indent Last
   sbsll:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
@@ -3431,6 +3693,7 @@
     :name: Sidebar Senseline Last
   sbsls:
     :group_name: sidebar
+    :secondary_group_name: sense
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3438,13 +3701,15 @@
     :name: Sidebar Senseline Stand-Alone
   sbslt:
     :group_name: sidebar
-    :spacing_profile: 22
+    :secondary_group_name: sense
+    :spacing_profile: 22 
     :abbrev: sb
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Tail
   sbt:
     :group_name: sidebar
+    :secondary_group_name: body
     :spacing_profile: 2
     :abbrev: sb
     :primary_structure: sidebar
@@ -3453,6 +3718,7 @@
     :tip: "The sbt style should be used for repeating sidebar titles. For example, some books might have many sidebars that begin with “For Your Information . . .”"
   sbul:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3460,6 +3726,7 @@
     :name: Sidebar Unnumbered List Item
   sbul1:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 4
     :abbrev: sb
     :primary_structure: sidebar
@@ -3467,6 +3734,7 @@
     :name: Sidebar Unnumbered List Item Level 1
   sbul1f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3474,6 +3742,7 @@
     :name: Sidebar Unnumbered List Item Level 1 First
   sbul1l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
@@ -3481,6 +3750,7 @@
     :name: Sidebar Unnumbered List Item Level 1 Last
   sbul1p:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3488,6 +3758,7 @@
     :name: Sidebar Unnumbered List Item Level 1 Paragraph
   sbul1s:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3495,6 +3766,7 @@
     :name: Sidebar Unnumbered List Item Level 1 Stand-Alone
   sbul2:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3502,6 +3774,7 @@
     :name: Sidebar Unnumbered List Item Level 2
   sbul2f:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3509,6 +3782,7 @@
     :name: Sidebar Unnumbered List Item Level 2 First
   sbul2l:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
@@ -3516,6 +3790,7 @@
     :name: Sidebar Unnumbered List Item Level 2 Last
   sbul2p:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3523,6 +3798,7 @@
     :name: Sidebar Unnumbered List Item Level 2 Paragraph
   sbul2s:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3530,6 +3806,7 @@
     :name: Sidebar Unnumbered List Item Level 2 Stand-Alone
   sbulf:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 3
     :abbrev: sb
     :primary_structure: sidebar
@@ -3537,6 +3814,7 @@
     :name: Sidebar Unnumbered List Item First
   sbull:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 5
     :abbrev: sb
     :primary_structure: sidebar
@@ -3544,6 +3822,7 @@
     :name: Sidebar Unnumbered List Item Last
   sbulp:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 9
     :abbrev: sb
     :primary_structure: sidebar
@@ -3552,6 +3831,7 @@
     :tip: "A new paragraph within a sidebar unnumbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   sbuls:
     :group_name: sidebar
+    :secondary_group_name: list
     :spacing_profile: 6
     :abbrev: sb
     :primary_structure: sidebar
@@ -3577,6 +3857,7 @@
     :tip: "Top-of-page sec to accomodate spacing/baseline needs of required ornament."
   ser:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 25
     :abbrev: ser
     :learning_category: Series
@@ -3584,6 +3865,7 @@
     :tip: "A title within the series. This is the base level series tag. It will generally be either a book title or a book title followed by the author name."
   ser1:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: ser
     :learning_category: Series
@@ -3591,6 +3873,7 @@
     :tip: "Level 1 series tag, if special spacing or indentation is needed."
   ser2:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: ser
     :learning_category: Series
@@ -3598,6 +3881,7 @@
     :tip: "Level 2 series tag, if special spacing or indentation is needed."
   seraft:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 26
     :abbrev: ser
     :learning_category: Series
@@ -3605,6 +3889,7 @@
     :tip: "A title within the series, following a head."
   serah:
     :group_name: series
+    :secondary_group_name: heads
     :spacing_profile: 1
     :abbrev: ser
     :learning_category: Series
@@ -3612,12 +3897,14 @@
     :tip: "An a-head within a series list. For example, if an author wrote half his books under a pseudonym, this a-head might say “As [Author Name]” before each grouping. Or if an educational series is divided by subject or grade level, this a-head may be used."
   serahaft:
     :group_name: series
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
     :name: Series A-Head After Series Title
   serau:
     :group_name: series
+    :secondary_group_name: chapter_other
     :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
@@ -3625,6 +3912,7 @@
     :tip: "The author of a book listed in the series list, if it appears on a separate line."
   serbh:
     :group_name: series
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
@@ -3632,6 +3920,7 @@
     :tip: "If further divisions are needed within a series list, this is the b-head level."
   serf:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 24
     :abbrev: ser
     :learning_category: Series
@@ -3639,6 +3928,7 @@
     :tip: "The series entry first is the same as the ser style but with added space above."
   serp:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 8
     :abbrev: ser
     :learning_category: Series
@@ -3647,6 +3937,7 @@
     :date: February 16, 2012
   serpf:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 7
     :abbrev: ser
     :learning_category: Series
@@ -3655,6 +3946,7 @@
     :date: February 16, 2012
   sers:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
@@ -3662,6 +3954,7 @@
     :tip: "The series subtitle is a subtitle under the sert."
   sert:
     :group_name: series
+    :secondary_group_name: body
     :spacing_profile: 2
     :abbrev: ser
     :learning_category: Series
@@ -3944,7 +4237,7 @@
     :name: Senseline Stand-Alone
   slt:
     :group_name: sense
-    :spacing_profile: 22
+    :spacing_profile: 22 
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
@@ -3952,6 +4245,7 @@
     :tip: "Senseline tail, like an epigraph tail, is the author or speaker of the poem."
   st:
     :group_name: story
+    :secondary_group_name: body
     :spacing_profile: 4
     :abbrev: st
     :primary_structure: story
@@ -3959,6 +4253,7 @@
     :name: Story Paragraph
   stf:
     :group_name: story
+    :secondary_group_name: body
     :spacing_profile: 3
     :abbrev: st
     :primary_structure: story
@@ -3966,6 +4261,7 @@
     :name: Story Paragraph First
   sth:
     :group_name: story
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: st
     :primary_structure: story
@@ -3973,6 +4269,7 @@
     :name: Story Head
   sth1:
     :group_name: story
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: st
     :primary_structure: story
@@ -3981,6 +4278,7 @@
     :date: March 8, 2013
   sth2:
     :group_name: story
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: st
     :primary_structure: story
@@ -3989,6 +4287,7 @@
     :date: March 8, 2013
   stl:
     :group_name: story
+    :secondary_group_name: body
     :spacing_profile: 5
     :abbrev: st
     :primary_structure: story
@@ -3996,7 +4295,7 @@
     :name: Story Paragraph Last
   structure:
     :for: sam
-    :spacing_profile: 9
+    :spacing_profile: 39
     :group_name: structure
     :learning_category: Structural Elements
     :name: Structure
@@ -4004,6 +4303,7 @@
     :date: March 8, 2013
   sts:
     :group_name: story
+    :secondary_group_name: body
     :spacing_profile: 6
     :abbrev: st
     :primary_structure: story
@@ -4112,6 +4412,7 @@
     :tip: "Footnote text for a table."
   toc:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 8
     :abbrev: toc
     :learning_category: Contents
@@ -4119,6 +4420,7 @@
     :tip: "Table of contents base level. This most commonly corresponds with the chapter titles (ct) of the book."
   toc1:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
@@ -4126,6 +4428,7 @@
     :tip: "This level typically corresponds with a book's a-heads, if sublevels of book chapters are included in the TOC. It can also be used for lists of tables/figures if the main TOC includes only top-level listings."
   toc2:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
@@ -4133,6 +4436,7 @@
     :tip: "This level typically corresponds with a book's b-heads, if sublevels of book chapters are included in the TOC. It can also be used for lists of tables/figures if the main TOC includes both toc and toc1 listings."
   toc3:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
@@ -4140,18 +4444,21 @@
     :tip: "This level typically corresponds with a book's c-heads, if sublevels of book chapters are included in the TOC. It can also be used for lists of tables/figures if the main TOC includes toc, toc1, and toc2 listings."
   toc4:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
     :name: TOC Level 4
   toc5:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
     :name: TOC Level 5
   tocau:
     :group_name: contents
+    :secondary_group_name: body
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
@@ -4159,6 +4466,7 @@
     :tip: "If a chapter (or introduction/preface) has a different author that should be listed in the TOC on a separate line. Corresponds with the au style."
   tocbm:
     :group_name: contents
+    :secondary_group_name: toc_back
     :spacing_profile: 8
     :abbrev: toc
     :learning_category: Contents
@@ -4168,6 +4476,7 @@
     :for: expanded
     :spacing_profile: 7
     :group_name: contents
+    :secondary_group_name: toc_back
     :abbrev: toc
     :learning_category: Contents
     :name: TOC Back Matter First
@@ -4176,12 +4485,14 @@
     :for: expanded
     :spacing_profile: 7
     :group_name: contents
+    :secondary_group_name: body
     :abbrev: toc
     :learning_category: Contents
     :name: TOC Main Level First
     :tip: "If you need to control the spacing above the first regular toc entry, use this style. Normally, there's a front matter entry (tocfm) that will handle spacing, but occasionally you need to use this in the same way you have pf as the first paragraph in a chapter. Outside InDesign, this style reverts back to toc."
   tocfm:
     :group_name: contents
+    :secondary_group_name: toc_front
     :spacing_profile: 8
     :abbrev: toc
     :learning_category: Contents
@@ -4191,12 +4502,14 @@
     :for: expanded
     :spacing_profile: 7
     :group_name: contents
+    :secondary_group_name: toc_front
     :abbrev: toc
     :learning_category: Contents
     :name: TOC Front Matter First
     :tip: "If you need to control the spacing above the first tocfm entry, use this style. Outside InDesign, this style reverts back to tocfm."
   tocpt:
     :group_name: contents
+    :secondary_group_name: toc_part
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
@@ -4204,6 +4517,7 @@
     :tip: "To be used for part titles that are included in the TOC. Corresponds with text in the pt style."
   tocut:
     :group_name: contents
+    :secondary_group_name: toc_unit
     :spacing_profile: 9
     :abbrev: toc
     :learning_category: Contents
@@ -4623,6 +4937,7 @@
     :date: February 16, 2012
   wsh:
     :group_name: exercise
+    :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: ex
     :primary_structure: exercise
