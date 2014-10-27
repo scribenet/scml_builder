@@ -92,6 +92,7 @@
     :for: scml
     :group_name: structure
     :learning_category: Structural Elements
+    :primary_structure: notes 
     :name: Endnote
     :date:  
   epigraph:
@@ -115,6 +116,7 @@
   footnote:
     :for: scml
     :group_name: structure
+    :primary_structure: notes 
     :learning_category: Structural Elements
     :name: Footnote
     :date: July 5, 2013
