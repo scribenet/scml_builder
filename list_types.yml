@@ -21,6 +21,7 @@ sam_dtd:
   - tso
   :categories:
   - roots
+  - block_styles
   - specialized_structure_styles
   - paragraph_styles
   - character_styles
