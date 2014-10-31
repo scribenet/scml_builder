@@ -296,6 +296,7 @@
       - '#IMPLIED'
 :paragraph_styles:
   ah:
+    :weight: 00
     :group_name: heads
     :learning_category: Heads
     :spacing_profile: 1
@@ -303,12 +304,14 @@
     :tip: "Level 1 head, often seen as H1."
     :shortcut: Ctrl+Shift+A
   ahaft:
+    :weight: 00
     :group_name: heads
     :learning_category: Heads
     :spacing_profile: 2
     :name: A-Head after Title
     :tip: "This is for an ah that opens a chapter, preceding the pf paragraph. If an ah follows a list, it is recommended that ah be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the ah to control spacing."
   ans:
+    :weight: 20
     :group_name: question
     :secondary_group_name: body
     :abbrev: qu
@@ -317,6 +320,7 @@
     :learning_category: Question and Answer
     :name: Answer
   ansf:
+    :weight: 20
     :group_name: question
     :secondary_group_name: body
     :abbrev: qu
@@ -325,6 +329,7 @@
     :learning_category: Question and Answer
     :name: Answer First
   ard:
+    :weight: 80
     :group_name: exercise
     :secondary_group_name: body
     :abbrev: ex
@@ -333,35 +338,41 @@
     :learning_category: Curriculum
     :name: Assigned Reading
   au:
+    :weight: 10
     :group_name: chapter_other
     :learning_category: Parts and Chapters
     :spacing_profile: 2
     :name: Chapter Author
     :tip: "Distinct from the bkau style that appears on a book's title page, au is used when a different author is associated with each chapter."
   au1:
+    :weight: 10
     :group_name: chapter_other
     :learning_category: Parts and Chapters
     :spacing_profile: 2
     :name: Chapter Author Level 1
     :date: March 8, 2013
   aubio:
-    :group_name: chapter_other
+    :weight: 40
+    :group_name: body 
     :spacing_profile: 8
-    :learning_category: Parts and Chapters
+    :learning_category: Body
     :name: Author Biographical Data
-    :tip: "If an author's short bio or affiliation is listed on a separate line, this style should be used. It can also be used in About the Author sections"
+    :tip: "This should be used in About the Author sections or other author biographies."
   aubiof:
-    :group_name: chapter_other
+    :weight: 40
+    :group_name: body
     :spacing_profile: 7
-    :learning_category: Parts and Chapters
+    :learning_category: Body
     :name: Author Biographical Data First
     :date: March 8, 2013
   audio:
+    :weight: 20
     :spacing_profile: 9
     :group_name: media
     :secondary_group_name: body
     :primary_structure: media
   bh:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 1
     :learning_category: Heads
@@ -369,12 +380,14 @@
     :tip: "Level 2 head, often seen as H2."
     :shortcut: Ctrl+Shift+B
   bhaft:
+    :weight: 00
     :spacing_profile: 2
     :group_name: heads
     :learning_category: Heads
     :name: B-Head after A-Head
-    :tip: "If a bh follows a list, it is recommended that bh be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the bh to control spacing."
+    :tip: "This should be used when a bh follows an ah."
   bk:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -382,6 +395,7 @@
     :name: Book Title
     :tip: "Full book title."
   bk1:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -389,6 +403,7 @@
     :name: Book Title Level 1
     :tip: "The book subtitle, one level down from the main book title."
   bk2:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -396,6 +411,7 @@
     :name: Book Title Level 2
     :tip: "Two levels down from the book title. If a book has two subtitles, this would be used for the second one. Sometimes book titles include a year as well as an additional descriptive subtitle."
   bkau:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -403,6 +419,7 @@
     :name: Book Author
     :tip: "The author's name or the editor's name. Can also be used for the phrase “Edited by” or “A Novel by” if this is to appear on its own line before the author's name or the editor's name."
   bkau1:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -410,6 +427,7 @@
     :name: Book Author Line 2
     :tip: "If there are multiple authors, this tag should be used for all that follow the first bkau. It can also be used for an author's title or affiliation."
   bkht:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -417,6 +435,7 @@
     :name: Book Half Title
     :tip: "Book half title. Typically appears on first recto page and is either the same size or smaller than the book title as it appears on the full title page."
   bkpub:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -424,6 +443,7 @@
     :name: Book Publisher
     :tip: "First book publisher line. Typically, this is the name of the publisher."
   bkpub1:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -431,6 +451,7 @@
     :name: Book Publisher Line 2
     :tip: "Second book publisher line. Often, this is the publisher's location."
   bksect:
+    :weight: 00
     :group_name: book
     :spacing_profile: 2
     :abbrev: bk
@@ -438,6 +459,7 @@
     :name: Book Section Title
     :tip: "For The Old Testament or The New Testament in some Bibles"
   bl:
+    :weight: 20
     :group_name: list
     :spacing_profile: 4
     :primary_structure: list
@@ -445,30 +467,35 @@
     :name: Bulleted List Item
     :tip: "The bulleted list (bl) style exists to specifically differentiate one kind of unnumbered list from another kind of unnumbered list within your project. The default for a standard unnumbered list, whether it uses a bullet, a dingbat, or nothing at all, should be the ul style."
   bl1:
+    :weight: 60
     :group_name: list
     :spacing_profile: 4
     :primary_structure: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 (Subpoint)
   bl1f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 First (Subpoint)
   bl1l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Last (Subpoint)
   bl1p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 10
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Paragraph (Subpoint)
   bl1pl:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 11
@@ -476,18 +503,21 @@
     :name: Bulleted List Item Level 1 Paragraph (Subpoint) Last
     :date: February 16, 2012
   bl1s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Stand-Alone (Subpoint)
   blf:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Bulleted List
     :name: Bulleted List Item First
   blh:
+    :weight: 10
     :group_name: list
     :primary_structure: list
     :spacing_profile: 2
@@ -495,12 +525,14 @@
     :name: Bulleted List Head
     :date: February 16, 2012
   bll:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Bulleted List
     :name: Bulleted List Item Last
   blp:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 10
@@ -508,6 +540,7 @@
     :name: Bulleted List Item Paragraph
     :tip: "A new paragraph within a bulleted list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   blpl:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 11
@@ -515,12 +548,14 @@
     :name: Bulleted List Item Paragraph Last
     :date: February 16, 2012
   bls:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Bulleted List
     :name: Bulleted List Item Stand-Alone
   bq:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -530,6 +565,7 @@
     :name: Block Quote
     :tip: "Often referred to as an extract. Use the f, l, and s variations to control spacing above and below as needed. When multiple block quotes appear consecutively, use bqf for all paragraphs that need space above them until the last one, which should use bqs, giving space above and below. This will prevent you from doubling up on space between separate block quotes. Block quote variations include bq1 sublevels as well as bqnl (block quote numbered list) and bqul (block quote unnumbered list) styles."
   bq1:
+    :weight: 60
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -538,6 +574,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Level 1
   bq1f:
+    :weight: 60
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -546,6 +583,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Level 1 First
   bq1l:
+    :weight: 60
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -554,6 +592,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Level 1 Last
   bq1s:
+    :weight: 60
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -562,6 +601,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Level 1 Stand-Alone
   bqaft:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :spacing_profile: 37
@@ -571,6 +611,7 @@
     :name: Block Quote after Head
     :tip: "For use instead of bqf when the first paragraph of a block quote follows immediately after a head, just as a paft paragraph would be used following a head. If it is the only block quote paragraph after the head, though, use bqo."
   bqf:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -579,6 +620,7 @@
     :learning_category: Block Quotation
     :name: Block Quote First
   bqh:
+    :weight: 10
     :group_name: blockquotes
     :secondary_group_name: heads
     :abbrev: bq
@@ -587,6 +629,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Head
   bql:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -595,6 +638,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Last
   bqnl:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -603,6 +647,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item
   bqnlf:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -611,6 +656,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item First
   bqnll:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -619,6 +665,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item Last
   bqnls:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -627,6 +674,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item Stand-Alone
   bqo:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :spacing_profile: 31
@@ -636,6 +684,7 @@
     :name: Block Quote Only
     :date: February 16, 2012
   bqs:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :abbrev: bq
@@ -644,6 +693,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Stand-Alone
   bqt:
+    :weight: 20
     :group_name: blockquotes
     :secondary_group_name: body
     :spacing_profile: 38 
@@ -651,9 +701,10 @@
     :primary_structure: blockquote
     :learning_category: Block Quotation
     :name: Block Quote Tail
-    :tip: "For use if your block quote has a source line."
+    :tip: "For use if your block quote has a source line. Controls spacing above and below."
     :date: February 16, 2012
   bqul:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -662,6 +713,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item
   bqulf:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -670,6 +722,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item First
   bqull:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: list
     :abbrev: bq
@@ -678,6 +731,7 @@
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item Last
   bquls:
+    :weight: 30
     :group_name: blockquotes-list
     :secondary_group_name: body
     :abbrev: bq
@@ -686,14 +740,16 @@
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item Stand-Alone
   bx:
+    :weight: 20
     :group_name: box
     :abbrev: bx
     :primary_structure: box
     :spacing_profile: 28
     :learning_category: Box
     :name: Box Paragraph
-    :tip: "Box text is used with parallel sidebar levels to aid in clarity and indicate sidebars that specifically occur within the main text area, most frequently placed within a gray, colored, and/or bordered box. Unless specifically coordinated with the design, sidebar content should use the sb styles as a default. Box pagragraph styles include heads, numbered lists, unnumbered lists, block quotes, and senselines. Each box style has a Level 1 equivalent."
+    :tip: "Unless specifically coordinated with the design, sidebar content should use the sb styles as a default. Box pagragraph styles include heads, numbered lists, unnumbered lists, block quotes, and senselines. Each box style has a Level 1 equivalent."
   bx1:
+    :weight: 60
     :group_name: box
     :secondary_group_name: body
     :abbrev: bx
@@ -702,6 +758,7 @@
     :learning_category: Box
     :name: Box Level 1 Paragraph
   bx1aft:
+    :weight: 60
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 19
@@ -710,6 +767,7 @@
     :learning_category: Box
     :name: Box Level 1 Paragraph after Head
   bx1ah:
+    :weight: 50
     :group_name: box
     :secondary_group_name: heads
     :abbrev: bx
@@ -718,6 +776,7 @@
     :learning_category: Box
     :name: Box Level 1 A-Head
   bx1bh:
+    :weight: 50
     :group_name: box
     :secondary_group_name: heads
     :abbrev: bx
@@ -726,6 +785,7 @@
     :learning_category: Box
     :name: Box Level 1 B-Head
   bx1bq:
+    :weight: 70
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -734,6 +794,7 @@
     :learning_category: Box
     :name: Box Level 1 Block Quote
   bx1bqf:
+    :weight: 70
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -742,6 +803,7 @@
     :learning_category: Box
     :name: Box Level 1 Block Quote First
   bx1bql:
+    :weight: 70
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -750,6 +812,7 @@
     :learning_category: Box
     :name: Box Level 1 Block Quote Last
   bx1bqs:
+    :weight: 70
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -758,6 +821,7 @@
     :learning_category: Box
     :name: Box Level 1 Block Quote Stand-Alone
   bx1con:
+    :weight: 60
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 9
@@ -766,6 +830,7 @@
     :learning_category: Box
     :name: Box Level 1 Paragraph Continued
   bx1f:
+    :weight: 60
     :group_name: box
     :secondary_group_name: body
     :abbrev: bx
@@ -774,6 +839,7 @@
     :learning_category: Box
     :name: Box Level 1 Paragraph First
   bx1h:
+    :weight: 40
     :group_name: box
     :secondary_group_name: heads
     :abbrev: bx
@@ -782,6 +848,7 @@
     :learning_category: Box
     :name: Box Level 1 Head
   bx1l:
+    :weight: 60
     :group_name: box
     :secondary_group_name: body
     :abbrev: bx
@@ -790,6 +857,7 @@
     :learning_category: Box
     :name: Box Level 1 Paragraph Last
   bx1nl:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -798,6 +866,7 @@
     :learning_category: Box
     :name: Box Level 1 Numbered List Item
   bx1nlf:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -806,6 +875,7 @@
     :learning_category: Box
     :name: Box Level 1 Numbered List Item First
   bx1nll:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -814,6 +884,7 @@
     :learning_category: Box
     :name: Box Level 1 Numbered List Item Last
   bx1nlp:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -822,6 +893,7 @@
     :learning_category: Box
     :name: Box Level 1 Numbered List Item Paragraph
   bx1s:
+    :weight: 60
     :group_name: box
     :secondary_group_name: body
     :abbrev: bx
@@ -830,6 +902,7 @@
     :learning_category: Box
     :name: Box Level 1 Paragraph Stand-Alone
   bx1sl:
+    :weight: 70
     :group_name: box
     :secondary_group_name: sense
     :abbrev: bx
@@ -838,6 +911,7 @@
     :learning_category: Box
     :name: Box Level 1 Senseline
   bx1slf:
+    :weight: 70
     :group_name: box
     :secondary_group_name: sense
     :abbrev: bx
@@ -846,6 +920,7 @@
     :learning_category: Box
     :name: Box Level 1 Senseline First
   bx1sll:
+    :weight: 70
     :group_name: box
     :secondary_group_name: sense
     :abbrev: bx
@@ -854,6 +929,7 @@
     :learning_category: Box
     :name: Box Level 1 Senseline Last
   bx1t:
+    :weight: 40
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 38 
@@ -862,6 +938,7 @@
     :learning_category: Box
     :name: Box Level 1 Title
   bx1ul:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -870,6 +947,7 @@
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item
   bx1ulf:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -878,6 +956,7 @@
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item First
   bx1ull:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -886,6 +965,7 @@
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item Last
   bx1ulp:
+    :weight: 70
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -894,6 +974,7 @@
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item Paragraph
   bxaft:
+    :weight: 20
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 37
@@ -902,6 +983,7 @@
     :learning_category: Box
     :name: Box Paragraph after Head
   bxah:
+    :weight: 10
     :group_name: box
     :secondary_group_name: heads
     :abbrev: bx
@@ -910,6 +992,7 @@
     :learning_category: Box
     :name: Box A-Head
   bxau:
+    :weight: 30
     :group_name: box
     :secondary_group_name: chapter_other
     :abbrev: bx
@@ -918,6 +1001,7 @@
     :learning_category: Box
     :name: Box Author
   bxau1:
+    :weight: 30
     :group_name: box
     :secondary_group_name: chapter_other
     :abbrev: bx
@@ -926,6 +1010,7 @@
     :learning_category: Box
     :name: Box Author 1
   bxbh:
+    :weight: 10
     :group_name: box
     :secondary_group_name: heads
     :abbrev: bx
@@ -934,6 +1019,7 @@
     :learning_category: Box
     :name: Box B-Head
   bxbq:
+    :weight: 30
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -942,6 +1028,7 @@
     :learning_category: Box
     :name: Box Block Quote
   bxbqf:
+    :weight: 30
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -950,6 +1037,7 @@
     :learning_category: Box
     :name: Box Block Quote First
   bxbql:
+    :weight: 30
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -958,6 +1046,7 @@
     :learning_category: Box
     :name: Box Block Quote Last
   bxbqs:
+    :weight: 30
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -966,6 +1055,7 @@
     :learning_category: Box
     :name: Box Block Quote Stand-Alone
   bxcon:
+    :weight: 30
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 9
@@ -974,6 +1064,7 @@
     :learning_category: Box
     :name: Box Paragraph Continued
   bxf:
+    :weight: 20
     :group_name: box
     :secondary_group_name: blockquotes
     :abbrev: bx
@@ -982,6 +1073,7 @@
     :learning_category: Box
     :name: Box Paragraph First
   bxh:
+    :weight: 00
     :group_name: box
     :secondary_group_name: heads
     :abbrev: bx
@@ -991,6 +1083,7 @@
     :name: Box Head
     :tip: "Used when the box head is unique to that particular box."
   bxl:
+    :weight: 20
     :group_name: box
     :secondary_group_name: body
     :abbrev: bx
@@ -999,6 +1092,7 @@
     :learning_category: Box
     :name: Box Paragraph Last
   bxnl:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1007,6 +1101,7 @@
     :learning_category: Box
     :name: Box Numbered List Item
   bxnlf:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1015,6 +1110,7 @@
     :learning_category: Box
     :name: Box Numbered List Item First
   bxnll:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1023,6 +1119,7 @@
     :learning_category: Box
     :name: Box Numbered List Item Last
   bxnlp:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1031,6 +1128,7 @@
     :learning_category: Box
     :name: Box Numbered List Item Paragraph
   bxnls:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1039,6 +1137,7 @@
     :learning_category: Box
     :name: Box Numbered List Item Stand-Alone
   bxo:
+    :weight: 20
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 31
@@ -1048,6 +1147,7 @@
     :name: Box Only
     :date: February 16, 2012
   bxs:
+    :weight: 20
     :group_name: box
     :secondary_group_name: body
     :abbrev: bx
@@ -1057,6 +1157,7 @@
     :name: Box Paragraph Stand-Alone
     :tip: "Box text with space both above and below. This is needed only if the box text appears within the text flow, with the box itself placed behind the text. If the text is placed within the box, spacing can be controlled through the object's style sheet."
   bxsl:
+    :weight: 30
     :group_name: box
     :secondary_group_name: sense
     :abbrev: bx
@@ -1065,6 +1166,7 @@
     :learning_category: Box
     :name: Box Senseline
   bxslf:
+    :weight: 30
     :group_name: box
     :secondary_group_name: sense
     :abbrev: bx
@@ -1073,6 +1175,7 @@
     :learning_category: Box
     :name: Box Senseline First
   bxsll:
+    :weight: 30
     :group_name: box
     :secondary_group_name: sense
     :abbrev: bx
@@ -1081,6 +1184,7 @@
     :learning_category: Box
     :name: Box Senseline Last
   bxt:
+    :weight: 00
     :group_name: box
     :secondary_group_name: body
     :spacing_profile: 2
@@ -1090,6 +1194,7 @@
     :name: Box Title
     :tip: "Used for repeating box titles."
   bxul:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1098,6 +1203,7 @@
     :learning_category: Box
     :name: Box Unnumbered List Item
   bxulf:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1106,6 +1212,7 @@
     :learning_category: Box
     :name: Box Unnumbered List Item First
   bxull:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1114,6 +1221,7 @@
     :learning_category: Box
     :name: Box Unnumbered List Item Last
   bxulp:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1122,6 +1230,7 @@
     :learning_category: Box
     :name: Box Unnumbered List Item Paragraph
   bxuls:
+    :weight: 30
     :group_name: box
     :secondary_group_name: list
     :abbrev: bx
@@ -1130,6 +1239,7 @@
     :learning_category: Box
     :name: Box Unnumbered List Item Stand-Alone
   call:
+    :weight: 20
     :group_name: quote
     :secondary_group_name: body
     :abbrev: quo
@@ -1138,6 +1248,7 @@
     :learning_category: Callouts
     :name: Callout (Pull Quote)
   ch:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 1
     :learning_category: Heads
@@ -1145,22 +1256,26 @@
     :tip: "Level 3 head, often seen as H3."
     :shortcut: Ctrl+Shift+C
   chaft:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: C-Head after B-Head
-    :tip: "If a ch follows a list, it is recommended that ch be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the ch to control spacing."
+    :tip: "This should be used when a ch follows an bh."
   chsect:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: Chapter Section
   chsubsect:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: Chapter Subsection
   cip:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 13
     :abbrev: cip
@@ -1168,6 +1283,7 @@
     :name: Catalog-in-Publication Data
     :tip: "Library of Congress Catalog-in-Publication data."
   cip1:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 9
     :abbrev: cip
@@ -1175,6 +1291,7 @@
     :name: Catalog-in-Publication Data Level 1
     :tip: "Used for the first level of indent within Library of Congress Catalog-in-Publication information."
   cip2:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 9
     :abbrev: cip
@@ -1182,6 +1299,7 @@
     :name: Catalog-in-Publication Data Level 2
     :tip: "Used for the second level of indent within Library of Congress Catalog-in-Publication information."
   cipf:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 12
     :abbrev: cip
@@ -1189,12 +1307,14 @@
     :name: Catalog-in-Publication Data First
     :tip: "Library of Congress Catalog-in-Publication data that will have space above it."
   cipf1:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 23
     :abbrev: cip
     :learning_category: Book
     :name: Catalog-in-Publication Data Level 1 First
   cipl:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 14
     :abbrev: cip
@@ -1202,6 +1322,7 @@
     :name: Catalog-in-Publication Data Last
     :date:  
   cl:
+    :weight: 20
     :group_name: codeline
     :spacing_profile: 4
     :abbrev: cl
@@ -1210,6 +1331,7 @@
     :name: Codeline
     :date: March 8, 2013
   cl1:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 4
     :abbrev: cl
@@ -1218,6 +1340,7 @@
     :name: Codeline Level 1
     :date: March 8, 2013
   cl1f:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 3
     :abbrev: cl
@@ -1226,6 +1349,7 @@
     :name: Codeline Level 1 first
     :date: March 8, 2013
   cl1l:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 5
     :abbrev: cl
@@ -1234,6 +1358,7 @@
     :name: Codeline Level 1 last
     :date: March 8, 2013
   cl1s:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 6
     :abbrev: cl
@@ -1242,6 +1367,7 @@
     :name: Codeline Level 1 standalone
     :date: March 8, 2013
   cl2:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 4
     :abbrev: cl
@@ -1250,6 +1376,7 @@
     :name: Codeline Level 2
     :date: March 8, 2013
   cl2f:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 3
     :abbrev: cl
@@ -1258,6 +1385,7 @@
     :name: Codeline Level 2 first
     :date: March 8, 2013
   cl2l:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 5
     :abbrev: cl
@@ -1266,6 +1394,7 @@
     :name: Codeline Level 2 last
     :date: March 8, 2013
   cl2s:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 6
     :abbrev: cl
@@ -1274,6 +1403,7 @@
     :name: Codeline Level 2 standalone
     :date: March 8, 2013
   cl3:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 4
     :abbrev: cl
@@ -1282,6 +1412,7 @@
     :name: Codeline Level 3
     :date: March 8, 2013
   cl3f:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 3
     :abbrev: cl
@@ -1290,6 +1421,7 @@
     :name: Codeline Level 3 first
     :date: March 8, 2013
   cl3l:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 5
     :abbrev: cl
@@ -1298,6 +1430,7 @@
     :name: Codeline Level 3 last
     :date: March 8, 2013
   cl3s:
+    :weight: 60
     :group_name: codeline
     :spacing_profile: 6
     :abbrev: cl
@@ -1306,6 +1439,7 @@
     :name: Codeline Level 3 standalone
     :date: March 8, 2013
   clf:
+    :weight: 20
     :group_name: codeline
     :spacing_profile: 3
     :abbrev: cl
@@ -1314,6 +1448,7 @@
     :name: Codeline first
     :date: March 8, 2013
   cll:
+    :weight: 20
     :group_name: codeline
     :spacing_profile: 5
     :abbrev: cl
@@ -1322,6 +1457,7 @@
     :name: Codeline last
     :date: March 8, 2013
   cls:
+    :weight: 20
     :group_name: codeline
     :spacing_profile: 6
     :abbrev: cl
@@ -1330,6 +1466,7 @@
     :name: Codeline standalone
     :date: March 8, 2013
   cn:
+    :weight: 00
     :group_name: chapter
     :chapter_start: true
     :spacing_profile: 2
@@ -1337,12 +1474,14 @@
     :learning_category: Parts and Chapters
     :name: Chapter Number
   com:
+    :weight: 20
     :group_name: commentary
     :abbrev: com
     :spacing_profile: 9
     :learning_category: Commentary
     :name: Commentary
   crt:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 8
     :abbrev: cip
@@ -1351,6 +1490,7 @@
     :tip: "Used for the text on copyright pages that is not Library of Congress Catalog-in-Publication data."
     :date: March 8, 2013
   crt1:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 8
     :abbrev: cip
@@ -1358,6 +1498,7 @@
     :name: Copyright level 1
     :date: March 8, 2013
   crt1f:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 7
     :abbrev: cip
@@ -1365,6 +1506,7 @@
     :name: Copyright level 1 first
     :date: March 8, 2013
   crt2:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 9
     :abbrev: cip
@@ -1372,6 +1514,7 @@
     :name: Copyright level 2
     :date: March 8, 2013
   crt3:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 9
     :abbrev: cip
@@ -1379,6 +1522,7 @@
     :name: Copyright level 3
     :date: March 8, 2013
   crtf:
+    :weight: 20
     :group_name: copyright
     :spacing_profile: 7
     :abbrev: cip
@@ -1386,11 +1530,13 @@
     :name: Copyright first
     :date: March 8, 2013
   cs:
+    :weight: 00
     :spacing_profile: 2
     :group_name: chapter_other
     :learning_category: Parts and Chapters
     :name: Chapter Subtitle
   ct:
+    :weight: 00
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
@@ -1398,6 +1544,7 @@
     :learning_category: Parts and Chapters
     :name: Chapter Title
   ctbm:
+    :weight: 00
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
@@ -1406,6 +1553,7 @@
     :name: Chapter Title Back Matter
     :tip: "A back matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs. Use ctbm for those titles (“Appendix Title,” “Notes,” “Bibliography,” etc.)."
   ctfm:
+    :weight: 00
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
@@ -1414,6 +1562,7 @@
     :name: Chapter Title Front Matter
     :tip: "A front matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs, and they get a different treatment when producing e-books. Therefore, use ctfm for those titles (“Contents,” “Preface,” etc.)."
   ctoc:
+    :weight: 20
     :spacing_profile: 9
     :group_name: chapter-contents
     :abbrev: ctoc
@@ -1421,6 +1570,7 @@
     :name: Chapter TOC Main Level
     :tip: "Main TOC level for a TOC appearing within a chapter or part."
   ctoc1:
+    :weight: 20
     :spacing_profile: 9
     :group_name: chapter-contents
     :abbrev: ctoc
@@ -1428,13 +1578,15 @@
     :name: Chapter TOC Level 1
     :tip: "First TOC sublevel for a TOC appearing within a chapter or part."
   ctoch:
+    :weight: 10
     :spacing_profile: 2
     :group_name: chapter-contents
     :abbrev: ctoc
     :learning_category: Chapter Contents
     :name: Chapter TOC Head
-    :tip: "Head level used if chapters or parts include mini TOCs."
+    :tip: "Head level used for a TOC appearing within a chapter or part."
   ded:
+    :weight: 20
     :group_name: dedication
     :spacing_profile: 8
     :abbrev: ded
@@ -1442,6 +1594,7 @@
     :name: Dedication
     :tip: "Dedication text. Typically set on its own page."
   ded1:
+    :weight: 60
     :group_name: dedication
     :spacing_profile: 8
     :abbrev: ded
@@ -1449,6 +1602,7 @@
     :name: Dedication Level 1
     :date: February 16, 2012
   ded1f:
+    :weight: 60
     :group_name: dedication
     :spacing_profile: 7
     :abbrev: ded
@@ -1456,6 +1610,7 @@
     :name: Dedication Level 1 First
     :date: February 16, 2012
   dedf:
+    :weight: 20
     :group_name: dedication
     :spacing_profile: 7
     :abbrev: ded
@@ -1463,18 +1618,21 @@
     :name: Dedication First
     :date: February 16, 2012
   dh:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 1
     :learning_category: Heads
     :name: D-Head
     :tip: "Level 4 head, often seen as H4."
   dhaft:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: D-Head after C-Head
-    :tip: "If a dh follows a list, it is recommended that dh be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the dh to control spacing."
+    :tip: "This should be used when a dh follows an ch."
   dia:
+    :weight: 20
     :group_name: dialogue
     :spacing_profile: 4
     :abbrev: dia
@@ -1483,6 +1641,7 @@
     :name: Dialogue
     :tip: "A dialogue paragraph. The speaker name can use the dispk character style if it is to be rendered differently from the other dia text. Most commonly used for plays, though some types of plays, like those by Shakespeare, may be better suited to the senseline (poetry) styles."
   diaf:
+    :weight: 20
     :group_name: dialogue
     :spacing_profile: 3
     :abbrev: dia
@@ -1491,6 +1650,7 @@
     :name: Dialogue First
     :tip: "The first line of a section of dialogue. "
   dial:
+    :weight: 20
     :group_name: dialogue
     :spacing_profile: 5
     :abbrev: dia
@@ -1499,6 +1659,7 @@
     :name: Dialogue Last
     :tip: "The last line of a section of dialogue."
   diap:
+    :weight: 20
     :group_name: dialogue
     :spacing_profile: 10
     :abbrev: dia
@@ -1507,6 +1668,7 @@
     :name: Dialogue Paragraph
     :tip: "Use this style if a line within a section of dialogue spans more than a single paragraph."
   diapl:
+    :weight: 20
     :group_name: dialogue
     :spacing_profile: 11
     :abbrev: dia
@@ -1515,6 +1677,7 @@
     :name: Dialogue Paragraph Last
     :date: February 16, 2012
   dias:
+    :weight: 20
     :group_name: dialogue
     :spacing_profile: 6
     :abbrev: dia
@@ -1523,6 +1686,7 @@
     :name: Dialogue Stand-Alone
     :tip: "A stand-alone line of dialogue."
   dl:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 9
     :learning_category: Heads
@@ -1530,6 +1694,7 @@
     :tip: "Most commonly used in fiction titles, for datelines that are not structural divisions."
     :date: April 14, 2014
   dl1:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 9
     :learning_category: Heads
@@ -1537,56 +1702,65 @@
     :tip: "Most commonly used in fiction titles, for datelines that are not structural divisions."
     :date: April 14, 2014
   dt:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: Major Division Head
   dtsub:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: Secondary Division Subhead
   eds:
+    :weight: 60
     :group_name: note
     :spacing_profile: 9
     :primary_structure: notes
     :learning_category: Notes
     :name: Editor's Note
   eh:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 1
     :learning_category: Heads
     :name: E-Head
   ehaft:
+    :weight: 00
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: E-Head after D-Head
-    :tip: "If an eh follows a list, it is recommended that eh be used but that the last list item be changed to ul or nl (rather than ull or nll) to allow the eh to control spacing."
+    :tip: "IfThis should be used when an eh follows an dh."
   en:
+    :weight: 20
     :group_name: note
     :secondary_group_name: body
     :spacing_profile: 9
     :primary_structure: notes
     :learning_category: Notes
     :name: Endnote
-    :tip: "Endnotes appear at the end of a chapter or book. The number before the note should **not** be composed as enref, which is used only on the number that appears within the main text. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
+    :tip: "Endnotes appear at the end of a chapter or book. The number before the note should be composed as ennum to ensure that notes are automatically linked in the e-book. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
   end:
+    :weight: 20
     :group_name: body
     :spacing_profile: 22
     :learning_category: Curriculum
     :name: Endpaper Text
     :tip: "For endpaper text in workbooks. Or, in books that include The End, use this style for that paragraph."
   enhn:
+    :weight: 80
     :group_name: note
     :secondary_group_name: heads
     :spacing_profile: 2
     :primary_structure: notes
     :learning_category: Notes
     :name: Endnote Headnote
-    :tip: "For an unnumbered endnote."
+    :tip: "For an unnumbered endnote. This is usually used for acknowledgments in books with multiple authors."
     :date: April 14, 2014
   enp:
+    :weight: 20
     :group_name: note
     :secondary_group_name: body
     :spacing_profile: 9
@@ -1595,6 +1769,7 @@
     :name: Endnote Paragraph
     :tip: "A new paragraph within an endnote. If an endnote is more than one paragraph long, then the second paragraph should use the enp style, which will control the proper indentation."
   ep:
+    :weight: 20
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 16
@@ -1602,8 +1777,9 @@
     :primary_structure: epigraph
     :learning_category: Epigraph
     :name: Epigraph
-    :tip: "This is the base level epigraph. If (as is most common) an epigraph is a single paragraph, simply use this ep style."
+    :tip: "When an epigraph is more than one paragraph, this should be used for any paragraph that isn't epf or epl."
   ep1:
+    :weight: 60
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 9
@@ -1613,6 +1789,7 @@
     :name: Epigraph Level 1
     :tip: "First epigraph sublevel, available if special spacing or indentation is required."
   ep2:
+    :weight: 60
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 9
@@ -1622,6 +1799,7 @@
     :name: Epigraph Level 2
     :tip: "Second epigraph sublevel, available if special spacing or indentation is required."
   epaft:
+    :weight: 20
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 19
@@ -1629,9 +1807,10 @@
     :primary_structure: epigraph
     :learning_category: Epigraph
     :name: Epigraph After Head
-    :tip: "Available if special spacing or indentation is required for epigraphs appearing after heads in chapters."
+    :tip: "Used for epigraphs appearing after heads in chapters."
     :date: March 8, 2013
   epf:
+    :weight: 20
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 15
@@ -1639,8 +1818,9 @@
     :primary_structure: epigraph
     :learning_category: Epigraph
     :name: Epigraph First
-    :tip: "If an epigraph is multiple paragraphs, the epf style is the equivalent of pf for paragraphs: as the first epigraph paragraph, it would likely not indent and can be typeset with added space above if needed."
+    :tip: "This should be used for the first paragraph of an epigraph. Use epf/ept when your epigraph is a single paragraph with a source line."
   epl:
+    :weight: 20
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 17
@@ -1648,8 +1828,9 @@
     :primary_structure: epigraph
     :learning_category: Epigraph
     :name: Epigraph Last
-    :tip: "The last paragraph of a multiple-paragraph epigraph, if needed to add spacing below."
+    :tip: "The last paragraph of a multiple-paragraph epigraph when there is not a source line."
   eps:
+    :weight: 20
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 18
@@ -1657,8 +1838,9 @@
     :primary_structure: epigraph
     :learning_category: Epigraph
     :name: Epigraph Stand-Alone
-    :tip: "If an epigraph has no ept and needs spacing defined above and below."
+    :tip: "If a single paragraph epigraph has no ept."
   epsl:
+    :weight: 30
     :group_name: epigraph
     :secondary_group_name: sense
     :spacing_profile: 8
@@ -1668,6 +1850,7 @@
     :name: Epigraph Senseline
     :tip: "Epigraph senseline should be used for an epigraph that contains lines of poetry."
   epsl1:
+    :weight: 30
     :group_name: epigraph
     :secondary_group_name: sense
     :spacing_profile: 9
@@ -1677,6 +1860,7 @@
     :name: Epigraph Senseline Level 1
     :date: March 8, 2013
   epslf:
+    :weight: 30
     :group_name: epigraph
     :secondary_group_name: sense
     :spacing_profile: 7
@@ -1686,6 +1870,7 @@
     :name: Epigraph Senseline First
     :date: March 8, 2013
   ept:
+    :weight: 20
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 38 
@@ -1695,6 +1880,7 @@
     :name: Epigraph Tail
     :tip: "The speaker/author of the epigraph, typically preceded by an em dash."
   ept1:
+    :weight: 60
     :group_name: epigraph
     :secondary_group_name: body
     :spacing_profile: 22 
@@ -1705,14 +1891,16 @@
     :tip: "Second line variation for epigraph tails."
     :date: March 8, 2013
   eq:
+    :weight: 20
     :group_name: equation
     :spacing_profile: 20
     :abbrev: eq
     :primary_structure: equation
     :learning_category: Figure
     :name: Equation
-    :tip: "Equations that appear in their own paragraphs, like figures, should use the eq paragraph style. A typesetter can use alternate styled to help control spacing needs, but composition in Word need not concern itself with this and can use eq for all equation paragraphs."
+    :tip: "Equations that appear in their own paragraphs, like figures, should use the eq paragraph style. A typesetter can use alternate styles to help control spacing needs, but composition in Word need not concern itself with this and can use eq for all equation paragraphs."
   eqaft:
+    :weight: 20
     :group_name: equation
     :spacing_profile: 21
     :abbrev: eq
@@ -1720,6 +1908,7 @@
     :learning_category: Figure
     :name: Equation After Head
   ex:
+    :weight: 20
     :group_name: exercise
     :secondary_group_name: body
     :spacing_profile: 16
@@ -1729,6 +1918,7 @@
     :name: Exercise
     :date: March 8, 2013
   exaft:
+    :weight: 20
     :group_name: exercise
     :secondary_group_name: body
     :spacing_profile: 19
@@ -1738,6 +1928,7 @@
     :name: Exercise after head
     :date: March 8, 2013
   exah:
+    :weight: 10
     :group_name: exercise
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -1746,6 +1937,7 @@
     :learning_category: Curriculum
     :name: Exercise A-Head
   exbh:
+    :weight: 10
     :group_name: exercise
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -1754,6 +1946,7 @@
     :learning_category: Curriculum
     :name: Exercise B-Head
   exf:
+    :weight: 20
     :group_name: exercise
     :secondary_group_name: body
     :spacing_profile: 15
@@ -1762,6 +1955,7 @@
     :learning_category: Curriculum
     :name: Exercise First
   exh:
+    :weight: 00
     :group_name: exercise
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -1770,6 +1964,7 @@
     :learning_category: Curriculum
     :name: Exercise Head
   exl:
+    :weight: 20
     :group_name: exercise
     :secondary_group_name: body
     :spacing_profile: 17
@@ -1778,6 +1973,7 @@
     :learning_category: Curriculum
     :name: Exercise Last
   exnl:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 4
@@ -1786,6 +1982,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item
   exnl1:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 4
@@ -1794,6 +1991,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1
   exnl1f:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 3
@@ -1802,6 +2000,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 First
   exnl1l:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 5
@@ -1810,6 +2009,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 Last
   exnl1p:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 9
@@ -1818,6 +2018,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 Paragraph
   exnl1s:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 6
@@ -1826,6 +2027,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 Stand-Alone
   exnlf:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 3
@@ -1834,6 +2036,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item First
   exnll:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 5
@@ -1842,6 +2045,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Last
   exnlp:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 9
@@ -1850,6 +2054,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Paragraph
   exnls:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 6
@@ -1858,6 +2063,7 @@
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Stand-Alone
   exs:
+    :weight: 20
     :group_name: exercise
     :secondary_group_name: body
     :spacing_profile: 18
@@ -1866,6 +2072,7 @@
     :learning_category: Curriculum
     :name: Exercise Stand-Alone
   exul:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 4
@@ -1874,6 +2081,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item
   exul1:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 4
@@ -1882,6 +2090,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1
   exul1f:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 3
@@ -1890,6 +2099,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 First
   exul1l:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 5
@@ -1898,6 +2108,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 Last
   exul1p:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 9
@@ -1906,6 +2117,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 Paragraph
   exul1s:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 6
@@ -1914,6 +2126,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 Stand-Alone
   exulf:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 3
@@ -1922,6 +2135,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item First
   exull:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 5
@@ -1930,6 +2144,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Last
   exulp:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 9
@@ -1938,6 +2153,7 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Paragraph
   exuls:
+    :weight: 30
     :group_name: exercise
     :secondary_group_name: list
     :spacing_profile: 6
@@ -1946,14 +2162,16 @@
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Stand-Alone
   fig:
+    :weight: 20
     :group_name: figure
     :spacing_profile: 9
     :abbrev: fig
     :primary_structure: figure
     :learning_category: Figure
     :name: Figure Marker
-    :tip: "This should be used in conjunction with the img character style to indicate a figure appearing at the paragraph level"
+    :tip: "This should be used in conjunction with the img character style to indicate a figure appearing at the paragraph level. Use an alternative style for figures created using live text."
   figatr:
+    :weight: 20
     :group_name: figure
     :spacing_profile: 9
     :abbrev: fig
@@ -1962,6 +2180,7 @@
     :name: Figure Credit/Attribution
     :tip: "The source, or attribution credit line, of the figure."
   figcap:
+    :weight: 20
     :group_name: figure
     :spacing_profile: 9
     :abbrev: fig
@@ -1970,6 +2189,7 @@
     :name: Figure Caption
     :tip: "To be used when the caption for a figure is on a separate line from the figh content."
   figcap1:
+    :weight: 20
     :group_name: figure
     :spacing_profile: 9
     :abbrev: fig
@@ -1978,14 +2198,16 @@
     :name: Figure Caption Level 1
     :tip: "To be used when a book includes different types of figure captions for different kinds of figures, like photos versus maps or drawings."
   figh:
+    :weight: 10
     :group_name: figure
     :spacing_profile: 9
     :abbrev: fig
     :primary_structure: figure
     :learning_category: Figure
     :name: Figure Head
-    :tip: "The figure head is the functional equivalent to a table head: the main title level for a figure. If a figure caption is only one line that contains the figure number and title, this style should be used for that paragraph. If the figure title is to be on a separate line from a descriptive caption, then figh should be used for the figure''s title, followed by the figcap style for the caption. The fighn character style should be used for the figure number, rather than simply making it bold, italic, or small caps."
+    :tip: "The figure head is the functional equivalent to a table head: the main title level for a figure. If a figure caption is only one line that contains the figure number and title, this style should be used for that paragraph. If the figure title is to be on a separate line from a descriptive caption, then figh should be used for the figure's title, followed by the figcap style for the caption. The fighn character style should be used for the figure number, rather than simply making it bold, italic, or small caps."
   figh1:
+    :weight: 10
     :group_name: figure
     :spacing_profile: 2
     :abbrev: fig
@@ -1994,6 +2216,7 @@
     :name: Figure Head Level 1
     :tip: "Used if a figure title has a subtitle."
   fign:
+    :weight: 20
     :group_name: figure
     :spacing_profile: 9
     :abbrev: fig
@@ -2002,14 +2225,16 @@
     :name: Figure Note
     :tip: "Figure note."
   fn:
+    :weight: 20
     :group_name: note
     :secondary_group_name: body
     :spacing_profile: 9
     :primary_structure: notes
     :learning_category: Notes
     :name: Footnote
-    :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should **not** be composed as fnref, which is used only on the number or symbol that appears within the main text. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
+    :tip: "Footnotes appear at the foot of a page. The number or symbol before the note should be composed as fnnum to ensure that notes are automatically linked in the e-book. To accomodate some variations that may appear within a footnote, the ntbq, ntsl, nttd, and nteq styles are available."
   fnp:
+    :weight: 20
     :group_name: note
     :secondary_group_name: body
     :primary_structure: notes
@@ -2018,6 +2243,7 @@
     :name: Footnote Paragraph
     :tip: "A new paragraph within a footnote. If a footnote is more than one paragraph long, then the second paragraph should use the fnp style, which will control the proper indentation."
   folio:
+    :weight: 20
     :for: tso
     :group_name: page
     :spacing_profile: 9
@@ -2026,6 +2252,7 @@
     :tip: "If a design calls for the page number to be separate from the rh, rhv, or rhr paragraph style, the folio style can be applied in InDesign."
     :date:  
   fs:
+    :weight: 20
     :group_name: exercise
     :abbrev: ex
     :spacing_profile: 9
@@ -2033,14 +2260,16 @@
     :learning_category: Curriculum
     :name: Further Study
   glo:
+    :weight: 20
     :group_name: glossary
     :spacing_profile: 8
     :abbrev: glo
     :primary_structure: glossary
     :learning_category: Curriculum
     :name: Glossary Definition
-    :tip: "The glossary definition, often used in conjunction with the gt (glossary term) character style. This style should also be used for abbreviations lists."
+    :tip: "The glossary definition, often used in conjunction with the gt (glossary term) character style. This style should also be used for abbreviations lists when there is not a glossary chapter."
   glof:
+    :weight: 20
     :group_name: glossary
     :spacing_profile: 7
     :abbrev: glo
@@ -2049,12 +2278,14 @@
     :name: Glossary Definition First
     :tip: "If the glossary entry encompasses more than one paragraph. For example, if the term is on one line and the definition is on another, use this style for the former."
   hb:
+    :weight: 30
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
     :name: Hiatus Break
     :tip: "Same definition and function as sec style. Hiatus break terminology is preferred by some publishers."
   hd:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Book
@@ -2062,11 +2293,13 @@
     :tip: "Generally used in Bibles, this style can also be appropriated when a one-off head is needed in an exceptional circumstance."
     :date:  
   hr:
+    :weight: 20
     :for: scml
     :spacing_profile: 2
     :scml_specialized_contents: EMPTY
     :group_name: body
   in:
+    :weight: 20
     :group_name: index
     :spacing_profile: 8
     :abbrev: in
@@ -2075,6 +2308,7 @@
     :name: Index Main Level
     :tip: "Main-level index entries."
   in1:
+    :weight: 60
     :group_name: index
     :spacing_profile: 9
     :abbrev: in
@@ -2083,6 +2317,7 @@
     :name: Index Level 1
     :tip: "First-sublevel index entries."
   in2:
+    :weight: 60
     :group_name: index
     :spacing_profile: 9
     :abbrev: in
@@ -2091,6 +2326,7 @@
     :name: Index Level 2
     :tip: "Second-sublevel index entries."
   in3:
+    :weight: 60
     :group_name: index
     :spacing_profile: 9
     :abbrev: in
@@ -2099,6 +2335,7 @@
     :name: Index Level 3
     :tip: "Third-sublevel index entries."
   inf:
+    :weight: 20
     :group_name: index
     :spacing_profile: 7
     :abbrev: in
@@ -2108,6 +2345,7 @@
     :tip: "A main-level index entry with added space above; used when letter groups' entries do not use a head but instead simply have space between them."
     :shortcut: F4 (Function key)
   inh:
+    :weight: 10
     :group_name: index
     :spacing_profile: 2
     :abbrev: in
@@ -2116,6 +2354,7 @@
     :name: Index Head
     :tip: "Used when an index includes the letter as a head before each letter group; should be followed by an in entry, **not** inf."
   inh1:
+    :weight: 10
     :group_name: index
     :spacing_profile: 2
     :abbrev: in
@@ -2124,6 +2363,7 @@
     :name: Index Head Level 1
     :tip: "If an index is broken up into a number of sublevels, the inh1 style is available for sublevel heads."
   inhn:
+    :weight: 80
     :group_name: index
     :spacing_profile: 2
     :abbrev: in
@@ -2132,6 +2372,7 @@
     :name: Index Headnote
     :tip: "For paragraphs preceding indexes that indicate what symbols or fonts mean within the index."
   lo:
+    :weight: 20
     :group_name: exercise
     :spacing_profile: 9
     :abbrev: ex
@@ -2139,6 +2380,7 @@
     :learning_category: Curriculum
     :name: Learning Objective
   lps:
+    :weight: 20
     :group_name: letter
     :secondary_group_name: letter_postscript 
     :spacing_profile: 9
@@ -2149,6 +2391,7 @@
     :tip: "Be careful not to confuse this with lts, which is the Letter Paragraph Stand-Alone style."
     :date: February 16, 2012
   lt:
+    :weight: 20
     :group_name: letter
     :secondary_group_name: letter_body
     :spacing_profile: 33
@@ -2158,6 +2401,7 @@
     :name: Letter Paragraph
     :date: March 8, 2013
   lta:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: adrress
     :spacing_profile: 8
@@ -2167,6 +2411,7 @@
     :name: Letter Address
     :tip: "The letter address refers to the physical address of the recipient, not how you address another person."
   ltaf:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: address
     :spacing_profile: 7
@@ -2175,6 +2420,7 @@
     :learning_category: Formal Letter
     :name: Letter Address First
   ltc:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: letter_close
     :spacing_profile: 9
@@ -2184,6 +2430,7 @@
     :name: Letter Complimentary Close
     :tip: "“Sincerely . . .”"
   ltd:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: date
     :spacing_profile: 8
@@ -2192,6 +2439,7 @@
     :learning_category: Formal Letter
     :name: Letter Date
   ltdf:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: date
     :spacing_profile: 7
@@ -2201,6 +2449,7 @@
     :name: Letter Date First
     :tip: "This is the first line of the letter date, often right aligned. If the date runs more than one line (perhaps the year is on a different line), the ltdf style would be applied to the first line, followed by ltd for the rest."
   ltf:
+    :weight: 20
     :group_name: letter
     :secondary_group_name: letter_body
     :spacing_profile: 32
@@ -2210,6 +2459,7 @@
     :name: Letter Paragraph First
     :date: March 8, 2013
   ltg:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: letter_greeting
     :spacing_profile: 9
@@ -2219,6 +2469,7 @@
     :name: Letter Greeting
     :tip: "“Dear So-and-So . . .”"
   ltl:
+    :weight: 20
     :group_name: letter
     :secondary_group_name: letter_body
     :spacing_profile: 34
@@ -2227,7 +2478,9 @@
     :learning_category: Formal Letter
     :name: Letter Paragraph Last
     :date: March 8, 2013
+    :tip: "To be used when a body paragraph is the last paragraph in a letter group. Use lt if it is followed by letter closing content(signatures, postscripts, etc."
   lto:
+    :weight: 20
     :group_name: letter
     :secondary_group_name: letter_body
     :spacing_profile: 36
@@ -2237,6 +2490,7 @@
     :name: Letter Paragraph Only
     :date: March 8, 2013
   lts:
+    :weight: 20
     :group_name: letter
     :secondary_group_name: letter_body
     :spacing_profile: 35
@@ -2247,6 +2501,7 @@
     :tip: "Be careful not to confuse this with lps, which is the Letter Postscript style."
     :date: March 8, 2013
   ltsig:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: signature
     :spacing_profile: 13
@@ -2255,6 +2510,7 @@
     :learning_category: Formal Letter
     :name: Letter Signature
   ltsigf:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: signature
     :spacing_profile: 12
@@ -2263,6 +2519,7 @@
     :learning_category: Formal Letter
     :name: Letter Signature First
   ltsigl:
+    :weight: 30
     :group_name: letter
     :secondary_group_name: signature
     :spacing_profile: 14
@@ -2272,18 +2529,22 @@
     :name: Letter Signature Last
     :date: February 16, 2012
   mediah:
+    :weight: 10
     :spacing_profile: 2
     :group_name: media
     :primary_structure: media
   mediacap:
+    :weight: 20
     :spacing_profile: 9
     :group_name: media
     :primary_structure: media
   mediaatr:
+    :weight: 20
     :spacing_profile: 9
     :group_name: media
     :primary_structure: media
   nl:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
@@ -2291,24 +2552,28 @@
     :name: Numbered List Item
     :tip: "Numbered lists should use nl styles. The f, l, and s styles should be used to control spacing above and below. If an unnumbered list appears within the numbered list, remember to use the ul1 sublevel."
   nl1:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 (Subpoint)
   nl1f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 First (Subpoint)
   nl1l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 Last (Subpoint)
   nl1p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 10
@@ -2316,6 +2581,7 @@
     :name: Numbered List Item Level 1 Paragraph (Subpoint)
     :tip: "A new paragraph within a numbered list level 1 item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   nl1pl:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 11
@@ -2323,138 +2589,161 @@
     :name: Numbered List Item Level 1 Paragraph Last (Subpoint)
     :date: February 16, 2012
   nl1s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 Stand-Alone (Subpoint)
   nl2:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Numbered List
     :name: Numbered List Item Level 2
   nl2f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 First
   nl2l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 Last
   nl2p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 Paragraph
   nl2s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 Stand-Alone
   nl3:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Numbered List
     :name: Numbered List Item Level 3
   nl3f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 First
   nl3l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 Last
   nl3p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 Paragraph
   nl3s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 Stand-Alone
   nl4:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Numbered List
     :name: Numbered List Item Level 4
   nl4f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 First
   nl4l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 Last
   nl4p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 Paragraph
   nl4s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 Stand-Alone
   nl5:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Level 5
   nl5f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 First
   nl5l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 Last
   nl5p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 Paragraph
   nl5s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 Stand-Alone
   nlf:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Numbered List
     :name: Numbered List Item First
   nlh:
+    :weight: 10
     :group_name: list
     :primary_structure: list
     :spacing_profile: 2
@@ -2462,12 +2751,14 @@
     :name: Numbered List Head
     :date: February 16, 2012
   nll:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Numbered List
     :name: Numbered List Item Last
   nlp:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 10
@@ -2475,6 +2766,7 @@
     :name: Numbered List Item Paragraph
     :tip: "A new paragraph within a numbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   nlpl:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 11
@@ -2482,12 +2774,14 @@
     :name: Numbered List Item Paragraph Last
     :date: February 16, 2012
   nls:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Numbered List
     :name: Numbered List Item Stand-Alone
   ntbq:
+    :weight: 30
     :group_name: note
     :secondary_group_name: blockquotes
     :primary_structure: notes
@@ -2496,6 +2790,7 @@
     :name: Note Block Quote
     :date: February 16, 2012
   ntbqf:
+    :weight: 30
     :group_name: note
     :secondary_group_name: blockquotes
     :primary_structure: notes
@@ -2504,6 +2799,7 @@
     :name: Note Block Quote First
     :date: February 16, 2012
   ntbql:
+    :weight: 30
     :group_name: note
     :secondary_group_name: blockquotes
     :primary_structure: notes
@@ -2512,6 +2808,7 @@
     :name: Note Block Quote Last
     :date: February 16, 2012
   ntbqs:
+    :weight: 30
     :group_name: note
     :secondary_group_name: blockquotes
     :primary_structure: notes
@@ -2520,6 +2817,7 @@
     :name: Note Block Quote Stand-Alone
     :date: February 16, 2012
   ntcon:
+    :weight: 30
     :spacing_profile: 9
     :group_name: note
     :secondary_group_name: body
@@ -2528,6 +2826,7 @@
     :name: Note Continued
     :date: February 16, 2012
   nteq:
+    :weight: 30
     :group_name: note
     :secondary_group_name: equation
     :primary_structure: notes
@@ -2536,6 +2835,7 @@
     :name: Note Equation
     :date: February 16, 2012
   ntnl:
+    :weight: 30
     :group_name: note
     :secondary_group_name: list
     :primary_structure: notes
@@ -2544,6 +2844,7 @@
     :name: Note Numbered List
     :date: February 16, 2012
   ntnlf:
+    :weight: 30
     :group_name: note
     :secondary_group_name: list
     :primary_structure: notes
@@ -2552,6 +2853,7 @@
     :name: Note Numbered List First
     :date: February 16, 2012
   ntnll:
+    :weight: 30
     :group_name: note
     :secondary_group_name: list
     :primary_structure: notes
@@ -2560,6 +2862,7 @@
     :name: Note Numbered List Last
     :date: February 16, 2012
   ntsl:
+    :weight: 30
     :group_name: note
     :secondary_group_name: sense
     :primary_structure: notes
@@ -2568,6 +2871,7 @@
     :name: Note Senseline
     :date: February 16, 2012
   ntslf:
+    :weight: 30
     :group_name: note
     :secondary_group_name: sense
     :primary_structure: notes
@@ -2576,6 +2880,7 @@
     :name: Note Senseline First
     :date: February 16, 2012
   ntsll:
+    :weight: 30
     :group_name: note
     :secondary_group_name: sense
     :primary_structure: notes
@@ -2584,6 +2889,7 @@
     :name: Note Senseline Last
     :date: February 16, 2012
   nttd:
+    :weight: 30
     :group_name: note
     :secondary_group_name: table
     :primary_structure: notes
@@ -2592,6 +2898,7 @@
     :name: Note Table
     :date: February 16, 2012
   ntul:
+    :weight: 30
     :group_name: note
     :secondary_group_name: list
     :primary_structure: notes
@@ -2600,6 +2907,7 @@
     :name: Note Unnumbered List
     :date: February 16, 2012
   ntulf:
+    :weight: 30
     :group_name: note
     :secondary_group_name: list
     :primary_structure: notes
@@ -2608,6 +2916,7 @@
     :name: Note Unnumbered List First
     :date: February 16, 2012
   ntull:
+    :weight: 30
     :group_name: note
     :secondary_group_name: list
     :primary_structure: notes
@@ -2616,12 +2925,14 @@
     :name: Note Unnumbered List Last
     :date: February 16, 2012
   opt:
+    :weight: 30
     :group_name: rubric
     :spacing_profile: 9
     :abbrev: rb
     :learning_category: Rubric
     :name: Optional Rubric
   p:
+    :weight: 20
     :group_name: body
     :spacing_profile: 20
     :learning_category: Body
@@ -2629,49 +2940,57 @@
     :tip: "Body paragraph, or standard paragraph, the base level for nearly all projects. Most commonly, it includes a first-line indent."
     :shortcut: Alt+Ctrl+P
   paft:
+    :weight: 20
     :group_name: body
     :spacing_profile: 21
     :learning_category: Body
     :name: Paragraph after Head (or sec)
-    :tip: "Paragraphs that follow heads often do not indent, as a regular p would. When composing, be aware of when a paft needs to occur. If the first paragraph of a chapter is preceded by an ah or ahaft, use pf."
+    :tip: "Paragraphs that follow heads often do not indent, as a regular p would. When composing, be aware of when a paft needs to occur. If the first paragraph of a chapter is preceded by an ahaft, use pf."
     :shortcut: F2 (Function key)
   patr:
+    :weight: 30
     :group_name: body
     :spacing_profile: 22
     :learning_category: Body
     :name: Paragraph Attribution
     :tip: "If the author of a preface or introduction is listed at the end of the section, rather than at the beginning as an au, the name is typically rendered as a right-aligning paragraph."
   patr1:
+    :weight: 30
     :group_name: body
     :spacing_profile: 22
     :learning_category: Body
     :name: Paragraph Attribution Level 1
-    :tip: "The sublevel of a paragraph attribution. This is typically the author's location or the date on which the piece of text was written."
+    :tip: "The sublevel of a paragraph attribution. This is typically the author's location, affiliation, or the date on which the piece of text was written."
   pcon:
+    :weight: 20
     :spacing_profile: 9
     :group_name: body
     :learning_category: Body
     :name: Paragraph Continued
     :tip: "When a paragraph is broken up by a block quote, figure, or list, the **continuation** of the paragraph should be composed as pcon. This is structurally different from paft, which is a paragraph that follows a head. When composing, keep in mind whether a paragraph that follows a list is a new paragraph (p) or the continuation of the previous paragraph."
   pcust1:
+    :weight: 80
     :for: expanded
     :spacing_profile: 9
     :group_name: body
     :learning_category: Body
     :name: Paragraph Custom 1
   pcust2:
+    :weight: 80
     :for: expanded
     :spacing_profile: 9
     :group_name: body
     :learning_category: Body
     :name: Paragraph Custom 2
   pcust3:
+    :weight: 80
     :for: expanded
     :spacing_profile: 9
     :group_name: body
     :learning_category: Body
     :name: Paragraph Custom 3
   pf:
+    :weight: 30
     :group_name: body
     :spacing_profile: 9
     :learning_category: Body
@@ -2679,6 +2998,7 @@
     :tip: "This is the first regular (body) paragraph of a chapter, even if it follows an a-head. Many designs include a drop cap or small caps on this paragraph. It is not the same as paft or psec and should not be used to control spacing within a chapter."
     :shortcut: Ctrl+Shift+P or F3
   pn:
+    :weight: 10
     :group_name: part
     :spacing_profile: 2
     :chapter_start: true
@@ -2686,24 +3006,28 @@
     :learning_category: Parts and Chapters
     :name: Part Number
   ps:
+    :weight: 10
     :spacing_profile: 2
     :group_name: parts_other
     :learning_category: Parts and Chapters
     :name: Part Subtitle
   psec:
+    :weight: 30
     :group_name: body
     :spacing_profile: 23
     :learning_category: Body
     :name: Paragraph Section Break
     :tip: "A paragraph that represents a new section within a chapter, typically by having space above it and no indent. Also referred to as an unornamented paragraph break. Note: this style is mutually exclusive with the sec style."
   psec1:
+    :weight: 30
     :group_name: body
     :spacing_profile: 23
     :learning_category: Body
     :name: Paragraph Section Break Level 1
-    :tip: "In case you have two different types of psec that have different "
+    :tip: "In case you have two different types of psec that have different spacing or indentation."
     :date: February 16, 2012
   pt:
+    :weight: 10
     :spacing_profile: 2
     :group_name: part
     :chapter_start: true
@@ -2711,6 +3035,7 @@
     :learning_category: Parts and Chapters
     :name: Part Title
   qu:
+    :weight: 20
     :group_name: question
     :secondary_group_name: body
     :spacing_profile: 8
@@ -2719,6 +3044,7 @@
     :learning_category: Question and Answer
     :name: Question
   quf:
+    :weight: 20
     :group_name: question
     :secondary_group_name: body
     :spacing_profile: 7
@@ -2727,6 +3053,7 @@
     :learning_category: Question and Answer
     :name: Question First
   quh:
+    :weight: 10
     :group_name: question
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -2735,6 +3062,7 @@
     :learning_category: Question and Answer
     :name: Question Head
   quot:
+    :weight: 20
     :group_name: quote
     :abbrev: quo
     :primary_structure: pullquote
@@ -2743,6 +3071,7 @@
     :name: Quote
     :tip: "To be used for pull quotes."
   quotf:
+    :weight: 20
     :group_name: quote
     :abbrev: quo
     :primary_structure: pullquote
@@ -2751,6 +3080,7 @@
     :name: Quote First
     :date: February 16, 2012
   quotl:
+    :weight: 20
     :group_name: quote
     :abbrev: quo
     :spacing_profile: 5
@@ -2759,6 +3089,7 @@
     :name: Quote Last
     :date: February 16, 2012
   quots:
+    :weight: 20
     :group_name: quote
     :abbrev: quo
     :primary_structure: pullquote
@@ -2767,6 +3098,7 @@
     :name: Quote Stand-Alone
     :date: February 16, 2012
   quott:
+    :weight: 20
     :group_name: quote
     :spacing_profile: 22 
     :abbrev: quo
@@ -2776,24 +3108,28 @@
     :tip: "The speaker of the pull quote."
     :date: March 8, 2013
   rb:
+    :weight: 20
     :group_name: rubric
     :spacing_profile: 9
     :abbrev: rb
     :learning_category: Rubric
     :name: Rubric
   rbc:
+    :weight: 20
     :group_name: rubric
     :spacing_profile: 9
     :abbrev: rb
     :learning_category: Rubric
     :name: Rubric Command
   rbi:
+    :weight: 20
     :group_name: rubric
     :spacing_profile: 9
     :abbrev: rb
     :learning_category: Rubric
     :name: Rubric Instruction
   rf:
+    :weight: 60
     :group_name: reference
     :primary_structure: references
     :spacing_profile: 9
@@ -2801,6 +3137,7 @@
     :name: Reference/Bibliography
     :tip: "For references and bibliographies, the rf style typically uses a hanging indent, with a font that's slightly smaller than the main p text."
   rf1:
+    :weight: 60
     :group_name: reference
     :primary_structure: references
     :spacing_profile: 9
@@ -2808,6 +3145,7 @@
     :name: Reference/Bibliography Level 1
     :date: March 8, 2013
   rf2:
+    :weight: 60
     :group_name: reference
     :primary_structure: references
     :spacing_profile: 9
@@ -2815,6 +3153,7 @@
     :name: Reference/Bibliography Level 2
     :date: March 8, 2013
   rh:
+    :weight: 10
     :for: tso
     :group_name: page
     :spacing_profile: 9
@@ -2822,13 +3161,15 @@
     :name: Running Head
     :tip: "This running head paragraph style can apply to either a verso or a recto page, when the settings are the same for both. It can also be used for running feet. The content of a running head does not need to be composed in Word unless specific running heads are required due to lengthy chapter titles that InDesign's text variables feature would not be able to generate automatically."
   rhr:
+    :weight: 10
     :for: tso
     :group_name: page
     :spacing_profile: 9
     :learning_category: Page
     :name: Running Head Recto
-    :tip: " On a regular body page, the recto running head is most commonly the chapter title. It can also be set to use a-heads or b-heads (or something altogether different) if the design calls for it. Typically, front matter and back matter use the same content for both the rhv and the rhr."
+    :tip: "On a regular body page, the recto running head is most commonly the chapter title. It can also be set to use a-heads or b-heads (or something altogether different) if the design calls for it. Typically, front matter and back matter use the same content for both the rhv and the rhr."
   rhv:
+    :weight: 10
     :for: tso
     :group_name: page
     :spacing_profile: 9
@@ -2836,6 +3177,7 @@
     :name: Running Head Verso
     :tip: "On a regular body page, the verso running head is most commonly the book title, author name, or chapter title. It can also be set to use a-heads or b-heads (or something altogether different) if the design calls for it. Typically, front matter and back matter use the same content for both the rhv and the rhr."
   rp:
+    :weight: 20
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 13
@@ -2844,6 +3186,7 @@
     :learning_category: Recipes
     :name: Recipe Procedure
   rp1:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 13
@@ -2852,6 +3195,7 @@
     :learning_category: Recipes
     :name: Recipe Procedure Level 1
   rp1f:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 12
@@ -2860,6 +3204,7 @@
     :learning_category: Recipes
     :name: Recipe Procedure Level 1 First
   rp1l:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 14
@@ -2868,6 +3213,7 @@
     :learning_category: Recipes
     :name: Recipe Procedure Level 1 Last
   rp1y:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -2876,6 +3222,7 @@
     :learning_category: Recipes
     :name: Recipe Yield Level 1
   rpah:
+    :weight: 10
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -2884,6 +3231,7 @@
     :learning_category: Recipes
     :name: Recipe A-Head
   rpbh:
+    :weight: 10
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -2892,6 +3240,7 @@
     :learning_category: Recipes
     :name: Recipe B-Head
   rpch:
+    :weight: 10
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -2900,6 +3249,7 @@
     :learning_category: Recipes
     :name: Recipe C-Head
   rpf:
+    :weight: 20
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 12
@@ -2908,6 +3258,7 @@
     :learning_category: Recipes
     :name: Recipe Procedure First
   rpg:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -2916,6 +3267,7 @@
     :learning_category: Recipes
     :name: Recipe Garnish
   rpg1:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -2924,12 +3276,14 @@
     :learning_category: Recipes
     :name: Recipe Garnish Level 1
   rph:
+    :weight: 00
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
     :primary_structure: recipe
   rph1:
+    :weight: 00
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -2938,6 +3292,7 @@
     :learning_category: Recipes
     :name: Recipe Subhead or Level 1 Head
   rphn:
+    :weight: 10
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 2
@@ -2946,6 +3301,7 @@
     :learning_category: Recipes
     :name: Recipe Head Note
   rpil:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 4
@@ -2954,6 +3310,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item
   rpil1:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 4
@@ -2962,6 +3319,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1
   rpil1f:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 3
@@ -2970,6 +3328,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1 First
   rpil1l:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 5
@@ -2978,6 +3337,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1 Last
   rpil1s:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 6
@@ -2986,6 +3346,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1 Stand-Alone
   rpilf:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 3
@@ -2994,6 +3355,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item First
   rpill:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3002,6 +3364,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Last
   rpils:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3010,6 +3373,7 @@
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Stand-Alone
   rpl:
+    :weight: 20
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 14
@@ -3018,6 +3382,7 @@
     :learning_category: Recipes
     :name: Recipe Procedure Last
   rpn:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -3026,6 +3391,7 @@
     :learning_category: Recipes
     :name: Recipe Note
   rpn1:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -3034,6 +3400,7 @@
     :learning_category: Recipes
     :name: Recipe Note Level 1
   rpnut:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -3042,6 +3409,7 @@
     :learning_category: Recipes
     :name: Recipe Nutritional Information
   rpnut1:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body
     :spacing_profile: 9
@@ -3050,6 +3418,7 @@
     :learning_category: Recipes
     :name: Recipe Nutritional Information Level 1
   rpt:
+    :weight: 00
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 22 
@@ -3058,6 +3427,7 @@
     :learning_category: Recipes
     :name: Recipe Title
   rpt1:
+    :weight: 00
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 22 
@@ -3066,6 +3436,7 @@
     :learning_category: Recipes
     :name: Recipe Subtitle or Level 1 Title
   rpv:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 13
@@ -3074,6 +3445,7 @@
     :learning_category: Recipes
     :name: Recipe Variation
   rpv1:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 13
@@ -3082,6 +3454,7 @@
     :learning_category: Recipes
     :name: Recipe Variation Level 1
   rpv1f:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 12
@@ -3090,6 +3463,7 @@
     :learning_category: Recipes
     :name: Recipe Variation Level 1 First
   rpv1h:
+    :weight: 50
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 2
@@ -3098,6 +3472,7 @@
     :learning_category: Recipes
     :name: Recipe Variation Level 1 Head
   rpv1l:
+    :weight: 60
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 14
@@ -3106,6 +3481,7 @@
     :learning_category: Recipes
     :name: Recipe Variation Level 1 Last
   rpvf:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 12
@@ -3114,6 +3490,7 @@
     :learning_category: Recipes
     :name: Recipe Variation First
   rpvh:
+    :weight: 10
     :group_name: recipe
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3122,6 +3499,7 @@
     :learning_category: Recipes
     :name: Recipe Variation Head
   rpvl:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_variation
     :spacing_profile: 14
@@ -3130,6 +3508,7 @@
     :learning_category: Recipes
     :name: Recipe Variation Last
   rpy:
+    :weight: 30
     :group_name: recipe
     :secondary_group_name: recipe_body 
     :spacing_profile: 9
@@ -3138,13 +3517,15 @@
     :learning_category: Recipes
     :name: Recipe Yield
   rv:
+    :weight: 20
     :group_name: series
     :spacing_profile: 9
     :abbrev: ser
     :learning_category: Series
     :name: Review
-    :tip: " Review should be used for praise pages. This is the quote, much like an ep or quot paragraph, but specific to book reviews, praise comments, or testimonials, typically seen in a book''s front matter."
+    :tip: "Review should be used for praise pages. This is the quote, much like an ep or quot paragraph, but specific to book reviews, praise comments, or testimonials, typically seen in a book's front matter."
   rvd:
+    :weight: 20
     :group_name: series
     :spacing_profile: 9
     :abbrev: ser
@@ -3152,6 +3533,7 @@
     :name: Review Description
     :tip: "Review description is a catchall for a line containing further information about a review's source or author affiliation."
   rvh:
+    :weight: 10
     :group_name: series
     :spacing_profile: 2
     :abbrev: ser
@@ -3159,6 +3541,7 @@
     :name: Review Head
     :date: April 14, 2014
   rvt:
+    :weight: 20
     :group_name: series
     :spacing_profile: 22 
     :abbrev: ser
@@ -3166,6 +3549,7 @@
     :name: Review Tail
     :tip: "The review tail is the author of the rv quotation. Most commonly preceded by an em dash and right aligned, like an ept or quotail."
   sb:
+    :weight: 20
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 28
@@ -3175,6 +3559,7 @@
     :name: Sidebar Paragraph
     :tip: "Sidebar paragraphs include many variations, following the same patterns as main-level ScML styles, including heads, lists, and senselines. The sidebar styles encompass things such as “box text” that may appear within your main text area. When composing, use the different sidebar levels to organize the different kinds of boxed text that appear in your project."
   sb1:
+    :weight: 60
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 13
@@ -3183,6 +3568,7 @@
     :learning_category: Sidebar
     :name: Sidebar Level 1
   sb1f:
+    :weight: 60
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 12
@@ -3191,6 +3577,7 @@
     :learning_category: Sidebar
     :name: Sidebar Level 1 First
   sb1h:
+    :weight: 40
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3200,6 +3587,7 @@
     :name: Sidebar Level 1 Head
     :date: March 8, 2013
   sb1l:
+    :weight: 60
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 14
@@ -3208,6 +3596,7 @@
     :learning_category: Sidebar
     :name: Sidebar Level 1 Last
   sb1t:
+    :weight: 00
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 22 
@@ -3217,6 +3606,7 @@
     :name: Sidebar Level 1 Title
     :date: March 8, 2013
   sbaft:
+    :weight: 20
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 37
@@ -3225,6 +3615,7 @@
     :learning_category: Sidebar
     :name: Sidebar Paragraph after Head
   sbah:
+    :weight: 10
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 1
@@ -3233,6 +3624,7 @@
     :learning_category: Sidebar
     :name: Sidebar A-Head
   sbahaft:
+    :weight: 10
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3241,6 +3633,7 @@
     :learning_category: Sidebar
     :name: Sidebar A-Head after Title
   sbbh:
+    :weight: 10
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 1
@@ -3249,6 +3642,7 @@
     :learning_category: Sidebar
     :name: Sidebar B-Head
   sbbhaft:
+    :weight: 10
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3257,6 +3651,7 @@
     :learning_category: Sidebar
     :name: Sidebar B-Head after A-Head
   sbbq:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: blockquotes
     :spacing_profile: 16
@@ -3265,6 +3660,7 @@
     :learning_category: Sidebar
     :name: Sidebar Block Quote
   sbbqaft:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: blockquotes
     :spacing_profile: 19
@@ -3273,6 +3669,7 @@
     :learning_category: Sidebar
     :name: Sidebar Block Quote after Head
   sbbqf:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: blockquotes
     :spacing_profile: 15
@@ -3281,6 +3678,7 @@
     :learning_category: Sidebar
     :name: Sidebar Block Quote First
   sbbql:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: blockquotes
     :spacing_profile: 17
@@ -3289,6 +3687,7 @@
     :learning_category: Sidebar
     :name: Sidebar Block Quote Last
   sbbqs:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: blockquotes
     :spacing_profile: 18
@@ -3297,6 +3696,7 @@
     :learning_category: Sidebar
     :name: Sidebar Block Quote Stand-Alone
   sbcon:
+    :weight: 20
     :spacing_profile: 9
     :group_name: sidebar
     :secondary_group_name: body
@@ -3305,6 +3705,7 @@
     :learning_category: Sidebar
     :name: Sidebar Paragraph Continued
   sbf:
+    :weight: 20
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 27
@@ -3313,6 +3714,7 @@
     :learning_category: Sidebar
     :name: Sidebar Paragraph First
   sbh:
+    :weight: 00
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3322,6 +3724,7 @@
     :name: Sidebar Head
     :tip: "The sbh style is for individual instances of sidebar heads."
   sbl:
+    :weight: 20
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 29
@@ -3330,6 +3733,7 @@
     :learning_category: Sidebar
     :name: Sidebar Paragraph Last
   sbnl:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 4
@@ -3338,6 +3742,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item
   sbnl1:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 4
@@ -3346,6 +3751,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1
   sbnl1f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3354,6 +3760,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 First
   sbnl1l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3362,6 +3769,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 Last
   sbnl1p:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3370,6 +3778,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 Paragraph
   sbnl1s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3378,6 +3787,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 Stand-Alone
   sbnl2:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 4
@@ -3386,6 +3796,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2
   sbnl2f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3394,6 +3805,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 First
   sbnl2l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3402,6 +3814,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 Last
   sbnl2p:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3410,6 +3823,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 Paragraph
   sbnl2s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3418,6 +3832,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 Stand-Alone
   sbnl3:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 13
@@ -3426,6 +3841,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 3
   sbnl3f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 12
@@ -3434,6 +3850,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 3 First
   sbnl3l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 14
@@ -3442,6 +3859,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 3 Last
   sbnl4:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 13
@@ -3450,6 +3868,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 4
   sbnl4f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 12
@@ -3458,6 +3877,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 4 First
   sbnl4l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 14
@@ -3466,6 +3886,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 4 Last
   sbnl5:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 13
@@ -3474,6 +3895,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 5
   sbnl5f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 12
@@ -3482,6 +3904,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 5 First
   sbnl5l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 14
@@ -3490,6 +3913,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 5 Last
   sbnlf:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3498,6 +3922,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item First
   sbnll:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :abbrev: sb
@@ -3506,6 +3931,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Last
   sbnlp:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3515,6 +3941,7 @@
     :name: Sidebar Numbered List Item Paragraph
     :tip: "A new paragraph within a sidebar numbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   sbnls:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3523,6 +3950,7 @@
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Stand-Alone
   sbo:
+    :weight: 20
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 31
@@ -3532,6 +3960,7 @@
     :name: Sidebar Only
     :date: February 16, 2012
   sbs:
+    :weight: 20
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 30
@@ -3540,6 +3969,7 @@
     :learning_category: Sidebar
     :name: Sidebar Paragraph Stand-Alone
   sbsl:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 4
@@ -3548,6 +3978,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline
   sbsl1:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 4
@@ -3556,6 +3987,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1
   sbsl1f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 3
@@ -3565,6 +3997,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 First
   sbsl1l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 5
@@ -3574,6 +4007,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 Last
   sbsl1s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 6
@@ -3582,6 +4016,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 Stand-Alone
   sbsl2:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 4
@@ -3591,6 +4026,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2
   sbsl2f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 3
@@ -3600,6 +4036,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 First
   sbsl2l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 5
@@ -3609,6 +4046,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 Last
   sbsl2s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 6
@@ -3617,6 +4055,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 Stand-Alone
   sbsl3:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 4
@@ -3626,6 +4065,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3
   sbsl3f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 3
@@ -3635,6 +4075,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 First
   sbsl3l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 5
@@ -3644,6 +4085,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 Last
   sbsl3s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 6
@@ -3652,6 +4094,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 Stand-Alone
   sbslf:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 3
@@ -3660,6 +4103,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline First
   sbsli:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 13
@@ -3668,6 +4112,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent
   sbslif:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 12
@@ -3676,6 +4121,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent First
   sbslil:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 14
@@ -3684,6 +4130,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent Last
   sbsll:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 5
@@ -3692,6 +4139,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Last
   sbsls:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 6
@@ -3700,6 +4148,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Stand-Alone
   sbslt:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: sense
     :spacing_profile: 22 
@@ -3708,6 +4157,7 @@
     :learning_category: Sidebar
     :name: Sidebar Senseline Tail
   sbt:
+    :weight: 00
     :group_name: sidebar
     :secondary_group_name: body
     :spacing_profile: 2
@@ -3717,6 +4167,7 @@
     :name: Sidebar Title
     :tip: "The sbt style should be used for repeating sidebar titles. For example, some books might have many sidebars that begin with “For Your Information . . .”"
   sbul:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 4
@@ -3725,6 +4176,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item
   sbul1:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 4
@@ -3733,6 +4185,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1
   sbul1f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3741,6 +4194,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 First
   sbul1l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3749,6 +4203,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Last
   sbul1p:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3757,6 +4212,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Paragraph
   sbul1s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3765,6 +4221,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Stand-Alone
   sbul2:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3773,6 +4230,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2
   sbul2f:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3781,6 +4239,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 First
   sbul2l:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3789,6 +4248,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Last
   sbul2p:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3797,6 +4257,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Paragraph
   sbul2s:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3805,6 +4266,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Stand-Alone
   sbulf:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3813,6 +4275,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item First
   sbull:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3821,6 +4284,7 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Last
   sbulp:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 9
@@ -3830,6 +4294,7 @@
     :name: Sidebar Unnumbered List Item Paragraph
     :tip: "A new paragraph within a sidebar unnumbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   sbuls:
+    :weight: 30
     :group_name: sidebar
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3838,32 +4303,37 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Stand-Alone
   sec:
+    :weight: 30
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
     :name: Section Break (Asterisk Break)
     :tip: "An ornamented space break (aka asterisk break). If a dingbat or asterisks are used to show the start of a new section, then the symbol or asterisks should be given the sec style. As with an a-head, the paragraph that follows should be paft. Note: this style is mutually exclusive with the psec style."
   secbot:
+    :weight: 30
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
     :name: Bottom-of-Page Section Break
     :tip: "Bottom-of-page sec to accomodate spacing/baseline needs of required ornament."
   sectop:
+    :weight: 30
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
     :name: Top-of-Page Section Break
     :tip: "Top-of-page sec to accomodate spacing/baseline needs of required ornament."
   ser:
+    :weight: 20
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 25
     :abbrev: ser
     :learning_category: Series
     :name: Series Entry
-    :tip: "A title within the series. This is the base level series tag. It will generally be either a book title or a book title followed by the author name."
+    :tip: "A title within the series section. This is the base level series tag. It will generally be either a book title or a book title followed by the author name."
   ser1:
+    :weight: 60
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 9
@@ -3872,6 +4342,7 @@
     :name: Series Level 1
     :tip: "Level 1 series tag, if special spacing or indentation is needed."
   ser2:
+    :weight: 60
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 9
@@ -3880,6 +4351,7 @@
     :name: Series Level 2
     :tip: "Level 2 series tag, if special spacing or indentation is needed."
   seraft:
+    :weight: 20
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 26
@@ -3888,6 +4360,7 @@
     :name: Series After Head
     :tip: "A title within the series, following a head."
   serah:
+    :weight: 10
     :group_name: series
     :secondary_group_name: heads
     :spacing_profile: 1
@@ -3896,6 +4369,7 @@
     :name: Series A-Head
     :tip: "An a-head within a series list. For example, if an author wrote half his books under a pseudonym, this a-head might say “As [Author Name]” before each grouping. Or if an educational series is divided by subject or grade level, this a-head may be used."
   serahaft:
+    :weight: 10
     :group_name: series
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3903,6 +4377,7 @@
     :learning_category: Series
     :name: Series A-Head After Series Title
   serau:
+    :weight: 20
     :group_name: series
     :secondary_group_name: chapter_other
     :spacing_profile: 2
@@ -3911,6 +4386,7 @@
     :name: Series Author
     :tip: "The author of a book listed in the series list, if it appears on a separate line."
   serbh:
+    :weight: 10
     :group_name: series
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -3919,6 +4395,7 @@
     :name: Series B-Head
     :tip: "If further divisions are needed within a series list, this is the b-head level."
   serf:
+    :weight: 20
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 24
@@ -3927,6 +4404,7 @@
     :name: Series Entry First
     :tip: "The series entry first is the same as the ser style but with added space above."
   serp:
+    :weight: 20
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 8
@@ -3936,6 +4414,7 @@
     :tip: "For series page content beyond heads and title listings."
     :date: February 16, 2012
   serpf:
+    :weight: 20
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 7
@@ -3945,6 +4424,7 @@
     :tip: "For series page content beyond heads and title listings."
     :date: February 16, 2012
   sers:
+    :weight: 10
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 2
@@ -3953,6 +4433,7 @@
     :name: Series Subtitle
     :tip: "The series subtitle is a subtitle under the sert."
   sert:
+    :weight: 00
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 2
@@ -3961,19 +4442,22 @@
     :name: Series Title
     :tip: "The series title is the title of the series (not a book title within the series)."
   sh:
+    :weight: 10
     :group_name: heads
     :spacing_profile: 2
     :learning_category: Heads
     :name: Section Head
   sl:
+    :weight: 20
     :group_name: sense
     :abbrev: sl
     :primary_structure: senseline
     :spacing_profile: 4
     :learning_category: Senseline (Poetry)
     :name: Senseline
-    :tip: "Senselines are lines of text that have a specific cadence, such as poems or liturgies. Indentations for senseline text are controlled by the numbered sl1, sl2, and sl3 styles. (Formerly po style.)"
+    :tip: "Senselines are lines of text that have a specific cadence, such as poems or liturgies. Indentations for senseline text are controlled by the numbered sl1, sl2, and sl3 styles."
   sl1:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -3981,6 +4465,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1
   sl1f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -3988,6 +4473,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1 First
   sl1l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -3995,6 +4481,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1 Last
   sl2:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4002,6 +4489,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2
   sl2f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4009,6 +4497,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2 First
   sl2l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4016,6 +4505,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2 Last
   sl3:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4023,6 +4513,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3
   sl3f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4030,6 +4521,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3 First
   sl3l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4037,6 +4529,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3 Last
   sl4:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4045,6 +4538,7 @@
     :name: Senseline Level 4
     :date: March 8, 2013
   sl4f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4053,6 +4547,7 @@
     :name: Senseline Level 4 First
     :date: March 8, 2013
   sl4l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4061,6 +4556,7 @@
     :name: Senseline Level 4 Last
     :date: March 8, 2013
   sl5:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4069,6 +4565,7 @@
     :name: Senseline Level 5
     :date: March 8, 2013
   sl5f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4077,6 +4574,7 @@
     :name: Senseline Level 5 First
     :date: March 8, 2013
   sl5l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4085,6 +4583,7 @@
     :name: Senseline Level 5 Last
     :date: March 8, 2013
   sl6:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4093,6 +4592,7 @@
     :name: Senseline Level 6
     :date: March 8, 2013
   sl6f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4101,6 +4601,7 @@
     :name: Senseline Level 6 First
     :date: March 8, 2013
   sl6l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4109,6 +4610,7 @@
     :name: Senseline Level 6 Last
     :date: March 8, 2013
   sl7:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4117,6 +4619,7 @@
     :name: Senseline Level 7
     :date: March 8, 2013
   sl7f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4125,6 +4628,7 @@
     :name: Senseline Level 7 First
     :date: March 8, 2013
   sl7l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4133,6 +4637,7 @@
     :name: Senseline Level 7 Last
     :date: March 8, 2013
   sl8:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4141,6 +4646,7 @@
     :name: Senseline Level 8
     :date: March 8, 2013
   sl8f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4149,6 +4655,7 @@
     :name: Senseline Level 8 First
     :date: March 8, 2013
   sl8l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4157,6 +4664,7 @@
     :name: Senseline Level 8 Last
     :date: March 8, 2013
   sl9:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4165,6 +4673,7 @@
     :name: Senseline Level 9
     :date: March 8, 2013
   sl9f:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4173,6 +4682,7 @@
     :name: Senseline Level 9 First
     :date: March 8, 2013
   sl9l:
+    :weight: 60
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -4181,6 +4691,7 @@
     :name: Senseline Level 9 Last
     :date: March 8, 2013
   slf:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 3
     :abbrev: sl
@@ -4188,6 +4699,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline First
   slh:
+    :weight: 10
     :group_name: sense
     :spacing_profile: 2
     :abbrev: sl
@@ -4197,30 +4709,34 @@
     :tip: "The title of a poem or liturgy."
     :date: March 8, 2013
   sli:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Indent
-    :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise. (Formerly poi style.)"
+    :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise."
   slif:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Indent First
-    :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise. (Formerly poi style.)"
+    :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise."
   slil:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
     :primary_structure: senseline
     :learning_category: Senseline (Poetry)
     :name: Senseline Indent Last
-    :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise. (Formerly poi style.)"
+    :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise."
   sll:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 5
     :abbrev: sl
@@ -4229,6 +4745,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Last
   sls:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 6
     :abbrev: sl
@@ -4236,6 +4753,7 @@
     :learning_category: Senseline (Poetry)
     :name: Senseline Stand-Alone
   slt:
+    :weight: 20
     :group_name: sense
     :spacing_profile: 22 
     :abbrev: sl
@@ -4244,6 +4762,7 @@
     :name: Senseline Tail
     :tip: "Senseline tail, like an epigraph tail, is the author or speaker of the poem."
   st:
+    :weight: 20
     :group_name: story
     :secondary_group_name: body
     :spacing_profile: 4
@@ -4252,6 +4771,7 @@
     :learning_category: Story
     :name: Story Paragraph
   stf:
+    :weight: 20
     :group_name: story
     :secondary_group_name: body
     :spacing_profile: 3
@@ -4260,6 +4780,7 @@
     :learning_category: Story
     :name: Story Paragraph First
   sth:
+    :weight: 10
     :group_name: story
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -4268,6 +4789,7 @@
     :learning_category: Story
     :name: Story Head
   sth1:
+    :weight: 10
     :group_name: story
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -4277,6 +4799,7 @@
     :name: Story Head Level 1
     :date: March 8, 2013
   sth2:
+    :weight: 10
     :group_name: story
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -4286,6 +4809,7 @@
     :name: Story Head Level 2
     :date: March 8, 2013
   stl:
+    :weight: 20
     :group_name: story
     :secondary_group_name: body
     :spacing_profile: 5
@@ -4302,6 +4826,7 @@
     :tip: "This is not a paragraph style for use on live text. It is used, like the fig style, in conjunction with a note indicating groups of elements. For example, if a sidebar is interrupted by a figure, the structure comments would be applied to indicate that it is one sidebar that contains a figure, rather than being three distinct groups (a sidebar, a figure, and another sidebar)."
     :date: March 8, 2013
   sts:
+    :weight: 20
     :group_name: story
     :secondary_group_name: body
     :spacing_profile: 6
@@ -4310,6 +4835,7 @@
     :learning_category: Story
     :name: Story Paragraph Stand-Alone
   tatr:
+    :weight: 20
     :group_name: table
     :spacing_profile: 9
     :abbrev: t
@@ -4317,6 +4843,7 @@
     :name: Table Credit/Attribution
     :tip: "The source, or attribution credit line, for a table. This is often rendered slightly differently than a table footnote, so it should be identified by the tatr tag specifically."
   tch:
+    :weight: 10
     :group_name: table
     :spacing_profile: 2
     :abbrev: t
@@ -4325,6 +4852,7 @@
     :tip: "For column heads in tables."
     :date: March 8, 2013
   tch1:
+    :weight: 10
     :group_name: table
     :spacing_profile: 2
     :abbrev: t
@@ -4332,6 +4860,7 @@
     :name: Table Column Head Level 1
     :date: March 8, 2013
   tch2:
+    :weight: 10
     :group_name: table
     :spacing_profile: 2
     :abbrev: t
@@ -4339,6 +4868,7 @@
     :name: Table Column Head Level 2
     :date: March 8, 2013
   td:
+    :weight: 20
     :group_name: table
     :spacing_profile: 13
     :abbrev: t
@@ -4346,6 +4876,7 @@
     :name: Table Data
     :tip: "Used with regular data or paragraphs within a table."
   tdf:
+    :weight: 20
     :group_name: table
     :spacing_profile: 12
     :abbrev: t
@@ -4353,6 +4884,7 @@
     :name: Table Data First
     :tip: "It is unnecessary to differentiate first and last paragraphs if the typesetter will be using InDesign's table feature to control spacing and rules."
   tdl:
+    :weight: 20
     :group_name: table
     :spacing_profile: 14
     :abbrev: t
@@ -4360,6 +4892,7 @@
     :name: Table Data Last
     :tip: "It is unnecessary to differentiate first and last paragraphs if the typesetter will be using InDesign's table feature to control spacing and rules."
   tdnl:
+    :weight: 20
     :group_name: table
     :spacing_profile: 9
     :abbrev: t
@@ -4368,6 +4901,7 @@
     :tip: "For numbered list items within a table cell"
     :date: March 8, 2013
   tdp:
+    :weight: 20
     :group_name: table
     :spacing_profile: 9
     :abbrev: t
@@ -4376,6 +4910,7 @@
     :tip: "A new paragraph within a table data cell, so you can apply a first line indent to the subsequent paragraphs after the main td."
     :date: March 8, 2013
   tdul:
+    :weight: 20
     :group_name: table
     :spacing_profile: 9
     :abbrev: t
@@ -4384,6 +4919,7 @@
     :tip: "For unnumbered list items within a table cell"
     :date: March 8, 2013
   th:
+    :weight: 10
     :group_name: table
     :spacing_profile: 2
     :abbrev: t
@@ -4391,6 +4927,7 @@
     :name: Table Head
     :tip: "This is the table's title. It typically includes the table number as well. If the table head is only the number, this paragraph style still applies. The th text should match the text in a List of Tables, if the book includes such a list in the front matter."
   th1:
+    :weight: 10
     :group_name: table
     :spacing_profile: 2
     :abbrev: t
@@ -4398,12 +4935,14 @@
     :name: Table Head Level 1
     :tip: "For column heads, use tch styles"
   th2:
+    :weight: 10
     :group_name: table
     :spacing_profile: 2
     :abbrev: t
     :learning_category: Table
     :name: Table Head Level 2
   tn:
+    :weight: 20
     :group_name: table
     :spacing_profile: 9
     :abbrev: t
@@ -4411,6 +4950,7 @@
     :name: Table Note
     :tip: "Footnote text for a table."
   toc:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 8
@@ -4419,6 +4959,7 @@
     :name: Table of Contents (TOC) Main Level
     :tip: "Table of contents base level. This most commonly corresponds with the chapter titles (ct) of the book."
   toc1:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4427,6 +4968,7 @@
     :name: TOC Level 1
     :tip: "This level typically corresponds with a book's a-heads, if sublevels of book chapters are included in the TOC. It can also be used for lists of tables/figures if the main TOC includes only top-level listings."
   toc2:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4435,6 +4977,7 @@
     :name: TOC Level 2
     :tip: "This level typically corresponds with a book's b-heads, if sublevels of book chapters are included in the TOC. It can also be used for lists of tables/figures if the main TOC includes both toc and toc1 listings."
   toc3:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4443,6 +4986,7 @@
     :name: TOC Level 3
     :tip: "This level typically corresponds with a book's c-heads, if sublevels of book chapters are included in the TOC. It can also be used for lists of tables/figures if the main TOC includes toc, toc1, and toc2 listings."
   toc4:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4450,6 +4994,7 @@
     :learning_category: Contents
     :name: TOC Level 4
   toc5:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4457,6 +5002,7 @@
     :learning_category: Contents
     :name: TOC Level 5
   tocau:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4465,6 +5011,7 @@
     :name: TOC Author
     :tip: "If a chapter (or introduction/preface) has a different author that should be listed in the TOC on a separate line. Corresponds with the au style."
   tocbm:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: toc_back
     :spacing_profile: 8
@@ -4473,6 +5020,7 @@
     :name: TOC Back Matter
     :tip: "To be used for back matter listings in the TOC (Notes, Bibliography, Index, Appendix, About the Author, etc.)."
   tocbmf:
+    :weight: 20
     :for: expanded
     :spacing_profile: 7
     :group_name: contents
@@ -4482,6 +5030,7 @@
     :name: TOC Back Matter First
     :tip: "If you need to control the spacing above the first tocbm entry, use this style. Outside InDesign, this style reverts back to tocbm."
   tocf:
+    :weight: 20
     :for: expanded
     :spacing_profile: 7
     :group_name: contents
@@ -4491,6 +5040,7 @@
     :name: TOC Main Level First
     :tip: "If you need to control the spacing above the first regular toc entry, use this style. Normally, there's a front matter entry (tocfm) that will handle spacing, but occasionally you need to use this in the same way you have pf as the first paragraph in a chapter. Outside InDesign, this style reverts back to toc."
   tocfm:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: toc_front
     :spacing_profile: 8
@@ -4499,6 +5049,7 @@
     :name: TOC Front Matter
     :tip: "To be used for front matter listings in the TOC (Preface, Acknowledgments, List of Figures/Tables, etc.). These are generally the pages that use roman numerals in a typeset book."
   tocfmf:
+    :weight: 20
     :for: expanded
     :spacing_profile: 7
     :group_name: contents
@@ -4508,6 +5059,7 @@
     :name: TOC Front Matter First
     :tip: "If you need to control the spacing above the first tocfm entry, use this style. Outside InDesign, this style reverts back to tocfm."
   tocpt:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: toc_part
     :spacing_profile: 9
@@ -4516,6 +5068,7 @@
     :name: TOC Part Title
     :tip: "To be used for part titles that are included in the TOC. Corresponds with text in the pt style."
   tocut:
+    :weight: 20
     :group_name: contents
     :secondary_group_name: toc_unit
     :spacing_profile: 9
@@ -4524,6 +5077,7 @@
     :name: TOC Unit Title
     :tip: "To be used for unit titles that are included in the TOC. Corresponds with text in the ut style."
   tsecbot:
+    :weight: 80
     :for: expanded
     :spacing_profile: 2
     :group_name: body
@@ -4531,6 +5085,7 @@
     :name: Temporary Bottom-of-Page Section Break
     :tip: "Temporary bottom-of-page sec when a psec happens to fall at a page break. This is removed when converting a typeset book to ScML or e-pub."
   tsectop:
+    :weight: 80
     :for: expanded
     :spacing_profile: 2
     :group_name: body
@@ -4538,6 +5093,7 @@
     :name: Temporary Top-of-Page Section Break
     :tip: "Temporary top-of-page sec when a psec happens to fall at a page break. This is removed when converting a typeset book to ScML or e-pub."
   ul:
+    :weight: 20
     :spacing_profile: 4
     :group_name: list
     :primary_structure: list
@@ -4545,30 +5101,35 @@
     :name: Unnumbered List Item
     :tip: "Unnumbered (unordered) list styles are for all kinds of unnumbered lists, whether they use a bullet, a dingbat, or nothing at all. The bulleted list (bl) style exists to specifically differentiate one kind of unnumbered list from another kind of unnumbered list within your project."
   ul1:
+    :weight: 60
     :spacing_profile: 4
     :group_name: list
     :primary_structure: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 (Subpoint)
   ul1f:
+    :weight: 60
     :group_name: list
     :spacing_profile: 3
     :primary_structure: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 First (Subpoint)
   ul1l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Last (Subpoint)
   ul1p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 10
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Paragraph (Subpoint)
   ul1pl:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 11
@@ -4576,138 +5137,161 @@
     :name: Unnumbered List Item Level 1 Paragraph (Subpoint) Last
     :date: February 16, 2012
   ul1s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Stand-Alone (Subpoint)
   ul2:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2
   ul2f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 First
   ul2l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 Last
   ul2p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 Paragraph
   ul2s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 Stand-Alone
   ul3:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3
   ul3f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 First
   ul3l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 Last
   ul3p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 Paragraph
   ul3s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 Stand-Alone
   ul4:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4
   ul4f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 First
   ul4l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 Last
   ul4p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 Paragraph
   ul4s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 Stand-Alone
   ul5:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 4
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5
   ul5f:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 First
   ul5l:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 Last
   ul5p:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 9
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 Paragraph
   ul5s:
+    :weight: 60
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 Stand-Alone
   ulf:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 3
     :learning_category: Unnumbered List
     :name: Unnumbered List Item First
   ulh:
+    :weight: 10
     :group_name: list
     :primary_structure: list
     :spacing_profile: 2
@@ -4715,12 +5299,14 @@
     :name: Unnumbered List Head
     :date: February 16, 2012
   ull:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 5
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Last
   ulp:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 10
@@ -4728,6 +5314,7 @@
     :name: Unnumbered List Item Paragraph
     :tip: "A new paragraph within an unnumbered list item. If a list item is more than one paragraph long, then the second paragraph should use this style, which will control the proper indentation."
   ulpl:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 11
@@ -4735,23 +5322,27 @@
     :name: Unnumbered List Item Paragraph Last
     :date: February 16, 2012
   uls:
+    :weight: 20
     :group_name: list
     :primary_structure: list
     :spacing_profile: 6
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Stand-Alone
   un:
+    :weight: 10
     :group_name: unit
     :chapter_start: true
     :spacing_profile: 2
     :learning_category: Parts and Chapters
     :name: Unit Number
   us:
+    :weight: 10
     :group_name: units_other
     :spacing_profile: 2
     :learning_category: Parts and Chapters
     :name: Unit Subtitle
   ut:
+    :weight: 10
     :group_name: unit
     :chapter_start: true
     :spacing_profile: 2
@@ -4759,10 +5350,12 @@
     :name: Unit Title
     :tip: "Specifically for heavily divided textbooks, a unit is structurally in between a part and a chapter."
   video:
+    :weight: 20
     :group_name: media
     :primary_structure: media
     :spacing_profile: 9
   wl:
+    :weight: 20
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
@@ -4771,6 +5364,7 @@
     :name: Written Language Paragraph
     :tip: "Written language styles are for faxes, e-mails, memos, and other forms of written communication that might need special treatment. Formal letters should use the styles for letters."
   wl1:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
@@ -4778,6 +5372,7 @@
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph
   wl1f:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
@@ -4785,6 +5380,7 @@
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph First
   wl1h:
+    :weight: 50
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4792,6 +5388,7 @@
     :learning_category: Written Language
     :name: Written Language Level 1 Head
   wl1h1:
+    :weight: 50
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4799,6 +5396,7 @@
     :learning_category: Written Language
     :name: Written Language Level 1 Subhead
   wl1l:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
@@ -4806,6 +5404,7 @@
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph Last
   wl1s:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
@@ -4814,6 +5413,7 @@
     :name: Written Language Level 1 Paragraph Stand-Alone
     :date: February 16, 2012
   wl2:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
@@ -4821,6 +5421,7 @@
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph
   wl2f:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
@@ -4828,6 +5429,7 @@
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph First
   wl2h:
+    :weight: 50
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4835,6 +5437,7 @@
     :learning_category: Written Language
     :name: Written Language Level 2 Head
   wl2h1:
+    :weight: 50
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4842,6 +5445,7 @@
     :learning_category: Written Language
     :name: Written Language Level 2  Subhead
   wl2l:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
@@ -4849,6 +5453,7 @@
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph Last
   wl2s:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
@@ -4857,6 +5462,7 @@
     :name: Written Language Level 2 Paragraph Stand-Alone
     :date: February 16, 2012
   wl3:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 4
     :abbrev: wl
@@ -4864,6 +5470,7 @@
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph
   wl3f:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
@@ -4871,6 +5478,7 @@
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph First
   wl3h:
+    :weight: 50
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4878,6 +5486,7 @@
     :learning_category: Written Language
     :name: Written Language Level 3 Head
   wl3h1:
+    :weight: 50
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4885,6 +5494,7 @@
     :learning_category: Written Language
     :name: Written Language Level 3 Subhead
   wl3l:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
@@ -4892,6 +5502,7 @@
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph Last
   wl3s:
+    :weight: 60
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
@@ -4900,6 +5511,7 @@
     :name: Written Language Level 3 Paragraph Stand-Alone
     :date: February 16, 2012
   wlf:
+    :weight: 20
     :group_name: written-language
     :spacing_profile: 3
     :abbrev: wl
@@ -4907,6 +5519,7 @@
     :learning_category: Written Language
     :name: Written Language Paragraph First
   wlh:
+    :weight: 10
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4914,6 +5527,7 @@
     :learning_category: Written Language
     :name: Written Language Head
   wlh1:
+    :weight: 10
     :group_name: written-language
     :spacing_profile: 2
     :abbrev: wl
@@ -4921,6 +5535,7 @@
     :learning_category: Written Language
     :name: Written Language Subhead
   wll:
+    :weight: 20
     :group_name: written-language
     :spacing_profile: 5
     :abbrev: wl
@@ -4928,6 +5543,7 @@
     :learning_category: Written Language
     :name: Written Language Paragraph Last
   wls:
+    :weight: 20
     :group_name: written-language
     :spacing_profile: 6
     :abbrev: wl
@@ -4936,6 +5552,7 @@
     :name: Written Language Paragraph Stand-Alone
     :date: February 16, 2012
   wsh:
+    :weight: 10
     :group_name: exercise
     :secondary_group_name: heads
     :spacing_profile: 2
