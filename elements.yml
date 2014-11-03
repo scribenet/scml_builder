@@ -25,6 +25,8 @@
   sam:
     :for: sam
     :group_name: structure
+    :learning_category: Structural Elements
+    :name: Scribe Markup Language Root
     :sam_specialized_contents: (%paragraph_styles; | table | footnote | endnote)+
     :sam_attrs:
     - - bver
@@ -213,6 +215,8 @@
     :for: scml
     :group_name: structure
     :scml_specialized_contents: ( fig )
+    :learning_category: Structural Elements
+    :name: Cover 
   table:
     :for: dtds
     :group_name: structure
@@ -274,6 +278,8 @@
     :group_name: structure
     :sam_specialized_contents: (%paragraph_styles;)*
     :scml_specialized_contents: (%block_styles; | %paragraph_styles;)*
+    :learning_category: Structural Elements
+    :name: Table Cell 
     :scml_attrs:
     - - colspan
       - CDATA
@@ -352,14 +358,14 @@
     :name: Chapter Author Level 1
     :date: March 8, 2013
   aubio:
-    :weight: 50
+    :weight: 60
     :group_name: body 
     :spacing_profile: 8
     :learning_category: Body
     :name: Author Biographical Data
     :tip: "This should be used in About the Author sections or other author biographies."
   aubiof:
-    :weight: 50
+    :weight: 60
     :group_name: body
     :spacing_profile: 7
     :learning_category: Body
@@ -1743,7 +1749,7 @@
     :name: Endnote
     :tip: "Endnotes appear at the end of a chapter or book. The number before the note should be composed as ennum to ensure that notes are automatically linked in the e-book. To accomodate some variations that may appear within an endnote, the ntbq, ntsl, nttd, and nteq styles are available."
   end:
-    :weight: 20
+    :weight: 50
     :group_name: body
     :spacing_profile: 22
     :learning_category: Curriculum
@@ -2278,7 +2284,7 @@
     :name: Glossary Definition First
     :tip: "If the glossary entry encompasses more than one paragraph. For example, if the term is on one line and the definition is on another, use this style for the former."
   hb:
-    :weight: 30
+    :weight: 50
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
@@ -2372,7 +2378,7 @@
     :name: Index Headnote
     :tip: "For paragraphs preceding indexes that indicate what symbols or fonts mean within the index."
   lo:
-    :weight: 20
+    :weight: 50
     :group_name: exercise
     :spacing_profile: 9
     :abbrev: ex
@@ -4820,6 +4826,7 @@
     :learning_category: Story
     :name: Story Paragraph Last
   structure:
+    :weight: 50
     :for: sam
     :spacing_profile: 39
     :group_name: structure
@@ -5709,6 +5716,8 @@
     :tip: "First word or phrase of a paragraph; used if you want to stylize the first word(s) (usually handled through InDesign nested styles, rather than composing this feature in Word)."
   first-i:
     :group_name: char-styles
+    :learning_category: Miscellaneous
+    :name: First Italic
   fnnum:
     :group_name: char-styles
     :learning_category: References/Cross-References
@@ -6179,6 +6188,8 @@
   rh-i:
     :for: tso
     :group_name: char-styles
+    :learning_category: Page
+    :name: Running Head Italic
   rhref:
     :for: tso
     :group_name: char-styles
