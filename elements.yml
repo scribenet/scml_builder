@@ -352,14 +352,14 @@
     :name: Chapter Author Level 1
     :date: March 8, 2013
   aubio:
-    :weight: 40
+    :weight: 50
     :group_name: body 
     :spacing_profile: 8
     :learning_category: Body
     :name: Author Biographical Data
     :tip: "This should be used in About the Author sections or other author biographies."
   aubiof:
-    :weight: 40
+    :weight: 50
     :group_name: body
     :spacing_profile: 7
     :learning_category: Body
@@ -1239,7 +1239,7 @@
     :learning_category: Box
     :name: Box Unnumbered List Item Stand-Alone
   call:
-    :weight: 20
+    :weight: 30
     :group_name: quote
     :secondary_group_name: body
     :abbrev: quo
@@ -1714,7 +1714,7 @@
     :learning_category: Heads
     :name: Secondary Division Subhead
   eds:
-    :weight: 60
+    :weight: 70
     :group_name: note
     :spacing_profile: 9
     :primary_structure: notes
@@ -1750,7 +1750,7 @@
     :name: Endpaper Text
     :tip: "For endpaper text in workbooks. Or, in books that include The End, use this style for that paragraph."
   enhn:
-    :weight: 80
+    :weight: 20
     :group_name: note
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -1891,7 +1891,7 @@
     :tip: "Second line variation for epigraph tails."
     :date: March 8, 2013
   eq:
-    :weight: 20
+    :weight: 30
     :group_name: equation
     :spacing_profile: 20
     :abbrev: eq
@@ -1900,7 +1900,7 @@
     :name: Equation
     :tip: "Equations that appear in their own paragraphs, like figures, should use the eq paragraph style. A typesetter can use alternate styles to help control spacing needs, but composition in Word need not concern itself with this and can use eq for all equation paragraphs."
   eqaft:
-    :weight: 20
+    :weight: 30
     :group_name: equation
     :spacing_profile: 21
     :abbrev: eq
@@ -2252,7 +2252,7 @@
     :tip: "If a design calls for the page number to be separate from the rh, rhv, or rhr paragraph style, the folio style can be applied in InDesign."
     :date:  
   fs:
-    :weight: 20
+    :weight: 60
     :group_name: exercise
     :abbrev: ex
     :spacing_profile: 9
@@ -2260,7 +2260,7 @@
     :learning_category: Curriculum
     :name: Further Study
   glo:
-    :weight: 20
+    :weight: 40
     :group_name: glossary
     :spacing_profile: 8
     :abbrev: glo
@@ -2269,7 +2269,7 @@
     :name: Glossary Definition
     :tip: "The glossary definition, often used in conjunction with the gt (glossary term) character style. This style should also be used for abbreviations lists when there is not a glossary chapter."
   glof:
-    :weight: 20
+    :weight: 40
     :group_name: glossary
     :spacing_profile: 7
     :abbrev: glo
@@ -2380,7 +2380,7 @@
     :learning_category: Curriculum
     :name: Learning Objective
   lps:
-    :weight: 20
+    :weight: 30
     :group_name: letter
     :secondary_group_name: letter_postscript 
     :spacing_profile: 9
@@ -3012,14 +3012,14 @@
     :learning_category: Parts and Chapters
     :name: Part Subtitle
   psec:
-    :weight: 30
+    :weight: 40
     :group_name: body
     :spacing_profile: 23
     :learning_category: Body
     :name: Paragraph Section Break
     :tip: "A paragraph that represents a new section within a chapter, typically by having space above it and no indent. Also referred to as an unornamented paragraph break. Note: this style is mutually exclusive with the sec style."
   psec1:
-    :weight: 30
+    :weight: 40
     :group_name: body
     :spacing_profile: 23
     :learning_category: Body
@@ -3281,6 +3281,8 @@
     :secondary_group_name: heads
     :spacing_profile: 2
     :abbrev: rp
+    :learning_category: Recipes
+    :name: Recipe Head
     :primary_structure: recipe
   rph1:
     :weight: 00
@@ -3517,7 +3519,7 @@
     :learning_category: Recipes
     :name: Recipe Yield
   rv:
-    :weight: 20
+    :weight: 50
     :group_name: series
     :spacing_profile: 9
     :abbrev: ser
@@ -3525,7 +3527,7 @@
     :name: Review
     :tip: "Review should be used for praise pages. This is the quote, much like an ep or quot paragraph, but specific to book reviews, praise comments, or testimonials, typically seen in a book's front matter."
   rvd:
-    :weight: 20
+    :weight: 50
     :group_name: series
     :spacing_profile: 9
     :abbrev: ser
@@ -3533,7 +3535,7 @@
     :name: Review Description
     :tip: "Review description is a catchall for a line containing further information about a review's source or author affiliation."
   rvh:
-    :weight: 10
+    :weight: 40
     :group_name: series
     :spacing_profile: 2
     :abbrev: ser
@@ -3541,7 +3543,7 @@
     :name: Review Head
     :date: April 14, 2014
   rvt:
-    :weight: 20
+    :weight: 50
     :group_name: series
     :spacing_profile: 22 
     :abbrev: ser
@@ -3596,7 +3598,7 @@
     :learning_category: Sidebar
     :name: Sidebar Level 1 Last
   sb1t:
-    :weight: 00
+    :weight: 40
     :group_name: sidebar
     :secondary_group_name: heads
     :spacing_profile: 22 
@@ -4303,21 +4305,21 @@
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Stand-Alone
   sec:
-    :weight: 30
+    :weight: 40
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
     :name: Section Break (Asterisk Break)
     :tip: "An ornamented space break (aka asterisk break). If a dingbat or asterisks are used to show the start of a new section, then the symbol or asterisks should be given the sec style. As with an a-head, the paragraph that follows should be paft. Note: this style is mutually exclusive with the psec style."
   secbot:
-    :weight: 30
+    :weight: 40
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
     :name: Bottom-of-Page Section Break
     :tip: "Bottom-of-page sec to accomodate spacing/baseline needs of required ornament."
   sectop:
-    :weight: 30
+    :weight: 40
     :group_name: body
     :spacing_profile: 2
     :learning_category: Body
@@ -4333,7 +4335,7 @@
     :name: Series Entry
     :tip: "A title within the series section. This is the base level series tag. It will generally be either a book title or a book title followed by the author name."
   ser1:
-    :weight: 60
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4342,7 +4344,7 @@
     :name: Series Level 1
     :tip: "Level 1 series tag, if special spacing or indentation is needed."
   ser2:
-    :weight: 60
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4709,7 +4711,7 @@
     :tip: "The title of a poem or liturgy."
     :date: March 8, 2013
   sli:
-    :weight: 20
+    :weight: 30
     :group_name: sense
     :spacing_profile: 13
     :abbrev: sl
@@ -4718,7 +4720,7 @@
     :name: Senseline Indent
     :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise."
   slif:
-    :weight: 20
+    :weight: 30
     :group_name: sense
     :spacing_profile: 12
     :abbrev: sl
@@ -4727,7 +4729,7 @@
     :name: Senseline Indent First
     :tip: "Senseline indent is for special types of indentation, like when the first line of a poem starts very far to the right. If you have a regular occurrence of indented lines, then these should use the sl1 style, which would be set to the proper indentation that differs from the main sl style. In other words, most indented poetry lines will use sl1, not sli, but the sli style is available should the need arise."
   slil:
-    :weight: 20
+    :weight: 30
     :group_name: sense
     :spacing_profile: 14
     :abbrev: sl
@@ -5552,7 +5554,7 @@
     :name: Written Language Paragraph Stand-Alone
     :date: February 16, 2012
   wsh:
-    :weight: 10
+    :weight: 70
     :group_name: exercise
     :secondary_group_name: heads
     :spacing_profile: 2
