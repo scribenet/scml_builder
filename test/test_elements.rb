@@ -1,9 +1,5 @@
 # encoding: utf-8
-require 'yaml'
-require 'rspec'
-require 'minitest'
-require 'minitest/unit'
-require 'minitest/autorun'
+require_relative 'test_helper'
 
 class ElementsYamlTests < Minitest::Test
   ELEMENTS = YAML.load(File.read('elements.yml'))
