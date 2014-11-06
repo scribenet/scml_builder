@@ -2,7 +2,7 @@ class SwimListMaker
 
   attr_reader :list, :types
   TEMPLATE =  ERB.new( File.read(File.dirname(__FILE__) + '/../templates/scml-tag-list.swim.erb') )
-  SPACING = YAML.load( File.read(File.dirname(__FILE__) + '/../spacing_profiles.yml') )
+  SPACING = YAML.load( File.read(File.dirname(__FILE__) + '/../../spacing_profiles.yml') )
   BASE_STYLES = %w(bl bq bx cl ctoc dia ep ex in lt nl rp sb sl st toc ul wl)
 
   def initialize type, list

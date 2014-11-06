@@ -1,9 +1,9 @@
 require 'yaml'
 require 'erb'
-require_relative 'lib/dtd_maker'
-require_relative 'lib/scml_list_maker'
-require_relative 'lib/word_template_maker'
-require_relative 'lib/swim_list_maker'
+require_relative 'makers/dtd_maker'
+require_relative 'makers/scml_list_maker'
+require_relative 'makers/word_template_maker'
+require_relative 'makers/swim_list_maker'
 
 class ScmlListKnowledge
 
@@ -31,7 +31,7 @@ class ScmlListKnowledge
       end
     end
     yaml
-  end 
+  end
 
   def removable? el_info, removers
     removers.include? el_info[:for]

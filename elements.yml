@@ -344,14 +344,14 @@
     :learning_category: Curriculum
     :name: Assigned Reading
   au:
-    :weight: 10
+    :weight: 30
     :group_name: chapter_other
     :learning_category: Parts and Chapters
     :spacing_profile: 2
     :name: Chapter Author
     :tip: "Distinct from the bkau style that appears on a book's title page, au is used when a different author is associated with each chapter."
   au1:
-    :weight: 10
+    :weight: 30
     :group_name: chapter_other
     :learning_category: Parts and Chapters
     :spacing_profile: 2
@@ -1536,7 +1536,7 @@
     :name: Copyright first
     :date: March 8, 2013
   cs:
-    :weight: 00
+    :weight: 10
     :spacing_profile: 2
     :group_name: chapter_other
     :learning_category: Parts and Chapters
@@ -1550,7 +1550,7 @@
     :learning_category: Parts and Chapters
     :name: Chapter Title
   ctbm:
-    :weight: 00
+    :weight: 20
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
@@ -1559,7 +1559,7 @@
     :name: Chapter Title Back Matter
     :tip: "A back matter chapter title is the same level head as a regular chapter title, but it may be rendered differently in some designs. Use ctbm for those titles (“Appendix Title,” “Notes,” “Bibliography,” etc.)."
   ctfm:
-    :weight: 00
+    :weight: 20
     :spacing_profile: 2
     :group_name: chapter
     :chapter_start: true
@@ -2291,10 +2291,10 @@
     :name: Hiatus Break
     :tip: "Same definition and function as sec style. Hiatus break terminology is preferred by some publishers."
   hd:
-    :weight: 10
+    :weight: 20
     :group_name: heads
     :spacing_profile: 2
-    :learning_category: Book
+    :learning_category: Heads
     :name: Head
     :tip: "Generally used in Bibles, this style can also be appropriated when a one-off head is needed in an exceptional circumstance."
     :date:  
@@ -3004,7 +3004,7 @@
     :tip: "This is the first regular (body) paragraph of a chapter, even if it follows an a-head. Many designs include a drop cap or small caps on this paragraph. It is not the same as paft or psec and should not be used to control spacing within a chapter."
     :shortcut: Ctrl+Shift+P or F3
   pn:
-    :weight: 10
+    :weight: 30
     :group_name: part
     :spacing_profile: 2
     :chapter_start: true
@@ -3012,7 +3012,7 @@
     :learning_category: Parts and Chapters
     :name: Part Number
   ps:
-    :weight: 10
+    :weight: 40
     :spacing_profile: 2
     :group_name: parts_other
     :learning_category: Parts and Chapters
@@ -3033,7 +3033,7 @@
     :tip: "In case you have two different types of psec that have different spacing or indentation."
     :date: February 16, 2012
   pt:
-    :weight: 10
+    :weight: 30
     :spacing_profile: 2
     :group_name: part
     :chapter_start: true
@@ -3541,7 +3541,7 @@
     :name: Review Description
     :tip: "Review description is a catchall for a line containing further information about a review's source or author affiliation."
   rvh:
-    :weight: 40
+    :weight: 45
     :group_name: series
     :spacing_profile: 2
     :abbrev: ser
@@ -4332,7 +4332,7 @@
     :name: Top-of-Page Section Break
     :tip: "Top-of-page sec to accomodate spacing/baseline needs of required ornament."
   ser:
-    :weight: 20
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 25
@@ -4341,7 +4341,7 @@
     :name: Series Entry
     :tip: "A title within the series section. This is the base level series tag. It will generally be either a book title or a book title followed by the author name."
   ser1:
-    :weight: 30
+    :weight: 40
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4350,7 +4350,7 @@
     :name: Series Level 1
     :tip: "Level 1 series tag, if special spacing or indentation is needed."
   ser2:
-    :weight: 30
+    :weight: 40
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 9
@@ -4359,7 +4359,7 @@
     :name: Series Level 2
     :tip: "Level 2 series tag, if special spacing or indentation is needed."
   seraft:
-    :weight: 20
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 26
@@ -4368,7 +4368,7 @@
     :name: Series After Head
     :tip: "A title within the series, following a head."
   serah:
-    :weight: 10
+    :weight: 20
     :group_name: series
     :secondary_group_name: heads
     :spacing_profile: 1
@@ -4377,7 +4377,7 @@
     :name: Series A-Head
     :tip: "An a-head within a series list. For example, if an author wrote half his books under a pseudonym, this a-head might say “As [Author Name]” before each grouping. Or if an educational series is divided by subject or grade level, this a-head may be used."
   serahaft:
-    :weight: 10
+    :weight: 20
     :group_name: series
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -4385,7 +4385,7 @@
     :learning_category: Series
     :name: Series A-Head After Series Title
   serau:
-    :weight: 20
+    :weight: 30
     :group_name: series
     :secondary_group_name: chapter_other
     :spacing_profile: 2
@@ -4394,7 +4394,7 @@
     :name: Series Author
     :tip: "The author of a book listed in the series list, if it appears on a separate line."
   serbh:
-    :weight: 10
+    :weight: 20
     :group_name: series
     :secondary_group_name: heads
     :spacing_profile: 2
@@ -4403,7 +4403,7 @@
     :name: Series B-Head
     :tip: "If further divisions are needed within a series list, this is the b-head level."
   serf:
-    :weight: 20
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 24
@@ -4412,7 +4412,7 @@
     :name: Series Entry First
     :tip: "The series entry first is the same as the ser style but with added space above."
   serp:
-    :weight: 20
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 8
@@ -4422,7 +4422,7 @@
     :tip: "For series page content beyond heads and title listings."
     :date: February 16, 2012
   serpf:
-    :weight: 20
+    :weight: 30
     :group_name: series
     :secondary_group_name: body
     :spacing_profile: 7
@@ -5338,20 +5338,20 @@
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Stand-Alone
   un:
-    :weight: 10
+    :weight: 50
     :group_name: unit
     :chapter_start: true
     :spacing_profile: 2
     :learning_category: Parts and Chapters
     :name: Unit Number
   us:
-    :weight: 10
+    :weight: 60
     :group_name: units_other
     :spacing_profile: 2
     :learning_category: Parts and Chapters
     :name: Unit Subtitle
   ut:
-    :weight: 10
+    :weight: 50
     :group_name: unit
     :chapter_start: true
     :spacing_profile: 2
