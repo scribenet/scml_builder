@@ -14,25 +14,28 @@ class WordTemplateMaker
   DOC_PAR = ERB.new '<w:p w:rsidR="00996D58" w:rsidRDefault="00996D58" w:rsidP="00996D58"><w:pPr><w:pStyle w:val="<%= name %>"/></w:pPr><w:r><w:t><%= name %></w:t></w:r></w:p>'
 
   CHAR_STYLE_HEADER = 'Character Styles:'
-  
+
   attr_reader :list, :type, :dotx, :elements
-  attr_reader :document, :styles, :styleswitheffects
+  attr_reader :document, :styles, :styles_with_effects
 
   def initialize type, list
     @list = list
     @type = type
     @elements = list.keys.map{ |k| list[k].keys }.flatten.sort
-    @dotx = DocxTools.new(DOTX) 
-    @document = Nokogiri.XML dotx.document
-    @styles = Nokogiri.XML dotx.styles
-    @styleswitheffects = Nokogiri.XML dotx.styleswitheffects
+    @dotx = DocxTools.new(DOTX)
+    @document = parsed_piece(:document)
+    @styles = parsed_piece(:styles)
+    @styles_with_effects = parsed_piece(:styles_with_effects)
+  end
+
+  def parsed_piece(type)
+    Nokogiri.XML(dotx.send(type).raw)
   end
 
   def run
     adjust_templates
     cleanup_document
     reset_dotx
-    File.open('log','w').write dotx.document.gsub(/<w:p /, "\n<w:p ")
     @dotx.rezip
   end
 
@@ -43,21 +46,20 @@ class WordTemplateMaker
   def removable_p? p
     p.text.empty? and p.parent.name == 'body'
   end
-    
+
   def reset_dotx
-    [:document, :styles, :styleswitheffects].each do |xml|
+    [:document, :styles, :styles_with_effects].each do |xml|
       new_xml = self.send(xml).serialize(:save_with => 0)
-      setter = xml.to_s + '='
-      dotx.send(setter, new_xml)
+      dotx.send(xml).raw= new_xml
     end
   end
-    
+
   def adjust_templates
-    current_styles = (gather_existing_styles(styles) + gather_existing_styles(styleswitheffects)).uniq.sort
+    current_styles = (gather_existing_styles(styles) + gather_existing_styles(styles_with_effects)).uniq.sort
     trim_template(current_styles, styles)
-    trim_template(current_styles, styleswitheffects)
+    trim_template(current_styles, styles_with_effects)
     add_to_template(current_styles, styles)
-    add_to_template(current_styles, styleswitheffects)
+    add_to_template(current_styles, styles_with_effects)
     trim_document(current_styles)
     add_to_document(current_styles)
   end
@@ -71,7 +73,7 @@ class WordTemplateMaker
       style_list.css("w|name[w|val=\"#{bad_style}\"]").map{ |x| x.parent.remove }
     end
   end
-    
+
   def add_to_template current_styles, style_list
     (elements - current_styles).each do |name|
       template = is_paragraph?(name) ? NEW_STYLE_PAR : NEW_STYLE_CHAR
@@ -121,14 +123,14 @@ class WordTemplateMaker
       sib = find_closest_sibling(name, char_lines_hsh)
       node = DOC_CHAR.result(binding)
       sib.add_next_sibling(node)
-    end 
+    end
   end
-      
+
   def add_new_paragraphs(paragraphs)
     start = character_start
     paragraphs.each do |name|
       node = DOC_PAR.result(binding)
-      start.add_previous_sibling(node)      
+      start.add_previous_sibling(node)
     end
   end
 
