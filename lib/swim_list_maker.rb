@@ -97,15 +97,9 @@ class SwimListMaker
     }.join("\n")
   end
 
-  def marked_base_styles(el)
-    return el unless BASE_STYLES.include?(el)
-    "**#{el}**"
-  end
-
   def make_tag el, vals
-    name = marked_base_styles(el)
-    return "{~scml:#{name}}" unless vals[:tip]
-    return "{~tt:{~scml:#{name}} #{vals[:tip]}}"
+    return "{~scml:#{el}}" unless vals[:tip]
+    return "{~tt:{~scml:#{el}} #{vals[:tip]}}"
   end
 
   def constantize string

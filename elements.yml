@@ -6188,7 +6188,7 @@
   rh-i:
     :for: tso
     :group_name: char-styles
-    :learning_category: Page
+    :learning_category: Expanded List of Character Styles
     :name: Running Head Italic
   rhref:
     :for: tso
