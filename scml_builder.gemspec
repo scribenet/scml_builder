@@ -15,5 +15,5 @@ spec = Gem::Specification.new do |s|
   s.add_development_dependency('pry')
   s.add_development_dependency('mocha')
   s.add_development_dependency('minitest', '> 5.0.0')
-  s.add_runtime_dependency('docx_tools')
+  s.add_runtime_dependency('dox')
 end
