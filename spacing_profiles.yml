@@ -167,6 +167,7 @@
   :aft: 'medial + aft'
   :first: 'medial + f'
   :last: 'medial + l'
+  :standalone: 'medial + s'
 
 
 # standard first with only
