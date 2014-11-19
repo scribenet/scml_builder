@@ -1,4 +1,4 @@
-# ==== Rules ====
+# === Rules ====
 # "for" values:
 # - scml: belongs only in full scml applications, like the scml.dtd
 # - sam: belongs only in full sam applications, like the sam.dtd, word template, etc.
@@ -1486,6 +1486,13 @@
     :spacing_profile: 9
     :learning_category: Commentary
     :name: Commentary
+  comp:
+    :weight: 20
+    :learning_category: Commentary
+    :date: January 2, 2015
+    :group_name: commentary
+    :spacing_profile:
+    :name: Commentary New Paragraph
   crt:
     :weight: 20
     :group_name: copyright
@@ -2298,6 +2305,13 @@
     :name: Head
     :tip: "Generally used in Bibles, this style can also be appropriated when a one-off head is needed in an exceptional circumstance."
     :date:  
+  hdn:
+    :weight: 20
+    :learning_category: Heads
+    :date: January 2, 2015
+    :group_name: heads
+    :spacing_profile:
+    :name: Headnote 
   hr:
     :weight: 20
     :for: scml
@@ -2534,6 +2548,13 @@
     :learning_category: Formal Letter
     :name: Letter Signature Last
     :date: February 16, 2012
+  ltsigs:
+    :weight: 30
+    :learning_category: Formal Letter
+    :date: January 2, 2015
+    :group_name: letter
+    :spacing_profile:
+    :name: Letter Signature Standalone
   mediah:
     :weight: 10
     :spacing_profile: 2
@@ -2867,6 +2888,34 @@
     :learning_category: Notes
     :name: Note Numbered List Last
     :date: February 16, 2012
+  ntnl1:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Numbered List Level 1
+  ntnl1f:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Numbered List Level 1 First
+  ntnl1s:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Numbered List Level 1 Standalone
+  ntnl1l:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Numbered List Level 1 Last
   ntsl:
     :weight: 30
     :group_name: note
@@ -2894,6 +2943,34 @@
     :learning_category: Notes
     :name: Note Senseline Last
     :date: February 16, 2012
+  ntsl1:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Senseline Level 1
+  ntsl1f:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Senseline Level 1 First
+  ntsl1s:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Senseline Level 1 Stand-Alone
+  ntsl1l:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Senseline Level 1 Last
   nttd:
     :weight: 30
     :group_name: note
@@ -2930,6 +3007,34 @@
     :learning_category: Notes
     :name: Note Unnumbered List Last
     :date: February 16, 2012
+  ntul1: 
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Unnumbered List Level 1
+  ntul1f:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Unnumbered List Level 1 First
+  ntul1s:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Unnumbered List Level 1 Standalone
+  ntul1l:
+    :weight: 30
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: note
+    :spacing_profile:
+    :name: Note Unnumbered List Level 1 Last
   opt:
     :weight: 30
     :group_name: rubric
@@ -3158,6 +3263,13 @@
     :learning_category: Notes
     :name: Reference/Bibliography Level 2
     :date: March 8, 2013
+  rff:
+    :weight: 60
+    :learning_category: Notes
+    :date: January 2, 2015
+    :group_name: reference
+    :spacing_profile:
+    :name: Reference First
   rh:
     :weight: 10
     :for: tso
@@ -3740,6 +3852,62 @@
     :primary_structure: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph Last
+  sbbl:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item
+  sbblf:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item First
+  sbbll:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item Last
+  sbbls:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item Stand-Alone
+  sbbl1:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item Level 1
+  sbbl1f:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item Level 1 First
+  sbbl1l:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item Level 1 Last
+  sbbl1s:
+    :weight: 30
+    :learning_category: Sidebar
+    :date: January 2, 2015
+    :group_name: sidebar
+    :spacing_profile:
+    :name: Sidebar Bulleted List Item Level 1 Stand-Alone
   sbnl:
     :weight: 30
     :group_name: sidebar
@@ -4778,6 +4946,13 @@
     :primary_structure: story
     :learning_category: Story
     :name: Story Paragraph
+  staft:
+    :weight: 20
+    :learning_category: Story
+    :date: January 2, 2015
+    :group_name: story
+    :spacing_profile:
+    :name: Story After Head
   stf:
     :weight: 20
     :group_name: story
@@ -4816,6 +4991,13 @@
     :learning_category: Story
     :name: Story Head Level 2
     :date: March 8, 2013
+  sto:
+    :weight: 20
+    :learning_category: Story
+    :date: January 2, 2015
+    :group_name: story
+    :spacing_profile:
+    :name: Story Only
   stl:
     :weight: 20
     :group_name: story
@@ -5601,6 +5783,14 @@
     :for: scml
     :scml_specialized_contents: EMPTY
     :group_name: char-styles
+  bu:
+    :learning_category: Main Styles
+    :date: January 2, 2015
+    :name: Bold Underline
+  bxhn:
+    :learning_category: Paragraph/Character Style Pairs
+    :date: January 2, 2015
+    :name: Box Head Number
   ccust1:
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
@@ -5705,6 +5895,10 @@
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Endnote Reference
+  exhn:
+    :learning_category: Paragraph/Character Style Pairs
+    :date: January 2, 2015
+    :name: Exercise Head Number
   fighn:
     :group_name: char-styles
     :learning_category: Paragraph/Character Style Pairs
@@ -5831,6 +6025,34 @@
     :learning_category: Embedded Heads
     :name: Embedded Head
     :date: February 16, 2012
+  hl:
+    :learning_category: Miscellaneous
+    :date: January 2, 2015
+    :name: Highlight
+  hl-i:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Highlight Italic
+  hl-b:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Highlight Bold
+  hl-bi:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Highlight Bold Italic
+  hl-u:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Highlight Bold Underline
+  hl-iu:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Highlight Bold Italic Underline
+  hn:
+    :learning_category: Paragraph/Character Style Pairs
+    :date: January 2, 2015
+    :name: Head Number
   gtref-i:
     :scml_attrs:
     - - idref
@@ -5896,186 +6118,6 @@
     :group_name: char-styles
     :learning_category: Main Styles
     :name: Italic Underline
-  l-chi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Chinese
-    :date: February 16, 2012
-  l-chi-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Chinese Bold
-    :date: February 16, 2012
-  l-chi-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Chinese Bold-Italic
-    :date: February 16, 2012
-  l-chi-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Chinese Italic
-    :date: February 16, 2012
-  l-fre:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: French
-    :date: February 16, 2012
-  l-fre-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: French Bold
-    :date: February 16, 2012
-  l-fre-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: French Bold-Italic
-    :date: February 16, 2012
-  l-fre-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: French Italic
-    :date: February 16, 2012
-  l-ger:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: German
-    :date: February 16, 2012
-  l-ger-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: German Bold
-    :date: February 16, 2012
-  l-ger-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: German Bold-Italic
-    :date: February 16, 2012
-  l-ger-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: German Italic
-    :date: February 16, 2012
-  l-ita:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Italian
-    :date: February 16, 2012
-  l-ita-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Italian Bold
-    :date: February 16, 2012
-  l-ita-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Italian Bold-Italic
-    :date: February 16, 2012
-  l-ita-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Italian Italic
-    :date: February 16, 2012
-  l-jpn:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Japanese
-    :date: February 16, 2012
-  l-jpn-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Japanese Bold
-    :date: February 16, 2012
-  l-jpn-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Japanese Bold-Italic
-    :date: February 16, 2012
-  l-jpn-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Japanese Italic
-    :date: February 16, 2012
-  l-kor:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Korean
-    :date: February 16, 2012
-  l-kor-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Korean Bold
-    :date: February 16, 2012
-  l-kor-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Korean Bold-Italic
-    :date: February 16, 2012
-  l-kor-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Korean Italic
-    :date: February 16, 2012
-  l-lat:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Latin
-    :date: February 16, 2012
-  l-lat-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Latin Bold
-    :date: February 16, 2012
-  l-lat-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Latin Bold-Italic
-    :date: February 16, 2012
-  l-lat-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Latin Italic
-    :date: February 16, 2012
-  l-rus:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Russian
-    :date: February 16, 2012
-  l-rus-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Russian Bold
-    :date: February 16, 2012
-  l-rus-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Russian Bold-Italic
-    :date: February 16, 2012
-  l-rus-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Russian Italic
-    :date: February 16, 2012
-  l-spa:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Spanish
-    :date: February 16, 2012
-  l-spa-b:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Spanish Bold
-    :date: February 16, 2012
-  l-spa-bi:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Spanish Bold-Italic
-    :date: February 16, 2012
-  l-spa-i:
-    :group_name: char-styles
-    :learning_category: Language
-    :name: Spanish Italic
-    :date: February 16, 2012
   lang:
     :group_name: char-styles
     :learning_category: Language
@@ -6185,6 +6227,66 @@
     :learning_category: Biblical and Religious Character Styles
     :name: Red Small-caps Oblique
     :date: February 16, 2012
+  red-strk:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Strikethrough
+  red-strk-i:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Strikethrough Italic
+  red-strk-b:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Strikethrough Bold
+  red-strk-bi:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Strikethrough Bold Italic
+  red-strk-u:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Strikethrough Underline
+  red-strk-iu:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Strikethrough Italic Underline
+  red-hl:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Highlight
+  red-hl-i:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Highlight Italic
+  red-hl-b:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Highlight Bold
+  red-hl-bi:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Highlight Bold Italic
+  red-hl-u:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Highlight Underline
+  red-hl-iu:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Highlight Italic Underline
+  red-bi:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Bold Italic
+  red-u:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Underline
+  red-iu:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Red Italic Underline
   rh-i:
     :for: tso
     :group_name: char-styles
@@ -6204,6 +6306,10 @@
     :name: Running Head Reference Level 1
     :tip: "If a typesetter wants to pull text from an additional character style for use in running heads, rhref1 can be applied to that text as a reference point."
     :date: February 16, 2012
+  sbhn:
+    :learning_category: Paragraph/Character Style Pairs
+    :date: January 2, 2015
+    :name: Sidebar Head Number
   sm:
     :group_name: char-styles
     :learning_category: Main Styles
@@ -6245,6 +6351,18 @@
     :group_name: char-styles
     :learning_category: Miscellaneous
     :name: Strikethrough
+  strk-i:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Strikethrough Italic
+  strk-b:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Strikethrough Bold
+  strk-bi:
+    :learning_category: Expanded List of Character Styles
+    :date: January 2, 2015
+    :name: Strikethrough Bold Italic
   sub:
     :group_name: char-styles
     :learning_category: Superscript and Subscript
@@ -6389,6 +6507,10 @@
     :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Bold
     :date: March 8, 2013
+  tetr-bi:
+    :learning_category: Biblical and Religious Character Styles
+    :date: January 2, 2015
+    :name: Tetragrammaton Bold-Italic
   tetr-i:
     :group_name: char-styles
     :learning_category: Biblical and Religious Character Styles
@@ -6496,10 +6618,26 @@
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: URL
+  url-i:
+    :learning_category: References/Cross-References
+    :date: January 2, 2015
+    :name: Url Italic
+  url-b:
+    :learning_category: References/Cross-References
+    :date: January 2, 2015
+    :name: Url Bold
+  url-bi:
+    :learning_category: References/Cross-References
+    :date: January 2, 2015
+    :name: Url Bold-italic
   ver:
     :group_name: char-styles
     :learning_category: Biblical and Religious Character Styles
     :name: Verse
+  ver-b:
+    :learning_category: Biblical and Religious Character Styles
+    :date: January 2, 2015
+    :name: Verse Bold
   xbk:
     :scml_attrs:
     - - idref
