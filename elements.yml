@@ -6926,14 +6926,38 @@
     :date: January 2, 2015
     :learning_category: References/Cross-References
     :name: Url Bold
+    :sam_attrs:
+    - - href
+      - CDATA
+      - '#IMPLIED'
+    :scml_attrs:
+    - - href
+      - CDATA
+      - '#IMPLIED'
   url-bi:
     :date: January 2, 2015
     :learning_category: References/Cross-References
     :name: Url Bold-italic
+    :sam_attrs:
+    - - href
+      - CDATA
+      - '#IMPLIED'
+    :scml_attrs:
+    - - href
+      - CDATA
+      - '#IMPLIED'
   url-i:
     :date: January 2, 2015
     :learning_category: References/Cross-References
     :name: Url Italic
+    :sam_attrs:
+    - - href
+      - CDATA
+      - '#IMPLIED'
+    :scml_attrs:
+    - - href
+      - CDATA
+      - '#IMPLIED'
   ver:
     :group_name: char-styles
     :learning_category: Biblical and Religious Character Styles
