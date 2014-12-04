@@ -401,6 +401,10 @@
     :group_name: book
     :learning_category: Book
     :name: Book Title
+    :scml_attrs:
+    - - alt 
+      - CDATA
+      - '#IMPLIED'
     :spacing_profile: 2
     :tip: Full book title.
     :weight: 0
@@ -1589,6 +1593,10 @@
     :group_name: chapter
     :learning_category: Parts and Chapters
     :name: Chapter Title
+    :scml_attrs:
+    - - alt 
+      - CDATA
+      - '#IMPLIED'
     :spacing_profile: 2
     :weight: 0
   ctbm:
@@ -3312,6 +3320,10 @@
     :group_name: part
     :learning_category: Parts and Chapters
     :name: Part Title
+    :scml_attrs:
+    - - alt 
+      - CDATA
+      - '#IMPLIED'
     :spacing_profile: 2
     :weight: 30
   qu:
@@ -5820,6 +5832,10 @@
     :group_name: unit
     :learning_category: Parts and Chapters
     :name: Unit Title
+    :scml_attrs:
+    - - alt 
+      - CDATA
+      - '#IMPLIED'
     :spacing_profile: 2
     :tip: Specifically for heavily divided textbooks, a unit is structurally in between
       a part and a chapter.
