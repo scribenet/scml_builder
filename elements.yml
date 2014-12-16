@@ -6448,6 +6448,7 @@
     :name: Language Italic
   med:
     :group_name: char-styles
+    :name: Media 
   ob:
     :for: expanded
     :group_name: char-styles
