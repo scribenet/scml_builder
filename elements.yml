@@ -377,6 +377,7 @@
     :weight: 60
   audio:
     :group_name: media
+    :name: Audio
     :primary_structure: media
     :secondary_group_name: body
     :spacing_profile: 9
@@ -2663,16 +2664,19 @@
     :weight: 30
   mediaatr:
     :group_name: media
+    :name: Media Attribution 
     :primary_structure: media
     :spacing_profile: 9
     :weight: 20
   mediacap:
     :group_name: media
+    :name: Media Caption 
     :primary_structure: media
     :spacing_profile: 9
     :weight: 20
   mediah:
     :group_name: media
+    :name: Media Head 
     :primary_structure: media
     :spacing_profile: 2
     :weight: 10
@@ -5839,6 +5843,7 @@
     :weight: 50
   video:
     :group_name: media
+    :name: Video 
     :primary_structure: media
     :spacing_profile: 9
     :weight: 20
