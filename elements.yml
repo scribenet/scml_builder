@@ -5490,7 +5490,6 @@
     :weight: 20
   tocbmf:
     :abbrev: toc
-    :for: expanded
     :group_name: contents
     :learning_category: Contents
     :name: TOC Back Matter First
@@ -5501,7 +5500,6 @@
     :weight: 20
   tocf:
     :abbrev: toc
-    :for: expanded
     :group_name: contents
     :learning_category: Contents
     :name: TOC Main Level First
@@ -5526,7 +5524,6 @@
     :weight: 20
   tocfmf:
     :abbrev: toc
-    :for: expanded
     :group_name: contents
     :learning_category: Contents
     :name: TOC Front Matter First
