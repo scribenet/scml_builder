@@ -4788,8 +4788,8 @@
     :group_name: series
     :learning_category: Series
     :name: Series Author
-    :secondary_group_name: chapter_other
-    :spacing_profile: 2
+    :secondary_group_name: body 
+    :spacing_profile: 9
     :tip: The author of a book listed in the series list, if it appears on a separate
       line.
     :weight: 30
