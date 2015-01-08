@@ -6352,26 +6352,32 @@
       - IDREF
       - '#IMPLIED'
   hl:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Miscellaneous
     :name: Highlight
   hl-b:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold
   hl-bi:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold Italic
   hl-i:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Italic
   hl-iu:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold Italic Underline
   hl-u:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold Underline
@@ -6515,26 +6521,32 @@
     :learning_category: Expanded List of Character Styles
     :name: Red Bold Italic
   red-hl:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight
   red-hl-b:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Bold
   red-hl-bi:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Bold Italic
   red-hl-i:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Italic
   red-hl-iu:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Italic Underline
   red-hl-u:
+    :for: expanded
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Underline
