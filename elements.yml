@@ -307,7 +307,7 @@
     :name: A-Head
     :shortcut: Ctrl+Shift+A
     :spacing_profile: 1
-    :tip: Level 1 head, often seen as H1.
+    :tip: Top-level head within a chapter.
     :weight: 0
   ahaft:
     :group_name: heads
@@ -376,6 +376,7 @@
     :spacing_profile: 7
     :weight: 60
   audio:
+    :for: expanded
     :group_name: media
     :name: Audio
     :primary_structure: media
@@ -388,7 +389,7 @@
     :name: B-Head
     :shortcut: Ctrl+Shift+B
     :spacing_profile: 1
-    :tip: Level 2 head, often seen as H2.
+    :tip: Second-level head within a chapter.
     :weight: 0
   bhaft:
     :group_name: heads
@@ -1294,7 +1295,7 @@
     :name: C-Head
     :shortcut: Ctrl+Shift+C
     :spacing_profile: 1
-    :tip: Level 3 head, often seen as H3.
+    :tip: Third-level head within a chapter.
     :weight: 0
   chaft:
     :group_name: heads
@@ -1684,7 +1685,7 @@
     :learning_category: Heads
     :name: D-Head
     :spacing_profile: 1
-    :tip: Level 4 head, often seen as H4.
+    :tip: Fourth-level head within a chapter.
     :weight: 0
   dhaft:
     :group_name: heads
@@ -1793,6 +1794,7 @@
     :learning_category: Heads
     :name: E-Head
     :spacing_profile: 1
+    :tip: Fifth-level head within a chapter.
     :weight: 0
   ehaft:
     :group_name: heads
@@ -2663,18 +2665,21 @@
     :spacing_profile: 6
     :weight: 30
   mediaatr:
+    :for: expanded
     :group_name: media
     :name: Media Attribution 
     :primary_structure: media
     :spacing_profile: 9
     :weight: 20
   mediacap:
+    :for: expanded
     :group_name: media
     :name: Media Caption 
     :primary_structure: media
     :spacing_profile: 9
     :weight: 20
   mediah:
+    :for: expanded
     :group_name: media
     :name: Media Head 
     :primary_structure: media
@@ -5842,6 +5847,7 @@
       a part and a chapter.
     :weight: 50
   video:
+    :for: expanded
     :group_name: media
     :name: Video 
     :primary_structure: media
@@ -6455,6 +6461,7 @@
     :learning_category: Language
     :name: Language Italic
   med:
+    :for: expanded
     :group_name: char-styles
     :name: Media 
   ob:
