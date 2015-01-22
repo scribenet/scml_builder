@@ -6095,10 +6095,12 @@
     :scml_specialized_contents: EMPTY
   bu:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Main Styles
     :name: Bold Underline
   bxhn:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Paragraph/Character Style Pairs
     :name: Box Head Number
   ccust1:
@@ -6208,6 +6210,7 @@
       - '#IMPLIED'
   exhn:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Paragraph/Character Style Pairs
     :name: Exercise Head Number
   fighn:
@@ -6359,36 +6362,43 @@
       - '#IMPLIED'
   hl:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Miscellaneous
     :name: Highlight
   hl-b:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold
   hl-bi:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold Italic
   hl-i:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Italic
   hl-iu:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold Italic Underline
   hl-u:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Highlight Bold Underline
   hn:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Paragraph/Character Style Pairs
     :name: Head Number
   i:
@@ -6525,35 +6535,42 @@
     :name: Red Letter Text Bold
   red-bi:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Bold Italic
   red-hl:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight
   red-hl-b:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Bold
   red-hl-bi:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Bold Italic
   red-hl-i:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Italic
   red-hl-iu:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Italic Underline
   red-hl-u:
     :for: expanded
+    :group_name: char-styles
     :date: January 2, 2015
     :learning_category: Expanded List of Character Styles
     :name: Red Highlight Underline
@@ -6563,6 +6580,7 @@
     :name: Red Letter Text Italic
   red-iu:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Italic Underline
   red-ob:
@@ -6591,30 +6609,37 @@
     :name: Red Small-caps Oblique
   red-strk:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Strikethrough
   red-strk-b:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Strikethrough Bold
   red-strk-bi:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Strikethrough Bold Italic
   red-strk-i:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Strikethrough Italic
   red-strk-iu:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Strikethrough Italic Underline
   red-strk-u:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Strikethrough Underline
   red-u:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Red Underline
   rh-i:
@@ -6640,6 +6665,7 @@
       use in running heads, rhref1 can be applied to that text as a reference point.
   sbhn:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Paragraph/Character Style Pairs
     :name: Sidebar Head Number
   sm:
@@ -6690,14 +6716,17 @@
     :name: Strikethrough
   strk-b:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Strikethrough Bold
   strk-bi:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Strikethrough Bold Italic
   strk-i:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Strikethrough Italic
   sub:
@@ -6846,6 +6875,7 @@
     :name: Tetragrammaton Bold
   tetr-bi:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Biblical and Religious Character Styles
     :name: Tetragrammaton Bold-Italic
   tetr-i:
@@ -6962,6 +6992,7 @@
       - '#IMPLIED'
   url-b:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Url Bold
     :sam_attrs:
@@ -6974,6 +7005,7 @@
       - '#IMPLIED'
   url-bi:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Url Bold-italic
     :sam_attrs:
@@ -6986,6 +7018,7 @@
       - '#IMPLIED'
   url-i:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Url Italic
     :sam_attrs:
@@ -7002,6 +7035,7 @@
     :name: Verse
   ver-b:
     :date: January 2, 2015
+    :group_name: char-styles
     :learning_category: Biblical and Religious Character Styles
     :name: Verse Bold
   xbk:
