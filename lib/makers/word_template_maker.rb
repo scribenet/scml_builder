@@ -6,10 +6,10 @@ class WordTemplateMaker
 
   DOTX = File.dirname(__FILE__) + '/../templates/scr-word-template.dotx'
   DEFAULT_CHAR = 'DefaultParagraphFont'
-  NEW_STYLE_CHAR = ERB.new '<w:style w:type="character" w:customStyle="1" w:styleId="<%= name %>"><w:name w:val="<%= name %>"/><w:basedOn w:val="<%= DEFAULT_CHAR %>"/><w:rsid w:val="004A770A"/><w:rPr><w:color w:val="8B008B"/></w:rPr></w:style>'
+  NEW_STYLE_CHAR = ERB.new '<w:style w:type="character" w:customStyle="1" w:styleId="<%= name %>"><w:name w:val="<%= name %>"/><w:uiPriority w:val="<%= priority %>"/><w:basedOn w:val="<%= DEFAULT_CHAR %>"/><w:rsid w:val="004A770A"/><w:rPr><w:color w:val="8B008B"/></w:rPr></w:style>'
 
   DEFAULT_PAR = 'pf'
-  NEW_STYLE_PAR = ERB.new '<w:style w:type="paragraph" w:customStyle="1" w:styleId="<%= name %>"><w:name w:val="<%= name %>"/><w:basedOn w:val="<%= DEFAULT_PAR %>"/><w:qFormat/><w:rsid w:val="004A770A"/><w:rPr></w:rPr></w:style>'
+  NEW_STYLE_PAR = ERB.new '<w:style w:type="paragraph" w:customStyle="1" w:styleId="<%= name %>"><w:name w:val="<%= name %>"/><w:uiPriority w:val="<%= priority %>"/><w:basedOn w:val="<%= DEFAULT_PAR %>"/><w:qFormat/><w:rsid w:val="004A770A"/><w:rPr></w:rPr></w:style>'
 
   attr_reader :list, :type, :dotx, :elements
   attr_reader :document, :styles, :styles_with_effects
@@ -18,6 +18,8 @@ class WordTemplateMaker
     @list = list
     @type = type
     @elements = list.keys.map{ |k| list[k].keys }.flatten.sort
+    @expanded = list[:character_styles].map { |n, i| n if i[:for] == 'expanded' }.compact +
+      list[:paragraph_styles].map { |n, i| n if i[:for] == 'expanded' }.compact
     @dotx = Dox.new(DOTX)
   end
 
@@ -50,7 +52,12 @@ class WordTemplateMaker
   end
 
   def add_style_el(template, name)
+    priority = priority_for(name)
     @dotx.styles.root.add_child(template.result(binding))
+  end
+
+  def priority_for(name)
+    @expanded.include?(name) ? 3 : 2
   end
 
   def paragraph?(name)
