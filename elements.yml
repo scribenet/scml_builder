@@ -5423,7 +5423,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: Table of Contents (TOC) Main Level
-    :secondary_group_name: body
+    :secondary_group_name: toc 
     :spacing_profile: 8
     :tip: Table of contents base level. This most commonly corresponds with the chapter
       titles (ct) of the book.
@@ -5433,7 +5433,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Level 1
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: This level typically corresponds with a book's a-heads, if sublevels of
       book chapters are included in the TOC. It can also be used for lists of tables/figures
@@ -5444,7 +5444,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Level 2
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: This level typically corresponds with a book's b-heads, if sublevels of
       book chapters are included in the TOC. It can also be used for lists of tables/figures
@@ -5455,7 +5455,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Level 3
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: This level typically corresponds with a book's c-heads, if sublevels of
       book chapters are included in the TOC. It can also be used for lists of tables/figures
@@ -5466,7 +5466,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Level 4
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :weight: 20
   toc5:
@@ -5474,7 +5474,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Level 5
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :weight: 20
   tocau:
@@ -5492,7 +5492,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Back Matter
-    :secondary_group_name: toc_back
+    :secondary_group_name: tocbm
     :spacing_profile: 8
     :tip: To be used for back matter listings in the TOC (Notes, Bibliography, Index,
       Appendix, About the Author, etc.).
@@ -5502,7 +5502,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Back Matter First
-    :secondary_group_name: toc_back
+    :secondary_group_name: tocbm
     :spacing_profile: 7
     :tip: If you need to control the spacing above the first tocbm entry, use this
       style. Outside InDesign, this style reverts back to tocbm.
@@ -5525,7 +5525,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Front Matter
-    :secondary_group_name: toc_front
+    :secondary_group_name: tocfm
     :spacing_profile: 8
     :tip: To be used for front matter listings in the TOC (Preface, Acknowledgments,
       List of Figures/Tables, etc.). These are generally the pages that use roman
@@ -5536,7 +5536,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Front Matter First
-    :secondary_group_name: toc_front
+    :secondary_group_name: tocfm
     :spacing_profile: 7
     :tip: If you need to control the spacing above the first tocfm entry, use this
       style. Outside InDesign, this style reverts back to tocfm.
@@ -5546,7 +5546,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Part Title
-    :secondary_group_name: toc_part
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: To be used for part titles that are included in the TOC. Corresponds with
       text in the pt style.
@@ -5556,7 +5556,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Unit Title
-    :secondary_group_name: toc_unit
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: To be used for unit titles that are included in the TOC. Corresponds with
       text in the ut style.
