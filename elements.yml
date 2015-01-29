@@ -5562,7 +5562,7 @@
       text in the ut style.
     :weight: 20
   tsecbot:
-    :for: expanded
+    :for: tso
     :group_name: body
     :learning_category: Body
     :name: Temporary Bottom-of-Page Section Break
@@ -5571,7 +5571,7 @@
       This is removed when converting a typeset book to ScML or e-pub.
     :weight: 80
   tsectop:
-    :for: expanded
+    :for: tso
     :group_name: body
     :learning_category: Body
     :name: Temporary Top-of-Page Section Break
