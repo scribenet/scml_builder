@@ -6310,12 +6310,24 @@
     :group_name: char-styles
     :learning_category: Paragraph/Character Style Pairs
     :name: Glossary Reference
+    :sam_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
+    :scml_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
     :tip: The glossary term appearing in the text.
   gtref-i:
     :date: March 8, 2013
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Glossary Reference Italic
+    :sam_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
     :scml_attrs:
     - - idref
       - IDREF
@@ -6326,6 +6338,10 @@
     :group_name: char-styles
     :learning_category: Expanded List of Character Styles
     :name: Glossary Reference Small-Caps
+    :sam_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
     :scml_attrs:
     - - idref
       - IDREF
@@ -6356,10 +6372,6 @@
     :group_name: char-styles
     :learning_category: Embedded Heads
     :name: Embedded Head
-    :scml_attrs:
-    - - idref
-      - IDREF
-      - '#IMPLIED'
   hl:
     :for: expanded
     :group_name: char-styles
@@ -7042,6 +7054,10 @@
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: External Reference
+    :sam_attrs:
+    - - idref
+      - IDREF
+      - '#IMPLIED'
     :scml_attrs:
     - - idref
       - IDREF
