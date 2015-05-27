@@ -5512,7 +5512,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Main Level First
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 7
     :tip: If you need to control the spacing above the first regular toc entry, use
       this style. Normally, there's a front matter entry (tocfm) that will handle
