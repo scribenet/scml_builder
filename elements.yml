@@ -6424,19 +6424,6 @@
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Index
-    :sam_attrs:
-    - - term
-      - CDATA
-      - '#IMPLIED'
-    - - level1
-      - CDATA
-      - '#IMPLIED'
-    - - level2
-      - CDATA
-      - '#IMPLIED'
-    - - level3
-      - CDATA
-      - '#IMPLIED'
     :scml_attrs:
     - - term
       - CDATA
