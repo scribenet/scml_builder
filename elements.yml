@@ -6541,7 +6541,7 @@
     - - locator
       - CDATA
       - '#IMPLIED'
-    :scml_specialized_contents: EMPTY
+    :scml_specialized_contents: (idx)* 
   pnum:
     :group_name: char-styles
     :learning_category: References/Cross-References
