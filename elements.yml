@@ -781,6 +781,7 @@
     :learning_category: Box
     :name: Box Paragraph
     :primary_structure: box
+    :secondary_group_name: body
     :spacing_profile: 28
     :tip: Unless specifically coordinated with the design, sidebar content should
       use the sb styles as a default. Box pagragraph styles include heads, numbered
