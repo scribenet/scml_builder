@@ -2548,7 +2548,7 @@
     :name: Letter Complimentary Close
     :primary_structure: letter
     :secondary_group_name: letter_close
-    :spacing_profile: 9
+    :spacing_profile: 23
     :tip: “Sincerely . . .”
     :weight: 30
   ltd:
