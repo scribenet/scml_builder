@@ -1135,8 +1135,6 @@
     :learning_category: Box
     :name: Box Paragraph First
     :primary_structure: box
-    :secondary_structure: blockquote
-    :secondary_group_name: blockquotes
     :spacing_profile: 27
     :weight: 20
   bxh:
