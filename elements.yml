@@ -1135,8 +1135,6 @@
     :learning_category: Box
     :name: Box Paragraph First
     :primary_structure: box
-    :secondary_structure: blockquote
-    :secondary_group_name: blockquotes
     :spacing_profile: 27
     :weight: 20
   bxh:
@@ -6597,6 +6595,19 @@
     :group_name: char-styles
     :learning_category: References/Cross-References
     :name: Index
+    :scml_attrs:
+    - - term
+      - CDATA
+      - '#IMPLIED'
+    - - level1
+      - CDATA
+      - '#IMPLIED'
+    - - level2
+      - CDATA
+      - '#IMPLIED'
+    - - level3
+      - CDATA
+      - '#IMPLIED'
   img:
     :group_name: char-styles
     :learning_category: Miscellaneous
@@ -6700,7 +6711,7 @@
     - - locator
       - CDATA
       - '#IMPLIED'
-    :scml_specialized_contents: EMPTY
+    :scml_specialized_contents: (idx)* 
   pnum:
     :group_name: char-styles
     :learning_category: References/Cross-References
