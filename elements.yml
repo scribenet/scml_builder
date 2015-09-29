@@ -1825,7 +1825,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Editor's Note
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :spacing_profile: 9
     :weight: 70
   eh:
@@ -1846,7 +1847,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Endnote
-    :primary_structure: notes
+    :primary_structure: endnote
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: Endnotes appear at the end of a chapter or book. The number before the note
@@ -1867,7 +1868,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Endnote Headnote
-    :primary_structure: notes
+    :primary_structure: endnote
     :secondary_group_name: heads
     :spacing_profile: 2
     :tip: For an unnumbered endnote. This is usually used for acknowledgments in books
@@ -1877,7 +1878,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Endnote Paragraph
-    :primary_structure: notes
+    :primary_structure: endnote
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: A new paragraph within an endnote. If an endnote is more than one paragraph
@@ -2386,7 +2387,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Footnote
-    :primary_structure: notes
+    :primary_structure: footnote
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: Footnotes appear at the foot of a page. The number or symbol before the
@@ -2398,7 +2399,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Footnote Paragraph
-    :primary_structure: notes
+    :primary_structure: footnote
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: A new paragraph within a footnote. If a footnote is more than one paragraph
@@ -2995,7 +2996,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: blockquote
     :secondary_group_name: blockquotes
     :spacing_profile: 4
@@ -3005,7 +3007,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: blockquote
     :secondary_group_name: blockquotes
     :spacing_profile: 3
@@ -3015,7 +3018,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: blockquote
     :secondary_group_name: blockquotes
     :spacing_profile: 5
@@ -3025,7 +3029,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote Stand-Alone
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: blockquote
     :secondary_group_name: blockquotes
     :spacing_profile: 6
@@ -3035,7 +3040,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Continued
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 30
@@ -3044,7 +3050,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Equation
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: equation
     :secondary_group_name: equation
     :spacing_profile: 9
@@ -3054,7 +3061,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4 
@@ -3064,7 +3072,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4 
@@ -3074,7 +3083,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3 
@@ -3084,7 +3094,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3094,7 +3105,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 Standalone
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6 
@@ -3104,7 +3116,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3114,7 +3127,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Standalone
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3124,7 +3138,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3134,7 +3149,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 4
@@ -3144,7 +3160,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 4
@@ -3154,7 +3171,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 3
@@ -3182,7 +3200,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 3
@@ -3192,7 +3211,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 5
@@ -3202,7 +3222,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Standalone
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 6
@@ -3212,7 +3233,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Table
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_group_name: table
     :spacing_profile: 9
     :weight: 30
@@ -3221,7 +3243,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4 
@@ -3231,7 +3254,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4
@@ -3241,7 +3265,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3251,7 +3276,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3261,7 +3287,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 Standalone
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6
@@ -3271,7 +3298,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List First
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3
@@ -3281,7 +3309,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
@@ -3291,7 +3320,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Last
-    :primary_structure: notes
+    :primary_structure: footnote
+    :acceptable_structures: [footnote, endnote]
     :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6
