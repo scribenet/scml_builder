@@ -2995,7 +2995,9 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote
-    :primary_structure: blockquote
+    :primary_structure: notes
+    :secondary_structure: blockquote
+    :secondary_group_name: blockquotes
     :spacing_profile: 4
     :weight: 30
   ntbqf:
@@ -3003,8 +3005,9 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote First
-    :primary_structure: blockquote
-    :secondary_group_name: blockquote
+    :primary_structure: notes
+    :secondary_structure: blockquote
+    :secondary_group_name: blockquotes
     :spacing_profile: 3
     :weight: 30
   ntbql:
@@ -3012,8 +3015,9 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote Last
-    :primary_structure: blockquote
-    :secondary_group_name: blockquote
+    :primary_structure: notes
+    :secondary_structure: blockquote
+    :secondary_group_name: blockquotes
     :spacing_profile: 5
     :weight: 30
   ntbqs:
@@ -3021,8 +3025,9 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote Stand-Alone
-    :primary_structure: blockquote
-    :secondary_group_name: blockquote
+    :primary_structure: notes
+    :secondary_structure: blockquote
+    :secondary_group_name: blockquotes
     :spacing_profile: 6
     :weight: 30
   ntcon:
@@ -3039,7 +3044,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Equation
-    :primary_structure: equation
+    :primary_structure: notes
+    :secondary_structure: equation
     :secondary_group_name: equation
     :spacing_profile: 9
     :weight: 30
@@ -3048,7 +3054,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4 
     :weight: 30
@@ -3057,7 +3064,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4 
     :weight: 30
@@ -3066,7 +3074,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 First
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3 
     :weight: 30
@@ -3075,7 +3084,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 Last
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3084,7 +3094,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 Standalone
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6 
     :weight: 30
@@ -3093,7 +3104,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List First
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3102,7 +3114,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Standalone
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3111,7 +3124,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Last
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3120,7 +3134,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline
-    :primary_structure: senseline 
+    :primary_structure: notes
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -3129,7 +3144,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1
-    :primary_structure: senseline
+    :primary_structure: notes
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -3138,7 +3154,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 First
-    :primary_structure: senseline
+    :primary_structure: notes
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -3147,7 +3164,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 Last
-    :primary_structure: senseline
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -3156,7 +3173,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 Stand-Alone
-    :primary_structure: senseline
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 6 
     :weight: 30
@@ -3165,7 +3182,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline First
-    :primary_structure: senseline
+    :primary_structure: notes
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -3174,7 +3192,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Last
-    :primary_structure: senseline
+    :primary_structure: notes
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -3183,7 +3202,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Standalone
-    :primary_structure: senseline
+    :primary_structure: notes
+    :secondary_structure: senseline
     :secondary_group_name: sense
     :spacing_profile: 6
     :weight: 30
@@ -3201,7 +3221,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4 
     :weight: 30
@@ -3210,7 +3231,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -3219,7 +3241,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 First
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3228,7 +3251,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 Last
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3237,7 +3261,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 Standalone
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3246,7 +3271,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List First
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3255,7 +3281,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Last
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3264,7 +3291,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Last
-    :primary_structure: list
+    :primary_structure: notes
+    :secondary_structure: list
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
