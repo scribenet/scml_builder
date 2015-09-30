@@ -2970,7 +2970,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Continued
-    :structures: [[notes], [footnote, endnote], [blockquote]]
+    :structures: [[notes], [footnote, endnote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 30
