@@ -5485,7 +5485,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Author
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: If a chapter (or introduction/preface) has a different author that should
       be listed in the TOC on a separate line. Corresponds with the au style.
