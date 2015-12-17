@@ -96,7 +96,7 @@
     :group_name: structure
     :learning_category: Structural Elements
     :name: Endnote
-    :primary_structure: notes
+    :structures: [[notes]]
     :sam_specialized_contents: (%paragraph_styles;)*
   epigraph:
     :date:  
@@ -128,7 +128,7 @@
     :group_name: structure
     :learning_category: Structural Elements
     :name: Footnote
-    :primary_structure: notes
+    :structures: [[notes]]
     :sam_specialized_contents: (%paragraph_styles;)*
   glossary:
     :date:  
@@ -324,7 +324,7 @@
     :group_name: question
     :learning_category: Question and Answer
     :name: Answer
-    :primary_structure: question
+    :structures: [[question]]
     :secondary_group_name: body
     :spacing_profile: 8
     :weight: 20
@@ -333,7 +333,7 @@
     :group_name: question
     :learning_category: Question and Answer
     :name: Answer First
-    :primary_structure: question
+    :structures: [[question]]
     :secondary_group_name: body
     :spacing_profile: 7
     :weight: 20
@@ -342,7 +342,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Assigned Reading
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 80
@@ -379,7 +379,7 @@
     :for: expanded
     :group_name: media
     :name: Audio
-    :primary_structure: media
+    :structures: [[media]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 20
@@ -484,7 +484,7 @@
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :tip: The bulleted list (bl) style exists to specifically differentiate one kind
       of unnumbered list from another kind of unnumbered list within your project.
@@ -495,28 +495,28 @@
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   bl1f:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 First (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   bl1l:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Last (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   bl1p:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Paragraph (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 10
     :weight: 60
   bl1pl:
@@ -524,21 +524,21 @@
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Paragraph (Subpoint) Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 11
     :weight: 60
   bl1s:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Level 1 Stand-Alone (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   blf:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 20
   blh:
@@ -546,21 +546,21 @@
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Head
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 2
     :weight: 10
   bll:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 20
   blp:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 10
     :tip: A new paragraph within a bulleted list item. If a list item is more than
       one paragraph long, then the second paragraph should use this style, which will
@@ -571,14 +571,14 @@
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Paragraph Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 11
     :weight: 20
   bls:
     :group_name: list
     :learning_category: Bulleted List
     :name: Bulleted List Item Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 20
   bq:
@@ -586,7 +586,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 28
     :tip: Often referred to as an extract. Use the f, l, and s variations to control
@@ -602,7 +602,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Level 1
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 4
     :weight: 60
@@ -611,7 +611,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Level 1 First
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 3
     :weight: 60
@@ -620,7 +620,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Level 1 Last
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 5
     :weight: 60
@@ -629,7 +629,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Level 1 Stand-Alone
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 6
     :weight: 60
@@ -638,7 +638,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote after Head
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 37
     :tip: For use instead of bqf when the first paragraph of a block quote follows
@@ -650,7 +650,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote First
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 27
     :weight: 20
@@ -659,7 +659,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Head
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -668,7 +668,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Last
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 29
     :weight: 20
@@ -677,8 +677,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -687,8 +686,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item First
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -697,8 +695,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item Last
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -707,8 +704,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Numbered List Item Stand-Alone
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -718,7 +714,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Only
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 31
     :weight: 20
@@ -727,7 +723,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Stand-Alone
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 30
     :weight: 20
@@ -737,7 +733,7 @@
     :group_name: blockquotes
     :learning_category: Block Quotation
     :name: Block Quote Tail
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 38
     :tip: For use if your block quote has a source line. Controls spacing above and
@@ -748,8 +744,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -758,8 +753,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item First
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -768,8 +762,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item Last
-    :primary_structure: blockquote
-    :secondary_structure: list
+    :structures: [[blockquote], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -778,7 +771,7 @@
     :group_name: blockquotes-list
     :learning_category: Block Quotation
     :name: Block Quote Unnumbered List Item Stand-Alone
-    :primary_structure: blockquote
+    :structures: [[blockquote]]
     :secondary_group_name: body
     :spacing_profile: 6
     :weight: 30
@@ -787,7 +780,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Paragraph
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 28
     :tip: Unless specifically coordinated with the design, sidebar content should
@@ -800,7 +793,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Paragraph
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 16
     :weight: 60
@@ -809,7 +802,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Paragraph after Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 19
     :weight: 60
@@ -818,7 +811,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 A-Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 50
@@ -827,7 +820,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 B-Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 50
@@ -836,8 +829,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Block Quote
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 4
     :weight: 70
@@ -846,8 +838,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Block Quote First
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 3
     :weight: 70
@@ -856,8 +847,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Block Quote Last
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 5
     :weight: 70
@@ -866,8 +856,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Block Quote Stand-Alone
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 6
     :weight: 70
@@ -876,7 +865,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Paragraph Continued
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 60
@@ -885,7 +874,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Paragraph First
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 15
     :weight: 60
@@ -894,7 +883,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 40
@@ -903,7 +892,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Paragraph Last
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 17
     :weight: 60
@@ -912,8 +901,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Numbered List Item
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 13
     :weight: 70
@@ -922,8 +910,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Numbered List Item First
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 12
     :weight: 70
@@ -932,8 +919,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Numbered List Item Last
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 14
     :weight: 70
@@ -942,8 +928,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Numbered List Item Paragraph
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 70
@@ -952,7 +937,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Paragraph Stand-Alone
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 18
     :weight: 60
@@ -961,8 +946,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Senseline
-    :primary_structure: box
-    :secondary_structure: senseline
+    :structures: [[box], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 13
     :weight: 70
@@ -971,8 +955,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Senseline First
-    :primary_structure: box
-    :secondary_structure: senseline
+    :structures: [[box], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 12
     :weight: 70
@@ -981,8 +964,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Senseline Last
-    :primary_structure: box
-    :secondary_structure: senseline
+    :structures: [[box], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 14
     :weight: 70
@@ -991,7 +973,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Title
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 38
     :weight: 40
@@ -1000,8 +982,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 13
     :weight: 70
@@ -1010,8 +991,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item First
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 12
     :weight: 70
@@ -1020,8 +1000,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item Last
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 14
     :weight: 70
@@ -1030,8 +1009,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Level 1 Unnumbered List Item Paragraph
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 70
@@ -1040,7 +1018,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Paragraph after Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 37
     :weight: 20
@@ -1049,7 +1027,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box A-Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -1058,7 +1036,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Author
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: chapter_other
     :spacing_profile: 2
     :weight: 30
@@ -1067,7 +1045,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Author 1
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: chapter_other
     :spacing_profile: 2
     :weight: 30
@@ -1076,7 +1054,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box B-Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -1085,8 +1063,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Block Quote
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 4
     :weight: 30
@@ -1095,8 +1072,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Block Quote First
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 3
     :weight: 30
@@ -1105,8 +1081,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Block Quote Last
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 5
     :weight: 30
@@ -1115,8 +1090,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Block Quote Stand-Alone
-    :primary_structure: box
-    :secondary_structure: blockquote
+    :structures: [[box], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 6
     :weight: 30
@@ -1125,7 +1099,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Paragraph Continued
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 30
@@ -1134,7 +1108,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Paragraph First
-    :primary_structure: box
+    :structures: [[box]]
     :spacing_profile: 27
     :weight: 20
   bxh:
@@ -1142,7 +1116,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Head
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :tip: Used when the box head is unique to that particular box.
@@ -1152,7 +1126,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Paragraph Last
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 29
     :weight: 20
@@ -1161,8 +1135,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Numbered List Item
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -1171,8 +1144,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Numbered List Item First
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -1181,8 +1153,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Numbered List Item Last
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -1191,8 +1162,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Numbered List Item Paragraph
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -1201,8 +1171,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Numbered List Item Stand-Alone
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -1212,7 +1181,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Only
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 31
     :weight: 20
@@ -1221,7 +1190,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Paragraph Stand-Alone
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 30
     :tip: Box text with space both above and below. This is needed only if the box
@@ -1234,8 +1203,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Senseline
-    :primary_structure: box
-    :secondary_structure: senseline
+    :structures: [[box], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 13
     :weight: 30
@@ -1244,8 +1212,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Senseline First
-    :primary_structure: box
-    :secondary_structure: senseline
+    :structures: [[box], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 12
     :weight: 30
@@ -1254,8 +1221,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Senseline Last
-    :primary_structure: box
-    :secondary_structure: senseline
+    :structures: [[box], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 14
     :weight: 30
@@ -1264,7 +1230,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Title
-    :primary_structure: box
+    :structures: [[box]]
     :secondary_group_name: body
     :spacing_profile: 2
     :tip: Used for repeating box titles.
@@ -1274,8 +1240,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Unnumbered List Item
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -1284,8 +1249,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Unnumbered List Item First
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -1294,8 +1258,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Unnumbered List Item Last
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -1304,8 +1267,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Unnumbered List Item Paragraph
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -1314,8 +1276,7 @@
     :group_name: box
     :learning_category: Box
     :name: Box Unnumbered List Item Stand-Alone
-    :primary_structure: box
-    :secondary_structure: list
+    :structures: [[box], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -1324,7 +1285,7 @@
     :group_name: quote
     :learning_category: Callouts
     :name: Callout (Pull Quote)
-    :primary_structure: pullquote
+    :structures: [[pullquote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 30
@@ -1411,7 +1372,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 4
     :weight: 20
   cl1:
@@ -1420,7 +1381,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 1
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 4
     :weight: 60
   cl1f:
@@ -1429,7 +1390,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 1 first
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 3
     :weight: 60
   cl1l:
@@ -1438,7 +1399,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 1 last
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 5
     :weight: 60
   cl1s:
@@ -1447,7 +1408,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 1 standalone
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 6
     :weight: 60
   cl2:
@@ -1456,7 +1417,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 2
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 4
     :weight: 60
   cl2f:
@@ -1465,7 +1426,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 2 first
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 3
     :weight: 60
   cl2l:
@@ -1474,7 +1435,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 2 last
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 5
     :weight: 60
   cl2s:
@@ -1483,7 +1444,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 2 standalone
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 6
     :weight: 60
   cl3:
@@ -1492,7 +1453,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 3
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 4
     :weight: 60
   cl3f:
@@ -1501,7 +1462,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 3 first
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 3
     :weight: 60
   cl3l:
@@ -1510,7 +1471,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 3 last
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 5
     :weight: 60
   cl3s:
@@ -1519,7 +1480,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline Level 3 standalone
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 6
     :weight: 60
   clf:
@@ -1528,7 +1489,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline first
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 3
     :weight: 20
   cll:
@@ -1537,7 +1498,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline last
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 5
     :weight: 20
   cls:
@@ -1546,7 +1507,7 @@
     :group_name: codeline
     :learning_category: Codelines
     :name: Codeline standalone
-    :primary_structure: codeline
+    :structures: [[codeline]]
     :spacing_profile: 6
     :weight: 20
   cn:
@@ -1738,7 +1699,7 @@
     :group_name: dialogue
     :learning_category: Dialogue
     :name: Dialogue
-    :primary_structure: dialogue
+    :structures: [[dialogue]]
     :spacing_profile: 4
     :tip: A dialogue paragraph. The speaker name can use the dispk character style
       if it is to be rendered differently from the other dia text. Most commonly used
@@ -1750,7 +1711,7 @@
     :group_name: dialogue
     :learning_category: Dialogue
     :name: Dialogue First
-    :primary_structure: dialogue
+    :structures: [[dialogue]]
     :spacing_profile: 3
     :tip: 'The first line of a section of dialogue. '
     :weight: 20
@@ -1759,7 +1720,7 @@
     :group_name: dialogue
     :learning_category: Dialogue
     :name: Dialogue Last
-    :primary_structure: dialogue
+    :structures: [[dialogue]]
     :spacing_profile: 5
     :tip: The last line of a section of dialogue.
     :weight: 20
@@ -1768,7 +1729,7 @@
     :group_name: dialogue
     :learning_category: Dialogue
     :name: Dialogue Paragraph
-    :primary_structure: dialogue
+    :structures: [[dialogue]]
     :spacing_profile: 10
     :tip: Use this style if a line within a section of dialogue spans more than a
       single paragraph.
@@ -1779,7 +1740,7 @@
     :group_name: dialogue
     :learning_category: Dialogue
     :name: Dialogue Paragraph Last
-    :primary_structure: dialogue
+    :structures: [[dialogue]]
     :spacing_profile: 11
     :weight: 20
   dias:
@@ -1787,7 +1748,7 @@
     :group_name: dialogue
     :learning_category: Dialogue
     :name: Dialogue Stand-Alone
-    :primary_structure: dialogue
+    :structures: [[dialogue]]
     :spacing_profile: 6
     :tip: A stand-alone line of dialogue.
     :weight: 20
@@ -1825,7 +1786,8 @@
     :group_name: note
     :learning_category: Notes
     :name: Editor's Note
-    :primary_structure: notes
+    :structures: [[footnote]]
+    :acceptable_structures: [footnote, endnote]
     :spacing_profile: 9
     :weight: 70
   eh:
@@ -1846,7 +1808,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Endnote
-    :primary_structure: notes
+    :structures: [[notes], [endnote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: Endnotes appear at the end of a chapter or book. The number before the note
@@ -1867,7 +1829,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Endnote Headnote
-    :primary_structure: notes
+    :structures: [[notes], [endnote]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :tip: For an unnumbered endnote. This is usually used for acknowledgments in books
@@ -1877,7 +1839,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Endnote Paragraph
-    :primary_structure: notes
+    :structures: [[notes], [endnote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: A new paragraph within an endnote. If an endnote is more than one paragraph
@@ -1889,7 +1851,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 16
     :tip: When an epigraph is more than one paragraph, this should be used for any
@@ -1900,7 +1862,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Level 1
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: First epigraph sublevel, available if special spacing or indentation is
@@ -1911,7 +1873,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Level 2
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: Second epigraph sublevel, available if special spacing or indentation is
@@ -1923,7 +1885,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph After Head
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 19
     :tip: Used for epigraphs appearing after heads in chapters.
@@ -1933,7 +1895,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph First
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 15
     :tip: This should be used for the first paragraph of an epigraph. Use epf/ept
@@ -1944,7 +1906,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Last
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 17
     :tip: The last paragraph of a multiple-paragraph epigraph when there is not a
@@ -1955,7 +1917,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Stand-Alone
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 18
     :tip: If a single paragraph epigraph has no ept.
@@ -1965,8 +1927,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Senseline
-    :primary_structure: epigraph
-    :secondary_structure: senseline
+    :structures: [[epigraph], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 8
     :tip: Epigraph senseline should be used for an epigraph that contains lines of
@@ -1978,8 +1939,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Senseline Level 1
-    :primary_structure: epigraph
-    :secondary_structure: senseline
+    :structures: [[epigraph], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 9
     :weight: 30
@@ -1989,8 +1949,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Senseline First
-    :primary_structure: epigraph
-    :secondary_structure: senseline
+    :structures: [[epigraph], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 7
     :weight: 30
@@ -1999,7 +1958,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Tail
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 38
     :tip: The speaker/author of the epigraph, typically preceded by an em dash.
@@ -2010,7 +1969,7 @@
     :group_name: epigraph
     :learning_category: Epigraph
     :name: Epigraph Tail Level 1
-    :primary_structure: epigraph
+    :structures: [[epigraph]]
     :secondary_group_name: body
     :spacing_profile: 22
     :tip: Second line variation for epigraph tails.
@@ -2020,7 +1979,7 @@
     :group_name: equation
     :learning_category: Figure
     :name: Equation
-    :primary_structure: equation
+    :structures: [[equation]]
     :spacing_profile: 20
     :tip: Equations that appear in their own paragraphs, like figures, should use
       the eq paragraph style. A typesetter can use alternate styles to help control
@@ -2032,7 +1991,7 @@
     :group_name: equation
     :learning_category: Figure
     :name: Equation After Head
-    :primary_structure: equation
+    :structures: [[equation]]
     :spacing_profile: 21
     :weight: 30
   ex:
@@ -2041,7 +2000,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: body
     :spacing_profile: 16
     :weight: 20
@@ -2051,7 +2010,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise after head
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: body
     :spacing_profile: 19
     :weight: 20
@@ -2060,7 +2019,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise A-Head
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -2069,7 +2028,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise B-Head
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -2078,7 +2037,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise First
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: body
     :spacing_profile: 15
     :weight: 20
@@ -2087,7 +2046,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Head
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 0
@@ -2096,7 +2055,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Last
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: body
     :spacing_profile: 17
     :weight: 20
@@ -2105,8 +2064,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -2115,8 +2073,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -2125,8 +2082,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 First
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -2135,8 +2091,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 Last
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -2145,8 +2100,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 Paragraph
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -2155,8 +2109,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Level 1 Stand-Alone
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -2165,8 +2118,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item First
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -2175,8 +2127,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Last
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -2185,8 +2136,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Paragraph
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -2195,8 +2145,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Numbered List Item Stand-Alone
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -2205,7 +2154,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Stand-Alone
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: body
     :spacing_profile: 18
     :weight: 20
@@ -2214,8 +2163,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -2224,8 +2172,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -2234,8 +2181,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 First
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -2244,8 +2190,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 Last
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -2254,8 +2199,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 Paragraph
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -2264,8 +2208,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Level 1 Stand-Alone
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -2274,8 +2217,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item First
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -2284,8 +2226,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Last
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -2294,8 +2235,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Paragraph
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -2304,8 +2244,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Exercise Unnumbered List Item Stand-Alone
-    :primary_structure: exercise
-    :secondary_structure: list
+    :structures: [[exercise], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -2314,7 +2253,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Marker
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 9
     :tip: This should be used in conjunction with the img character style to indicate
       a figure appearing at the paragraph level. Use an alternative style for figures
@@ -2325,7 +2264,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Credit/Attribution
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 9
     :tip: The source, or attribution credit line, of the figure.
     :weight: 20
@@ -2334,7 +2273,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Caption
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 9
     :tip: To be used when the caption for a figure is on a separate line from the
       figh content.
@@ -2344,7 +2283,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Caption Level 1
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 9
     :tip: To be used when a book includes different types of figure captions for different
       kinds of figures, like photos versus maps or drawings.
@@ -2354,7 +2293,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Head
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 9
     :tip: 'The figure head is the functional equivalent to a table head: the main
       title level for a figure. If a figure caption is only one line that contains
@@ -2369,7 +2308,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Head Level 1
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 2
     :tip: Used if a figure title has a subtitle.
     :weight: 10
@@ -2378,7 +2317,7 @@
     :group_name: figure
     :learning_category: Figure
     :name: Figure Note
-    :primary_structure: figure
+    :structures: [[figure]]
     :spacing_profile: 9
     :tip: Figure note.
     :weight: 20
@@ -2386,7 +2325,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Footnote
-    :primary_structure: notes
+    :structures: [[notes], [footnote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: Footnotes appear at the foot of a page. The number or symbol before the
@@ -2398,7 +2337,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Footnote Paragraph
-    :primary_structure: notes
+    :structures: [[notes], [footnote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :tip: A new paragraph within a footnote. If a footnote is more than one paragraph
@@ -2420,7 +2359,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Further Study
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :spacing_profile: 9
     :weight: 60
   glo:
@@ -2428,7 +2367,7 @@
     :group_name: glossary
     :learning_category: Curriculum
     :name: Glossary Definition
-    :primary_structure: glossary
+    :structures: [[glossary]]
     :spacing_profile: 8
     :tip: The glossary definition, often used in conjunction with the gt (glossary
       term) character style. This style should also be used for abbreviations lists
@@ -2439,7 +2378,7 @@
     :group_name: glossary
     :learning_category: Curriculum
     :name: Glossary Definition First
-    :primary_structure: glossary
+    :structures: [[glossary]]
     :spacing_profile: 7
     :tip: If the glossary entry encompasses more than one paragraph. For example,
       if the term is on one line and the definition is on another, use this style
@@ -2480,7 +2419,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Main Level
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 8
     :tip: Main-level index entries.
     :weight: 20
@@ -2489,7 +2428,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Level 1
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 9
     :tip: First-sublevel index entries.
     :weight: 60
@@ -2498,7 +2437,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Level 2
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 9
     :tip: Second-sublevel index entries.
     :weight: 60
@@ -2507,7 +2446,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Level 3
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 9
     :tip: Third-sublevel index entries.
     :weight: 60
@@ -2516,7 +2455,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Main Level First
-    :primary_structure: index
+    :structures: [[index]]
     :shortcut: F4 (Function key)
     :spacing_profile: 7
     :tip: A main-level index entry with added space above; used when letter groups'
@@ -2527,7 +2466,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Head
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 2
     :tip: Used when an index includes the letter as a head before each letter group;
       should be followed by an in entry, **not** inf.
@@ -2537,7 +2476,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Head Level 1
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 2
     :tip: If an index is broken up into a number of sublevels, the inh1 style is available
       for sublevel heads.
@@ -2547,7 +2486,7 @@
     :group_name: index
     :learning_category: Index
     :name: Index Headnote
-    :primary_structure: index
+    :structures: [[index]]
     :spacing_profile: 2
     :tip: For paragraphs preceding indexes that indicate what symbols or fonts mean
       within the index.
@@ -2557,7 +2496,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Learning Objective
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :spacing_profile: 9
     :weight: 50
   lps:
@@ -2566,7 +2505,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Postscript
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_postscript
     :spacing_profile: 9
     :tip: Be careful not to confuse this with lts, which is the Letter Paragraph Stand-Alone
@@ -2578,7 +2517,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Paragraph
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_body
     :spacing_profile: 33
     :weight: 20
@@ -2587,7 +2526,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Address
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: address
     :spacing_profile: 8
     :tip: The letter address refers to the physical address of the recipient, not
@@ -2598,7 +2537,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Address First
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: address
     :spacing_profile: 7
     :weight: 30
@@ -2607,7 +2546,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Complimentary Close
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_close
     :spacing_profile: 23
     :tip: “Sincerely . . .”
@@ -2617,7 +2556,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Date
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: date
     :spacing_profile: 8
     :weight: 30
@@ -2626,7 +2565,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Date First
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: date
     :spacing_profile: 7
     :tip: This is the first line of the letter date, often right aligned. If the date
@@ -2639,7 +2578,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Paragraph First
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_body
     :spacing_profile: 32
     :weight: 20
@@ -2648,7 +2587,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Greeting
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_greeting
     :spacing_profile: 9
     :tip: “Dear So-and-So . . .”
@@ -2659,7 +2598,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Paragraph Last
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_body
     :spacing_profile: 34
     :tip: To be used when a body paragraph is the last paragraph in a letter group.
@@ -2672,7 +2611,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Paragraph Only
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_body
     :spacing_profile: 36
     :weight: 20
@@ -2682,7 +2621,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Paragraph Stand-Alone
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: letter_body
     :spacing_profile: 35
     :tip: Be careful not to confuse this with lps, which is the Letter Postscript
@@ -2693,7 +2632,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Signature
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: signature
     :spacing_profile: 4
     :weight: 30
@@ -2702,7 +2641,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Signature First
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: signature
     :spacing_profile: 3
     :weight: 30
@@ -2712,7 +2651,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Signature Last
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: signature
     :spacing_profile: 5
     :weight: 30
@@ -2722,7 +2661,7 @@
     :group_name: letter
     :learning_category: Formal Letter
     :name: Letter Signature Standalone
-    :primary_structure: letter
+    :structures: [[letter]]
     :secondary_group_name: signature
     :spacing_profile: 6
     :weight: 30
@@ -2730,28 +2669,28 @@
     :for: expanded
     :group_name: media
     :name: Media Attribution 
-    :primary_structure: media
+    :structures: [[media]]
     :spacing_profile: 9
     :weight: 20
   mediacap:
     :for: expanded
     :group_name: media
     :name: Media Caption 
-    :primary_structure: media
+    :structures: [[media]]
     :spacing_profile: 9
     :weight: 20
   mediah:
     :for: expanded
     :group_name: media
     :name: Media Head 
-    :primary_structure: media
+    :structures: [[media]]
     :spacing_profile: 2
     :weight: 10
   nl:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :tip: Numbered lists should use nl styles. The f, l, and s styles should be used
       to control spacing above and below. If an unnumbered list appears within the
@@ -2761,28 +2700,28 @@
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   nl1f:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 First (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   nl1l:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 Last (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   nl1p:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 Paragraph (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 10
     :tip: A new paragraph within a numbered list level 1 item. If a list item is more
       than one paragraph long, then the second paragraph should use this style, which
@@ -2793,161 +2732,161 @@
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 Paragraph Last (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 11
     :weight: 60
   nl1s:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 1 Stand-Alone (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   nl2:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 2
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   nl2f:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   nl2l:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   nl2p:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   nl2s:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 2 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   nl3:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 3
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   nl3f:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   nl3l:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   nl3p:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   nl3s:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 3 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   nl4:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 4
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   nl4f:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   nl4l:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   nl4p:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   nl4s:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 4 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   nl5:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 5
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   nl5f:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   nl5l:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   nl5p:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   nl5s:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Level 5 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   nlf:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 20
   nlh:
@@ -2955,21 +2894,21 @@
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Head
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 2
     :weight: 10
   nll:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 20
   nlp:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 10
     :tip: A new paragraph within a numbered list item. If a list item is more than
       one paragraph long, then the second paragraph should use this style, which will
@@ -2980,14 +2919,14 @@
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Paragraph Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 11
     :weight: 20
   nls:
     :group_name: list
     :learning_category: Numbered List
     :name: Numbered List Item Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 20
   ntbq:
@@ -2995,8 +2934,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote
-    :primary_structure: notes
-    :secondary_structure: blockquote
+    :structures: [[notes], [footnote, endnote], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 4
     :weight: 30
@@ -3005,8 +2943,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote First
-    :primary_structure: notes
-    :secondary_structure: blockquote
+    :structures: [[notes], [footnote, endnote], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 3
     :weight: 30
@@ -3015,8 +2952,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote Last
-    :primary_structure: notes
-    :secondary_structure: blockquote
+    :structures: [[notes], [footnote, endnote], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 5
     :weight: 30
@@ -3025,8 +2961,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Block Quote Stand-Alone
-    :primary_structure: notes
-    :secondary_structure: blockquote
+    :structures: [[notes], [footnote, endnote], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 6
     :weight: 30
@@ -3035,7 +2970,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Continued
-    :primary_structure: notes
+    :structures: [[notes], [footnote, endnote]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 30
@@ -3044,8 +2979,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Equation
-    :primary_structure: notes
-    :secondary_structure: equation
+    :structures: [[notes], [footnote, endnote], [equation]]
     :secondary_group_name: equation
     :spacing_profile: 9
     :weight: 30
@@ -3054,8 +2988,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 4 
     :weight: 30
@@ -3064,8 +2997,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 4 
     :weight: 30
@@ -3074,8 +3006,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 First
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 3 
     :weight: 30
@@ -3084,8 +3015,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 Last
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3094,8 +3024,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Level 1 Standalone
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 6 
     :weight: 30
@@ -3104,8 +3033,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List First
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3114,8 +3042,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Standalone
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3124,8 +3051,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Numbered List Last
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3134,8 +3060,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline
-    :primary_structure: notes
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -3144,8 +3069,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1
-    :primary_structure: notes
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -3154,8 +3078,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 First
-    :primary_structure: notes
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -3164,7 +3087,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 Last
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -3173,7 +3096,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Level 1 Stand-Alone
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 6 
     :weight: 30
@@ -3182,8 +3105,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline First
-    :primary_structure: notes
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -3192,8 +3114,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Last
-    :primary_structure: notes
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -3202,8 +3123,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Senseline Standalone
-    :primary_structure: notes
-    :secondary_structure: senseline
+    :structures: [[notes], [footnote, endnote], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 6
     :weight: 30
@@ -3212,7 +3132,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Table
-    :primary_structure: notes
+    :structures: [[footnote]]
     :secondary_group_name: table
     :spacing_profile: 9
     :weight: 30
@@ -3221,8 +3141,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 4 
     :weight: 30
@@ -3231,8 +3150,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -3241,8 +3159,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 First
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3251,8 +3168,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 Last
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3261,8 +3177,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Level 1 Standalone
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3271,8 +3186,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List First
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3281,8 +3195,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Last
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3291,8 +3204,7 @@
     :group_name: note
     :learning_category: Notes
     :name: Note Unnumbered List Last
-    :primary_structure: notes
-    :secondary_structure: list
+    :structures: [[notes], [footnote, endnote], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3431,7 +3343,7 @@
     :group_name: question
     :learning_category: Question and Answer
     :name: Question
-    :primary_structure: question
+    :structures: [[question]]
     :secondary_group_name: body
     :spacing_profile: 8
     :weight: 20
@@ -3440,7 +3352,7 @@
     :group_name: question
     :learning_category: Question and Answer
     :name: Question First
-    :primary_structure: question
+    :structures: [[question]]
     :secondary_group_name: body
     :spacing_profile: 7
     :weight: 20
@@ -3449,7 +3361,7 @@
     :group_name: question
     :learning_category: Question and Answer
     :name: Question Head
-    :primary_structure: question
+    :structures: [[question]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -3458,7 +3370,7 @@
     :group_name: quote
     :learning_category: Callouts
     :name: Quote
-    :primary_structure: pullquote
+    :structures: [[pullquote]]
     :spacing_profile: 4
     :tip: To be used for pull quotes.
     :weight: 20
@@ -3468,7 +3380,7 @@
     :group_name: quote
     :learning_category: Callouts
     :name: Quote First
-    :primary_structure: pullquote
+    :structures: [[pullquote]]
     :spacing_profile: 3
     :weight: 20
   quotl:
@@ -3477,7 +3389,7 @@
     :group_name: quote
     :learning_category: Callouts
     :name: Quote Last
-    :primary_structure: pullquote
+    :structures: [[pullquote]]
     :spacing_profile: 5
     :weight: 20
   quots:
@@ -3486,7 +3398,7 @@
     :group_name: quote
     :learning_category: Callouts
     :name: Quote Stand-Alone
-    :primary_structure: pullquote
+    :structures: [[pullquote]]
     :spacing_profile: 6
     :weight: 20
   quott:
@@ -3495,7 +3407,7 @@
     :group_name: quote
     :learning_category: Callouts
     :name: Quote Tail
-    :primary_structure: pullquote
+    :structures: [[pullquote]]
     :spacing_profile: 22
     :tip: The speaker of the pull quote.
     :weight: 20
@@ -3524,7 +3436,7 @@
     :group_name: reference
     :learning_category: Notes
     :name: Reference/Bibliography
-    :primary_structure: references
+    :structures: [[references]]
     :spacing_profile: 8
     :tip: For references and bibliographies, the rf style typically uses a hanging
       indent, with a font that's slightly smaller than the main p text.
@@ -3534,7 +3446,7 @@
     :group_name: reference
     :learning_category: Notes
     :name: Reference/Bibliography Level 1
-    :primary_structure: references
+    :structures: [[references]]
     :spacing_profile: 9
     :weight: 60
   rf2:
@@ -3542,7 +3454,7 @@
     :group_name: reference
     :learning_category: Notes
     :name: Reference/Bibliography Level 2
-    :primary_structure: references
+    :structures: [[references]]
     :spacing_profile: 9
     :weight: 60
   rff:
@@ -3550,7 +3462,7 @@
     :group_name: reference
     :learning_category: Notes
     :name: Reference First
-    :primary_structure: references
+    :structures: [[references]]
     :spacing_profile: 7
     :weight: 60
   rh:
@@ -3592,7 +3504,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Procedure
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 13
     :weight: 20
@@ -3601,7 +3513,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Procedure Level 1
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 13
     :weight: 60
@@ -3610,7 +3522,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Procedure Level 1 First
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 12
     :weight: 60
@@ -3619,7 +3531,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Procedure Level 1 Last
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 14
     :weight: 60
@@ -3628,7 +3540,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Yield Level 1
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 60
@@ -3637,7 +3549,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe A-Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -3646,7 +3558,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe B-Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -3655,7 +3567,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe C-Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -3664,7 +3576,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Procedure First
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 12
     :weight: 20
@@ -3673,7 +3585,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Garnish
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3682,7 +3594,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Garnish Level 1
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3691,7 +3603,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 0
@@ -3700,7 +3612,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Subhead or Level 1 Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 0
@@ -3709,7 +3621,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Head Note
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 2
     :weight: 10
@@ -3718,8 +3630,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -3728,8 +3639,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -3738,8 +3648,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1 First
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3748,8 +3657,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1 Last
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3758,8 +3666,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Level 1 Stand-Alone
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3768,8 +3675,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item First
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -3778,8 +3684,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Last
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -3788,8 +3693,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Ingredient List Item Stand-Alone
-    :primary_structure: recipe
-    :secondary_structure: list
+    :structures: [[recipe], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -3798,7 +3702,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Procedure Last
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 14
     :weight: 20
@@ -3807,7 +3711,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Note
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3816,7 +3720,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Note Level 1
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3825,7 +3729,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Nutritional Information
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3834,7 +3738,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Nutritional Information Level 1
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3843,7 +3747,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Title
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 22
     :weight: 0
@@ -3852,7 +3756,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Subtitle or Level 1 Title
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 22
     :weight: 0
@@ -3861,7 +3765,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 13
     :weight: 30
@@ -3870,7 +3774,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation Level 1
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 13
     :weight: 60
@@ -3879,7 +3783,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation Level 1 First
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 12
     :weight: 60
@@ -3888,7 +3792,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation Level 1 Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 2
     :weight: 50
@@ -3897,7 +3801,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation Level 1 Last
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 14
     :weight: 60
@@ -3906,7 +3810,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation First
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 12
     :weight: 30
@@ -3915,7 +3819,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation Head
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -3924,7 +3828,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Variation Last
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_variation
     :spacing_profile: 14
     :weight: 30
@@ -3933,7 +3837,7 @@
     :group_name: recipe
     :learning_category: Recipes
     :name: Recipe Yield
-    :primary_structure: recipe
+    :structures: [[recipe]]
     :secondary_group_name: recipe_body
     :spacing_profile: 9
     :weight: 30
@@ -3978,7 +3882,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 28
     :tip: Sidebar paragraphs include many variations, following the same patterns
@@ -3992,7 +3896,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Level 1
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 13
     :weight: 60
@@ -4001,7 +3905,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Level 1 First
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 12
     :weight: 60
@@ -4011,7 +3915,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Level 1 Head
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 40
@@ -4020,7 +3924,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Level 1 Last
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 14
     :weight: 60
@@ -4030,7 +3934,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Level 1 Title
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 22
     :weight: 40
@@ -4039,7 +3943,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph after Head
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 37
     :weight: 20
@@ -4048,7 +3952,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar A-Head
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 1
     :weight: 10
@@ -4057,7 +3961,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar A-Head after Title
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -4066,7 +3970,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar B-Head
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 1
     :weight: 10
@@ -4075,7 +3979,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar B-Head after A-Head
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -4085,8 +3989,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 4 
     :weight: 30
@@ -4096,8 +3999,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item Level 1
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 4
     :weight: 30
@@ -4107,8 +4009,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item Level 1 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 3
     :weight: 30
@@ -4118,8 +4019,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item Level 1 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 5
     :weight: 30
@@ -4129,8 +4029,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item Level 1 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 6
     :weight: 30
@@ -4140,8 +4039,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 3
     :weight: 30
@@ -4151,8 +4049,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 5
     :weight: 30
@@ -4162,8 +4059,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Bulleted List Item Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list 
     :spacing_profile: 6
     :weight: 30
@@ -4172,8 +4068,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Block Quote
-    :primary_structure: sidebar
-    :secondary_structure: blockquote
+    :structures: [[sidebar], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 16
     :weight: 30
@@ -4182,8 +4077,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Block Quote after Head
-    :primary_structure: sidebar
-    :secondary_structure: blockquote
+    :structures: [[sidebar], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 19
     :weight: 30
@@ -4192,8 +4086,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Block Quote First
-    :primary_structure: sidebar
-    :secondary_structure: blockquote
+    :structures: [[sidebar], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 15
     :weight: 30
@@ -4202,8 +4095,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Block Quote Last
-    :primary_structure: sidebar
-    :secondary_structure: blockquote
+    :structures: [[sidebar], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 17
     :weight: 30
@@ -4212,8 +4104,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Block Quote Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: blockquote
+    :structures: [[sidebar], [blockquote]]
     :secondary_group_name: blockquotes
     :spacing_profile: 18
     :weight: 30
@@ -4222,7 +4113,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph Continued
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 9
     :weight: 20
@@ -4231,7 +4122,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph First
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 27
     :weight: 20
@@ -4240,7 +4131,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Head
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :tip: The sbh style is for individual instances of sidebar heads.
@@ -4250,7 +4141,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph Last
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 29
     :weight: 20
@@ -4259,8 +4150,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -4269,8 +4159,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -4279,8 +4168,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -4289,8 +4177,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -4299,8 +4186,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 Paragraph
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -4309,8 +4195,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 1 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -4319,8 +4204,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -4329,8 +4213,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -4339,8 +4222,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -4349,8 +4231,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 Paragraph
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -4359,8 +4240,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 2 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -4369,8 +4249,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 3
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 13
     :weight: 30
@@ -4379,8 +4258,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 3 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 12
     :weight: 30
@@ -4389,8 +4267,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 3 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 14
     :weight: 30
@@ -4399,8 +4276,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 4
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 13
     :weight: 30
@@ -4409,8 +4285,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 4 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 12
     :weight: 30
@@ -4419,8 +4294,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 4 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 14
     :weight: 30
@@ -4429,8 +4303,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 5
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 13
     :weight: 30
@@ -4439,8 +4312,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 5 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 12
     :weight: 30
@@ -4449,8 +4321,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Level 5 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 14
     :weight: 30
@@ -4459,8 +4330,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -4469,8 +4339,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -4479,8 +4348,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Paragraph
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :tip: A new paragraph within a sidebar numbered list item. If a list item is more
@@ -4492,8 +4360,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Numbered List Item Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -4503,7 +4370,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Only
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 31
     :weight: 20
@@ -4512,7 +4379,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Paragraph Stand-Alone
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 30
     :weight: 20
@@ -4521,8 +4388,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -4531,8 +4397,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -4541,8 +4406,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 First
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -4551,8 +4415,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 Last
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -4561,8 +4424,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 1 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 6
     :weight: 30
@@ -4571,8 +4433,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -4581,8 +4442,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 First
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -4591,8 +4451,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 Last
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -4601,8 +4460,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 2 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 6
     :weight: 30
@@ -4611,8 +4469,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 4
     :weight: 30
@@ -4621,8 +4478,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 First
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -4631,8 +4487,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 Last
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -4641,8 +4496,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Level 3 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 6
     :weight: 30
@@ -4651,8 +4505,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline First
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 3
     :weight: 30
@@ -4661,8 +4514,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 13
     :weight: 30
@@ -4671,8 +4523,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent First
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 12
     :weight: 30
@@ -4681,8 +4532,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Indent Last
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 14
     :weight: 30
@@ -4691,8 +4541,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Last
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 5
     :weight: 30
@@ -4701,8 +4550,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 6
     :weight: 30
@@ -4711,8 +4559,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Senseline Tail
-    :primary_structure: sidebar
-    :secondary_structure: senseline
+    :structures: [[sidebar], [senseline]]
     :secondary_group_name: sense
     :spacing_profile: 22
     :weight: 30
@@ -4721,7 +4568,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Title
-    :primary_structure: sidebar
+    :structures: [[sidebar]]
     :secondary_group_name: body
     :spacing_profile: 2
     :tip: The sbt style should be used for repeating sidebar titles. For example,
@@ -4733,8 +4580,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -4743,8 +4589,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 4
     :weight: 30
@@ -4753,8 +4598,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -4763,8 +4607,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -4773,8 +4616,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Paragraph
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -4783,8 +4625,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 1 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -4793,8 +4634,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -4803,8 +4643,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -4813,8 +4652,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -4823,8 +4661,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Paragraph
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :weight: 30
@@ -4833,8 +4670,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Level 2 Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -4843,8 +4679,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item First
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 3
     :weight: 30
@@ -4853,8 +4688,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Last
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 5
     :weight: 30
@@ -4863,8 +4697,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Paragraph
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 9
     :tip: A new paragraph within a sidebar unnumbered list item. If a list item is
@@ -4876,8 +4709,7 @@
     :group_name: sidebar
     :learning_category: Sidebar
     :name: Sidebar Unnumbered List Item Stand-Alone
-    :primary_structure: sidebar
-    :secondary_structure: list
+    :structures: [[sidebar], [list]]
     :secondary_group_name: list
     :spacing_profile: 6
     :weight: 30
@@ -5043,7 +4875,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 4
     :tip: Senselines are lines of text that have a specific cadence, such as poems
       or liturgies. Indentations for senseline text are controlled by the numbered
@@ -5054,7 +4886,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl1f:
@@ -5062,7 +4894,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl1l:
@@ -5070,7 +4902,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 1 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl2:
@@ -5078,7 +4910,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl2f:
@@ -5086,7 +4918,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl2l:
@@ -5094,7 +4926,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 2 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl3:
@@ -5102,7 +4934,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl3f:
@@ -5110,7 +4942,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl3l:
@@ -5118,7 +4950,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 3 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl4:
@@ -5127,7 +4959,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 4
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl4f:
@@ -5136,7 +4968,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 4 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl4l:
@@ -5145,7 +4977,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 4 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl5:
@@ -5154,7 +4986,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 5
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl5f:
@@ -5163,7 +4995,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 5 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl5l:
@@ -5172,7 +5004,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 5 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl6:
@@ -5181,7 +5013,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 6
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl6f:
@@ -5190,7 +5022,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 6 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl6l:
@@ -5199,7 +5031,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 6 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl7:
@@ -5208,7 +5040,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 7
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl7f:
@@ -5217,7 +5049,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 7 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl7l:
@@ -5226,7 +5058,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 7 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl8:
@@ -5235,7 +5067,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 8
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl8f:
@@ -5244,7 +5076,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 8 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl8l:
@@ -5253,7 +5085,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 8 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   sl9:
@@ -5262,7 +5094,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 9
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :weight: 60
   sl9f:
@@ -5271,7 +5103,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 9 First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :weight: 60
   sl9l:
@@ -5280,7 +5112,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Level 9 Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :weight: 60
   slf:
@@ -5288,7 +5120,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 3
     :weight: 20
   slh:
@@ -5297,7 +5129,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Head
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 2
     :tip: The title of a poem or liturgy.
     :weight: 10
@@ -5306,7 +5138,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Indent
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 13
     :tip: Senseline indent is for special types of indentation, like when the first
       line of a poem starts very far to the right. If you have a regular occurrence
@@ -5320,7 +5152,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Indent First
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 12
     :tip: Senseline indent is for special types of indentation, like when the first
       line of a poem starts very far to the right. If you have a regular occurrence
@@ -5334,7 +5166,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Indent Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 14
     :tip: Senseline indent is for special types of indentation, like when the first
       line of a poem starts very far to the right. If you have a regular occurrence
@@ -5348,7 +5180,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Last
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 5
     :weight: 20
   sls:
@@ -5356,7 +5188,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Stand-Alone
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 6
     :weight: 20
   slt:
@@ -5364,7 +5196,7 @@
     :group_name: sense
     :learning_category: Senseline (Poetry)
     :name: Senseline Tail
-    :primary_structure: senseline
+    :structures: [[senseline]]
     :spacing_profile: 22
     :tip: Senseline tail, like an epigraph tail, is the author or speaker of the poem.
     :weight: 20
@@ -5373,7 +5205,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Paragraph
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: body
     :spacing_profile: 28
     :weight: 20
@@ -5383,7 +5215,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story After Head
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: body
     :spacing_profile: 37
     :weight: 20
@@ -5392,7 +5224,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Paragraph First
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: body
     :spacing_profile: 27
     :weight: 20
@@ -5401,7 +5233,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Head
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -5411,7 +5243,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Head Level 1
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -5421,7 +5253,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Head Level 2
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 10
@@ -5430,7 +5262,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Paragraph Last
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: body
     :spacing_profile: 29
     :weight: 20
@@ -5440,7 +5272,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Only
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: body
     :spacing_profile: 31 
     :weight: 20
@@ -5462,7 +5294,7 @@
     :group_name: story
     :learning_category: Story
     :name: Story Paragraph Stand-Alone
-    :primary_structure: story
+    :structures: [[story]]
     :secondary_group_name: body
     :spacing_profile: 30
     :weight: 20
@@ -5653,7 +5485,7 @@
     :group_name: contents
     :learning_category: Contents
     :name: TOC Author
-    :secondary_group_name: body
+    :secondary_group_name: toc
     :spacing_profile: 9
     :tip: If a chapter (or introduction/preface) has a different author that should
       be listed in the TOC on a separate line. Corresponds with the au style.
@@ -5754,7 +5586,7 @@
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :tip: Unnumbered (unordered) list styles are for all kinds of unnumbered lists,
       whether they use a bullet, a dingbat, or nothing at all. The bulleted list (bl)
@@ -5765,28 +5597,28 @@
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   ul1f:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 First (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   ul1l:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Last (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   ul1p:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Paragraph (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 10
     :weight: 60
   ul1pl:
@@ -5794,161 +5626,161 @@
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Paragraph (Subpoint) Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 11
     :weight: 60
   ul1s:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 1 Stand-Alone (Subpoint)
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   ul2:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   ul2f:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   ul2l:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   ul2p:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   ul2s:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 2 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   ul3:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   ul3f:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   ul3l:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   ul3p:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   ul3s:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 3 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   ul4:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   ul4f:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   ul4l:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   ul4p:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   ul4s:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 4 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   ul5:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 4
     :weight: 60
   ul5f:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 60
   ul5l:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 60
   ul5p:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 9
     :weight: 60
   ul5s:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Level 5 Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 60
   ulf:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item First
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 3
     :weight: 20
   ulh:
@@ -5956,21 +5788,21 @@
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Head
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 2
     :weight: 10
   ull:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 5
     :weight: 20
   ulp:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Paragraph
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 10
     :tip: A new paragraph within an unnumbered list item. If a list item is more than
       one paragraph long, then the second paragraph should use this style, which will
@@ -5981,14 +5813,14 @@
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Paragraph Last
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 11
     :weight: 20
   uls:
     :group_name: list
     :learning_category: Unnumbered List
     :name: Unnumbered List Item Stand-Alone
-    :primary_structure: list
+    :structures: [[list]]
     :spacing_profile: 6
     :weight: 20
   un:
@@ -6021,7 +5853,7 @@
     :for: expanded
     :group_name: media
     :name: Video 
-    :primary_structure: media
+    :structures: [[media]]
     :spacing_profile: 9
     :weight: 20
   wl:
@@ -6029,7 +5861,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Paragraph
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 4
     :tip: Written language styles are for faxes, e-mails, memos, and other forms of
       written communication that might need special treatment. Formal letters should
@@ -6040,7 +5872,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 4
     :weight: 60
   wl1f:
@@ -6048,7 +5880,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph First
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 3
     :weight: 60
   wl1h:
@@ -6056,7 +5888,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 1 Head
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 50
   wl1h1:
@@ -6064,7 +5896,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 1 Subhead
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 50
   wl1l:
@@ -6072,7 +5904,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph Last
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 5
     :weight: 60
   wl1s:
@@ -6081,7 +5913,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 1 Paragraph Stand-Alone
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 6
     :weight: 60
   wl2:
@@ -6089,7 +5921,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 4
     :weight: 60
   wl2f:
@@ -6097,7 +5929,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph First
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 3
     :weight: 60
   wl2h:
@@ -6105,7 +5937,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 2 Head
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 50
   wl2h1:
@@ -6113,7 +5945,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 2  Subhead
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 50
   wl2l:
@@ -6121,7 +5953,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph Last
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 5
     :weight: 60
   wl2s:
@@ -6130,7 +5962,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 2 Paragraph Stand-Alone
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 6
     :weight: 60
   wl3:
@@ -6138,7 +5970,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 4
     :weight: 60
   wl3f:
@@ -6146,7 +5978,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph First
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 3
     :weight: 60
   wl3h:
@@ -6154,7 +5986,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 3 Head
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 50
   wl3h1:
@@ -6162,7 +5994,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 3 Subhead
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 50
   wl3l:
@@ -6170,7 +6002,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph Last
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 5
     :weight: 60
   wl3s:
@@ -6179,7 +6011,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Level 3 Paragraph Stand-Alone
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 6
     :weight: 60
   wlf:
@@ -6187,7 +6019,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Paragraph First
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 3
     :weight: 20
   wlh:
@@ -6195,7 +6027,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Head
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 10
   wlh1:
@@ -6203,7 +6035,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Subhead
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 2
     :weight: 10
   wll:
@@ -6211,7 +6043,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Paragraph Last
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 5
     :weight: 20
   wls:
@@ -6220,7 +6052,7 @@
     :group_name: written-language
     :learning_category: Written Language
     :name: Written Language Paragraph Stand-Alone
-    :primary_structure: written
+    :structures: [[written]]
     :spacing_profile: 6
     :weight: 20
   wsh:
@@ -6228,7 +6060,7 @@
     :group_name: exercise
     :learning_category: Curriculum
     :name: Worksheet Head
-    :primary_structure: exercise
+    :structures: [[exercise]]
     :secondary_group_name: heads
     :spacing_profile: 2
     :weight: 70
